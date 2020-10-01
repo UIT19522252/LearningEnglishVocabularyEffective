@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace StartMenu
 {
-    public partial class menu : Form
-    {
-        public menu()
-        {
-            InitializeComponent();
-        }
-
-    }
+	public partial class StartMenu : Form
+	{
+		public StartMenu()
+		{
+			InitializeComponent();
+		}
+	}
 }

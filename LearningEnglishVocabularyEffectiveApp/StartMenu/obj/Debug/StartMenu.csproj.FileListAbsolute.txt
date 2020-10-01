@@ -1,0 +1,10 @@
+C:\Users\HELLO\Desktop\LearningEnglishVocabularyEffectiveApp\StartMenu\bin\Debug\StartMenu.exe.config
+C:\Users\HELLO\Desktop\LearningEnglishVocabularyEffectiveApp\StartMenu\bin\Debug\StartMenu.exe
+C:\Users\HELLO\Desktop\LearningEnglishVocabularyEffectiveApp\StartMenu\bin\Debug\StartMenu.pdb
+C:\Users\HELLO\Desktop\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.csprojAssemblyReference.cache
+C:\Users\HELLO\Desktop\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.StartMenu.resources
+C:\Users\HELLO\Desktop\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.Properties.Resources.resources
+C:\Users\HELLO\Desktop\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.csproj.GenerateResource.cache
+C:\Users\HELLO\Desktop\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.csproj.CoreCompileInputs.cache
+C:\Users\HELLO\Desktop\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.exe
+C:\Users\HELLO\Desktop\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.pdb
