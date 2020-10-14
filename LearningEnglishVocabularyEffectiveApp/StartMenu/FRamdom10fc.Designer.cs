@@ -52,11 +52,12 @@
             this.guna2ImageButton4.Image = global::StartMenu.Properties.Resources.radomuser;
             this.guna2ImageButton4.ImageRotate = 0F;
             this.guna2ImageButton4.ImageSize = new System.Drawing.Size(88, 76);
-            this.guna2ImageButton4.Location = new System.Drawing.Point(878, 2);
+            this.guna2ImageButton4.Location = new System.Drawing.Point(874, 1);
+            this.guna2ImageButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ImageButton4.Name = "guna2ImageButton4";
             this.guna2ImageButton4.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton4.PressedState.Parent = this.guna2ImageButton4;
-            this.guna2ImageButton4.Size = new System.Drawing.Size(88, 76);
+            this.guna2ImageButton4.Size = new System.Drawing.Size(61, 59);
             this.guna2ImageButton4.TabIndex = 4;
             // 
             // guna2ImageButton3
@@ -68,11 +69,12 @@
             this.guna2ImageButton3.Image = global::StartMenu.Properties.Resources.radomflipall;
             this.guna2ImageButton3.ImageRotate = 0F;
             this.guna2ImageButton3.ImageSize = new System.Drawing.Size(160, 45);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(649, 247);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(651, 247);
+            this.guna2ImageButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ImageButton3.Name = "guna2ImageButton3";
             this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton3.PressedState.Parent = this.guna2ImageButton3;
-            this.guna2ImageButton3.Size = new System.Drawing.Size(160, 45);
+            this.guna2ImageButton3.Size = new System.Drawing.Size(158, 46);
             this.guna2ImageButton3.TabIndex = 3;
             // 
             // guna2ImageButton2
@@ -84,11 +86,12 @@
             this.guna2ImageButton2.Image = global::StartMenu.Properties.Resources.ramdomflipnext;
             this.guna2ImageButton2.ImageRotate = 0F;
             this.guna2ImageButton2.ImageSize = new System.Drawing.Size(180, 60);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(388, 238);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(390, 242);
+            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ImageButton2.Name = "guna2ImageButton2";
             this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Size = new System.Drawing.Size(166, 54);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(164, 51);
             this.guna2ImageButton2.TabIndex = 2;
             // 
             // guna2ImageButton1
@@ -100,34 +103,37 @@
             this.guna2ImageButton1.Image = global::StartMenu.Properties.Resources.radomreturnPNG;
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(135, 88);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(27, 12);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(26, 23);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ImageButton1.Name = "guna2ImageButton1";
             this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(135, 87);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(106, 59);
             this.guna2ImageButton1.TabIndex = 1;
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::StartMenu.Properties.Resources.Random_10_flash_cards;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(1, 2);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 1);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1199, 674);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1200, 675);
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
             // FRamdom10fc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1195, 675);
+            this.ClientSize = new System.Drawing.Size(1200, 675);
             this.Controls.Add(this.guna2ImageButton4);
             this.Controls.Add(this.guna2ImageButton3);
             this.Controls.Add(this.guna2ImageButton2);
             this.Controls.Add(this.guna2ImageButton1);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FRamdom10fc";
             this.Text = "p";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
