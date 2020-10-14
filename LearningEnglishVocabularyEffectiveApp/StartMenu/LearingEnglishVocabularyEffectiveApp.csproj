@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FLearnNewWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLearnNewWord.Designer.cs">
+      <DependentUpon>FLearnNewWord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FLearnNewWord.resx">
+      <DependentUpon>FLearnNewWord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +147,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\radomuser.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LearnNewWords.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\learnnewworduser.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\learnnewwordreturn.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
