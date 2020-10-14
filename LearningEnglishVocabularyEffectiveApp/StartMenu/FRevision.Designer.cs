@@ -93,7 +93,7 @@
 			// 
 			this.btnRandom10.AutoRoundedCorners = true;
 			this.btnRandom10.BackColor = System.Drawing.Color.Transparent;
-			this.btnRandom10.BorderRadius = 60;
+			this.btnRandom10.BorderRadius = 192;
 			this.btnRandom10.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
 			this.btnRandom10.CheckedState.Parent = this.btnRandom10;
 			this.btnRandom10.CustomImages.Parent = this.btnRandom10;
@@ -102,10 +102,10 @@
 			this.btnRandom10.HoverState.Parent = this.btnRandom10;
 			this.btnRandom10.Image = ((System.Drawing.Image)(resources.GetObject("btnRandom10.Image")));
 			this.btnRandom10.ImageSize = new System.Drawing.Size(500, 420);
-			this.btnRandom10.Location = new System.Drawing.Point(63, 245);
+			this.btnRandom10.Location = new System.Drawing.Point(110, 245);
 			this.btnRandom10.Name = "btnRandom10";
 			this.btnRandom10.ShadowDecoration.Parent = this.btnRandom10;
-			this.btnRandom10.Size = new System.Drawing.Size(474, 406);
+			this.btnRandom10.Size = new System.Drawing.Size(436, 387);
 			this.btnRandom10.TabIndex = 1;
 			// 
 			// guna2TextBox1
@@ -145,7 +145,7 @@
 			this.btnAllCard.Animated = true;
 			this.btnAllCard.AutoRoundedCorners = true;
 			this.btnAllCard.BackColor = System.Drawing.Color.Transparent;
-			this.btnAllCard.BorderRadius = 202;
+			this.btnAllCard.BorderRadius = 192;
 			this.btnAllCard.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
 			this.btnAllCard.CheckedState.Parent = this.btnAllCard;
 			this.btnAllCard.CustomImages.Parent = this.btnAllCard;
@@ -157,7 +157,7 @@
 			this.btnAllCard.Location = new System.Drawing.Point(646, 245);
 			this.btnAllCard.Name = "btnAllCard";
 			this.btnAllCard.ShadowDecoration.Parent = this.btnAllCard;
-			this.btnAllCard.Size = new System.Drawing.Size(474, 406);
+			this.btnAllCard.Size = new System.Drawing.Size(447, 387);
 			this.btnAllCard.TabIndex = 1;
 			// 
 			// guna2TextBox2

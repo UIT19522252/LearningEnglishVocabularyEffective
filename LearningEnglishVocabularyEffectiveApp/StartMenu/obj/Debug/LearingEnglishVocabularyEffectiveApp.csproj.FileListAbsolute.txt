@@ -28,3 +28,17 @@ C:\Users\HELLO\Source\Repos\LearningEnglishVocabularyEffective\LearningEnglishVo
 C:\Users\HELLO\Source\Repos\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\LearingEnglishVocabularyEffectiveApp.csproj.CopyComplete
 C:\Users\HELLO\Source\Repos\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.exe
 C:\Users\HELLO\Source\Repos\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.pdb
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\bin\Debug\StartMenu.exe.config
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\bin\Debug\StartMenu.exe
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\bin\Debug\StartMenu.pdb
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\LearingEnglishVocabularyEffectiveApp.csprojAssemblyReference.cache
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.StartMenu.resources
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FRevision.resources
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.Properties.Resources.resources
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\LearingEnglishVocabularyEffectiveApp.csproj.GenerateResource.cache
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\LearingEnglishVocabularyEffectiveApp.csproj.CoreCompileInputs.cache
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\LearingEnglishVocabularyEffectiveApp.csproj.CopyComplete
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.exe
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.pdb
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FAllFlashCards.resources
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FYourWords.resources
