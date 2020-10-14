@@ -62,6 +62,12 @@
       <DependentUpon>FPractice.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FRamdom10fc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRamdom10fc.Designer.cs">
+      <DependentUpon>FRamdom10fc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -69,6 +75,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FPractice.resx">
       <DependentUpon>FPractice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRamdom10fc.resx">
+      <DependentUpon>FRamdom10fc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,6 +123,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gameuserPNG1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Random-10-flash-cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radomreturnPNG.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramdomflipnext.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radomflipall.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radomuser.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
