@@ -4,7 +4,6 @@ C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglis
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\bin\Debug\Guna.UI2.dll
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\LearingEnglishVocabularyEffectiveApp.csprojAssemblyReference.cache
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.StartMenu.resources
-C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.Practice.resources
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.Properties.Resources.resources
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\LearingEnglishVocabularyEffectiveApp.csproj.GenerateResource.cache
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\LearingEnglishVocabularyEffectiveApp.csproj.CoreCompileInputs.cache
@@ -13,3 +12,4 @@ C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglis
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.pdb
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FRamdom10fc.resources
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FLearnNewWord.resources
+C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FPractice.resources
