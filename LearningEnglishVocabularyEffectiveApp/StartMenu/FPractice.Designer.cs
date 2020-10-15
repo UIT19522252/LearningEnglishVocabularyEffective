@@ -28,43 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnPRgame1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPRgame2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPRuser = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPRreturn = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
-            // panel2
+            // btnPRgame1
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Location = new System.Drawing.Point(220, 324);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(758, 73);
-            this.panel2.TabIndex = 2;
+            this.btnPRgame1.BackColor = System.Drawing.Color.Transparent;
+            this.btnPRgame1.CheckedState.Parent = this.btnPRgame1;
+            this.btnPRgame1.CustomImages.Parent = this.btnPRgame1;
+            this.btnPRgame1.FillColor = System.Drawing.Color.Transparent;
+            this.btnPRgame1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPRgame1.ForeColor = System.Drawing.Color.Transparent;
+            this.btnPRgame1.HoverState.Parent = this.btnPRgame1;
+            this.btnPRgame1.Location = new System.Drawing.Point(226, 322);
+            this.btnPRgame1.Name = "btnPRgame1";
+            this.btnPRgame1.ShadowDecoration.Parent = this.btnPRgame1;
+            this.btnPRgame1.Size = new System.Drawing.Size(732, 77);
+            this.btnPRgame1.TabIndex = 2;
+            this.btnPRgame1.Text = "guna2Button2";
             // 
-            // panel1
+            // btnPRgame2
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(220, 451);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(772, 67);
-            this.panel1.TabIndex = 2;
+            this.btnPRgame2.BackColor = System.Drawing.Color.Transparent;
+            this.btnPRgame2.CheckedState.Parent = this.btnPRgame2;
+            this.btnPRgame2.CustomImages.Parent = this.btnPRgame2;
+            this.btnPRgame2.FillColor = System.Drawing.Color.Transparent;
+            this.btnPRgame2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPRgame2.ForeColor = System.Drawing.Color.Transparent;
+            this.btnPRgame2.HoverState.Parent = this.btnPRgame2;
+            this.btnPRgame2.Location = new System.Drawing.Point(226, 446);
+            this.btnPRgame2.Name = "btnPRgame2";
+            this.btnPRgame2.ShadowDecoration.Parent = this.btnPRgame2;
+            this.btnPRgame2.Size = new System.Drawing.Size(763, 72);
+            this.btnPRgame2.TabIndex = 3;
+            this.btnPRgame2.Text = "guna2Button1";
             // 
-            // panel3
+            // btnPRuser
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Location = new System.Drawing.Point(887, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(52, 56);
-            this.panel3.TabIndex = 2;
+            this.btnPRuser.BackColor = System.Drawing.Color.Transparent;
+            this.btnPRuser.CheckedState.Parent = this.btnPRuser;
+            this.btnPRuser.CustomImages.Parent = this.btnPRuser;
+            this.btnPRuser.FillColor = System.Drawing.Color.Transparent;
+            this.btnPRuser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPRuser.ForeColor = System.Drawing.Color.Transparent;
+            this.btnPRuser.HoverState.Parent = this.btnPRuser;
+            this.btnPRuser.Location = new System.Drawing.Point(884, 12);
+            this.btnPRuser.Name = "btnPRuser";
+            this.btnPRuser.ShadowDecoration.Parent = this.btnPRuser;
+            this.btnPRuser.Size = new System.Drawing.Size(61, 48);
+            this.btnPRuser.TabIndex = 4;
+            this.btnPRuser.Text = "guna2Button3";
             // 
-            // panel4
+            // btnPRreturn
             // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Location = new System.Drawing.Point(12, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(78, 58);
-            this.panel4.TabIndex = 2;
+            this.btnPRreturn.BackColor = System.Drawing.Color.Transparent;
+            this.btnPRreturn.CheckedState.Parent = this.btnPRreturn;
+            this.btnPRreturn.CustomImages.Parent = this.btnPRreturn;
+            this.btnPRreturn.FillColor = System.Drawing.Color.Transparent;
+            this.btnPRreturn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPRreturn.ForeColor = System.Drawing.Color.Transparent;
+            this.btnPRreturn.HoverState.Parent = this.btnPRreturn;
+            this.btnPRreturn.Location = new System.Drawing.Point(12, 12);
+            this.btnPRreturn.Name = "btnPRreturn";
+            this.btnPRreturn.ShadowDecoration.Parent = this.btnPRreturn;
+            this.btnPRreturn.Size = new System.Drawing.Size(69, 66);
+            this.btnPRreturn.TabIndex = 5;
+            this.btnPRreturn.Text = "guna2Button4";
             // 
             // FPractice
             // 
@@ -72,10 +104,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::StartMenu.Properties.Resources.Practice;
             this.ClientSize = new System.Drawing.Size(1184, 636);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnPRreturn);
+            this.Controls.Add(this.btnPRuser);
+            this.Controls.Add(this.btnPRgame2);
+            this.Controls.Add(this.btnPRgame1);
             this.Name = "FPractice";
             this.Text = "PRACTICE";
             this.ResumeLayout(false);
@@ -84,9 +116,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private Guna.UI2.WinForms.Guna2Button btnPRgame1;
+        private Guna.UI2.WinForms.Guna2Button btnPRgame2;
+        private Guna.UI2.WinForms.Guna2Button btnPRuser;
+        private Guna.UI2.WinForms.Guna2Button btnPRreturn;
     }
 }

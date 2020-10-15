@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLNWreturn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLNWuser = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -39,23 +39,39 @@
             this.guna2Elipse1.BorderRadius = 10;
             this.guna2Elipse1.TargetControl = this;
             // 
-            // panel1
+            // btnLNWreturn
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(73, 73);
-            this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.btnLNWreturn.BackColor = System.Drawing.Color.Transparent;
+            this.btnLNWreturn.BorderColor = System.Drawing.Color.Transparent;
+            this.btnLNWreturn.CheckedState.Parent = this.btnLNWreturn;
+            this.btnLNWreturn.CustomImages.Parent = this.btnLNWreturn;
+            this.btnLNWreturn.FillColor = System.Drawing.Color.Transparent;
+            this.btnLNWreturn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLNWreturn.ForeColor = System.Drawing.Color.Transparent;
+            this.btnLNWreturn.HoverState.Parent = this.btnLNWreturn;
+            this.btnLNWreturn.Location = new System.Drawing.Point(12, 22);
+            this.btnLNWreturn.Name = "btnLNWreturn";
+            this.btnLNWreturn.ShadowDecoration.Parent = this.btnLNWreturn;
+            this.btnLNWreturn.Size = new System.Drawing.Size(73, 57);
+            this.btnLNWreturn.TabIndex = 0;
+            this.btnLNWreturn.Text = "guna2Button1";
             // 
-            // panel2
+            // btnLNWuser
             // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Location = new System.Drawing.Point(861, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(57, 56);
-            this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.btnLNWuser.BackColor = System.Drawing.Color.Transparent;
+            this.btnLNWuser.BorderColor = System.Drawing.Color.Transparent;
+            this.btnLNWuser.CheckedState.Parent = this.btnLNWuser;
+            this.btnLNWuser.CustomImages.Parent = this.btnLNWuser;
+            this.btnLNWuser.FillColor = System.Drawing.Color.Transparent;
+            this.btnLNWuser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLNWuser.ForeColor = System.Drawing.Color.Transparent;
+            this.btnLNWuser.HoverState.Parent = this.btnLNWuser;
+            this.btnLNWuser.Location = new System.Drawing.Point(862, 12);
+            this.btnLNWuser.Name = "btnLNWuser";
+            this.btnLNWuser.ShadowDecoration.Parent = this.btnLNWuser;
+            this.btnLNWuser.Size = new System.Drawing.Size(51, 55);
+            this.btnLNWuser.TabIndex = 1;
+            this.btnLNWuser.Text = "guna2Button1";
             // 
             // FLearnNewWord
             // 
@@ -63,8 +79,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::StartMenu.Properties.Resources.LearnNewWords;
             this.ClientSize = new System.Drawing.Size(1200, 675);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnLNWuser);
+            this.Controls.Add(this.btnLNWreturn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FLearnNewWord";
             this.Text = "LEARN NEW WORDS";
@@ -75,7 +92,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private Guna.UI2.WinForms.Guna2Button btnLNWuser;
+        private Guna.UI2.WinForms.Guna2Button btnLNWreturn;
     }
 }
