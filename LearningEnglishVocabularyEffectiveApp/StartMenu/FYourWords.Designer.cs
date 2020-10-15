@@ -30,9 +30,6 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FYourWords));
-			this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-			this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.btnAddWord = new Guna.UI2.WinForms.Guna2Button();
 			this.tbxWord = new Guna.UI2.WinForms.Guna2TextBox();
 			this.btnBack = new Guna.UI2.WinForms.Guna2Button();
@@ -44,36 +41,8 @@
 			this.btnWord7 = new Guna.UI2.WinForms.Guna2Button();
 			this.btnWord6 = new Guna.UI2.WinForms.Guna2Button();
 			this.ScrlWord = new Guna.UI2.WinForms.Guna2VScrollBar();
+			this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
 			this.SuspendLayout();
-			// 
-			// guna2BorderlessForm1
-			// 
-			this.guna2BorderlessForm1.ContainerControl = this;
-			// 
-			// guna2ControlBox1
-			// 
-			this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-			this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-			this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-			this.guna2ControlBox1.Location = new System.Drawing.Point(1132, 2);
-			this.guna2ControlBox1.Name = "guna2ControlBox1";
-			this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-			this.guna2ControlBox1.Size = new System.Drawing.Size(51, 30);
-			this.guna2ControlBox1.TabIndex = 0;
-			// 
-			// guna2ControlBox2
-			// 
-			this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-			this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-			this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-			this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-			this.guna2ControlBox2.Location = new System.Drawing.Point(1080, 2);
-			this.guna2ControlBox2.Name = "guna2ControlBox2";
-			this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-			this.guna2ControlBox2.Size = new System.Drawing.Size(46, 30);
-			this.guna2ControlBox2.TabIndex = 0;
 			// 
 			// btnAddWord
 			// 
@@ -87,7 +56,7 @@
 			this.btnAddWord.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.btnAddWord.ForeColor = System.Drawing.Color.Transparent;
 			this.btnAddWord.HoverState.Parent = this.btnAddWord;
-			this.btnAddWord.Location = new System.Drawing.Point(101, 268);
+			this.btnAddWord.Location = new System.Drawing.Point(98, 254);
 			this.btnAddWord.Name = "btnAddWord";
 			this.btnAddWord.ShadowDecoration.Parent = this.btnAddWord;
 			this.btnAddWord.Size = new System.Drawing.Size(228, 39);
@@ -111,7 +80,7 @@
 			this.tbxWord.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.tbxWord.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.tbxWord.HoverState.Parent = this.tbxWord;
-			this.tbxWord.Location = new System.Drawing.Point(356, 268);
+			this.tbxWord.Location = new System.Drawing.Point(356, 255);
 			this.tbxWord.Name = "tbxWord";
 			this.tbxWord.PasswordChar = '\0';
 			this.tbxWord.PlaceholderText = "";
@@ -256,6 +225,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(1184, 636);
 			this.Controls.Add(this.ScrlWord);
 			this.Controls.Add(this.btnWord6);
@@ -268,9 +238,6 @@
 			this.Controls.Add(this.btnBack);
 			this.Controls.Add(this.tbxWord);
 			this.Controls.Add(this.btnAddWord);
-			this.Controls.Add(this.guna2ControlBox2);
-			this.Controls.Add(this.guna2ControlBox1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "FYourWords";
 			this.Text = "FYourWords";
 			this.ResumeLayout(false);
@@ -278,12 +245,8 @@
 		}
 
 		#endregion
-
-		private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
 		private Guna.UI2.WinForms.Guna2TextBox tbxWord;
 		private Guna.UI2.WinForms.Guna2Button btnAddWord;
-		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
 		private Guna.UI2.WinForms.Guna2Button btnBack;
 		private Guna.UI2.WinForms.Guna2VScrollBar ScrlWord;
 		private Guna.UI2.WinForms.Guna2Button btnWord6;
@@ -293,5 +256,6 @@
 		private Guna.UI2.WinForms.Guna2Button btnWord3;
 		private Guna.UI2.WinForms.Guna2Button btnWord2;
 		private Guna.UI2.WinForms.Guna2Button btnWord1;
+		private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
 	}
 }

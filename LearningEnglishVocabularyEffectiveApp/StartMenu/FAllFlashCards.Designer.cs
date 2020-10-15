@@ -28,11 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FAllFlashCards));
-			this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-			this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-			this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
 			this.guna2VScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
 			this.btnFlashCard1 = new Guna.UI2.WinForms.Guna2Button();
 			this.btnFlashCard5 = new Guna.UI2.WinForms.Guna2Button();
@@ -52,36 +48,6 @@
 			this.btnFlashCard16 = new Guna.UI2.WinForms.Guna2Button();
 			this.btnBack = new Guna.UI2.WinForms.Guna2Button();
 			this.SuspendLayout();
-			// 
-			// guna2BorderlessForm1
-			// 
-			this.guna2BorderlessForm1.ContainerControl = this;
-			// 
-			// guna2ControlBox1
-			// 
-			this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-			this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-			this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-			this.guna2ControlBox1.Location = new System.Drawing.Point(1159, 7);
-			this.guna2ControlBox1.Name = "guna2ControlBox1";
-			this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-			this.guna2ControlBox1.Size = new System.Drawing.Size(34, 33);
-			this.guna2ControlBox1.TabIndex = 0;
-			// 
-			// guna2ControlBox2
-			// 
-			this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.guna2ControlBox2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-			this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-			this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-			this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-			this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-			this.guna2ControlBox2.Location = new System.Drawing.Point(1119, 7);
-			this.guna2ControlBox2.Name = "guna2ControlBox2";
-			this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-			this.guna2ControlBox2.Size = new System.Drawing.Size(34, 33);
-			this.guna2ControlBox2.TabIndex = 0;
 			// 
 			// guna2VScrollBar1
 			// 
@@ -107,7 +73,7 @@
 			this.btnFlashCard1.BackColor = System.Drawing.Color.Transparent;
 			this.btnFlashCard1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard1.BackgroundImage")));
 			this.btnFlashCard1.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard1.BorderRadius = 10;
+			this.btnFlashCard1.BorderRadius = 61;
 			this.btnFlashCard1.CheckedState.Parent = this.btnFlashCard1;
 			this.btnFlashCard1.CustomImages.Parent = this.btnFlashCard1;
 			this.btnFlashCard1.FillColor = System.Drawing.Color.Transparent;
@@ -465,9 +431,6 @@
 			this.Controls.Add(this.btnFlashCard2);
 			this.Controls.Add(this.btnFlashCard1);
 			this.Controls.Add(this.guna2VScrollBar1);
-			this.Controls.Add(this.guna2ControlBox2);
-			this.Controls.Add(this.guna2ControlBox1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "FAllFlashCards";
 			this.Text = "FAllFlashCards";
 			this.ResumeLayout(false);
@@ -475,13 +438,9 @@
 		}
 
 		#endregion
-
-		private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
 		private Guna.UI2.WinForms.Guna2Button btnFlashCard5;
 		private Guna.UI2.WinForms.Guna2Button btnFlashCard1;
 		private Guna.UI2.WinForms.Guna2VScrollBar guna2VScrollBar1;
-		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-		private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
 		private Guna.UI2.WinForms.Guna2Button btnFlashCard16;
 		private Guna.UI2.WinForms.Guna2Button btnFlashCard15;
 		private Guna.UI2.WinForms.Guna2Button btnFlashCard14;
