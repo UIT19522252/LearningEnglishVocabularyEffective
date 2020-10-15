@@ -49,16 +49,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FLearnNewWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLearnNewWord.Designer.cs">
+      <DependentUpon>FLearnNewWord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FPractice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>FPractice.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRamdom10fc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRamdom10fc.Designer.cs">
+      <DependentUpon>FRamdom10fc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FLearnNewWord.resx">
+      <DependentUpon>FLearnNewWord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPractice.resx">
+      <DependentUpon>FPractice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRamdom10fc.resx">
+      <DependentUpon>FRamdom10fc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -68,6 +96,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -82,6 +111,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Practice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Practice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\game1return.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameuserPNG.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gameuserPNG1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Random-10-flash-cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radomreturnPNG.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramdomflipnext.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radomflipall.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radomuser.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LearnNewWords.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\learnnewworduser.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\learnnewwordreturn.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
