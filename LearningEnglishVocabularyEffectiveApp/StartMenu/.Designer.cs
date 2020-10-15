@@ -44,7 +44,6 @@
             // guna2ElipseFPractice
             // 
             this.guna2ElipseFPractice.BorderRadius = 10;
-            this.guna2ElipseFPractice.TargetControl = this;
             // 
             // guna2ImageButton2
             // 
