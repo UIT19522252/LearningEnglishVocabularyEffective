@@ -28,18 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnRDreturn = new Guna.UI2.WinForms.Guna2Button();
             this.btnRDflipnext = new Guna.UI2.WinForms.Guna2Button();
             this.btnRDflipall = new Guna.UI2.WinForms.Guna2Button();
             this.btnRDuser = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 10;
-            this.guna2Elipse1.TargetControl = this;
             // 
             // btnRDreturn
             // 
@@ -59,7 +52,9 @@
             // 
             // btnRDflipnext
             // 
+            this.btnRDflipnext.AutoRoundedCorners = true;
             this.btnRDflipnext.BackColor = System.Drawing.Color.Transparent;
+            this.btnRDflipnext.BorderRadius = 23;
             this.btnRDflipnext.CheckedState.Parent = this.btnRDflipnext;
             this.btnRDflipnext.CustomImages.Parent = this.btnRDflipnext;
             this.btnRDflipnext.FillColor = System.Drawing.Color.Transparent;
@@ -75,23 +70,27 @@
             // 
             // btnRDflipall
             // 
+            this.btnRDflipall.AutoRoundedCorners = true;
             this.btnRDflipall.BackColor = System.Drawing.Color.Transparent;
+            this.btnRDflipall.BorderRadius = 23;
             this.btnRDflipall.CheckedState.Parent = this.btnRDflipall;
             this.btnRDflipall.CustomImages.Parent = this.btnRDflipall;
             this.btnRDflipall.FillColor = System.Drawing.Color.Transparent;
             this.btnRDflipall.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRDflipall.ForeColor = System.Drawing.Color.Transparent;
             this.btnRDflipall.HoverState.Parent = this.btnRDflipall;
-            this.btnRDflipall.Location = new System.Drawing.Point(656, 242);
+            this.btnRDflipall.Location = new System.Drawing.Point(650, 242);
             this.btnRDflipall.Name = "btnRDflipall";
             this.btnRDflipall.ShadowDecoration.Parent = this.btnRDflipall;
-            this.btnRDflipall.Size = new System.Drawing.Size(158, 48);
+            this.btnRDflipall.Size = new System.Drawing.Size(157, 48);
             this.btnRDflipall.TabIndex = 2;
             this.btnRDflipall.Text = "guna2Button3";
             // 
             // btnRDuser
             // 
+            this.btnRDuser.AutoRoundedCorners = true;
             this.btnRDuser.BackColor = System.Drawing.Color.Transparent;
+            this.btnRDuser.BorderRadius = 21;
             this.btnRDuser.CheckedState.Parent = this.btnRDuser;
             this.btnRDuser.CustomImages.Parent = this.btnRDuser;
             this.btnRDuser.FillColor = System.Drawing.Color.Transparent;
@@ -101,7 +100,7 @@
             this.btnRDuser.Location = new System.Drawing.Point(884, 12);
             this.btnRDuser.Name = "btnRDuser";
             this.btnRDuser.ShadowDecoration.Parent = this.btnRDuser;
-            this.btnRDuser.Size = new System.Drawing.Size(46, 48);
+            this.btnRDuser.Size = new System.Drawing.Size(51, 45);
             this.btnRDuser.TabIndex = 3;
             this.btnRDuser.Text = "guna2Button4";
             // 
@@ -115,7 +114,6 @@
             this.Controls.Add(this.btnRDflipall);
             this.Controls.Add(this.btnRDflipnext);
             this.Controls.Add(this.btnRDreturn);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FRamdom10fc";
             this.Text = "RANDOM 10 FLASHCARD";
@@ -124,8 +122,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button btnRDuser;
         private Guna.UI2.WinForms.Guna2Button btnRDflipall;
         private Guna.UI2.WinForms.Guna2Button btnRDflipnext;

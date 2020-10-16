@@ -28,16 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnLNWreturn = new Guna.UI2.WinForms.Guna2Button();
-            this.btnLNWuser = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLNWuser = new Guna.UI2.WinForms.Guna2CircleButton();
             this.SuspendLayout();
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 10;
-            this.guna2Elipse1.TargetControl = this;
             // 
             // btnLNWreturn
             // 
@@ -59,19 +52,19 @@
             // btnLNWuser
             // 
             this.btnLNWuser.BackColor = System.Drawing.Color.Transparent;
-            this.btnLNWuser.BorderColor = System.Drawing.Color.Transparent;
             this.btnLNWuser.CheckedState.Parent = this.btnLNWuser;
             this.btnLNWuser.CustomImages.Parent = this.btnLNWuser;
             this.btnLNWuser.FillColor = System.Drawing.Color.Transparent;
             this.btnLNWuser.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLNWuser.ForeColor = System.Drawing.Color.Transparent;
             this.btnLNWuser.HoverState.Parent = this.btnLNWuser;
-            this.btnLNWuser.Location = new System.Drawing.Point(862, 12);
+            this.btnLNWuser.Location = new System.Drawing.Point(864, 12);
             this.btnLNWuser.Name = "btnLNWuser";
+            this.btnLNWuser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnLNWuser.ShadowDecoration.Parent = this.btnLNWuser;
-            this.btnLNWuser.Size = new System.Drawing.Size(51, 55);
+            this.btnLNWuser.Size = new System.Drawing.Size(50, 50);
             this.btnLNWuser.TabIndex = 1;
-            this.btnLNWuser.Text = "guna2Button1";
+            this.btnLNWuser.Text = "guna2CircleButton1";
             // 
             // FLearnNewWord
             // 
@@ -81,7 +74,6 @@
             this.ClientSize = new System.Drawing.Size(1200, 675);
             this.Controls.Add(this.btnLNWuser);
             this.Controls.Add(this.btnLNWreturn);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FLearnNewWord";
             this.Text = "LEARN NEW WORDS";
@@ -90,9 +82,7 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2Button btnLNWuser;
         private Guna.UI2.WinForms.Guna2Button btnLNWreturn;
+        private Guna.UI2.WinForms.Guna2CircleButton btnLNWuser;
     }
 }
