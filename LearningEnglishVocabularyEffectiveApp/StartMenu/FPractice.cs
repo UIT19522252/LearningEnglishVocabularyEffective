@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace StartMenu
 {
-    public partial class Practice : Form
+    public partial class FPractice : Form
     {
-        public Practice()
+        public FPractice()
         {
             InitializeComponent();
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
