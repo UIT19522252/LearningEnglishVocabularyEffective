@@ -74,6 +74,12 @@
     <Compile Include="FRamdom10fc.Designer.cs">
       <DependentUpon>FRamdom10fc.cs</DependentUpon>
     </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FLearnNewWord.resx">
@@ -87,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRamdom10fc.resx">
       <DependentUpon>FRamdom10fc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -156,6 +165,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\learnnewwordreturn.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

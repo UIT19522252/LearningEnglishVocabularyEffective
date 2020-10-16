@@ -16,7 +16,7 @@ namespace StartMenu
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FAllFlashCards());
+			Application.Run(new FLogin());
 		}
 	}
 }
