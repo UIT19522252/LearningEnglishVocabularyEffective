@@ -31,5 +31,13 @@ namespace StartMenu
         {
 
         }
+
+        // btnBack
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            StartMenu f = new StartMenu();
+            this.Close();
+            f.ShowDialog();
+        }
     }
 }

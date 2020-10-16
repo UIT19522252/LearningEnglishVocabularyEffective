@@ -21,5 +21,17 @@ namespace StartMenu
         {
 
         }
+
+        private void FRamdom10fc_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRDreturn_Click(object sender, EventArgs e)
+        {
+            StartMenu f = new StartMenu();
+            this.Close();
+            f.ShowDialog();
+        }
     }
 }

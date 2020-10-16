@@ -28,102 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnPRgame1 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPRgame2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPRreturn = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPRuser = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
-            // btnPRgame1
+            // guna2Button1
             // 
-            this.btnPRgame1.AutoRoundedCorners = true;
-            this.btnPRgame1.BackColor = System.Drawing.Color.Transparent;
-            this.btnPRgame1.BorderRadius = 41;
-            this.btnPRgame1.CheckedState.Parent = this.btnPRgame1;
-            this.btnPRgame1.CustomImages.Parent = this.btnPRgame1;
-            this.btnPRgame1.FillColor = System.Drawing.Color.Transparent;
-            this.btnPRgame1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPRgame1.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPRgame1.HoverState.Parent = this.btnPRgame1;
-            this.btnPRgame1.Location = new System.Drawing.Point(209, 317);
-            this.btnPRgame1.Name = "btnPRgame1";
-            this.btnPRgame1.ShadowDecoration.Parent = this.btnPRgame1;
-            this.btnPRgame1.Size = new System.Drawing.Size(788, 85);
-            this.btnPRgame1.TabIndex = 2;
-            this.btnPRgame1.Text = "guna2Button2";
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 40;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(207, 293);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(776, 83);
+            this.guna2Button1.TabIndex = 0;
             // 
-            // btnPRgame2
+            // guna2Button2
             // 
-            this.btnPRgame2.AutoRoundedCorners = true;
-            this.btnPRgame2.BackColor = System.Drawing.Color.Transparent;
-            this.btnPRgame2.BorderRadius = 38;
-            this.btnPRgame2.CheckedState.Parent = this.btnPRgame2;
-            this.btnPRgame2.CustomImages.Parent = this.btnPRgame2;
-            this.btnPRgame2.FillColor = System.Drawing.Color.Transparent;
-            this.btnPRgame2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPRgame2.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPRgame2.HoverState.Parent = this.btnPRgame2;
-            this.btnPRgame2.Location = new System.Drawing.Point(222, 443);
-            this.btnPRgame2.Name = "btnPRgame2";
-            this.btnPRgame2.ShadowDecoration.Parent = this.btnPRgame2;
-            this.btnPRgame2.Size = new System.Drawing.Size(784, 79);
-            this.btnPRgame2.TabIndex = 3;
-            this.btnPRgame2.Text = "guna2Button1";
+            this.guna2Button2.AutoRoundedCorners = true;
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderRadius = 36;
+            this.guna2Button2.BorderThickness = 1;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(215, 411);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(776, 75);
+            this.guna2Button2.TabIndex = 1;
             // 
-            // btnPRreturn
+            // guna2Button3
             // 
-            this.btnPRreturn.BackColor = System.Drawing.Color.Transparent;
-            this.btnPRreturn.CheckedState.Parent = this.btnPRreturn;
-            this.btnPRreturn.CustomImages.Parent = this.btnPRreturn;
-            this.btnPRreturn.FillColor = System.Drawing.Color.Transparent;
-            this.btnPRreturn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPRreturn.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPRreturn.HoverState.Parent = this.btnPRreturn;
-            this.btnPRreturn.Location = new System.Drawing.Point(12, 12);
-            this.btnPRreturn.Name = "btnPRreturn";
-            this.btnPRreturn.ShadowDecoration.Parent = this.btnPRreturn;
-            this.btnPRreturn.Size = new System.Drawing.Size(69, 66);
-            this.btnPRreturn.TabIndex = 5;
-            this.btnPRreturn.Text = "guna2Button4";
-            // 
-            // btnPRuser
-            // 
-            this.btnPRuser.BackColor = System.Drawing.Color.Transparent;
-            this.btnPRuser.CheckedState.Parent = this.btnPRuser;
-            this.btnPRuser.CustomImages.Parent = this.btnPRuser;
-            this.btnPRuser.FillColor = System.Drawing.Color.Transparent;
-            this.btnPRuser.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnPRuser.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPRuser.HoverState.Parent = this.btnPRuser;
-            this.btnPRuser.Location = new System.Drawing.Point(888, 12);
-            this.btnPRuser.Name = "btnPRuser";
-            this.btnPRuser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnPRuser.ShadowDecoration.Parent = this.btnPRuser;
-            this.btnPRuser.Size = new System.Drawing.Size(48, 46);
-            this.btnPRuser.TabIndex = 6;
-            this.btnPRuser.Text = "guna2CircleButton1";
+            this.guna2Button3.AutoRoundedCorners = true;
+            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.BorderRadius = 40;
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Location = new System.Drawing.Point(5, 3);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(84, 83);
+            this.guna2Button3.TabIndex = 2;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // FPractice
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::StartMenu.Properties.Resources.Practice;
-            this.ClientSize = new System.Drawing.Size(1184, 636);
-            this.Controls.Add(this.btnPRuser);
-            this.Controls.Add(this.btnPRreturn);
-            this.Controls.Add(this.btnPRgame2);
-            this.Controls.Add(this.btnPRgame1);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackgroundImage = global::StartMenu.Properties.Resources.Practice2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2Button1);
             this.Name = "FPractice";
-            this.Text = "PRACTICE";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FPractice";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button btnPRgame1;
-        private Guna.UI2.WinForms.Guna2Button btnPRgame2;
-        private Guna.UI2.WinForms.Guna2Button btnPRreturn;
-        private Guna.UI2.WinForms.Guna2CircleButton btnPRuser;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }

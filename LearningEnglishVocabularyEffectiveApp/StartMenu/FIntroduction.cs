@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace StartMenu
 {
-    public partial class FPractice : Form
+    public partial class FIntroduction : Form
     {
-        public FPractice()
+        public FIntroduction()
         {
             InitializeComponent();
         }
-        //btn Back
-        private void guna2Button3_Click(object sender, EventArgs e)
+
+        private void btnBack_Click(object sender, EventArgs e)
         {
             StartMenu f = new StartMenu();
             this.Close();
