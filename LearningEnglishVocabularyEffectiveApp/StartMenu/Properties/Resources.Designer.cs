@@ -143,6 +143,16 @@ namespace StartMenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Menu {
+            get {
+                object obj = ResourceManager.GetObject("Menu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Practice {
             get {
                 object obj = ResourceManager.GetObject("Practice", resourceCulture);
@@ -156,6 +166,16 @@ namespace StartMenu.Properties {
         internal static System.Drawing.Bitmap Practice1 {
             get {
                 object obj = ResourceManager.GetObject("Practice1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap practicereturn {
+            get {
+                object obj = ResourceManager.GetObject("practicereturn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

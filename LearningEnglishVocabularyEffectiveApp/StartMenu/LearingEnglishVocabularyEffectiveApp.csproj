@@ -49,6 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FAllFlashCards.cs" />
+    <Compile Include="FAllFlashCards.Designer.cs">
+      <DependentUpon>FAllFlashCards.cs</DependentUpon>
+    </Compile>
     <Compile Include="FLearnNewWord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,9 +68,8 @@
     <Compile Include="FPractice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include=".Designer.cs">
+    <Compile Include="FPractice.Designer.cs">
       <DependentUpon>FPractice.cs</DependentUpon>
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRamdom10fc.cs">
       <SubType>Form</SubType>
@@ -74,8 +77,19 @@
     <Compile Include="FRamdom10fc.Designer.cs">
       <DependentUpon>FRamdom10fc.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRevision.cs" />
+    <Compile Include="FRevision.Designer.cs">
+      <DependentUpon>FRevision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FYourWords.cs" />
+    <Compile Include="FYourWords.Designer.cs">
+      <DependentUpon>FYourWords.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FAllFlashCards.resx">
+      <DependentUpon>FAllFlashCards.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FLearnNewWord.resx">
       <DependentUpon>FLearnNewWord.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +101,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FRamdom10fc.resx">
       <DependentUpon>FRamdom10fc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRevision.resx">
+      <DependentUpon>FRevision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FYourWords.resx">
+      <DependentUpon>FYourWords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -156,6 +176,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\learnnewwordreturn.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\practicereturn.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

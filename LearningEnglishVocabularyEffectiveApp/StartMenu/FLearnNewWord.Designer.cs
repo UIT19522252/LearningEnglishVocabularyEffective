@@ -28,116 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.btnLNWreturn = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLNWuser = new Guna.UI2.WinForms.Guna2CircleButton();
             this.SuspendLayout();
             // 
-            // guna2Elipse1
+            // btnLNWreturn
             // 
-            this.guna2Elipse1.BorderRadius = 10;
+            this.btnLNWreturn.BackColor = System.Drawing.Color.Transparent;
+            this.btnLNWreturn.BorderColor = System.Drawing.Color.Transparent;
+            this.btnLNWreturn.CheckedState.Parent = this.btnLNWreturn;
+            this.btnLNWreturn.CustomImages.Parent = this.btnLNWreturn;
+            this.btnLNWreturn.FillColor = System.Drawing.Color.Transparent;
+            this.btnLNWreturn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLNWreturn.ForeColor = System.Drawing.Color.Transparent;
+            this.btnLNWreturn.HoverState.Parent = this.btnLNWreturn;
+            this.btnLNWreturn.Location = new System.Drawing.Point(12, 22);
+            this.btnLNWreturn.Name = "btnLNWreturn";
+            this.btnLNWreturn.ShadowDecoration.Parent = this.btnLNWreturn;
+            this.btnLNWreturn.Size = new System.Drawing.Size(73, 57);
+            this.btnLNWreturn.TabIndex = 0;
+            this.btnLNWreturn.Text = "guna2Button1";
             // 
-            // guna2ImageButton2
+            // btnLNWuser
             // 
-            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.CheckedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.HoverState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Image = global::StartMenu.Properties.Resources.learnnewwordreturn;
-            this.guna2ImageButton2.ImageRotate = 0F;
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(85, 68);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(11, 11);
-            this.guna2ImageButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton2.PressedState.Parent = this.guna2ImageButton2;
-            this.guna2ImageButton2.Size = new System.Drawing.Size(75, 66);
-            this.guna2ImageButton2.TabIndex = 2;
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.CheckedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Image = global::StartMenu.Properties.Resources.learnnewworduser;
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.Location = new System.Drawing.Point(858, 11);
-            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.PressedState.Parent = this.guna2ImageButton1;
-            this.guna2ImageButton1.Size = new System.Drawing.Size(60, 62);
-            this.guna2ImageButton1.TabIndex = 1;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::StartMenu.Properties.Resources.LearnNewWords;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, -1);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1200, 765);
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1154, -1);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 3;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1108, -1);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
-            this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox2.TabIndex = 4;
+            this.btnLNWuser.BackColor = System.Drawing.Color.Transparent;
+            this.btnLNWuser.CheckedState.Parent = this.btnLNWuser;
+            this.btnLNWuser.CustomImages.Parent = this.btnLNWuser;
+            this.btnLNWuser.FillColor = System.Drawing.Color.Transparent;
+            this.btnLNWuser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLNWuser.ForeColor = System.Drawing.Color.Transparent;
+            this.btnLNWuser.HoverState.Parent = this.btnLNWuser;
+            this.btnLNWuser.Location = new System.Drawing.Point(864, 12);
+            this.btnLNWuser.Name = "btnLNWuser";
+            this.btnLNWuser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnLNWuser.ShadowDecoration.Parent = this.btnLNWuser;
+            this.btnLNWuser.Size = new System.Drawing.Size(50, 50);
+            this.btnLNWuser.TabIndex = 1;
+            this.btnLNWuser.Text = "guna2CircleButton1";
             // 
             // FLearnNewWord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::StartMenu.Properties.Resources.LearnNewWords;
             this.ClientSize = new System.Drawing.Size(1200, 675);
-            this.Controls.Add(this.guna2ControlBox2);
-            this.Controls.Add(this.guna2ControlBox1);
-            this.Controls.Add(this.guna2ImageButton2);
-            this.Controls.Add(this.guna2ImageButton1);
-            this.Controls.Add(this.guna2PictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.btnLNWuser);
+            this.Controls.Add(this.btnLNWreturn);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FLearnNewWord";
-            this.Text = "FLearnNewWord";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.Text = "LEARN NEW WORDS";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2Button btnLNWreturn;
+        private Guna.UI2.WinForms.Guna2CircleButton btnLNWuser;
     }
 }
