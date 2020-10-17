@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FAllFlashCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAllFlashCards.Designer.cs">
+      <DependentUpon>FAllFlashCards.cs</DependentUpon>
+    </Compile>
     <Compile Include="FLearnNewWord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,9 +91,30 @@
     <Compile Include="FIntroduction.Designer.cs">
       <DependentUpon>FIntroduction.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRevision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRevision.Designer.cs">
+      <DependentUpon>FRevision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSignUp.Designer.cs">
+      <DependentUpon>FSignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FYourWords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FYourWords.Designer.cs">
+      <DependentUpon>FYourWords.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
+    <EmbeddedResource Include="FAllFlashCards.resx">
+      <DependentUpon>FAllFlashCards.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FLearnNewWord.resx">
       <DependentUpon>FLearnNewWord.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +132,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FIntroduction.resx">
       <DependentUpon>FIntroduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRevision.resx">
+      <DependentUpon>FRevision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSignUp.resx">
+      <DependentUpon>FSignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FYourWords.resx">
+      <DependentUpon>FYourWords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -189,6 +225,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Introduction.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YourWord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignUp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Revision_Background %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AllflashcardsBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\butFlash.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -28,433 +28,358 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FAllFlashCards));
-			this.guna2VScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
-			this.btnFlashCard1 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard5 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard13 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard9 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard2 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard6 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard10 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard14 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard3 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard7 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard11 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard15 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard4 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard8 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard12 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnFlashCard16 = new Guna.UI2.WinForms.Guna2Button();
-			this.btnBack = new Guna.UI2.WinForms.Guna2Button();
-			this.SuspendLayout();
-			// 
-			// guna2VScrollBar1
-			// 
-			this.guna2VScrollBar1.AutoRoundedCorners = true;
-			this.guna2VScrollBar1.BackColor = System.Drawing.Color.Transparent;
-			this.guna2VScrollBar1.BorderColor = System.Drawing.Color.White;
-			this.guna2VScrollBar1.BorderRadius = 9;
-			this.guna2VScrollBar1.FillColor = System.Drawing.Color.Transparent;
-			this.guna2VScrollBar1.HoverState.Parent = null;
-			this.guna2VScrollBar1.LargeChange = 10;
-			this.guna2VScrollBar1.Location = new System.Drawing.Point(1172, 169);
-			this.guna2VScrollBar1.MouseWheelBarPartitions = 10;
-			this.guna2VScrollBar1.Name = "guna2VScrollBar1";
-			this.guna2VScrollBar1.PressedState.Parent = this.guna2VScrollBar1;
-			this.guna2VScrollBar1.ScrollbarSize = 20;
-			this.guna2VScrollBar1.Size = new System.Drawing.Size(20, 477);
-			this.guna2VScrollBar1.TabIndex = 1;
-			this.guna2VScrollBar1.ThumbColor = System.Drawing.Color.Salmon;
-			// 
-			// btnFlashCard1
-			// 
-			this.btnFlashCard1.AutoRoundedCorners = true;
-			this.btnFlashCard1.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard1.BackgroundImage")));
-			this.btnFlashCard1.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard1.BorderRadius = 61;
-			this.btnFlashCard1.CheckedState.Parent = this.btnFlashCard1;
-			this.btnFlashCard1.CustomImages.Parent = this.btnFlashCard1;
-			this.btnFlashCard1.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard1.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard1.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard1.HoverState.Parent = this.btnFlashCard1;
-			this.btnFlashCard1.Location = new System.Drawing.Point(36, 198);
-			this.btnFlashCard1.Name = "btnFlashCard1";
-			this.btnFlashCard1.ShadowDecoration.Parent = this.btnFlashCard1;
-			this.btnFlashCard1.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard1.TabIndex = 2;
-			this.btnFlashCard1.Text = "guna2Button1";
-			// 
-			// btnFlashCard5
-			// 
-			this.btnFlashCard5.AutoRoundedCorners = true;
-			this.btnFlashCard5.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard5.BackgroundImage")));
-			this.btnFlashCard5.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard5.BorderRadius = 61;
-			this.btnFlashCard5.CheckedState.Parent = this.btnFlashCard5;
-			this.btnFlashCard5.CustomImages.Parent = this.btnFlashCard5;
-			this.btnFlashCard5.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard5.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard5.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard5.HoverState.Parent = this.btnFlashCard5;
-			this.btnFlashCard5.Location = new System.Drawing.Point(36, 345);
-			this.btnFlashCard5.Name = "btnFlashCard5";
-			this.btnFlashCard5.ShadowDecoration.Parent = this.btnFlashCard5;
-			this.btnFlashCard5.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard5.TabIndex = 2;
-			this.btnFlashCard5.Text = "guna2Button1";
-			// 
-			// btnFlashCard13
-			// 
-			this.btnFlashCard13.AutoRoundedCorners = true;
-			this.btnFlashCard13.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard13.BackgroundImage")));
-			this.btnFlashCard13.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard13.BorderRadius = 61;
-			this.btnFlashCard13.CheckedState.Parent = this.btnFlashCard13;
-			this.btnFlashCard13.CustomImages.Parent = this.btnFlashCard13;
-			this.btnFlashCard13.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard13.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard13.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard13.HoverState.Parent = this.btnFlashCard13;
-			this.btnFlashCard13.Location = new System.Drawing.Point(36, 641);
-			this.btnFlashCard13.Name = "btnFlashCard13";
-			this.btnFlashCard13.ShadowDecoration.Parent = this.btnFlashCard13;
-			this.btnFlashCard13.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard13.TabIndex = 2;
-			this.btnFlashCard13.Text = "guna2Button1";
-			// 
-			// btnFlashCard9
-			// 
-			this.btnFlashCard9.AutoRoundedCorners = true;
-			this.btnFlashCard9.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard9.BackgroundImage")));
-			this.btnFlashCard9.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard9.BorderRadius = 61;
-			this.btnFlashCard9.CheckedState.Parent = this.btnFlashCard9;
-			this.btnFlashCard9.CustomImages.Parent = this.btnFlashCard9;
-			this.btnFlashCard9.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard9.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard9.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard9.HoverState.Parent = this.btnFlashCard9;
-			this.btnFlashCard9.Location = new System.Drawing.Point(36, 496);
-			this.btnFlashCard9.Name = "btnFlashCard9";
-			this.btnFlashCard9.ShadowDecoration.Parent = this.btnFlashCard9;
-			this.btnFlashCard9.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard9.TabIndex = 2;
-			this.btnFlashCard9.Text = "guna2Button1";
-			// 
-			// btnFlashCard2
-			// 
-			this.btnFlashCard2.AutoRoundedCorners = true;
-			this.btnFlashCard2.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard2.BackgroundImage")));
-			this.btnFlashCard2.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard2.BorderRadius = 61;
-			this.btnFlashCard2.CheckedState.Parent = this.btnFlashCard2;
-			this.btnFlashCard2.CustomImages.Parent = this.btnFlashCard2;
-			this.btnFlashCard2.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard2.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard2.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard2.HoverState.Parent = this.btnFlashCard2;
-			this.btnFlashCard2.Location = new System.Drawing.Point(329, 198);
-			this.btnFlashCard2.Name = "btnFlashCard2";
-			this.btnFlashCard2.ShadowDecoration.Parent = this.btnFlashCard2;
-			this.btnFlashCard2.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard2.TabIndex = 2;
-			this.btnFlashCard2.Text = "guna2Button1";
-			// 
-			// btnFlashCard6
-			// 
-			this.btnFlashCard6.AutoRoundedCorners = true;
-			this.btnFlashCard6.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard6.BackgroundImage")));
-			this.btnFlashCard6.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard6.BorderRadius = 61;
-			this.btnFlashCard6.CheckedState.Parent = this.btnFlashCard6;
-			this.btnFlashCard6.CustomImages.Parent = this.btnFlashCard6;
-			this.btnFlashCard6.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard6.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard6.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard6.HoverState.Parent = this.btnFlashCard6;
-			this.btnFlashCard6.Location = new System.Drawing.Point(329, 345);
-			this.btnFlashCard6.Name = "btnFlashCard6";
-			this.btnFlashCard6.ShadowDecoration.Parent = this.btnFlashCard6;
-			this.btnFlashCard6.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard6.TabIndex = 2;
-			this.btnFlashCard6.Text = "guna2Button1";
-			// 
-			// btnFlashCard10
-			// 
-			this.btnFlashCard10.AutoRoundedCorners = true;
-			this.btnFlashCard10.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard10.BackgroundImage")));
-			this.btnFlashCard10.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard10.BorderRadius = 61;
-			this.btnFlashCard10.CheckedState.Parent = this.btnFlashCard10;
-			this.btnFlashCard10.CustomImages.Parent = this.btnFlashCard10;
-			this.btnFlashCard10.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard10.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard10.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard10.HoverState.Parent = this.btnFlashCard10;
-			this.btnFlashCard10.Location = new System.Drawing.Point(329, 496);
-			this.btnFlashCard10.Name = "btnFlashCard10";
-			this.btnFlashCard10.ShadowDecoration.Parent = this.btnFlashCard10;
-			this.btnFlashCard10.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard10.TabIndex = 2;
-			this.btnFlashCard10.Text = "guna2Button1";
-			// 
-			// btnFlashCard14
-			// 
-			this.btnFlashCard14.AutoRoundedCorners = true;
-			this.btnFlashCard14.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard14.BackgroundImage")));
-			this.btnFlashCard14.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard14.BorderRadius = 61;
-			this.btnFlashCard14.CheckedState.Parent = this.btnFlashCard14;
-			this.btnFlashCard14.CustomImages.Parent = this.btnFlashCard14;
-			this.btnFlashCard14.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard14.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard14.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard14.HoverState.Parent = this.btnFlashCard14;
-			this.btnFlashCard14.Location = new System.Drawing.Point(329, 641);
-			this.btnFlashCard14.Name = "btnFlashCard14";
-			this.btnFlashCard14.ShadowDecoration.Parent = this.btnFlashCard14;
-			this.btnFlashCard14.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard14.TabIndex = 2;
-			this.btnFlashCard14.Text = "guna2Button1";
-			// 
-			// btnFlashCard3
-			// 
-			this.btnFlashCard3.AutoRoundedCorners = true;
-			this.btnFlashCard3.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard3.BackgroundImage")));
-			this.btnFlashCard3.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard3.BorderRadius = 61;
-			this.btnFlashCard3.CheckedState.Parent = this.btnFlashCard3;
-			this.btnFlashCard3.CustomImages.Parent = this.btnFlashCard3;
-			this.btnFlashCard3.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard3.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard3.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard3.HoverState.Parent = this.btnFlashCard3;
-			this.btnFlashCard3.Location = new System.Drawing.Point(596, 198);
-			this.btnFlashCard3.Name = "btnFlashCard3";
-			this.btnFlashCard3.ShadowDecoration.Parent = this.btnFlashCard3;
-			this.btnFlashCard3.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard3.TabIndex = 2;
-			this.btnFlashCard3.Text = "guna2Button1";
-			// 
-			// btnFlashCard7
-			// 
-			this.btnFlashCard7.AutoRoundedCorners = true;
-			this.btnFlashCard7.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard7.BackgroundImage")));
-			this.btnFlashCard7.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard7.BorderRadius = 61;
-			this.btnFlashCard7.CheckedState.Parent = this.btnFlashCard7;
-			this.btnFlashCard7.CustomImages.Parent = this.btnFlashCard7;
-			this.btnFlashCard7.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard7.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard7.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard7.HoverState.Parent = this.btnFlashCard7;
-			this.btnFlashCard7.Location = new System.Drawing.Point(596, 345);
-			this.btnFlashCard7.Name = "btnFlashCard7";
-			this.btnFlashCard7.ShadowDecoration.Parent = this.btnFlashCard7;
-			this.btnFlashCard7.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard7.TabIndex = 2;
-			this.btnFlashCard7.Text = "guna2Button1";
-			// 
-			// btnFlashCard11
-			// 
-			this.btnFlashCard11.AutoRoundedCorners = true;
-			this.btnFlashCard11.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard11.BackgroundImage")));
-			this.btnFlashCard11.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard11.BorderRadius = 61;
-			this.btnFlashCard11.CheckedState.Parent = this.btnFlashCard11;
-			this.btnFlashCard11.CustomImages.Parent = this.btnFlashCard11;
-			this.btnFlashCard11.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard11.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard11.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard11.HoverState.Parent = this.btnFlashCard11;
-			this.btnFlashCard11.Location = new System.Drawing.Point(596, 496);
-			this.btnFlashCard11.Name = "btnFlashCard11";
-			this.btnFlashCard11.ShadowDecoration.Parent = this.btnFlashCard11;
-			this.btnFlashCard11.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard11.TabIndex = 2;
-			this.btnFlashCard11.Text = "guna2Button1";
-			// 
-			// btnFlashCard15
-			// 
-			this.btnFlashCard15.AutoRoundedCorners = true;
-			this.btnFlashCard15.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard15.BackgroundImage")));
-			this.btnFlashCard15.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard15.BorderRadius = 61;
-			this.btnFlashCard15.CheckedState.Parent = this.btnFlashCard15;
-			this.btnFlashCard15.CustomImages.Parent = this.btnFlashCard15;
-			this.btnFlashCard15.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard15.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard15.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard15.HoverState.Parent = this.btnFlashCard15;
-			this.btnFlashCard15.Location = new System.Drawing.Point(596, 641);
-			this.btnFlashCard15.Name = "btnFlashCard15";
-			this.btnFlashCard15.ShadowDecoration.Parent = this.btnFlashCard15;
-			this.btnFlashCard15.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard15.TabIndex = 2;
-			this.btnFlashCard15.Text = "guna2Button1";
-			// 
-			// btnFlashCard4
-			// 
-			this.btnFlashCard4.AutoRoundedCorners = true;
-			this.btnFlashCard4.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard4.BackgroundImage")));
-			this.btnFlashCard4.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard4.BorderRadius = 61;
-			this.btnFlashCard4.CheckedState.Parent = this.btnFlashCard4;
-			this.btnFlashCard4.CustomImages.Parent = this.btnFlashCard4;
-			this.btnFlashCard4.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard4.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard4.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard4.HoverState.Parent = this.btnFlashCard4;
-			this.btnFlashCard4.Location = new System.Drawing.Point(869, 198);
-			this.btnFlashCard4.Name = "btnFlashCard4";
-			this.btnFlashCard4.ShadowDecoration.Parent = this.btnFlashCard4;
-			this.btnFlashCard4.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard4.TabIndex = 2;
-			this.btnFlashCard4.Text = "guna2Button1";
-			// 
-			// btnFlashCard8
-			// 
-			this.btnFlashCard8.AutoRoundedCorners = true;
-			this.btnFlashCard8.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard8.BackgroundImage")));
-			this.btnFlashCard8.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard8.BorderRadius = 61;
-			this.btnFlashCard8.CheckedState.Parent = this.btnFlashCard8;
-			this.btnFlashCard8.CustomImages.Parent = this.btnFlashCard8;
-			this.btnFlashCard8.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard8.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard8.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard8.HoverState.Parent = this.btnFlashCard8;
-			this.btnFlashCard8.Location = new System.Drawing.Point(869, 345);
-			this.btnFlashCard8.Name = "btnFlashCard8";
-			this.btnFlashCard8.ShadowDecoration.Parent = this.btnFlashCard8;
-			this.btnFlashCard8.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard8.TabIndex = 2;
-			this.btnFlashCard8.Text = "guna2Button1";
-			// 
-			// btnFlashCard12
-			// 
-			this.btnFlashCard12.AutoRoundedCorners = true;
-			this.btnFlashCard12.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard12.BackgroundImage")));
-			this.btnFlashCard12.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard12.BorderRadius = 61;
-			this.btnFlashCard12.CheckedState.Parent = this.btnFlashCard12;
-			this.btnFlashCard12.CustomImages.Parent = this.btnFlashCard12;
-			this.btnFlashCard12.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard12.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard12.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard12.HoverState.Parent = this.btnFlashCard12;
-			this.btnFlashCard12.Location = new System.Drawing.Point(869, 496);
-			this.btnFlashCard12.Name = "btnFlashCard12";
-			this.btnFlashCard12.ShadowDecoration.Parent = this.btnFlashCard12;
-			this.btnFlashCard12.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard12.TabIndex = 2;
-			this.btnFlashCard12.Text = "guna2Button1";
-			// 
-			// btnFlashCard16
-			// 
-			this.btnFlashCard16.AutoRoundedCorners = true;
-			this.btnFlashCard16.BackColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFlashCard16.BackgroundImage")));
-			this.btnFlashCard16.BorderColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard16.BorderRadius = 61;
-			this.btnFlashCard16.CheckedState.Parent = this.btnFlashCard16;
-			this.btnFlashCard16.CustomImages.Parent = this.btnFlashCard16;
-			this.btnFlashCard16.FillColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard16.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnFlashCard16.ForeColor = System.Drawing.Color.Transparent;
-			this.btnFlashCard16.HoverState.Parent = this.btnFlashCard16;
-			this.btnFlashCard16.Location = new System.Drawing.Point(869, 641);
-			this.btnFlashCard16.Name = "btnFlashCard16";
-			this.btnFlashCard16.ShadowDecoration.Parent = this.btnFlashCard16;
-			this.btnFlashCard16.Size = new System.Drawing.Size(220, 125);
-			this.btnFlashCard16.TabIndex = 2;
-			this.btnFlashCard16.Text = "guna2Button1";
-			// 
-			// btnBack
-			// 
-			this.btnBack.BackColor = System.Drawing.Color.Transparent;
-			this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
-			this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.btnBack.BorderColor = System.Drawing.Color.Transparent;
-			this.btnBack.CheckedState.Parent = this.btnBack;
-			this.btnBack.CustomImages.Parent = this.btnBack;
-			this.btnBack.FillColor = System.Drawing.Color.Transparent;
-			this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btnBack.ForeColor = System.Drawing.Color.Transparent;
-			this.btnBack.HoverState.Parent = this.btnBack;
-			this.btnBack.ImageSize = new System.Drawing.Size(50, 50);
-			this.btnBack.Location = new System.Drawing.Point(39, 23);
-			this.btnBack.Name = "btnBack";
-			this.btnBack.ShadowDecoration.Parent = this.btnBack;
-			this.btnBack.Size = new System.Drawing.Size(70, 61);
-			this.btnBack.TabIndex = 3;
-			this.btnBack.TabStop = false;
-			// 
-			// FAllFlashCards
-			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-			this.ClientSize = new System.Drawing.Size(1200, 675);
-			this.Controls.Add(this.btnBack);
-			this.Controls.Add(this.btnFlashCard16);
-			this.Controls.Add(this.btnFlashCard15);
-			this.Controls.Add(this.btnFlashCard14);
-			this.Controls.Add(this.btnFlashCard13);
-			this.Controls.Add(this.btnFlashCard12);
-			this.Controls.Add(this.btnFlashCard11);
-			this.Controls.Add(this.btnFlashCard10);
-			this.Controls.Add(this.btnFlashCard9);
-			this.Controls.Add(this.btnFlashCard8);
-			this.Controls.Add(this.btnFlashCard7);
-			this.Controls.Add(this.btnFlashCard6);
-			this.Controls.Add(this.btnFlashCard5);
-			this.Controls.Add(this.btnFlashCard4);
-			this.Controls.Add(this.btnFlashCard3);
-			this.Controls.Add(this.btnFlashCard2);
-			this.Controls.Add(this.btnFlashCard1);
-			this.Controls.Add(this.guna2VScrollBar1);
-			this.Name = "FAllFlashCards";
-			this.Text = "FAllFlashCards";
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FAllFlashCards));
+            this.guna2VScrollBar1 = new Guna.UI2.WinForms.Guna2VScrollBar();
+            this.btnFlashCard1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
+            this.SuspendLayout();
+            // 
+            // guna2VScrollBar1
+            // 
+            this.guna2VScrollBar1.AutoRoundedCorners = true;
+            this.guna2VScrollBar1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2VScrollBar1.BorderColor = System.Drawing.Color.White;
+            this.guna2VScrollBar1.BorderRadius = 11;
+            this.guna2VScrollBar1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2VScrollBar1.HoverState.Parent = null;
+            this.guna2VScrollBar1.LargeChange = 10;
+            this.guna2VScrollBar1.Location = new System.Drawing.Point(1141, 174);
+            this.guna2VScrollBar1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.guna2VScrollBar1.MouseWheelBarPartitions = 10;
+            this.guna2VScrollBar1.Name = "guna2VScrollBar1";
+            this.guna2VScrollBar1.PressedState.Parent = this.guna2VScrollBar1;
+            this.guna2VScrollBar1.ScrollbarSize = 25;
+            this.guna2VScrollBar1.Size = new System.Drawing.Size(25, 410);
+            this.guna2VScrollBar1.TabIndex = 1;
+            this.guna2VScrollBar1.ThumbColor = System.Drawing.Color.Salmon;
+            // 
+            // btnFlashCard1
+            // 
+            this.btnFlashCard1.AutoRoundedCorners = true;
+            this.btnFlashCard1.BackColor = System.Drawing.Color.Transparent;
+            this.btnFlashCard1.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.btnFlashCard1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFlashCard1.BorderColor = System.Drawing.Color.Transparent;
+            this.btnFlashCard1.BorderRadius = 61;
+            this.btnFlashCard1.CheckedState.Parent = this.btnFlashCard1;
+            this.btnFlashCard1.CustomImages.Parent = this.btnFlashCard1;
+            this.btnFlashCard1.FillColor = System.Drawing.Color.Transparent;
+            this.btnFlashCard1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnFlashCard1.ForeColor = System.Drawing.Color.Transparent;
+            this.btnFlashCard1.HoverState.Parent = this.btnFlashCard1;
+            this.btnFlashCard1.Location = new System.Drawing.Point(89, 174);
+            this.btnFlashCard1.Margin = new System.Windows.Forms.Padding(4);
+            this.btnFlashCard1.Name = "btnFlashCard1";
+            this.btnFlashCard1.ShadowDecoration.Parent = this.btnFlashCard1;
+            this.btnFlashCard1.Size = new System.Drawing.Size(217, 125);
+            this.btnFlashCard1.TabIndex = 2;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.BorderColor = System.Drawing.Color.Transparent;
+            this.btnBack.CheckedState.Parent = this.btnBack;
+            this.btnBack.CustomImages.Parent = this.btnBack;
+            this.btnBack.FillColor = System.Drawing.Color.Transparent;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBack.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBack.HoverState.Parent = this.btnBack;
+            this.btnBack.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnBack.Location = new System.Drawing.Point(13, 23);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.ShadowDecoration.Parent = this.btnBack;
+            this.btnBack.Size = new System.Drawing.Size(93, 75);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.TabStop = false;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 61;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(361, 174);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(217, 125);
+            this.guna2Button1.TabIndex = 4;
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.AutoRoundedCorners = true;
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.guna2Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button2.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderRadius = 61;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(619, 174);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(217, 125);
+            this.guna2Button2.TabIndex = 5;
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.AutoRoundedCorners = true;
+            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.guna2Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button3.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.BorderRadius = 61;
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Location = new System.Drawing.Point(889, 174);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(217, 125);
+            this.guna2Button3.TabIndex = 6;
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.AutoRoundedCorners = true;
+            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.guna2Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button4.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.BorderRadius = 61;
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Location = new System.Drawing.Point(889, 317);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(217, 125);
+            this.guna2Button4.TabIndex = 10;
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.AutoRoundedCorners = true;
+            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.guna2Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button5.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.BorderRadius = 61;
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Location = new System.Drawing.Point(619, 317);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(217, 125);
+            this.guna2Button5.TabIndex = 9;
+            // 
+            // guna2Button6
+            // 
+            this.guna2Button6.AutoRoundedCorners = true;
+            this.guna2Button6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button6.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.guna2Button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button6.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button6.BorderRadius = 61;
+            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
+            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
+            this.guna2Button6.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button6.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button6.HoverState.Parent = this.guna2Button6;
+            this.guna2Button6.Location = new System.Drawing.Point(361, 317);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
+            this.guna2Button6.Size = new System.Drawing.Size(217, 125);
+            this.guna2Button6.TabIndex = 8;
+            // 
+            // guna2Button7
+            // 
+            this.guna2Button7.AutoRoundedCorners = true;
+            this.guna2Button7.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button7.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.guna2Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button7.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button7.BorderRadius = 61;
+            this.guna2Button7.CheckedState.Parent = this.guna2Button7;
+            this.guna2Button7.CustomImages.Parent = this.guna2Button7;
+            this.guna2Button7.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button7.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button7.HoverState.Parent = this.guna2Button7;
+            this.guna2Button7.Location = new System.Drawing.Point(89, 317);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button7.Name = "guna2Button7";
+            this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
+            this.guna2Button7.Size = new System.Drawing.Size(217, 125);
+            this.guna2Button7.TabIndex = 7;
+            // 
+            // guna2Button8
+            // 
+            this.guna2Button8.AutoRoundedCorners = true;
+            this.guna2Button8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button8.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.guna2Button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button8.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button8.BorderRadius = 61;
+            this.guna2Button8.CheckedState.Parent = this.guna2Button8;
+            this.guna2Button8.CustomImages.Parent = this.guna2Button8;
+            this.guna2Button8.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button8.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button8.HoverState.Parent = this.guna2Button8;
+            this.guna2Button8.Location = new System.Drawing.Point(889, 459);
+            this.guna2Button8.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button8.Name = "guna2Button8";
+            this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
+            this.guna2Button8.Size = new System.Drawing.Size(217, 125);
+            this.guna2Button8.TabIndex = 14;
+            // 
+            // guna2Button9
+            // 
+            this.guna2Button9.AutoRoundedCorners = true;
+            this.guna2Button9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button9.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.guna2Button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button9.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button9.BorderRadius = 61;
+            this.guna2Button9.CheckedState.Parent = this.guna2Button9;
+            this.guna2Button9.CustomImages.Parent = this.guna2Button9;
+            this.guna2Button9.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button9.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button9.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button9.HoverState.Parent = this.guna2Button9;
+            this.guna2Button9.Location = new System.Drawing.Point(619, 459);
+            this.guna2Button9.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button9.Name = "guna2Button9";
+            this.guna2Button9.ShadowDecoration.Parent = this.guna2Button9;
+            this.guna2Button9.Size = new System.Drawing.Size(217, 125);
+            this.guna2Button9.TabIndex = 13;
+            // 
+            // guna2Button10
+            // 
+            this.guna2Button10.AutoRoundedCorners = true;
+            this.guna2Button10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button10.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.guna2Button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button10.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button10.BorderRadius = 61;
+            this.guna2Button10.CheckedState.Parent = this.guna2Button10;
+            this.guna2Button10.CustomImages.Parent = this.guna2Button10;
+            this.guna2Button10.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button10.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button10.HoverState.Parent = this.guna2Button10;
+            this.guna2Button10.Location = new System.Drawing.Point(361, 459);
+            this.guna2Button10.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button10.Name = "guna2Button10";
+            this.guna2Button10.ShadowDecoration.Parent = this.guna2Button10;
+            this.guna2Button10.Size = new System.Drawing.Size(217, 125);
+            this.guna2Button10.TabIndex = 12;
+            // 
+            // guna2Button11
+            // 
+            this.guna2Button11.AutoRoundedCorners = true;
+            this.guna2Button11.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button11.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+            this.guna2Button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button11.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button11.BorderRadius = 61;
+            this.guna2Button11.CheckedState.Parent = this.guna2Button11;
+            this.guna2Button11.CustomImages.Parent = this.guna2Button11;
+            this.guna2Button11.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button11.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button11.HoverState.Parent = this.guna2Button11;
+            this.guna2Button11.Location = new System.Drawing.Point(89, 459);
+            this.guna2Button11.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button11.Name = "guna2Button11";
+            this.guna2Button11.ShadowDecoration.Parent = this.guna2Button11;
+            this.guna2Button11.Size = new System.Drawing.Size(217, 125);
+            this.guna2Button11.TabIndex = 11;
+            // 
+            // FAllFlashCards
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackgroundImage = global::StartMenu.Properties.Resources.AllflashcardsBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.Controls.Add(this.guna2Button8);
+            this.Controls.Add(this.guna2Button9);
+            this.Controls.Add(this.guna2Button10);
+            this.Controls.Add(this.guna2Button11);
+            this.Controls.Add(this.guna2Button4);
+            this.Controls.Add(this.guna2Button5);
+            this.Controls.Add(this.guna2Button6);
+            this.Controls.Add(this.guna2Button7);
+            this.Controls.Add(this.guna2Button3);
+            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btnBack);
+            this.Controls.Add(this.btnFlashCard1);
+            this.Controls.Add(this.guna2VScrollBar1);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FAllFlashCards";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FAllFlashCards";
+            this.ResumeLayout(false);
 
 		}
 
 		#endregion
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard5;
 		private Guna.UI2.WinForms.Guna2Button btnFlashCard1;
 		private Guna.UI2.WinForms.Guna2VScrollBar guna2VScrollBar1;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard16;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard15;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard14;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard13;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard12;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard11;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard10;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard9;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard8;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard7;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard6;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard4;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard3;
-		private Guna.UI2.WinForms.Guna2Button btnFlashCard2;
 		private Guna.UI2.WinForms.Guna2Button btnBack;
-	}
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button guna2Button7;
+        private Guna.UI2.WinForms.Guna2Button guna2Button8;
+        private Guna.UI2.WinForms.Guna2Button guna2Button9;
+        private Guna.UI2.WinForms.Guna2Button guna2Button10;
+        private Guna.UI2.WinForms.Guna2Button guna2Button11;
+    }
 }

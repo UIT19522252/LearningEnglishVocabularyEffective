@@ -16,5 +16,19 @@ namespace StartMenu
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void btnRan10_Click(object sender, EventArgs e)
+        {
+			FRamdom10fc f = new FRamdom10fc();
+			this.Close();
+			f.ShowDialog();
+        }
+
+        private void btnAllFlashCards_Click(object sender, EventArgs e)
+        {
+			FAllFlashCards f = new FAllFlashCards();
+			this.Close();
+			f.ShowDialog();
+        }
+    }
 }

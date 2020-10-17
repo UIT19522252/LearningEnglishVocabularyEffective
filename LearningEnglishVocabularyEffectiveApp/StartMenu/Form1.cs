@@ -42,12 +42,16 @@ namespace StartMenu
 
         private void btnRevision_Click(object sender, EventArgs e)
         {
-			
+			FRevision f = new FRevision();
+			this.Close();
+			f.ShowDialog();
         }
 
         private void btnYourWords_Click(object sender, EventArgs e)
         {
-
+			FYourWords f = new FYourWords();
+			this.Close();
+			f.ShowDialog();
         }
 
         private void btnIntroducetions_Click(object sender, EventArgs e)
