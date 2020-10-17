@@ -118,26 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="radomflipall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\radomflipall.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ramdomflipnext" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ramdomflipnext.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gameuserPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gameuserPNG.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="game1return" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\game1return.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Practice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Practice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="game1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\game1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Capture2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="radomreturnPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\radomreturnPNG.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,35 +130,35 @@
   <data name="AllflashcardsBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AllflashcardsBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gameuserPNG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gameuserPNG1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Introduction" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Introduction.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ramdomflipnext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ramdomflipnext.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LearnNewWords1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LearnNewWords.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SignUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SignUp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Practice1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Practice1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="learnnewwordreturn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\learnnewwordreturn.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="learnnewworduser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\learnnewworduser.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LearnNewWords" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LearnNewWords.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Capture2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Capture2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="butFlash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\butFlash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Random-10-flash-cards" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Random-10-flash-cards.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="game1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="learnnewwordreturn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\learnnewwordreturn.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gameuserPNG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gameuserPNG1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gameuserPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gameuserPNG.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Practice2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Practice.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,22 +166,40 @@
   <data name="YourWord" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\YourWord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LearnNewWords1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LearnNewWords.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="learnnewworduser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\learnnewworduser.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Random-10-flash-cards" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Random-10-flash-cards.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radomflipall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\radomflipall.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="radomuser" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\radomuser.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Login2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Practice1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Practice1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SignUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SignUp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Introduction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Introduction.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Menu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Practice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Practice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Revision_Background (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Revision_Background (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="butFlash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\butFlash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Login2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="errorIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\errorIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

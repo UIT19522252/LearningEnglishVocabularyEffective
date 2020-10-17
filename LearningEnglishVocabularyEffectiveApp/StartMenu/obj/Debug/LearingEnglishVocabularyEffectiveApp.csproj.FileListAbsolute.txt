@@ -55,3 +55,4 @@ C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffective\LearningEnglishVo
 C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\LearingEnglishVocabularyEffectiveApp.csproj.CopyComplete
 C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.exe
 C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.pdb
+C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FError.resources

@@ -40,13 +40,15 @@ namespace StartMenu
 			while (reader.HasRows)
 			{
 				if (reader.Read() == false) break;
-				if(reader[1]==a)
+				if(reader[1].Equals(a))
 				{
-					if(HashPassword(b)==reader[2])
+					if (HashPassword(b).Equals(reader[2]))
 					{
 						connection.Close();
 						return true;
-					}						
+					}
+					else
+						return false;
 				}	
 			}
 			connection.Close();
@@ -56,47 +58,34 @@ namespace StartMenu
 		{
 			if (a.Length < 6 || b.Length < 8)
 			{
-				MessageBox.Show("Password must have more than 7 characters and Username must has more than 5 character  ", "Message");
+				FError f = new FError("Password must have more than 7 characters and Username must has more than 5 character", "Message");
+				f.ShowDialog();
 				return;
 			}
 			if (findUser(a)==true)
 			{
-				MessageBox.Show("Username were used");
+				FError f = new FError("Username were used", "Message");
+				f.ShowDialog();
 				return;
-			}	
+			}
 			SqlConnection connection = new SqlConnection(connString);
+			int _id = countUser() + 1;
+
 			try
 			{
+				string statement = "insert into USERINFOR(id, userName, hashPassword) values(" + "'" + _id.ToString() + "',"
+				+ "'" + a + "'," + "'" + HashPassword(b) + "')";
 				connection.Open();
-				String sqlQuery1 = "select * from USERINFOR";
-				int countid=1;
-				SqlCommand command1 = new SqlCommand(sqlQuery1, connection);
-				SqlDataReader reader = command1.ExecuteReader();
-
-				while (reader.HasRows)
-				{
-					if (reader.Read() == false) break;
-					else countid++;
-				}
-				connection.Close();
-				String sqlQuery = "insert into USERINFOR(id, userName, hashPassword) values(";
-				SqlCommand command = new SqlCommand(sqlQuery, connection);
-				sqlQuery += (countid +",");
-				sqlQuery += ("'" + a + "',");
-				sqlQuery += ("'"+ HashPassword(b) + "')");
-				//MessageBox.Show(sqlQuery);
-				int rs = command.ExecuteNonQuery();
-				if (rs != 1)
-				{
-					throw new Exception("Failed Query");
-				}
+				SqlCommand command = new SqlCommand(statement, connection);
+				command.ExecuteNonQuery();
 			}
 			catch (Exception ex)
 			{
-				MessageBox.Show("Ket noi xay ra loi hoac doc du lieu bi loi");
+				FError f = new FError("Connection or data reader failed", "Error");
+				f.ShowDialog();
 			}
 			finally
-			{ 
+			{
 				connection.Close();
 			}
 		}	
@@ -114,13 +103,34 @@ namespace StartMenu
 			while (reader.HasRows)
 			{
 				if (reader.Read() == false) break;
-				if (reader[1] == a)
-				{ 
+				if (reader[1].Equals(a))
+				{
+					connection.Close();
 					return true;
 				}
 			}
 			connection.Close();
 			return false;
+		}
+		public int countUser()
+		{
+			int count = 0;
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+
+			String sqlQuery = "select * from USERINFOR";
+
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+
+			SqlDataReader reader = command.ExecuteReader();
+
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				count++;
+			}
+			connection.Close();
+			return count;
 		}
 	}
 }
