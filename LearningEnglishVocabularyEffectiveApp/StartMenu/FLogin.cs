@@ -20,10 +20,25 @@ namespace StartMenu
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            temp.formMenu = new StartMenu(temp.username);
-            temp.formMenu.ShowDialog();
-            this.Show();
+            LoginActivity lg = new LoginActivity();
+            if (lg.checkUser(tbxUsrname.Text,tbxPassword.Text)==true)
+            {
+                this.Hide();
+                temp.formMenu = new StartMenu(temp.username);
+                temp.formMenu.ShowDialog();
+                this.Show();
+            }    
+            else
+            {
+                MessageBox.Show("Login Failed", "Message");
+                return;
+            }                
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            FSignUp f = new FSignUp();
+            f.ShowDialog();
         }
     }
 }

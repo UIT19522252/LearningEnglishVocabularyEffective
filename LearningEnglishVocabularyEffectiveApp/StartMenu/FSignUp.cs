@@ -16,5 +16,24 @@ namespace StartMenu
         {
             InitializeComponent();
         }
+
+        private void btnSignin_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+
+            if(tbxRepeatPass.Text!=tbxPass.Text)
+            {
+                MessageBox.Show("Password and repeat password are not match ", "Message");
+            } 
+            else
+            {
+                LoginActivity lg = new LoginActivity();
+                lg.Signup(tbxUsername.Text, tbxPass.Text);
+            }    
+        }
     }
 }
