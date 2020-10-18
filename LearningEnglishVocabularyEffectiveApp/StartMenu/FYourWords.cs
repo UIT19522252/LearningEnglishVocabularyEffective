@@ -22,12 +22,15 @@ namespace StartMenu
 
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void tbxWord_KeyDown(object sender, KeyEventArgs e)
         {
-            StartMenu f = new StartMenu();
-            this.Hide();
-            this.Close();
-            f.ShowDialog();
+            if (e.KeyCode == Keys.Enter)
+                btnAddWord_Click(sender, e);
+        }
+
+        private void btnAddWord_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

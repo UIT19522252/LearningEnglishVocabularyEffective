@@ -65,6 +65,7 @@
             this.tbxUsername.Size = new System.Drawing.Size(501, 45);
             this.tbxUsername.TabIndex = 0;
             this.tbxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxUsername_KeyDown);
             // 
             // tbxRepeatPass
             // 
@@ -96,6 +97,7 @@
             this.tbxRepeatPass.Size = new System.Drawing.Size(501, 45);
             this.tbxRepeatPass.TabIndex = 2;
             this.tbxRepeatPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxRepeatPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxRepeatPass_KeyDown);
             // 
             // tbxPass
             // 
@@ -127,6 +129,7 @@
             this.tbxPass.Size = new System.Drawing.Size(501, 45);
             this.tbxPass.TabIndex = 1;
             this.tbxPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxPass_KeyDown);
             // 
             // btnSignup
             // 
