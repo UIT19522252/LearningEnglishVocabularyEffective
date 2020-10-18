@@ -62,8 +62,10 @@ namespace StartMenu
 
         private void tbxPassword_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.Enter)
+            if ( e.KeyCode == Keys.Enter)
                 btnLogin_Click(sender, e);
+            if (e.KeyCode == Keys.Down)
+                btnLogin.Focus();
             if (e.KeyCode == Keys.Up)
                 tbxUsrname.Focus();
         }
@@ -72,6 +74,18 @@ namespace StartMenu
         {
             if (e.KeyCode == Keys.Up)
                 tbxPassword.Focus();
+            if (e.KeyCode == Keys.Down)
+                btnSignUp.Focus();
+            if (e.KeyCode == Keys.Enter)
+                btnLogin_Click(sender, e);
+        }
+
+        private void btnSignUp_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)
+               btnLogin.Focus();
+            if (e.KeyCode == Keys.Enter)
+                btnSignUp_Click(sender, e);
         }
     }
 }

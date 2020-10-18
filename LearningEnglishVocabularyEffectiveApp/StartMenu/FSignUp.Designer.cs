@@ -153,6 +153,7 @@
             this.btnSignup.Text = "Sign Up!";
             this.btnSignup.UseTransparentBackground = true;
             this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
+            this.btnSignup.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnSignup_KeyDown);
             // 
             // btnSignin
             // 
@@ -175,6 +176,7 @@
             this.btnSignin.Text = "Have an account?";
             this.btnSignin.UseTransparentBackground = true;
             this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
+            this.btnSignin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnSignin_KeyDown);
             // 
             // FSignUp
             // 

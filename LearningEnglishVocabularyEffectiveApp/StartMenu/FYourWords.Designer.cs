@@ -112,7 +112,7 @@
             this.btnBack.Size = new System.Drawing.Size(107, 90);
             this.btnBack.TabIndex = 3;
             this.btnBack.Text = "guna2Button2";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            
             // 
             // btnWord1
             // 

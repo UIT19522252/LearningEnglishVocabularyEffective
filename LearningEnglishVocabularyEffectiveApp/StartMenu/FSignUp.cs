@@ -61,9 +61,31 @@ namespace StartMenu
         private void tbxRepeatPass_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-                btnSignin_Click(sender, e);
+                btnSignup_Click(sender, e);
             if (e.KeyCode == Keys.Up)
                 tbxPass.Focus();
+            if (e.KeyCode == Keys.Down)
+                btnSignup.Focus();
+        }
+
+        private void btnSignup_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)
+                tbxRepeatPass.Focus();
+            if (e.KeyCode == Keys.Left)
+                btnSignin.Focus();
+            if (e.KeyCode == Keys.Enter)
+                btnSignup_Click(sender, e);
+        }
+
+        private void btnSignin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)
+                tbxRepeatPass.Focus();
+            if (e.KeyCode == Keys.Right)
+                btnSignup.Focus();
+            if (e.KeyCode == Keys.Enter)
+                btnSignin_Click(sender, e);
         }
     }
 }

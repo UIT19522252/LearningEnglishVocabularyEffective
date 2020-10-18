@@ -65,6 +65,7 @@
             this.tbxUsrname.Size = new System.Drawing.Size(396, 45);
             this.tbxUsrname.TabIndex = 0;
             this.tbxUsrname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxUsrname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxUsrname_KeyDown);
             // 
             // tbxPassword
             // 
@@ -95,6 +96,7 @@
             this.tbxPassword.Size = new System.Drawing.Size(396, 45);
             this.tbxPassword.TabIndex = 1;
             this.tbxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxPassword_KeyDown);
             // 
             // btnLogin
             // 
@@ -116,6 +118,7 @@
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Log in";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnLogin_KeyDown);
             // 
             // lblForgotPassword
             // 
@@ -125,7 +128,7 @@
             this.lblForgotPassword.ForeColor = System.Drawing.Color.Sienna;
             this.lblForgotPassword.Location = new System.Drawing.Point(576, 402);
             this.lblForgotPassword.Name = "lblForgotPassword";
-            this.lblForgotPassword.Size = new System.Drawing.Size(114, 19);
+            this.lblForgotPassword.Size = new System.Drawing.Size(130, 21);
             this.lblForgotPassword.TabIndex = 3;
             this.lblForgotPassword.Text = "Forgot Pasword?";
             // 
@@ -150,6 +153,7 @@
             this.btnSignUp.TabIndex = 4;
             this.btnSignUp.Text = "Sign up!";
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            this.btnSignUp.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnSignUp_KeyDown);
             // 
             // lblWrong
             // 
@@ -159,7 +163,7 @@
             this.lblWrong.ForeColor = System.Drawing.Color.Red;
             this.lblWrong.Location = new System.Drawing.Point(658, 334);
             this.lblWrong.Name = "lblWrong";
-            this.lblWrong.Size = new System.Drawing.Size(245, 19);
+            this.lblWrong.Size = new System.Drawing.Size(274, 21);
             this.lblWrong.TabIndex = 5;
             this.lblWrong.Text = "*Incorrect Username or Password";
             // 
