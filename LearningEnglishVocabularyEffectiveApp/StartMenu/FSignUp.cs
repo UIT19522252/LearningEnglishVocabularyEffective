@@ -34,5 +34,29 @@ namespace StartMenu
                 lg.Signup(tbxUsername.Text, tbxPass.Text);
             }    
         }
+
+        private void tbxUsername_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter || e.KeyCode == Keys.Down)
+            {
+                tbxPass.Focus();
+            }    
+        }
+
+        private void tbxPass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Down)
+                tbxRepeatPass.Focus();
+            if (e.KeyCode == Keys.Up)
+                tbxUsername.Focus();
+        }
+
+        private void tbxRepeatPass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                btnSignin_Click(sender, e);
+            if (e.KeyCode == Keys.Up)
+                tbxPass.Focus();
+        }
     }
 }

@@ -63,6 +63,7 @@
             this.btnAddWord.Size = new System.Drawing.Size(248, 43);
             this.btnAddWord.TabIndex = 1;
             this.btnAddWord.Text = "guna2Button1";
+            this.btnAddWord.Click += new System.EventHandler(this.btnAddWord_Click);
             // 
             // tbxWord
             // 
@@ -90,6 +91,7 @@
             this.tbxWord.ShadowDecoration.Parent = this.tbxWord;
             this.tbxWord.Size = new System.Drawing.Size(699, 47);
             this.tbxWord.TabIndex = 2;
+            this.tbxWord.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxWord_KeyDown);
             // 
             // btnBack
             // 

@@ -45,5 +45,26 @@ namespace StartMenu
             this.tbxPassword.Text = "";
             this.tbxUsrname.Text = "";
         }
+
+        private void tbxUsrname_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.Enter)
+                tbxPassword.Focus();
+
+        }
+
+        private void tbxPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Down || e.KeyCode == Keys.Enter)
+                btnLogin_Click(sender, e);
+            if (e.KeyCode == Keys.Up)
+                tbxUsrname.Focus();
+        }
+
+        private void btnLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Up)
+                tbxPassword.Focus();
+        }
     }
 }
