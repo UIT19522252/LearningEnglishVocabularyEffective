@@ -110,6 +110,7 @@
             this.btnBack.Size = new System.Drawing.Size(107, 90);
             this.btnBack.TabIndex = 3;
             this.btnBack.Text = "guna2Button2";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnWord1
             // 
@@ -278,6 +279,7 @@
             this.Controls.Add(this.btnAddWord);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FYourWords";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FYourWords";
             this.ResumeLayout(false);
 

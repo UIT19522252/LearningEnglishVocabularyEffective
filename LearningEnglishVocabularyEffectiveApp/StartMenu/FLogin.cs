@@ -31,10 +31,11 @@ namespace StartMenu
             }    
             else
             {
-                FError f = new FError("Login Failed", "Message");
-                f.ShowDialog();
+               /* FError f = new FError("Login Failed", "Message");
+                f.ShowDialog();*/
                 this.tbxPassword.Text = "";
                 this.tbxUsrname.Text = "";
+                this.lblWrong.Visible = true;
                 return;
             }                
         }
@@ -44,6 +45,12 @@ namespace StartMenu
             f.ShowDialog();
             this.tbxPassword.Text = "";
             this.tbxUsrname.Text = "";
+            this.lblWrong.Visible = false;
+        }
+
+        private void FLogin_Load(object sender, EventArgs e)
+        {
+            this.lblWrong.Visible = false;
         }
     }
 }

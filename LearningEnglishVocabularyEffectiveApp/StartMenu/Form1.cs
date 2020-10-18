@@ -28,6 +28,7 @@ namespace StartMenu
 		private void btnLNW_Click(object sender, EventArgs e)
         {
 			FLearnNewWord f = new FLearnNewWord();
+			this.Hide();
 			this.Close();
 			f.ShowDialog();
 			
@@ -36,6 +37,7 @@ namespace StartMenu
         private void btnPractice_Click(object sender, EventArgs e)
         {
 			FPractice f = new FPractice();
+			this.Hide();
 			this.Close();
 			f.ShowDialog();
         }
@@ -43,6 +45,7 @@ namespace StartMenu
         private void btnRevision_Click(object sender, EventArgs e)
         {
 			FRevision f = new FRevision();
+			this.Hide();
 			this.Close();
 			f.ShowDialog();
         }
@@ -50,6 +53,7 @@ namespace StartMenu
         private void btnYourWords_Click(object sender, EventArgs e)
         {
 			FYourWords f = new FYourWords();
+			this.Hide();
 			this.Close();
 			f.ShowDialog();
         }
@@ -57,8 +61,15 @@ namespace StartMenu
         private void btnIntroducetions_Click(object sender, EventArgs e)
         {
 			FIntroduction f = new FIntroduction();
+			this.Hide();
 			this.Close();
 			f.ShowDialog();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+			this.Hide();
+			this.Close();
         }
     }
 }

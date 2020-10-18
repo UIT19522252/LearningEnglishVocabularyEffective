@@ -56,3 +56,4 @@ C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffective\LearningEnglishVo
 C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.exe
 C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.pdb
 C:\Users\HELLO\Desktop\LTTQ\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FError.resources
+C:\Users\ASUS\Source\Repos\UIT19522252\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FError.resources

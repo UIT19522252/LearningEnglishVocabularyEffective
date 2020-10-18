@@ -20,6 +20,7 @@ namespace StartMenu
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             StartMenu f = new StartMenu();
+            this.Hide();
             this.Close();
             f.ShowDialog();
         }

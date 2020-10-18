@@ -12,7 +12,7 @@ namespace StartMenu
 {
 	class LoginActivity
 	{
-		String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=Data;User Id=sa;Password=1;";
+		String connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=Data;User Id=sa;Password=1;";
 		static string HashPassword(string rawData)
 		{
 			using (SHA256 sha256Hash = SHA256.Create())
@@ -54,19 +54,21 @@ namespace StartMenu
 			connection.Close();
 			return false;
 		}
-		public void Signup(string a, string b)
+		public bool Signup(string a, string b)
 		{
 			if (a.Length < 6 || b.Length < 8)
 			{
 				FError f = new FError("Password must have more than 7 characters and Username must has more than 5 character", "Message");
+				f.StartPosition = FormStartPosition.CenterScreen;
 				f.ShowDialog();
-				return;
+				return false;
 			}
 			if (findUser(a)==true)
 			{
 				FError f = new FError("Username were used", "Message");
+				f.StartPosition = FormStartPosition.CenterScreen;
 				f.ShowDialog();
-				return;
+				return false;
 			}
 			SqlConnection connection = new SqlConnection(connString);
 			int _id = countUser() + 1;
@@ -82,12 +84,15 @@ namespace StartMenu
 			catch (Exception ex)
 			{
 				FError f = new FError("Connection or data reader failed", "Error");
+				f.StartPosition = FormStartPosition.CenterScreen;
 				f.ShowDialog();
+				return false;
 			}
 			finally
 			{
 				connection.Close();
 			}
+			return true;
 		}	
 		public bool findUser(string a)
 		{
