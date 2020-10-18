@@ -63,6 +63,7 @@
             this.btnAddWord.Size = new System.Drawing.Size(248, 43);
             this.btnAddWord.TabIndex = 1;
             this.btnAddWord.Text = "guna2Button1";
+            this.btnAddWord.Click += new System.EventHandler(this.btnAddWord_Click);
             // 
             // tbxWord
             // 
@@ -90,6 +91,7 @@
             this.tbxWord.ShadowDecoration.Parent = this.tbxWord;
             this.tbxWord.Size = new System.Drawing.Size(699, 47);
             this.tbxWord.TabIndex = 2;
+            this.tbxWord.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxWord_KeyDown);
             // 
             // btnBack
             // 
@@ -110,6 +112,7 @@
             this.btnBack.Size = new System.Drawing.Size(107, 90);
             this.btnBack.TabIndex = 3;
             this.btnBack.Text = "guna2Button2";
+            
             // 
             // btnWord1
             // 
@@ -278,6 +281,7 @@
             this.Controls.Add(this.btnAddWord);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FYourWords";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FYourWords";
             this.ResumeLayout(false);
 

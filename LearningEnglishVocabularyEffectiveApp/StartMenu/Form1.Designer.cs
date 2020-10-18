@@ -153,6 +153,7 @@
             this.btnLogOut.ShadowDecoration.Parent = this.btnLogOut;
             this.btnLogOut.Size = new System.Drawing.Size(112, 42);
             this.btnLogOut.TabIndex = 5;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // StartMenu
             // 

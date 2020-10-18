@@ -33,6 +33,7 @@
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.lblForgotPassword = new System.Windows.Forms.Label();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
+            this.lblWrong = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbxUsrname
@@ -64,6 +65,7 @@
             this.tbxUsrname.Size = new System.Drawing.Size(396, 45);
             this.tbxUsrname.TabIndex = 0;
             this.tbxUsrname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxUsrname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxUsrname_KeyDown);
             // 
             // tbxPassword
             // 
@@ -94,6 +96,7 @@
             this.tbxPassword.Size = new System.Drawing.Size(396, 45);
             this.tbxPassword.TabIndex = 1;
             this.tbxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxPassword_KeyDown);
             // 
             // btnLogin
             // 
@@ -115,6 +118,7 @@
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Log in";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            this.btnLogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnLogin_KeyDown);
             // 
             // lblForgotPassword
             // 
@@ -124,7 +128,7 @@
             this.lblForgotPassword.ForeColor = System.Drawing.Color.Sienna;
             this.lblForgotPassword.Location = new System.Drawing.Point(576, 402);
             this.lblForgotPassword.Name = "lblForgotPassword";
-            this.lblForgotPassword.Size = new System.Drawing.Size(114, 19);
+            this.lblForgotPassword.Size = new System.Drawing.Size(130, 21);
             this.lblForgotPassword.TabIndex = 3;
             this.lblForgotPassword.Text = "Forgot Pasword?";
             // 
@@ -148,6 +152,20 @@
             this.btnSignUp.Size = new System.Drawing.Size(280, 45);
             this.btnSignUp.TabIndex = 4;
             this.btnSignUp.Text = "Sign up!";
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            this.btnSignUp.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnSignUp_KeyDown);
+            // 
+            // lblWrong
+            // 
+            this.lblWrong.AutoSize = true;
+            this.lblWrong.BackColor = System.Drawing.Color.Transparent;
+            this.lblWrong.Font = new System.Drawing.Font("Segoe UI Symbol", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWrong.ForeColor = System.Drawing.Color.Red;
+            this.lblWrong.Location = new System.Drawing.Point(658, 334);
+            this.lblWrong.Name = "lblWrong";
+            this.lblWrong.Size = new System.Drawing.Size(274, 21);
+            this.lblWrong.TabIndex = 5;
+            this.lblWrong.Text = "*Incorrect Username or Password";
             // 
             // FLogin
             // 
@@ -155,6 +173,7 @@
             this.BackgroundImage = global::StartMenu.Properties.Resources.Login2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.Controls.Add(this.lblWrong);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.lblForgotPassword);
             this.Controls.Add(this.btnLogin);
@@ -163,6 +182,7 @@
             this.Name = "FLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.FLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,5 +195,6 @@
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private System.Windows.Forms.Label lblForgotPassword;
         private Guna.UI2.WinForms.Guna2Button btnSignUp;
+        private System.Windows.Forms.Label lblWrong;
     }
 }

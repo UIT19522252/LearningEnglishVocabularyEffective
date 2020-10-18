@@ -10,19 +10,21 @@ using System.Windows.Forms;
 
 namespace StartMenu
 {
-	public partial class FAllFlashCards : Form
+	public partial class FError : Form
 	{
-		public FAllFlashCards()
+		public FError()
 		{
 			InitializeComponent();
 		}
-
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-			FRevision f = new FRevision();
-			this.Hide();
-			f.ShowDialog();
+		public FError(string message, string title)
+		{
+			InitializeComponent();
+			this.lblMessage.Text = message;
+			this.Text = title;
+		}
+		private void btnOK_Click(object sender, EventArgs e)
+		{
 			this.Close();
-        }
-    }
+		}
+	}
 }

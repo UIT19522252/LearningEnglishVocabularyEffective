@@ -105,6 +105,7 @@
             this.btnBack.Size = new System.Drawing.Size(93, 75);
             this.btnBack.TabIndex = 3;
             this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // guna2Button1
             // 

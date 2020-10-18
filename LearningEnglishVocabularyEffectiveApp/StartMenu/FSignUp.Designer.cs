@@ -28,148 +28,155 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.tbxUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbxRepeatPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbxPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSignup = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
-            // guna2TextBox1
+            // tbxUsername
             // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.AutoRoundedCorners = true;
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Aqua;
-            this.guna2TextBox1.BorderRadius = 21;
-            this.guna2TextBox1.BorderThickness = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(502, 241);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Your username";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(501, 45);
-            this.guna2TextBox1.TabIndex = 0;
-            this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxUsername.Animated = true;
+            this.tbxUsername.AutoRoundedCorners = true;
+            this.tbxUsername.BackColor = System.Drawing.Color.Transparent;
+            this.tbxUsername.BorderColor = System.Drawing.Color.Aqua;
+            this.tbxUsername.BorderRadius = 21;
+            this.tbxUsername.BorderThickness = 2;
+            this.tbxUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbxUsername.DefaultText = "";
+            this.tbxUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbxUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbxUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbxUsername.DisabledState.Parent = this.tbxUsername;
+            this.tbxUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbxUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbxUsername.FocusedState.Parent = this.tbxUsername;
+            this.tbxUsername.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.tbxUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbxUsername.HoverState.Parent = this.tbxUsername;
+            this.tbxUsername.Location = new System.Drawing.Point(502, 241);
+            this.tbxUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxUsername.Name = "tbxUsername";
+            this.tbxUsername.PasswordChar = '\0';
+            this.tbxUsername.PlaceholderText = "Your username";
+            this.tbxUsername.SelectedText = "";
+            this.tbxUsername.ShadowDecoration.Parent = this.tbxUsername;
+            this.tbxUsername.Size = new System.Drawing.Size(501, 45);
+            this.tbxUsername.TabIndex = 0;
+            this.tbxUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxUsername.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxUsername_KeyDown);
             // 
-            // guna2TextBox3
+            // tbxRepeatPass
             // 
-            this.guna2TextBox3.Animated = true;
-            this.guna2TextBox3.AutoRoundedCorners = true;
-            this.guna2TextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.Aqua;
-            this.guna2TextBox3.BorderRadius = 21;
-            this.guna2TextBox3.BorderThickness = 2;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(502, 352);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "Your password";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(501, 45);
-            this.guna2TextBox3.TabIndex = 2;
-            this.guna2TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxRepeatPass.Animated = true;
+            this.tbxRepeatPass.AutoRoundedCorners = true;
+            this.tbxRepeatPass.BackColor = System.Drawing.Color.Transparent;
+            this.tbxRepeatPass.BorderColor = System.Drawing.Color.Aqua;
+            this.tbxRepeatPass.BorderRadius = 21;
+            this.tbxRepeatPass.BorderThickness = 2;
+            this.tbxRepeatPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbxRepeatPass.DefaultText = "";
+            this.tbxRepeatPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbxRepeatPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbxRepeatPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbxRepeatPass.DisabledState.Parent = this.tbxRepeatPass;
+            this.tbxRepeatPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbxRepeatPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbxRepeatPass.FocusedState.Parent = this.tbxRepeatPass;
+            this.tbxRepeatPass.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.tbxRepeatPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbxRepeatPass.HoverState.Parent = this.tbxRepeatPass;
+            this.tbxRepeatPass.Location = new System.Drawing.Point(502, 352);
+            this.tbxRepeatPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxRepeatPass.Name = "tbxRepeatPass";
+            this.tbxRepeatPass.PasswordChar = '*';
+            this.tbxRepeatPass.PlaceholderText = "Your password";
+            this.tbxRepeatPass.SelectedText = "";
+            this.tbxRepeatPass.ShadowDecoration.Parent = this.tbxRepeatPass;
+            this.tbxRepeatPass.Size = new System.Drawing.Size(501, 45);
+            this.tbxRepeatPass.TabIndex = 2;
+            this.tbxRepeatPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxRepeatPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxRepeatPass_KeyDown);
             // 
-            // guna2TextBox2
+            // tbxPass
             // 
-            this.guna2TextBox2.Animated = true;
-            this.guna2TextBox2.AutoRoundedCorners = true;
-            this.guna2TextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.Aqua;
-            this.guna2TextBox2.BorderRadius = 21;
-            this.guna2TextBox2.BorderThickness = 2;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(502, 296);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "Your password";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(501, 45);
-            this.guna2TextBox2.TabIndex = 1;
-            this.guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxPass.Animated = true;
+            this.tbxPass.AutoRoundedCorners = true;
+            this.tbxPass.BackColor = System.Drawing.Color.Transparent;
+            this.tbxPass.BorderColor = System.Drawing.Color.Aqua;
+            this.tbxPass.BorderRadius = 21;
+            this.tbxPass.BorderThickness = 2;
+            this.tbxPass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbxPass.DefaultText = "";
+            this.tbxPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbxPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbxPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbxPass.DisabledState.Parent = this.tbxPass;
+            this.tbxPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbxPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbxPass.FocusedState.Parent = this.tbxPass;
+            this.tbxPass.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.tbxPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbxPass.HoverState.Parent = this.tbxPass;
+            this.tbxPass.Location = new System.Drawing.Point(502, 296);
+            this.tbxPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbxPass.Name = "tbxPass";
+            this.tbxPass.PasswordChar = '*';
+            this.tbxPass.PlaceholderText = "Your password";
+            this.tbxPass.SelectedText = "";
+            this.tbxPass.ShadowDecoration.Parent = this.tbxPass;
+            this.tbxPass.Size = new System.Drawing.Size(501, 45);
+            this.tbxPass.TabIndex = 1;
+            this.tbxPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbxPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxPass_KeyDown);
             // 
-            // guna2Button1
+            // btnSignup
             // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.White;
-            this.guna2Button1.BorderRadius = 38;
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Lime;
-            this.guna2Button1.Font = new System.Drawing.Font("Showcard Gothic", 13.8F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(762, 423);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(287, 79);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "Sign Up!";
-            this.guna2Button1.UseTransparentBackground = true;
+            this.btnSignup.Animated = true;
+            this.btnSignup.AutoRoundedCorners = true;
+            this.btnSignup.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignup.BorderColor = System.Drawing.Color.White;
+            this.btnSignup.BorderRadius = 38;
+            this.btnSignup.BorderThickness = 2;
+            this.btnSignup.CheckedState.Parent = this.btnSignup;
+            this.btnSignup.CustomImages.Parent = this.btnSignup;
+            this.btnSignup.FillColor = System.Drawing.Color.Lime;
+            this.btnSignup.Font = new System.Drawing.Font("Showcard Gothic", 13.8F);
+            this.btnSignup.ForeColor = System.Drawing.Color.White;
+            this.btnSignup.HoverState.Parent = this.btnSignup;
+            this.btnSignup.Location = new System.Drawing.Point(762, 423);
+            this.btnSignup.Name = "btnSignup";
+            this.btnSignup.ShadowDecoration.Parent = this.btnSignup;
+            this.btnSignup.Size = new System.Drawing.Size(287, 79);
+            this.btnSignup.TabIndex = 3;
+            this.btnSignup.Text = "Sign Up!";
+            this.btnSignup.UseTransparentBackground = true;
+            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
+            this.btnSignup.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnSignup_KeyDown);
             // 
-            // guna2Button2
+            // btnSignin
             // 
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.AutoRoundedCorners = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderColor = System.Drawing.Color.White;
-            this.guna2Button2.BorderRadius = 38;
-            this.guna2Button2.BorderThickness = 2;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.Font = new System.Drawing.Font("Showcard Gothic", 13.8F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(433, 423);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(287, 79);
-            this.guna2Button2.TabIndex = 4;
-            this.guna2Button2.Text = "Have an account?";
-            this.guna2Button2.UseTransparentBackground = true;
+            this.btnSignin.Animated = true;
+            this.btnSignin.AutoRoundedCorners = true;
+            this.btnSignin.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignin.BorderColor = System.Drawing.Color.White;
+            this.btnSignin.BorderRadius = 38;
+            this.btnSignin.BorderThickness = 2;
+            this.btnSignin.CheckedState.Parent = this.btnSignin;
+            this.btnSignin.CustomImages.Parent = this.btnSignin;
+            this.btnSignin.Font = new System.Drawing.Font("Showcard Gothic", 13.8F);
+            this.btnSignin.ForeColor = System.Drawing.Color.White;
+            this.btnSignin.HoverState.Parent = this.btnSignin;
+            this.btnSignin.Location = new System.Drawing.Point(433, 423);
+            this.btnSignin.Name = "btnSignin";
+            this.btnSignin.ShadowDecoration.Parent = this.btnSignin;
+            this.btnSignin.Size = new System.Drawing.Size(287, 79);
+            this.btnSignin.TabIndex = 4;
+            this.btnSignin.Text = "Have an account?";
+            this.btnSignin.UseTransparentBackground = true;
+            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
+            this.btnSignin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnSignin_KeyDown);
             // 
             // FSignUp
             // 
@@ -177,11 +184,11 @@
             this.BackgroundImage = global::StartMenu.Properties.Resources.SignUp;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 628);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.btnSignin);
+            this.Controls.Add(this.btnSignup);
+            this.Controls.Add(this.tbxRepeatPass);
+            this.Controls.Add(this.tbxPass);
+            this.Controls.Add(this.tbxUsername);
             this.Name = "FSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FSignUp";
@@ -191,10 +198,10 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2TextBox tbxUsername;
+        private Guna.UI2.WinForms.Guna2TextBox tbxRepeatPass;
+        private Guna.UI2.WinForms.Guna2TextBox tbxPass;
+        private Guna.UI2.WinForms.Guna2Button btnSignup;
+        private Guna.UI2.WinForms.Guna2Button btnSignin;
     }
 }

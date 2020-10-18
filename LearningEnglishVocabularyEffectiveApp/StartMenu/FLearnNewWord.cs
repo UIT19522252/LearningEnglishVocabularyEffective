@@ -17,25 +17,17 @@ namespace StartMenu
             InitializeComponent();
         }
 
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
-        {
+        
 
-        }
+        
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        
 
         // btnBack
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             StartMenu f = new StartMenu();
+            this.Hide();
             this.Close();
             f.ShowDialog();
         }

@@ -163,6 +163,7 @@
             this.btnBack.Size = new System.Drawing.Size(103, 77);
             this.btnBack.TabIndex = 2;
             this.btnBack.Text = "guna2Button3";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // FRevision
             // 
