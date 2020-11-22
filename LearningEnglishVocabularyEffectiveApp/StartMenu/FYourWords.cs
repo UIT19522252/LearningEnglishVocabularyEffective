@@ -72,8 +72,17 @@ namespace StartMenu
                 AppendText(rtbMean, "Không tìm thấy từ được nhập", Color.Blue);
                 return;
             }
-           
-            if(File.Exists("temp.mp3"))
+            if (Meanings[0] != "Null")
+            {
+                this.lbPronuciation.Text = "Pronuciation: " + Meanings[0];
+                this.lbPronuciation.Visible = true;
+            }
+            else
+            {
+                AppendText(rtbMean, "Không tìm thấy từ được nhập", Color.Blue);
+                return;
+            }
+            if (File.Exists("temp.mp3"))
             {
                 this.btSpeaker.Visible = true;
             }   
@@ -84,7 +93,6 @@ namespace StartMenu
                 this.lbPronuciation.Visible = true;
             }    
 
-            //Còn bug từ in on, of
             for(int i = 1; i < Meanings.Count; i++)
             {
                 int k = Meanings[i].IndexOf(";");
@@ -99,7 +107,7 @@ namespace StartMenu
         private void btSpeaker_Click(object sender, EventArgs e)
         {
             
-            timer1.Interval = 7000;
+            timer1.Interval = 5000;
             timer1.Tick += new System.EventHandler(this.timer1_Tick);
             timer1.Enabled = true;
             WebActivity wa = new WebActivity();

@@ -85,22 +85,59 @@ namespace Dictionary
 		}
 		public List<string> getMeanings(string source)
 		{
+
 			List<string> ans=new List<string>();
 			while(true)
 			{
+				int typeindex = source.IndexOf("defmeta\">Type:");
+				string l = source.Substring(typeindex + 28);
+				string df = l.Substring(0, l.IndexOf(";"));
+
 				if (source.IndexOf("Show declension of") == -1) break;
-				int k = source.IndexOf("strong class=\" phr\">");
+				int k = source.IndexOf("strong class");
+				if (k == -1) break;
+				//MessageBox.Show("Đã lấy đc cái strong class" + k);
 				source = source.Substring(k + 20, source.Length - k - 20);
 				string res = source.Substring(0, source.IndexOf('<'));
+				//MessageBox.Show(res);
+				//MessageBox.Show(h);
 				k = source.IndexOf("gender-n-phrase\">");
-				source = source.Substring(k + 40, source.Length - k - 40);
-				string wordformat = source.Substring(0, source.IndexOf("\t"));
-				//Check xem từ vừa tìm đc có hợp lệ hay không
-				if(wordformat.Length > 12)
+				string wordformat;
+				if (k == -1)
 				{
-					wordformat = " ";
+					wordformat = df;
 				}
-				//Còn bug chỗ này từ sudden
+				else
+				{
+					source = source.Substring(k + 40, source.Length - k - 40);
+					wordformat = source.Substring(0, source.IndexOf("\t"));
+				}
+
+				//get more detail
+
+				//if (wordformat.Length > 12) continue;
+				//Cập nhật các điều kiện để fix mấy cái bug của chữ in
+				string illegal = "!<>|:;";
+				bool isOk = true;
+				for (int i = 0; i < illegal.Length; i++)
+				{
+					if (wordformat.IndexOf(illegal[i]) != -1)
+					{
+						isOk = false;
+						break;
+					}
+				}
+				if (isOk == false) continue;
+				//Cập nhật để fix chữ optimize
+				for (int i = 0; i < illegal.Length; i++)
+				{
+					if (res.IndexOf(illegal[i]) != -1)
+					{
+						isOk = false;
+						break;
+					}
+				}
+				if (isOk == false) continue;
 				string result = res + " ; " + wordformat;
 				ans.Add(result);
 			}	
@@ -120,7 +157,12 @@ namespace Dictionary
 
 			int k = source.IndexOf("IPA");
 			string h = source.Substring(k + 18);
+
 			string u = h.Substring(0, h.IndexOf(';'));
+			if(u.IndexOf(',') != -1)
+			{
+				u = u.Substring(0, u.IndexOf(','));
+			}	
 			if (u.IndexOf('>') != -1)
 			{
 				ans.Add("Null");
