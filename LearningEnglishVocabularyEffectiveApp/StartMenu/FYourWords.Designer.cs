@@ -36,7 +36,6 @@
 			this.btnWord1 = new Guna.UI2.WinForms.Guna2Button();
 			this.btnWord7 = new Guna.UI2.WinForms.Guna2Button();
 			this.btnWord6 = new Guna.UI2.WinForms.Guna2Button();
-			this.ScrlWord = new Guna.UI2.WinForms.Guna2VScrollBar();
 			this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
 			this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
 			this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -44,6 +43,8 @@
 			this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
 			this.btFind = new Guna.UI2.WinForms.Guna2Button();
 			this.rtbMean = new System.Windows.Forms.RichTextBox();
+			this.btSpeaker = new Guna.UI2.WinForms.Guna2Button();
+			this.lbPronuciation = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// btnAddWord
@@ -163,26 +164,6 @@
 			this.btnWord6.Size = new System.Drawing.Size(1244, 47);
 			this.btnWord6.TabIndex = 4;
 			// 
-			// ScrlWord
-			// 
-			this.ScrlWord.AutoRoundedCorners = true;
-			this.ScrlWord.BackColor = System.Drawing.Color.Transparent;
-			this.ScrlWord.BorderColor = System.Drawing.Color.SteelBlue;
-			this.ScrlWord.BorderRadius = 12;
-			this.ScrlWord.FillColor = System.Drawing.Color.Transparent;
-			this.ScrlWord.HoverState.Parent = null;
-			this.ScrlWord.LargeChange = 10;
-			this.ScrlWord.Location = new System.Drawing.Point(1139, 259);
-			this.ScrlWord.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-			this.ScrlWord.MouseWheelBarPartitions = 10;
-			this.ScrlWord.Name = "ScrlWord";
-			this.ScrlWord.PressedState.Parent = this.ScrlWord;
-			this.ScrlWord.ScrollbarSize = 27;
-			this.ScrlWord.Size = new System.Drawing.Size(27, 354);
-			this.ScrlWord.TabIndex = 5;
-			this.ScrlWord.ThumbColor = System.Drawing.Color.Cyan;
-			this.ScrlWord.Scroll += new System.Windows.Forms.ScrollEventHandler(this.ScrlWord_Scroll);
-			// 
 			// guna2Button1
 			// 
 			this.guna2Button1.AutoRoundedCorners = true;
@@ -277,7 +258,7 @@
 			this.btFind.Location = new System.Drawing.Point(1064, 245);
 			this.btFind.Name = "btFind";
 			this.btFind.ShadowDecoration.Parent = this.btFind;
-			this.btFind.Size = new System.Drawing.Size(55, 45);
+			this.btFind.Size = new System.Drawing.Size(72, 45);
 			this.btFind.TabIndex = 10;
 			this.btFind.Text = "Find";
 			this.btFind.Click += new System.EventHandler(this.btFind_Click);
@@ -285,11 +266,43 @@
 			// rtbMean
 			// 
 			this.rtbMean.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.rtbMean.Location = new System.Drawing.Point(358, 306);
+			this.rtbMean.Location = new System.Drawing.Point(358, 334);
 			this.rtbMean.Name = "rtbMean";
-			this.rtbMean.Size = new System.Drawing.Size(699, 306);
+			this.rtbMean.Size = new System.Drawing.Size(699, 278);
 			this.rtbMean.TabIndex = 11;
 			this.rtbMean.Text = "";
+			// 
+			// btSpeaker
+			// 
+			this.btSpeaker.BackColor = System.Drawing.Color.Transparent;
+			this.btSpeaker.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btSpeaker.BackgroundImage")));
+			this.btSpeaker.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btSpeaker.CheckedState.Parent = this.btSpeaker;
+			this.btSpeaker.CustomImages.Parent = this.btSpeaker;
+			this.btSpeaker.FillColor = System.Drawing.Color.Transparent;
+			this.btSpeaker.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btSpeaker.ForeColor = System.Drawing.Color.White;
+			this.btSpeaker.HoverState.Parent = this.btSpeaker;
+			this.btSpeaker.Location = new System.Drawing.Point(1064, 333);
+			this.btSpeaker.Name = "btSpeaker";
+			this.btSpeaker.ShadowDecoration.Parent = this.btSpeaker;
+			this.btSpeaker.Size = new System.Drawing.Size(49, 48);
+			this.btSpeaker.TabIndex = 12;
+			this.btSpeaker.Visible = false;
+			this.btSpeaker.Click += new System.EventHandler(this.btSpeaker_Click);
+			// 
+			// lbPronuciation
+			// 
+			this.lbPronuciation.AutoSize = true;
+			this.lbPronuciation.BackColor = System.Drawing.Color.Transparent;
+			this.lbPronuciation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbPronuciation.ForeColor = System.Drawing.Color.DarkGreen;
+			this.lbPronuciation.Location = new System.Drawing.Point(776, 311);
+			this.lbPronuciation.Name = "lbPronuciation";
+			this.lbPronuciation.Size = new System.Drawing.Size(109, 20);
+			this.lbPronuciation.TabIndex = 13;
+			this.lbPronuciation.Text = "Pronuciation";
+			this.lbPronuciation.Visible = false;
 			// 
 			// FYourWords
 			// 
@@ -297,13 +310,14 @@
 			this.BackgroundImage = global::StartMenu.Properties.Resources.YourWord;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(1182, 628);
+			this.Controls.Add(this.lbPronuciation);
+			this.Controls.Add(this.btSpeaker);
 			this.Controls.Add(this.rtbMean);
 			this.Controls.Add(this.btFind);
 			this.Controls.Add(this.guna2Button4);
 			this.Controls.Add(this.guna2Button3);
 			this.Controls.Add(this.guna2Button2);
 			this.Controls.Add(this.guna2Button1);
-			this.Controls.Add(this.ScrlWord);
 			this.Controls.Add(this.btnWord6);
 			this.Controls.Add(this.btnWord7);
 			this.Controls.Add(this.btnWord1);
@@ -315,6 +329,7 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FYourWords";
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -322,7 +337,6 @@
 		private Guna.UI2.WinForms.Guna2TextBox tbxWord;
 		private Guna.UI2.WinForms.Guna2Button btnAddWord;
 		private Guna.UI2.WinForms.Guna2Button btnBack;
-		private Guna.UI2.WinForms.Guna2VScrollBar ScrlWord;
 		private Guna.UI2.WinForms.Guna2Button btnWord6;
 		private Guna.UI2.WinForms.Guna2Button btnWord7;
 		private Guna.UI2.WinForms.Guna2Button btnWord1;
@@ -333,5 +347,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button btFind;
 		private System.Windows.Forms.RichTextBox rtbMean;
+		private Guna.UI2.WinForms.Guna2Button btSpeaker;
+		private System.Windows.Forms.Label lbPronuciation;
 	}
 }
