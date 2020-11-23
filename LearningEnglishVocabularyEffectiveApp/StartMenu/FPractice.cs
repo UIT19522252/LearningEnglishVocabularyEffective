@@ -24,5 +24,13 @@ namespace StartMenu
             this.Close();
             f.ShowDialog();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            GRearangeTheWords GRTW = new GRearangeTheWords();
+            this.Hide();
+            this.Close();
+            GRTW.ShowDialog();
+        }
     }
 }

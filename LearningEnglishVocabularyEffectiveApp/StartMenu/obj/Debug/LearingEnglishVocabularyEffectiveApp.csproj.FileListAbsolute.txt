@@ -64,3 +64,4 @@ C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglis
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FRevision.resources
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FSignUp.resources
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FYourWords.resources
+C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.GRearangeTheWords.resources
