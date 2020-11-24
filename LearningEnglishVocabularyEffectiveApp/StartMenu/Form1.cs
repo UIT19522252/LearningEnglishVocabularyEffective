@@ -13,6 +13,7 @@ namespace StartMenu
 	public partial class StartMenu : Form
 	{
 		string username;
+		
 		public StartMenu()
 		{
 			InitializeComponent();
@@ -70,6 +71,11 @@ namespace StartMenu
         {
 			this.Hide();
 			this.Close();
+        }
+
+        private void StartMenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

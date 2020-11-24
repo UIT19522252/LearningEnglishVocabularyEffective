@@ -12,6 +12,7 @@ namespace StartMenu
 {
     public partial class FPractice : Form
     {
+        
         public FPractice()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace StartMenu
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             GRearangeTheWords GRTW = new GRearangeTheWords();
+           
             this.Hide();
             this.Close();
             GRTW.ShowDialog();
