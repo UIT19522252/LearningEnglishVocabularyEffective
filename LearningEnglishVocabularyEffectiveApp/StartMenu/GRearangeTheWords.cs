@@ -17,6 +17,8 @@ namespace StartMenu
         private DateTime startime; 
         int dem = 0;
         int dm = 0;
+        int demso = 0;
+        
         String connString = @"Server=LAPTOP-7LJ1B5F3\SQLEXPRESS;Database=data;User Id=sa;Password=trongphuc123456;";
         public string iduser = "1";
         public string[] EL = new string[10];
@@ -37,18 +39,63 @@ namespace StartMenu
                 
                 if (reader[0].ToString() == iduser)
                 {
-                    
-                    int i = 0;
+
+                    Random rd = new Random();
+                    int i = rd.Next(0, 10);
                     while (EL[i] != null)
                     {
-                        i++;
+                        i = rd.Next(0, 10);
+                        if (demso == 10) return;
                     }
                     EL[i] = reader[3].ToString();
                     VN[i] = reader[4].ToString();
+                    demso += 1;
                 }
             }
             connection.Close();
            
+        }
+       
+
+        public void  RandomButton()
+        {
+            List<Button> mButton = new List<Button>(20);
+            mButton.Add(this.button1);
+            mButton.Add(this.button2);
+            mButton.Add(this.button3);
+            mButton.Add(this.button4);
+            mButton.Add(this.button5);
+            mButton.Add(this.button6);
+            mButton.Add(this.button7);
+            mButton.Add(this.button8);
+            mButton.Add(this.button9);
+            mButton.Add(this.button10);
+            mButton.Add(this.button11);
+            mButton.Add(this.button12);
+            mButton.Add(this.button13);
+            mButton.Add(this.button14);
+            mButton.Add(this.button15);
+            mButton.Add(this.button16);
+            mButton.Add(this.button17);
+            mButton.Add(this.button18);
+            mButton.Add(this.button19);
+            mButton.Add(this.button20);
+
+            for (int i = 0; i < 10; i++)
+            {
+                Random rd = new Random();
+                int m = rd.Next(0, 20);
+                while(mButton[m].Text != "")
+                {
+                    m = rd.Next(0, 20);
+                }
+                mButton[m].Text = EL[i];
+                while (mButton[m].Text != "")
+                {
+                    m = rd.Next(0, 20);
+                }
+                mButton[m].Text = VN[i];
+            }    
         }
         public GRearangeTheWords()
         {
@@ -62,26 +109,7 @@ namespace StartMenu
             this.again.Hide();
             this.exit.Hide();
             this.Get10Words();
-            this.button1.Text = EL[0];
-            this.button9.Text = VN[0];
-            this.button2.Text = EL[1];
-            this.button14.Text = VN[1];
-            this.button3.Text = EL[2];
-            this.button19.Text = VN[2];
-            this.button4.Text = EL[3];
-            this.button20.Text = VN[3];
-            this.button5.Text = EL[4];
-            this.button18.Text = VN[4];
-            this.button6.Text = EL[5];
-            this.button16.Text = VN[5];
-            this.button7.Text = EL[6];
-            this.button15.Text = VN[6];
-            this.button8.Text = EL[7];
-            this.button12.Text = VN[7];
-            this.button17.Text = VN[8];
-            this.button11.Text = EL[8];
-            this.button10.Text = VN[9];
-            this.button13.Text = EL[9];
+            this.RandomButton();
             startime = DateTime.Now;
             diem.Text = "0";
         }
