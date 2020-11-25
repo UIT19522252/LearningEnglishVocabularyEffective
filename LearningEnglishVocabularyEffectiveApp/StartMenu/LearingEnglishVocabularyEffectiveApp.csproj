@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackEnd.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="FError.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,17 +69,23 @@
     <Compile Include="FLearnNewWord.Designer.cs">
       <DependentUpon>FLearnNewWord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FMenu.Designer.cs">
+      <DependentUpon>FMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="FPractice.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FPractice.Designer.cs">
       <DependentUpon>FPractice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPreviewNewWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPreviewNewWord.Designer.cs">
+      <DependentUpon>FPreviewNewWord.cs</DependentUpon>
     </Compile>
     <Compile Include="FRamdom10fc.cs">
       <SubType>Form</SubType>
@@ -118,6 +126,13 @@
     <Compile Include="LoginActivity.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Question.cs" />
+    <Compile Include="ReLearn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReLearn.Designer.cs">
+      <DependentUpon>ReLearn.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="WebActivity.cs" />
     <EmbeddedResource Include="FError.resx">
@@ -129,11 +144,14 @@
     <EmbeddedResource Include="FLearnNewWord.resx">
       <DependentUpon>FLearnNewWord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FMenu.resx">
+      <DependentUpon>FMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FPractice.resx">
       <DependentUpon>FPractice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPreviewNewWord.resx">
+      <DependentUpon>FPreviewNewWord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRamdom10fc.resx">
       <DependentUpon>FRamdom10fc.cs</DependentUpon>
@@ -163,6 +181,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReLearn.resx">
+      <DependentUpon>ReLearn.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -260,6 +281,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\errorIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Preview.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

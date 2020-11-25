@@ -27,10 +27,10 @@ namespace StartMenu
 
 		private void btnLNW_Click(object sender, EventArgs e)
         {
-			FLearnNewWord f = new FLearnNewWord();
+			FPreviewNewWord f = new FPreviewNewWord();
 			this.Hide();
-			this.Close();
 			f.ShowDialog();
+			this.Show();
 			
         }
 

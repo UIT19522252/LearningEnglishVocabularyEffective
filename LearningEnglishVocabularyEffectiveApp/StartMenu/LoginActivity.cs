@@ -12,7 +12,7 @@ namespace StartMenu
 {
 	class LoginActivity
 	{
-		String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=Data;User Id=sa;Password=1;";
+		String connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=Data;User Id=sa;Password=1;";
 		static string HashPassword(string rawData)
 		{
 			using (SHA256 sha256Hash = SHA256.Create())
