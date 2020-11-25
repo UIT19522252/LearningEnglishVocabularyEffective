@@ -14,6 +14,7 @@ namespace StartMenu
 {
     public partial class GRearangeTheWords : Form
     {
+        private DateTime startime; 
         int dem = 0;
         String connString = @"Server=LAPTOP-7LJ1B5F3\SQLEXPRESS;Database=data;User Id=sa;Password=trongphuc123456;";
         public string iduser = "1";
@@ -72,7 +73,7 @@ namespace StartMenu
             this.button11.Text = EL[8];
             this.button10.Text = VN[9];
             this.button13.Text = EL[9];
-
+            startime = DateTime.Now;
         }
         private void GRearangeTheWords_Load(object sender, EventArgs e)
         {
@@ -106,7 +107,19 @@ namespace StartMenu
                             yourchoice = null;
                             a = null;
                         }    
-                    }    
+                    } 
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button1.Text)
+                        {
+                            button1.Hide();
+                            a.Hide();
+                            result = true;
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
                 }
                 if (result == false)
                 {
@@ -140,6 +153,18 @@ namespace StartMenu
                             result = true;
                             button9.Hide();
                             a.Hide();
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button9.Text)
+                        {
+                            button9.Hide();
+                            a.Hide();
+                            result = true;
                             dem++;
                             yourchoice = null;
                             a = null;
@@ -183,6 +208,18 @@ namespace StartMenu
                             a = null;
                         }
                     }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button2.Text)
+                        {
+                            button2.Hide();
+                            a.Hide();
+                            result = true;
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
                 }
                 if (result == false)
                 {
@@ -216,6 +253,18 @@ namespace StartMenu
                             result = true;
                             button5.Hide();
                             a.Hide();
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button5.Text)
+                        {
+                            button5.Hide();
+                            a.Hide();
+                            result = true;
                             dem++;
                             yourchoice = null;
                             a = null;
@@ -259,6 +308,18 @@ namespace StartMenu
                             a = null;
                         }
                     }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button6.Text)
+                        {
+                            button6.Hide();
+                            a.Hide();
+                            result = true;
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
                 }
                 if (result == false)
                 {
@@ -292,6 +353,18 @@ namespace StartMenu
                             result = true;
                             button10.Hide();
                             a.Hide();
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button10.Text)
+                        {
+                            button10.Hide();
+                            a.Hide();
+                            result = true;
                             dem++;
                             yourchoice = null;
                             a = null;
@@ -335,6 +408,18 @@ namespace StartMenu
                             a = null;
                         }
                     }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button7.Text)
+                        {
+                            button7.Hide();
+                            a.Hide();
+                            result = true;
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
                 }
                 if (result == false)
                 {
@@ -368,6 +453,18 @@ namespace StartMenu
                             result = true;
                             button11.Hide();
                             a.Hide();
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button11.Text)
+                        {
+                            button11.Hide();
+                            a.Hide();
+                            result = true;
                             dem++;
                             yourchoice = null;
                             a = null;
@@ -411,6 +508,18 @@ namespace StartMenu
                             a = null;
                         }
                     }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button12.Text)
+                        {
+                            button12.Hide();
+                            a.Hide();
+                            result = true;
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
                 }
                 if (result == false)
                 {
@@ -444,6 +553,18 @@ namespace StartMenu
                             result = true;
                             button8.Hide();
                             a.Hide();
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button8.Text)
+                        {
+                            button8.Hide();
+                            a.Hide();
+                            result = true;
                             dem++;
                             yourchoice = null;
                             a = null;
@@ -487,6 +608,18 @@ namespace StartMenu
                             a = null;
                         }
                     }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button3.Text)
+                        {
+                            button3.Hide();
+                            a.Hide();
+                            result = true;
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
                 }
                 if (result == false)
                 {
@@ -520,6 +653,18 @@ namespace StartMenu
                             result = true;
                             button4.Hide();
                             a.Hide();
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button4.Text)
+                        {
+                            button4.Hide();
+                            a.Hide();
+                            result = true;
                             dem++;
                             yourchoice = null;
                             a = null;
@@ -562,6 +707,18 @@ namespace StartMenu
                             yourchoice = null;
                             a = null;
                         }
+                        else if (VN[i] == yourchoice)
+                        {
+                            if (EL[i] == button13.Text)
+                            {
+                                button13.Hide();
+                                a.Hide();
+                                result = true;
+                                dem++;
+                                yourchoice = null;
+                                a = null;
+                            }
+                        }
                     }
                 }
                 if (result == false)
@@ -596,6 +753,18 @@ namespace StartMenu
                             result = true;
                             button17.Hide();
                             a.Hide();
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button17.Text)
+                        {
+                            button17.Hide();
+                            a.Hide();
+                            result = true;
                             dem++;
                             yourchoice = null;
                             a = null;
@@ -639,6 +808,18 @@ namespace StartMenu
                             a = null;
                         }
                     }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button14.Text)
+                        {
+                            button14.Hide();
+                            a.Hide();
+                            result = true;
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
                 }
                 if (result == false)
                 {
@@ -672,6 +853,18 @@ namespace StartMenu
                             result = true;
                             button18.Hide();
                             a.Hide();
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button18.Text)
+                        {
+                            button18.Hide();
+                            a.Hide();
+                            result = true;
                             dem++;
                             yourchoice = null;
                             a = null;
@@ -715,6 +908,18 @@ namespace StartMenu
                             a = null;
                         }
                     }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button15.Text)
+                        {
+                            button15.Hide();
+                            a.Hide();
+                            result = true;
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
                 }
                 if (result == false)
                 {
@@ -748,6 +953,18 @@ namespace StartMenu
                             result = true;
                             button19.Hide();
                             a.Hide();
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button19.Text)
+                        {
+                            button19.Hide();
+                            a.Hide();
+                            result = true;
                             dem++;
                             yourchoice = null;
                             a = null;
@@ -791,6 +1008,18 @@ namespace StartMenu
                             a = null;
                         }
                     }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button16.Text)
+                        {
+                            button16.Hide();
+                            a.Hide();
+                            result = true;
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
                 }
                 if (result == false)
                 {
@@ -829,6 +1058,18 @@ namespace StartMenu
                             a = null;
                         }
                     }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button20.Text)
+                        {
+                            button20.Hide();
+                            a.Hide();
+                            result = true;
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                        }
+                    }
                 }
                 if (result == false)
                 {
@@ -837,6 +1078,23 @@ namespace StartMenu
                     a = null;
                 }
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TimeSpan spantime = DateTime.Now - startime;
+            time.Text = spantime.ToString();
+            if (dem == 10) timer1.Stop();
         }
     }
 }
