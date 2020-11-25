@@ -16,6 +16,7 @@ namespace StartMenu
     {
         private DateTime startime; 
         int dem = 0;
+        int dm = 0;
         String connString = @"Server=LAPTOP-7LJ1B5F3\SQLEXPRESS;Database=data;User Id=sa;Password=trongphuc123456;";
         public string iduser = "1";
         public string[] EL = new string[10];
@@ -52,6 +53,14 @@ namespace StartMenu
         public GRearangeTheWords()
         {
             InitializeComponent();
+            this.correct.Hide();
+            this.incorrect.Hide();
+            this.TBDiem.Hide();
+            this.TBtime.Hide();
+            this.diemtb.Hide();
+            this.timetb.Hide();
+            this.again.Hide();
+            this.exit.Hide();
             this.Get10Words();
             this.button1.Text = EL[0];
             this.button9.Text = VN[0];
@@ -74,6 +83,7 @@ namespace StartMenu
             this.button10.Text = VN[9];
             this.button13.Text = EL[9];
             startime = DateTime.Now;
+            diem.Text = "0";
         }
         private void GRearangeTheWords_Load(object sender, EventArgs e)
         {
@@ -106,6 +116,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }    
                     } 
                     else if (VN[i] == yourchoice)
@@ -118,16 +129,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
                 }
-            }                
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
+                }    
+            }
+            diem.Text = dm.ToString();
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -156,6 +176,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -168,16 +189,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -206,6 +236,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -218,16 +249,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -256,6 +296,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -268,16 +309,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -306,6 +356,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -318,16 +369,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -335,7 +395,7 @@ namespace StartMenu
             if (yourchoice == null)
             {
                 yourchoice = button10.Text;
-                a = button9;
+                a = button10;
             }
             else if (yourchoice == button10.Text)
             {
@@ -356,6 +416,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -368,16 +429,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -406,6 +476,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -418,16 +489,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -456,6 +536,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -468,16 +549,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -506,6 +596,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -518,16 +609,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -556,6 +656,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -568,16 +669,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -606,6 +716,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -618,16 +729,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -656,6 +776,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -668,16 +789,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -706,6 +836,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                         else if (VN[i] == yourchoice)
                         {
@@ -717,17 +848,26 @@ namespace StartMenu
                                 dem++;
                                 yourchoice = null;
                                 a = null;
+                                dm += 10;
                             }
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -756,6 +896,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -768,16 +909,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -806,6 +956,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -818,16 +969,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button18_Click(object sender, EventArgs e)
@@ -856,6 +1016,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -868,16 +1029,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -906,6 +1076,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -918,16 +1089,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button19_Click(object sender, EventArgs e)
@@ -956,6 +1136,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -968,16 +1149,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -1006,6 +1196,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -1018,16 +1209,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void button20_Click(object sender, EventArgs e)
@@ -1056,6 +1256,7 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                     else if (VN[i] == yourchoice)
@@ -1068,16 +1269,25 @@ namespace StartMenu
                             dem++;
                             yourchoice = null;
                             a = null;
+                            dm += 10;
                         }
                     }
                 }
                 if (result == false)
                 {
-                    MessageBox.Show("Incorrect");
+                    incorrect.Show();
+                    correct.Hide();
                     yourchoice = null;
                     a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
                 }
             }
+            diem.Text = dm.ToString();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -1093,8 +1303,52 @@ namespace StartMenu
         private void timer1_Tick(object sender, EventArgs e)
         {
             TimeSpan spantime = DateTime.Now - startime;
-            time.Text = spantime.ToString();
-            if (dem == 10) timer1.Stop();
+            string h, m, s;
+            if (spantime.Hours < 10)
+                h = "0" + spantime.Hours.ToString();
+            else 
+                h = spantime.Hours.ToString();
+            if (spantime.Minutes < 10)
+                m = "0" + spantime.Minutes.ToString();
+            else
+                m = spantime.Minutes.ToString();
+            if (spantime.Seconds < 10)
+                s = "0" + spantime.Seconds.ToString();
+            else
+                s = spantime.Seconds.ToString();
+            time.Text = h + ":" + m + ":" + s;
+            if (dem == 10)
+            {
+                timer1.Stop();
+                time.Hide();
+                diem.Hide();
+                lbtime.Hide();
+                lbpoint.Hide();
+                diemtb.Text = diem.Text;
+                timetb.Text = time.Text;
+                TBDiem.Show();
+                TBtime.Show();
+                diemtb.Show();
+                timetb.Show();
+                exit.Show();
+                again.Show();
+            }
+        }
+
+        private void again_Click(object sender, EventArgs e)
+        {
+            GRearangeTheWords newgame = new GRearangeTheWords();
+            this.Hide();
+            this.Close();
+            newgame.ShowDialog();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            FPractice newpractice = new FPractice();
+            this.Hide();
+            this.Close();
+            newpractice.ShowDialog();
         }
     }
 }
