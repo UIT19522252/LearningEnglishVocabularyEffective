@@ -19,9 +19,9 @@ namespace StartMenu
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            StartMenu f = new StartMenu();
+          
             this.Close();
-            f.ShowDialog();
+           
         }
     }
 }

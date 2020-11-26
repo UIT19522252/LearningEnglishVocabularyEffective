@@ -90,7 +90,7 @@
             this.btnBack.BackColor = System.Drawing.Color.Transparent;
             this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBack.BorderColor = System.Drawing.Color.Transparent;
+            this.btnBack.BorderRadius = 50;
             this.btnBack.CheckedState.Parent = this.btnBack;
             this.btnBack.CustomImages.Parent = this.btnBack;
             this.btnBack.FillColor = System.Drawing.Color.Transparent;
@@ -98,11 +98,11 @@
             this.btnBack.ForeColor = System.Drawing.Color.Transparent;
             this.btnBack.HoverState.Parent = this.btnBack;
             this.btnBack.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnBack.Location = new System.Drawing.Point(13, 23);
+            this.btnBack.Location = new System.Drawing.Point(13, 8);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.ShadowDecoration.Parent = this.btnBack;
-            this.btnBack.Size = new System.Drawing.Size(93, 75);
+            this.btnBack.Size = new System.Drawing.Size(93, 90);
             this.btnBack.TabIndex = 3;
             this.btnBack.TabStop = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);

@@ -122,5 +122,10 @@ namespace StartMenu
             wa.openAudio("temp.mp3");
             wa.stopAudio();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

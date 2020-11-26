@@ -19,7 +19,7 @@ namespace StartMenu
         int dm = 0;
         int demso = 0;
 
-        String connString = @"Server=LAPTOP-7LJ1B5F3\SQLEXPRESS;Database=data;User Id=sa;Password=trongphuc123456;";
+        String connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=Data;User Id=sa;Password=1;";
         public string iduser = "1";
         public string[] EL = new string[10];
         public string[] VN = new string[10];
@@ -1380,6 +1380,11 @@ namespace StartMenu
             FPractice newpractice = new FPractice();
             this.Hide();
             newpractice.ShowDialog();
+            this.Close();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

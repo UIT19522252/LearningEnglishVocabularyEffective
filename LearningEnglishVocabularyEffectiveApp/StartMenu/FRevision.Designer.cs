@@ -146,7 +146,8 @@
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.BorderColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.BorderRadius = 50;
             this.btnBack.CheckedState.Parent = this.btnBack;
             this.btnBack.CustomImages.Parent = this.btnBack;
             this.btnBack.FillColor = System.Drawing.Color.Transparent;
@@ -160,7 +161,7 @@
             this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.ShadowDecoration.Parent = this.btnBack;
-            this.btnBack.Size = new System.Drawing.Size(103, 77);
+            this.btnBack.Size = new System.Drawing.Size(103, 99);
             this.btnBack.TabIndex = 2;
             this.btnBack.Text = "guna2Button3";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);

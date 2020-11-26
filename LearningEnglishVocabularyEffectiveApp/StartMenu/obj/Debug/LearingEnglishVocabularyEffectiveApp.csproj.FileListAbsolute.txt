@@ -69,3 +69,4 @@ C:\Users\ASUS\source\repos\UIT19522252\LearningEnglishVocabularyEffective\Learni
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FPreviewNewWord.resources
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.ReLearn.resources
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.GRearangeTheWords.resources
+C:\Users\ASUS\Source\Repos\UIT19522252\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.GRearangeTheWords.resources
