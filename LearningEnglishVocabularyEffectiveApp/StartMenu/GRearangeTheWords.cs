@@ -1198,65 +1198,7 @@ namespace StartMenu
             diem.Text = dm.ToString();
         }
 
-        private void button16_Click(object sender, EventArgs e)
-        {
-            if (yourchoice == null)
-            {
-                yourchoice = button16.Text;
-                a = button16;
-            }
-            else if (yourchoice == button16.Text)
-            {
-                yourchoice = null;
-            }
-            else
-            {
-                bool result = false;
-                for (int i = 0; i < 10; i++)
-                {
-                    if (EL[i] == yourchoice)
-                    {
-                        if (VN[i] == button16.Text)
-                        {
-                            result = true;
-                            button16.Hide();
-                            a.Hide();
-                            dem++;
-                            yourchoice = null;
-                            a = null;
-                            dm += 10;
-                        }
-                    }
-                    else if (VN[i] == yourchoice)
-                    {
-                        if (EL[i] == button16.Text)
-                        {
-                            button16.Hide();
-                            a.Hide();
-                            result = true;
-                            dem++;
-                            yourchoice = null;
-                            a = null;
-                            dm += 10;
-                        }
-                    }
-                }
-                if (result == false)
-                {
-                    incorrect.Show();
-                    correct.Hide();
-                    yourchoice = null;
-                    a = null;
-                    dm -= 5;
-                }
-                else
-                {
-                    correct.Show();
-                    incorrect.Hide();
-                }
-            }
-            diem.Text = dm.ToString();
-        }
+       
 
         private void button20_Click(object sender, EventArgs e)
         {
@@ -1367,16 +1309,78 @@ namespace StartMenu
         {
             GRearangeTheWords newgame = new GRearangeTheWords();
             this.Hide();
-            this.Close();
             newgame.ShowDialog();
+            this.Close();
         }
 
-        private void button21_Click(object sender, EventArgs e)
+       
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            if (yourchoice == null)
+            {
+                yourchoice = button16.Text;
+                a = button16;
+            }
+            else if (yourchoice == button16.Text)
+            {
+                yourchoice = null;
+            }
+            else
+            {
+                bool result = false;
+                for (int i = 0; i < 10; i++)
+                {
+                    if (EL[i] == yourchoice)
+                    {
+                        if (VN[i] == button16.Text)
+                        {
+                            result = true;
+                            button16.Hide();
+                            a.Hide();
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                            dm += 10;
+                        }
+                    }
+                    else if (VN[i] == yourchoice)
+                    {
+                        if (EL[i] == button16.Text)
+                        {
+                            button16.Hide();
+                            a.Hide();
+                            result = true;
+                            dem++;
+                            yourchoice = null;
+                            a = null;
+                            dm += 10;
+                        }
+                    }
+                }
+                if (result == false)
+                {
+                    incorrect.Show();
+                    correct.Hide();
+                    yourchoice = null;
+                    a = null;
+                    dm -= 5;
+                }
+                else
+                {
+                    correct.Show();
+                    incorrect.Hide();
+                }
+            }
+            diem.Text = dm.ToString();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
         {
             FPractice newpractice = new FPractice();
             this.Hide();
-            this.Close();
             newpractice.ShowDialog();
+            this.Close();
         }
     }
 }

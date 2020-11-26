@@ -38,9 +38,9 @@ namespace StartMenu
         {
 			FPractice f = new FPractice();
 			this.Hide();
-			this.Close();
 			f.ShowDialog();
-        }
+			this.Close();
+		}
 
         private void btnRevision_Click(object sender, EventArgs e)
         {
