@@ -19,10 +19,23 @@ namespace StartMenu
         //btn Back
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            StartMenu f = new StartMenu();
+         
             this.Hide();
             this.Close();
-            f.ShowDialog();
+            
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            GRearangeTheWords game1 = new GRearangeTheWords();
+            this.Hide();
+            game1.ShowDialog();
+            this.Show();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

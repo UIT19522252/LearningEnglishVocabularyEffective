@@ -29,10 +29,9 @@ namespace StartMenu
 
         private void btnRDreturn_Click(object sender, EventArgs e)
         {
-            FRevision f = new FRevision();
-            this.Hide();
+            
             this.Close();
-            f.ShowDialog();
+          
         }
     }
 }

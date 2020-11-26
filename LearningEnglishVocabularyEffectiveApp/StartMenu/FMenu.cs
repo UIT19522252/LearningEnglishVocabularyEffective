@@ -38,32 +38,32 @@ namespace StartMenu
         {
 			FPractice f = new FPractice();
 			this.Hide();
-			this.Close();
 			f.ShowDialog();
-        }
+			this.Show();
+		}
 
         private void btnRevision_Click(object sender, EventArgs e)
         {
 			FRevision f = new FRevision();
-			this.Hide();
-			this.Close();
+			this.Hide();			
 			f.ShowDialog();
-        }
+			this.Show();
+		}
 
         private void btnYourWords_Click(object sender, EventArgs e)
         {
 			FYourWords f = new FYourWords();
 			this.Hide();
-			this.Close();
 			f.ShowDialog();
+			this.Show();
         }
 
         private void btnIntroducetions_Click(object sender, EventArgs e)
         {
 			FIntroduction f = new FIntroduction();
 			this.Hide();
-			this.Close();
 			f.ShowDialog();
+			this.Show();
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

@@ -16,7 +16,7 @@ namespace StartMenu
 
 		public static void LoadData()
 		{
-			string connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+			string connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=Data;User Id=sa;Password=1;";
 
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
@@ -30,7 +30,7 @@ namespace StartMenu
 			while (reader.HasRows)
 			{
 				if (reader.Read() == false) break;
-				Data.newWord.Add(new Question(reader[0].ToString(), reader[1].ToString()));
+				Data.newWord.Add(new Question(reader[1].ToString(), reader[2].ToString()));
 			}
 			connection.Close();
 

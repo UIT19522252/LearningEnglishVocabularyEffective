@@ -19,9 +19,6 @@ namespace StartMenu
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-			FRevision f = new FRevision();
-			this.Hide();
-			f.ShowDialog();
 			this.Close();
         }
     }
