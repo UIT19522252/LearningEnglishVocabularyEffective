@@ -33,10 +33,11 @@
             // 
             // GRearangeTheWords
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1178, 609);
+            this.ClientSize = new System.Drawing.Size(1184, 626);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "GRearangeTheWords";
             this.Text = "GRearangeTheWords";
             this.ResumeLayout(false);
