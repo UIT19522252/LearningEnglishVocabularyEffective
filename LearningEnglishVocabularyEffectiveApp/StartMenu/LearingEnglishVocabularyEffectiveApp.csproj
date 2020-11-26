@@ -123,6 +123,12 @@
     <Compile Include="FYourWords.Designer.cs">
       <DependentUpon>FYourWords.cs</DependentUpon>
     </Compile>
+    <Compile Include="GRearangeTheWords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GRearangeTheWords.Designer.cs">
+      <DependentUpon>GRearangeTheWords.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginActivity.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FYourWords.resx">
       <DependentUpon>FYourWords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GRearangeTheWords.resx">
+      <DependentUpon>GRearangeTheWords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -7,7 +7,8 @@ namespace StartMenu
 {
     public static class Data
     {
-        
+        public static string username;
+        public static string iduser;
         // Luu 5 tu moi dang hoc
         public static List<Question> newWord = new List<Question>();
         // Luu 4 dap an cua tu hien tai
