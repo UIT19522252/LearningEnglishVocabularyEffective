@@ -7,6 +7,7 @@ namespace StartMenu
 {
     public static class Data
     {
+        
         // Luu 5 tu moi dang hoc
         public static List<Question> newWord = new List<Question>();
         // Luu 4 dap an cua tu hien tai
@@ -18,5 +19,7 @@ namespace StartMenu
         public static Question currentQuestion;
         // Luu trang thai da hoc xong hay chua
         public static bool XONG = false;
+
+        
     }
 }
