@@ -12,7 +12,7 @@ namespace StartMenu
 {
 	class LoginActivity
 	{
-		String connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=Data;User Id=sa;Password=1;";
+		String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
 		static string HashPassword(string rawData)
 		{
 			using (SHA256 sha256Hash = SHA256.Create())
@@ -31,7 +31,7 @@ namespace StartMenu
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
 
-			String sqlQuery = "select * from USERINFOR";
+			String sqlQuery = "select * from USERINFO where username='"+ a+"'";
 
 			SqlCommand command = new SqlCommand(sqlQuery, connection);
 
@@ -40,16 +40,13 @@ namespace StartMenu
 			while (reader.HasRows)
 			{
 				if (reader.Read() == false) break;
-				if(reader[1].Equals(a))
+				if (HashPassword(b).Equals(reader[2]))
 				{
-					if (HashPassword(b).Equals(reader[2]))
-					{
-						connection.Close();
-						return true;
-					}
-					else
-						return false;
-				}	
+					connection.Close();
+					return true;
+				}
+				else
+					return false;
 			}
 			connection.Close();
 			return false;
@@ -71,12 +68,10 @@ namespace StartMenu
 				return false;
 			}
 			SqlConnection connection = new SqlConnection(connString);
-			int _id = countUser() + 1;
-
 			try
 			{
-				string statement = "insert into USERINFOR(id, userName, hashPassword) values(" + "'" + _id.ToString() + "',"
-				+ "'" + a + "'," + "'" + HashPassword(b) + "')";
+				string statement = "insert into USERINFO(username, hashPass) values ("
+					+ "'" + a + "'," + "'" + HashPassword(b) + "')";
 				connection.Open();
 				SqlCommand command = new SqlCommand(statement, connection);
 				command.ExecuteNonQuery();
@@ -99,7 +94,7 @@ namespace StartMenu
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
 
-			String sqlQuery = "select * from USERINFOR";
+			String sqlQuery = "select * from USERINFO where username='"+a+"'";
 
 			SqlCommand command = new SqlCommand(sqlQuery, connection);
 
@@ -117,13 +112,12 @@ namespace StartMenu
 			connection.Close();
 			return false;
 		}
-		public int countUser()
+		public int FindID(string a)
 		{
-			int count = 0;
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
 
-			String sqlQuery = "select * from USERINFOR";
+			String sqlQuery = "select * from USERINFO where username='" + a + "'";
 
 			SqlCommand command = new SqlCommand(sqlQuery, connection);
 
@@ -132,10 +126,16 @@ namespace StartMenu
 			while (reader.HasRows)
 			{
 				if (reader.Read() == false) break;
-				count++;
+				else
+				{
+					int k = int.Parse(reader[0].ToString());
+					reader.Close();
+					connection.Close();
+					return k;
+				}	
 			}
 			connection.Close();
-			return count;
+			return -1;
 		}
 	}
 }

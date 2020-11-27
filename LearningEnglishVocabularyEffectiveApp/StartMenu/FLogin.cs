@@ -24,6 +24,8 @@ namespace StartMenu
             {
                 this.Hide();
                 temp.formMenu = new StartMenu(temp.username);
+                Data.username = tbxUsrname.Text;
+                Data.iduser = lg.FindID(tbxUsrname.Text).ToString();
                 temp.formMenu.ShowDialog();
                 this.tbxPassword.Text= "";
                 this.tbxUsrname.Text = "";

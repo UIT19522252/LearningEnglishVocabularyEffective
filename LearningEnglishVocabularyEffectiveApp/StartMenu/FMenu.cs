@@ -52,7 +52,7 @@ namespace StartMenu
 
         private void btnYourWords_Click(object sender, EventArgs e)
         {
-			FYourWords f = new FYourWords();
+			Dictionary f = new Dictionary();
 			this.Hide();
 			f.ShowDialog();
 			this.Show();
