@@ -21,6 +21,7 @@ namespace StartMenu
         sqlConnection sql = new sqlConnection();
         List<string> my_list = new List<string>();
         bool isChange = false;
+        int index = 1;
         public Dictionary()
 		{
 			InitializeComponent();
@@ -40,7 +41,6 @@ namespace StartMenu
             box.AppendText(text);
             box.SelectionColor = box.ForeColor;
         }
-
         private void ScrlWord_Scroll(object sender, ScrollEventArgs e)
         {
 
@@ -147,11 +147,39 @@ namespace StartMenu
             this.pnMakeFlashCard.Dock = DockStyle.Fill;
             this.btSpeaker.Visible = false;
             this.lbPronuciation.Visible = false;
-
+            lbWord.Text = this.tbWord.Text;
+            index = 1;
+            string m = Meanings[index];
+            m = m.Substring(0, m.IndexOf(";"));
+            btFlashCard.Text = m;
+            this.btMakeFlashCard.Enabled = false;
         }
         private void tbWord_TextChanged(object sender, EventArgs e)
         {
             this.btMakeFlashCard.Enabled = false;
+        }
+        private void btFlashCard_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btChoose_Click(object sender, EventArgs e)
+        {
+            sql.CustomFlashCard(this.lbWord.Text, this.btFlashCard.Text);
+            this.pnMakeFlashCard.Visible=false;
+            this.tbWord.Text = "";
+            this.btMakeFlashCard.Enabled = false;
+            this.rtbMean.Text = "";
+        }
+        private void btNext_Click(object sender, EventArgs e)
+        {
+            index += 1;
+            if (index == Meanings.Count)
+            {
+                index = 1;
+            }
+            string m = Meanings[index];
+            m = m.Substring(0, m.IndexOf(";"));
+            btFlashCard.Text = m;
         }
     }
 }

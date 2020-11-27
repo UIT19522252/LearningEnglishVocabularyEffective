@@ -69,12 +69,99 @@ namespace StartMenu
 		{
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
-			String sqlQuery = "insert into FlashCard (word, mean, userID) values ('" + word + "', N'" + mean + "', 0)";
+			String sqlQuery = "insert into FlashCard (word, mean, userID) values ('" + word + "', N'" + mean + "'," + Data.iduser + ")";
 			//MessageBox.Show(sqlQuery);
 			SqlCommand command = new SqlCommand(sqlQuery, connection);
 			SqlDataReader reader = command.ExecuteReader();
 			reader.Close();
 			connection.Close();
+		}
+		public void Learned(string word_id)
+		{
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			String sqlQuery = "insert into Learned (id_word, id_user) values (" + word_id + "," + Data.iduser + ")";
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+			SqlDataReader reader = command.ExecuteReader();
+			reader.Close();
+			connection.Close();
+		}
+		public void ToLearn(string word_id)
+		{
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			String sqlQuery = "insert into ToLearn (id_word, id_user) values (" + word_id + "," + Data.iduser + ")";
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+			SqlDataReader reader = command.ExecuteReader();
+			reader.Close();
+			connection.Close();
+		}
+		public List<string> getInfo(string user_id)
+		{
+			List<string> ls = new List<string>();
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			String sqlQuery = "select id, username, email from USERINFO where id=" + user_id;
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+			SqlDataReader reader = command.ExecuteReader();
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					ls.Add(reader[0].ToString());
+					ls.Add(reader[1].ToString());
+					ls.Add(reader[2].ToString());
+
+				}
+			}
+			reader.Close();
+			sqlQuery = "select count(*) as dem from Learned where id_user=" + Data.iduser;
+			command = new SqlCommand(sqlQuery, connection);
+			reader = command.ExecuteReader();
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					ls.Add(reader[0].ToString());
+				}
+			}
+			reader.Close();
+			sqlQuery = "select count(*) as dem from ToLearn where id_user=" + Data.iduser;
+			command = new SqlCommand(sqlQuery, connection);
+			reader = command.ExecuteReader();
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					ls.Add(reader[0].ToString());
+				}
+			}
+			reader.Close();
+			connection.Close();
+			return ls;
+		}
+		public List<Word> getOwnFlashCard()
+		{
+			List<Word> res = new List<Word>();
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			String sqlQuery = "select f.id, f.word, f.mean from FlashCard f where f.userID =" + Data.iduser + "order by f.id";
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+			SqlDataReader reader = command.ExecuteReader();
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				{
+					Word w = new Word(reader[0].ToString(), reader[1].ToString(), reader[2].ToString());
+					res.Add(w);
+				}
+			}
+			reader.Close();
+			connection.Close();
+			return res;
 		}
 	}
 }

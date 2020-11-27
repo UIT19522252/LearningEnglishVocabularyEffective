@@ -57,12 +57,6 @@
     <Compile Include="FError.Designer.cs">
       <DependentUpon>FError.cs</DependentUpon>
     </Compile>
-    <Compile Include="FAllFlashCards.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FAllFlashCards.Designer.cs">
-      <DependentUpon>FAllFlashCards.cs</DependentUpon>
-    </Compile>
     <Compile Include="FLearnNewWord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,9 +138,6 @@
     <Compile Include="WebActivity.cs" />
     <EmbeddedResource Include="FError.resx">
       <DependentUpon>FError.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FAllFlashCards.resx">
-      <DependentUpon>FAllFlashCards.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FLearnNewWord.resx">
       <DependentUpon>FLearnNewWord.cs</DependentUpon>

@@ -14,7 +14,6 @@ namespace StartMenu
         public StartMenu formMenu ;
         public FPractice formPractice ;
         public FLearnNewWord formLNW;
-        public FRamdom10fc formRandomFL;
         public FIntroduction formIntroduce;
         public User(string usrname, string pass_word)
         {
