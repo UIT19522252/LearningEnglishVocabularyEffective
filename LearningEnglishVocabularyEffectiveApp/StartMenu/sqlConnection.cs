@@ -24,6 +24,34 @@ namespace StartMenu
 	class sqlConnection
 	{
 		String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+		public List<Word> getWord()
+		{
+			List<Word> res = new List<Word>();
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+
+			String sqlQuery = "select v.id, v.WORD, v.MEAN  from VOCABULARY v where v.id not in (select id_word from Learned l where l.id_user = " + Data.iduser + ") and v.id not in (select id_word from ToLearn t where t.id_user = " + Data.iduser + ") order by v.id";
+
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+
+			SqlDataReader reader = command.ExecuteReader();
+
+			int target = 11;
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				{
+					Word w = new Word(reader[0].ToString(), reader[1].ToString(), reader[2].ToString());
+					res.Add(w);
+					target--;
+					if (target == 0)
+						return res;
+				}
+			}
+			reader.Close();
+			connection.Close();
+			return res;
+		}
 		public string Find(string word)
 		{
 			string res = "Không tìm thấy từ được nhập";

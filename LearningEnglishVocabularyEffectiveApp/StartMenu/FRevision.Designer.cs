@@ -42,8 +42,16 @@
 			this.btFlashCard = new Guna.UI2.WinForms.Guna2Button();
 			this.btBack = new Guna.UI2.WinForms.Guna2Button();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.pnCheck = new System.Windows.Forms.Panel();
+			this.btFlip2 = new Guna.UI2.WinForms.Guna2Button();
+			this.btNope = new Guna.UI2.WinForms.Guna2Button();
+			this.btKnow = new Guna.UI2.WinForms.Guna2Button();
+			this.btFlashCard2 = new Guna.UI2.WinForms.Guna2Button();
+			this.btBack2 = new Guna.UI2.WinForms.Guna2Button();
+			this.timer2 = new System.Windows.Forms.Timer(this.components);
 			btNext = new Guna.UI2.WinForms.Guna2Button();
 			this.pnYourFlashCard.SuspendLayout();
+			this.pnCheck.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// btNext
@@ -223,11 +231,11 @@
 			this.pnYourFlashCard.Controls.Add(this.btFlip);
 			this.pnYourFlashCard.Controls.Add(this.btFlashCard);
 			this.pnYourFlashCard.Controls.Add(this.btBack);
-			this.pnYourFlashCard.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pnYourFlashCard.Location = new System.Drawing.Point(0, 0);
+			this.pnYourFlashCard.Location = new System.Drawing.Point(171, 0);
 			this.pnYourFlashCard.Name = "pnYourFlashCard";
-			this.pnYourFlashCard.Size = new System.Drawing.Size(1182, 628);
+			this.pnYourFlashCard.Size = new System.Drawing.Size(319, 169);
 			this.pnYourFlashCard.TabIndex = 5;
+			this.pnYourFlashCard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnYourFlashCard_Paint);
 			// 
 			// btFlip
 			// 
@@ -295,12 +303,128 @@
 			this.timer1.Interval = 1;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
+			// pnCheck
+			// 
+			this.pnCheck.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnCheck.BackgroundImage")));
+			this.pnCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pnCheck.Controls.Add(this.btFlip2);
+			this.pnCheck.Controls.Add(this.btNope);
+			this.pnCheck.Controls.Add(this.btKnow);
+			this.pnCheck.Controls.Add(this.btFlashCard2);
+			this.pnCheck.Controls.Add(this.btBack2);
+			this.pnCheck.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pnCheck.Location = new System.Drawing.Point(0, 0);
+			this.pnCheck.Name = "pnCheck";
+			this.pnCheck.Size = new System.Drawing.Size(1182, 628);
+			this.pnCheck.TabIndex = 6;
+			this.pnCheck.Visible = false;
+			// 
+			// btFlip2
+			// 
+			this.btFlip2.BackColor = System.Drawing.Color.Transparent;
+			this.btFlip2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btFlip2.BackgroundImage")));
+			this.btFlip2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btFlip2.CheckedState.Parent = this.btFlip2;
+			this.btFlip2.CustomImages.Parent = this.btFlip2;
+			this.btFlip2.FillColor = System.Drawing.Color.Transparent;
+			this.btFlip2.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btFlip2.ForeColor = System.Drawing.Color.White;
+			this.btFlip2.HoverState.Parent = this.btFlip2;
+			this.btFlip2.Location = new System.Drawing.Point(512, 557);
+			this.btFlip2.Name = "btFlip2";
+			this.btFlip2.ShadowDecoration.Parent = this.btFlip2;
+			this.btFlip2.Size = new System.Drawing.Size(171, 42);
+			this.btFlip2.TabIndex = 5;
+			this.btFlip2.Click += new System.EventHandler(this.btFlip2_Click);
+			// 
+			// btNope
+			// 
+			this.btNope.BackColor = System.Drawing.Color.Transparent;
+			this.btNope.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btNope.BackgroundImage")));
+			this.btNope.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btNope.CheckedState.Parent = this.btNope;
+			this.btNope.CustomImages.Parent = this.btNope;
+			this.btNope.FillColor = System.Drawing.Color.Transparent;
+			this.btNope.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btNope.ForeColor = System.Drawing.Color.White;
+			this.btNope.HoverState.Parent = this.btNope;
+			this.btNope.Location = new System.Drawing.Point(151, 349);
+			this.btNope.Name = "btNope";
+			this.btNope.ShadowDecoration.Parent = this.btNope;
+			this.btNope.Size = new System.Drawing.Size(66, 67);
+			this.btNope.TabIndex = 4;
+			this.btNope.Click += new System.EventHandler(this.btNope_Click);
+			// 
+			// btKnow
+			// 
+			this.btKnow.BackColor = System.Drawing.Color.Transparent;
+			this.btKnow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btKnow.BackgroundImage")));
+			this.btKnow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btKnow.CheckedState.Parent = this.btKnow;
+			this.btKnow.CustomImages.Parent = this.btKnow;
+			this.btKnow.FillColor = System.Drawing.Color.Transparent;
+			this.btKnow.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btKnow.ForeColor = System.Drawing.Color.Transparent;
+			this.btKnow.HoverState.Parent = this.btKnow;
+			this.btKnow.Location = new System.Drawing.Point(956, 338);
+			this.btKnow.Name = "btKnow";
+			this.btKnow.ShadowDecoration.Parent = this.btKnow;
+			this.btKnow.Size = new System.Drawing.Size(82, 78);
+			this.btKnow.TabIndex = 4;
+			this.btKnow.Click += new System.EventHandler(this.btKnow_Click);
+			// 
+			// btFlashCard2
+			// 
+			this.btFlashCard2.BackColor = System.Drawing.Color.Transparent;
+			this.btFlashCard2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btFlashCard2.BackgroundImage")));
+			this.btFlashCard2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btFlashCard2.CheckedState.Parent = this.btFlashCard2;
+			this.btFlashCard2.CustomImages.Parent = this.btFlashCard2;
+			this.btFlashCard2.FillColor = System.Drawing.Color.Transparent;
+			this.btFlashCard2.Font = new System.Drawing.Font("SVN-Block", 36F);
+			this.btFlashCard2.ForeColor = System.Drawing.Color.Black;
+			this.btFlashCard2.HoverState.Parent = this.btFlashCard2;
+			this.btFlashCard2.Location = new System.Drawing.Point(276, 235);
+			this.btFlashCard2.Name = "btFlashCard2";
+			this.btFlashCard2.ShadowDecoration.Parent = this.btFlashCard2;
+			this.btFlashCard2.Size = new System.Drawing.Size(620, 300);
+			this.btFlashCard2.TabIndex = 3;
+			this.btFlashCard2.Text = "guna2Button1";
+			// 
+			// btBack2
+			// 
+			this.btBack2.BackColor = System.Drawing.Color.Transparent;
+			this.btBack2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btBack2.BorderRadius = 50;
+			this.btBack2.CheckedState.Parent = this.btBack2;
+			this.btBack2.CustomImages.Parent = this.btBack2;
+			this.btBack2.FillColor = System.Drawing.Color.Transparent;
+			this.btBack2.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btBack2.ForeColor = System.Drawing.Color.Transparent;
+			this.btBack2.HoverState.Parent = this.btBack2;
+			this.btBack2.Image = ((System.Drawing.Image)(resources.GetObject("btBack2.Image")));
+			this.btBack2.ImageOffset = new System.Drawing.Point(20, 0);
+			this.btBack2.ImageSize = new System.Drawing.Size(100, 100);
+			this.btBack2.Location = new System.Drawing.Point(4, 11);
+			this.btBack2.Margin = new System.Windows.Forms.Padding(4);
+			this.btBack2.Name = "btBack2";
+			this.btBack2.ShadowDecoration.Parent = this.btBack2;
+			this.btBack2.Size = new System.Drawing.Size(103, 99);
+			this.btBack2.TabIndex = 2;
+			this.btBack2.Text = "guna2Button3";
+			this.btBack2.Click += new System.EventHandler(this.btBack2_Click);
+			// 
+			// timer2
+			// 
+			this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+			// 
 			// FRevision
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackgroundImage = global::StartMenu.Properties.Resources.Revision_Background__2_;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(1182, 628);
+			this.Controls.Add(this.pnCheck);
 			this.Controls.Add(this.pnYourFlashCard);
 			this.Controls.Add(this.btCheck);
 			this.Controls.Add(this.btYourFlashCard);
@@ -313,6 +437,7 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FRevision";
 			this.pnYourFlashCard.ResumeLayout(false);
+			this.pnCheck.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
@@ -329,5 +454,12 @@
 		private Guna.UI2.WinForms.Guna2Button btFlashCard;
 		private Guna.UI2.WinForms.Guna2Button btBack;
 		private System.Windows.Forms.Timer timer1;
+		private System.Windows.Forms.Panel pnCheck;
+		private Guna.UI2.WinForms.Guna2Button btBack2;
+		private Guna.UI2.WinForms.Guna2Button btFlip2;
+		private Guna.UI2.WinForms.Guna2Button btNope;
+		private Guna.UI2.WinForms.Guna2Button btKnow;
+		private Guna.UI2.WinForms.Guna2Button btFlashCard2;
+		private System.Windows.Forms.Timer timer2;
 	}
 }

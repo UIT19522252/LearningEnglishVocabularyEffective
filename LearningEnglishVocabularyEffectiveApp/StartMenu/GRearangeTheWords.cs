@@ -19,7 +19,7 @@ namespace StartMenu
         int dm = 0;
         int demso = 0;
 
-        String connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=Data;User Id=sa;Password=1;";
+        String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
         public string iduser = "1";
         public string[] EL = new string[10];
         public string[] VN = new string[10];
@@ -29,7 +29,7 @@ namespace StartMenu
         {
             SqlConnection connection = new SqlConnection(connString);
             connection.Open();
-            String sqlQuery = "select * from YOURWORDS y join VOCABULARY v on y.idword = v.id";
+            String sqlQuery = "select * from ToLearn y join VOCABULARY v on y.id_word = v.id";
             SqlCommand command = new SqlCommand(sqlQuery, connection);
 
             SqlDataReader reader = command.ExecuteReader();
