@@ -113,7 +113,7 @@ namespace StartMenu
             while (reader.HasRows)
             {
                 if (reader.Read() == false) break;
-                Data.listAnswer.Add(new Question(reader[0].ToString(), reader[1].ToString()));
+                Data.listAnswer.Add(new Question(reader[1].ToString(), reader[2].ToString()));
             }
             connection.Close();
             Data.listAnswer.Add(Data.currentQuestion);
