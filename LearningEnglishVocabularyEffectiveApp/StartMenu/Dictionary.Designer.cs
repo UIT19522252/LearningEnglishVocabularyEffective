@@ -48,14 +48,14 @@
 			this.btOnlineDictionary = new Guna.UI2.WinForms.Guna2Button();
 			this.btMakeFlashCard = new Guna.UI2.WinForms.Guna2Button();
 			this.pnMakeFlashCard = new System.Windows.Forms.Panel();
-			this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+			this.btChoose = new Guna.UI2.WinForms.Guna2Button();
+			this.btNext = new Guna.UI2.WinForms.Guna2Button();
+			this.btFlashCard = new Guna.UI2.WinForms.Guna2Button();
 			this.lbWord = new System.Windows.Forms.Label();
+			this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-			this.btFlashCard = new Guna.UI2.WinForms.Guna2Button();
-			this.btNext = new Guna.UI2.WinForms.Guna2Button();
-			this.btChoose = new Guna.UI2.WinForms.Guna2Button();
 			this.pnOfflineDic.SuspendLayout();
 			this.pnMakeFlashCard.SuspendLayout();
 			this.panel1.SuspendLayout();
@@ -80,7 +80,7 @@
 			this.tbWord.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.tbWord.HoverState.Parent = this.tbWord;
 			this.tbWord.Location = new System.Drawing.Point(249, 247);
-			this.tbWord.Margin = new System.Windows.Forms.Padding(4);
+			this.tbWord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.tbWord.Name = "tbWord";
 			this.tbWord.PasswordChar = '\0';
 			this.tbWord.PlaceholderText = "";
@@ -232,9 +232,10 @@
 			this.pnOfflineDic.Controls.Add(this.tbWord1);
 			this.pnOfflineDic.Controls.Add(this.btFind1);
 			this.pnOfflineDic.Controls.Add(this.btOnlineDictionary);
+			this.pnOfflineDic.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.pnOfflineDic.Location = new System.Drawing.Point(0, 0);
 			this.pnOfflineDic.Name = "pnOfflineDic";
-			this.pnOfflineDic.Size = new System.Drawing.Size(248, 161);
+			this.pnOfflineDic.Size = new System.Drawing.Size(1182, 628);
 			this.pnOfflineDic.TabIndex = 15;
 			this.pnOfflineDic.Visible = false;
 			// 
@@ -262,6 +263,7 @@
 			// 
 			// rtbMean1
 			// 
+			this.rtbMean1.Font = new System.Drawing.Font("SVN-Helves", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.rtbMean1.Location = new System.Drawing.Point(45, 296);
 			this.rtbMean1.Name = "rtbMean1";
 			this.rtbMean1.Size = new System.Drawing.Size(1068, 316);
@@ -284,7 +286,7 @@
 			this.tbWord1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
 			this.tbWord1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.tbWord1.FocusedState.Parent = this.tbWord1;
-			this.tbWord1.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.tbWord1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.tbWord1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.tbWord1.HoverState.Parent = this.tbWord1;
 			this.tbWord1.Location = new System.Drawing.Point(45, 224);
@@ -296,6 +298,7 @@
 			this.tbWord1.ShadowDecoration.Parent = this.tbWord1;
 			this.tbWord1.Size = new System.Drawing.Size(974, 47);
 			this.tbWord1.TabIndex = 10;
+			this.tbWord1.TextChanged += new System.EventHandler(this.tbWord1_TextChanged);
 			// 
 			// btFind1
 			// 
@@ -379,6 +382,76 @@
 			this.pnMakeFlashCard.TabIndex = 16;
 			this.pnMakeFlashCard.Visible = false;
 			// 
+			// btChoose
+			// 
+			this.btChoose.BackColor = System.Drawing.Color.Transparent;
+			this.btChoose.BorderRadius = 12;
+			this.btChoose.CheckedState.Parent = this.btChoose;
+			this.btChoose.CustomImages.Parent = this.btChoose;
+			this.btChoose.FillColor = System.Drawing.Color.Magenta;
+			this.btChoose.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btChoose.ForeColor = System.Drawing.Color.White;
+			this.btChoose.HoverState.Parent = this.btChoose;
+			this.btChoose.Location = new System.Drawing.Point(576, 576);
+			this.btChoose.Name = "btChoose";
+			this.btChoose.ShadowDecoration.Parent = this.btChoose;
+			this.btChoose.Size = new System.Drawing.Size(93, 35);
+			this.btChoose.TabIndex = 15;
+			this.btChoose.Text = "Choose";
+			this.btChoose.Click += new System.EventHandler(this.btChoose_Click);
+			// 
+			// btNext
+			// 
+			this.btNext.AutoRoundedCorners = true;
+			this.btNext.BackColor = System.Drawing.Color.Transparent;
+			this.btNext.BorderRadius = 38;
+			this.btNext.CheckedState.Parent = this.btNext;
+			this.btNext.CustomImages.Parent = this.btNext;
+			this.btNext.FillColor = System.Drawing.Color.Magenta;
+			this.btNext.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.btNext.ForeColor = System.Drawing.Color.White;
+			this.btNext.HoverState.Parent = this.btNext;
+			this.btNext.Location = new System.Drawing.Point(964, 372);
+			this.btNext.Name = "btNext";
+			this.btNext.ShadowDecoration.Parent = this.btNext;
+			this.btNext.Size = new System.Drawing.Size(93, 78);
+			this.btNext.TabIndex = 15;
+			this.btNext.Text = "Next";
+			this.btNext.Click += new System.EventHandler(this.btNext_Click);
+			// 
+			// btFlashCard
+			// 
+			this.btFlashCard.AllowDrop = true;
+			this.btFlashCard.AutoRoundedCorners = true;
+			this.btFlashCard.BackColor = System.Drawing.Color.Transparent;
+			this.btFlashCard.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
+			this.btFlashCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.btFlashCard.BorderRadius = 126;
+			this.btFlashCard.CheckedState.Parent = this.btFlashCard;
+			this.btFlashCard.CustomImages.Parent = this.btFlashCard;
+			this.btFlashCard.FillColor = System.Drawing.Color.Transparent;
+			this.btFlashCard.Font = new System.Drawing.Font("SVN-Internation", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btFlashCard.ForeColor = System.Drawing.Color.Maroon;
+			this.btFlashCard.HoverState.Parent = this.btFlashCard;
+			this.btFlashCard.Location = new System.Drawing.Point(352, 301);
+			this.btFlashCard.Name = "btFlashCard";
+			this.btFlashCard.ShadowDecoration.Parent = this.btFlashCard;
+			this.btFlashCard.Size = new System.Drawing.Size(560, 255);
+			this.btFlashCard.TabIndex = 14;
+			this.btFlashCard.Text = "Meanings";
+			this.btFlashCard.Click += new System.EventHandler(this.btFlashCard_Click);
+			// 
+			// lbWord
+			// 
+			this.lbWord.AutoSize = true;
+			this.lbWord.BackColor = System.Drawing.Color.Transparent;
+			this.lbWord.Font = new System.Drawing.Font("SVN-Cookies", 50F);
+			this.lbWord.Location = new System.Drawing.Point(520, 199);
+			this.lbWord.Name = "lbWord";
+			this.lbWord.Size = new System.Drawing.Size(197, 91);
+			this.lbWord.TabIndex = 13;
+			this.lbWord.Text = "WORD";
+			// 
 			// guna2Button1
 			// 
 			this.guna2Button1.AutoRoundedCorners = true;
@@ -400,17 +473,6 @@
 			this.guna2Button1.TabIndex = 12;
 			this.guna2Button1.Text = "guna2Button2";
 			this.guna2Button1.Click += new System.EventHandler(this.btBack_Click);
-			// 
-			// lbWord
-			// 
-			this.lbWord.AutoSize = true;
-			this.lbWord.BackColor = System.Drawing.Color.Transparent;
-			this.lbWord.Font = new System.Drawing.Font("SVN-Cookies", 50F);
-			this.lbWord.Location = new System.Drawing.Point(520, 199);
-			this.lbWord.Name = "lbWord";
-			this.lbWord.Size = new System.Drawing.Size(197, 91);
-			this.lbWord.TabIndex = 13;
-			this.lbWord.Text = "WORD";
 			// 
 			// panel1
 			// 
@@ -456,65 +518,6 @@
 			this.guna2Button3.TabIndex = 12;
 			this.guna2Button3.Text = "guna2Button2";
 			this.guna2Button3.Click += new System.EventHandler(this.btBack_Click);
-			// 
-			// btFlashCard
-			// 
-			this.btFlashCard.AllowDrop = true;
-			this.btFlashCard.AutoRoundedCorners = true;
-			this.btFlashCard.BackColor = System.Drawing.Color.Transparent;
-			this.btFlashCard.BackgroundImage = global::StartMenu.Properties.Resources.butFlash;
-			this.btFlashCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.btFlashCard.BorderRadius = 126;
-			this.btFlashCard.CheckedState.Parent = this.btFlashCard;
-			this.btFlashCard.CustomImages.Parent = this.btFlashCard;
-			this.btFlashCard.FillColor = System.Drawing.Color.Transparent;
-			this.btFlashCard.Font = new System.Drawing.Font("SVN-Internation", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btFlashCard.ForeColor = System.Drawing.Color.Maroon;
-			this.btFlashCard.HoverState.Parent = this.btFlashCard;
-			this.btFlashCard.Location = new System.Drawing.Point(352, 301);
-			this.btFlashCard.Name = "btFlashCard";
-			this.btFlashCard.ShadowDecoration.Parent = this.btFlashCard;
-			this.btFlashCard.Size = new System.Drawing.Size(560, 255);
-			this.btFlashCard.TabIndex = 14;
-			this.btFlashCard.Text = "Meanings";
-			this.btFlashCard.Click += new System.EventHandler(this.btFlashCard_Click);
-			// 
-			// btNext
-			// 
-			this.btNext.AutoRoundedCorners = true;
-			this.btNext.BackColor = System.Drawing.Color.Transparent;
-			this.btNext.BorderRadius = 19;
-			this.btNext.CheckedState.Parent = this.btNext;
-			this.btNext.CustomImages.Parent = this.btNext;
-			this.btNext.FillColor = System.Drawing.Color.Magenta;
-			this.btNext.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btNext.ForeColor = System.Drawing.Color.White;
-			this.btNext.HoverState.Parent = this.btNext;
-			this.btNext.Location = new System.Drawing.Point(964, 372);
-			this.btNext.Name = "btNext";
-			this.btNext.ShadowDecoration.Parent = this.btNext;
-			this.btNext.Size = new System.Drawing.Size(93, 78);
-			this.btNext.TabIndex = 15;
-			this.btNext.Text = "Next";
-			this.btNext.Click += new System.EventHandler(this.btNext_Click);
-			// 
-			// btChoose
-			// 
-			this.btChoose.BackColor = System.Drawing.Color.Transparent;
-			this.btChoose.BorderRadius = 12;
-			this.btChoose.CheckedState.Parent = this.btChoose;
-			this.btChoose.CustomImages.Parent = this.btChoose;
-			this.btChoose.FillColor = System.Drawing.Color.Magenta;
-			this.btChoose.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.btChoose.ForeColor = System.Drawing.Color.White;
-			this.btChoose.HoverState.Parent = this.btChoose;
-			this.btChoose.Location = new System.Drawing.Point(576, 576);
-			this.btChoose.Name = "btChoose";
-			this.btChoose.ShadowDecoration.Parent = this.btChoose;
-			this.btChoose.Size = new System.Drawing.Size(93, 35);
-			this.btChoose.TabIndex = 15;
-			this.btChoose.Text = "Choose";
-			this.btChoose.Click += new System.EventHandler(this.btChoose_Click);
 			// 
 			// Dictionary
 			// 

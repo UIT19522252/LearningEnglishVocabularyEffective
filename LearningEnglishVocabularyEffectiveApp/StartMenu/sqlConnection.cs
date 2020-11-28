@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Security.Policy;
 
 namespace StartMenu
 {
@@ -144,18 +145,7 @@ namespace StartMenu
 				}
 			}
 			reader.Close();
-			sqlQuery = "select count(*) as dem from Learned where id_user=" + Data.iduser;
-			command = new SqlCommand(sqlQuery, connection);
-			reader = command.ExecuteReader();
-			while (reader.HasRows)
-			{
-				if (reader.Read() == false) break;
-				else
-				{
-					ls.Add(reader[0].ToString());
-				}
-			}
-			reader.Close();
+			
 			sqlQuery = "select count(*) as dem from ToLearn where id_user=" + Data.iduser;
 			command = new SqlCommand(sqlQuery, connection);
 			reader = command.ExecuteReader();
@@ -170,6 +160,46 @@ namespace StartMenu
 			reader.Close();
 			connection.Close();
 			return ls;
+		}
+		public int countToLearn()
+		{
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			string sqlQuery = "select count(*) as dem from ToLearn where id_user=" + Data.iduser;
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+			SqlDataReader reader = command.ExecuteReader();
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					int k = int.Parse(reader[0].ToString());
+					reader.Close();
+					return k;
+				}
+			}
+			reader.Close();
+			return -1;
+		}
+		public int countLearned()
+		{
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			string sqlQuery = "select count(*) as dem from Learned where id_user=" + Data.iduser;
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+			SqlDataReader reader = command.ExecuteReader();
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					int k = int.Parse(reader[0].ToString());
+					reader.Close();
+					return k;
+				}
+			}
+			reader.Close();
+			return -1;
 		}
 		public List<Word> getOwnFlashCard()
 		{
@@ -190,6 +220,32 @@ namespace StartMenu
 			reader.Close();
 			connection.Close();
 			return res;
+		}
+		public string FindEmail(string a)
+		{
+			string Email = "Null";
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+
+			String sqlQuery = "select email from USERINFO where username='" + a + "'";
+
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+
+			SqlDataReader reader = command.ExecuteReader();
+
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					Email = reader[0].ToString();
+					reader.Close();
+					connection.Close();
+					return Email;
+				}
+			}
+			connection.Close();
+			return Email;
 		}
 	}
 }

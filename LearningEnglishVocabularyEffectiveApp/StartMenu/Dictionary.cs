@@ -181,5 +181,10 @@ namespace StartMenu
             m = m.Substring(0, m.IndexOf(";"));
             btFlashCard.Text = m;
         }
+
+        private void tbWord1_TextChanged(object sender, EventArgs e)
+        {
+            this.rtbMean1.Text = "";
+        }
     }
 }

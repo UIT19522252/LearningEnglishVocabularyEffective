@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.HtmlRenderer.Adapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -140,7 +141,6 @@ namespace StartMenu
 			if(st.Count>0)
 				btFlashCard2.Text = st[k].eng;
 		}
-
 		private void timer2_Tick(object sender, EventArgs e)
 		{
 			if (signal == true)
@@ -192,7 +192,6 @@ namespace StartMenu
 				}
 			}
 		}
-
 		private void btKnow_Click(object sender, EventArgs e)
 		{
 			sql.Learned(st[k].id);
@@ -207,12 +206,24 @@ namespace StartMenu
 			if(st.Count>0)
 				btFlashCard2.Text = st[k].eng;
 		}
-
 		private void btBack2_Click(object sender, EventArgs e)
 		{
 			this.pnCheck.Visible = false;
 		}
-
+		private void btStatistic_Click(object sender, EventArgs e)
+		{
+			this.pnStatistic.Visible = true;
+			this.pnStatistic.Dock = DockStyle.Fill;
+			this.lbUsername.Text ="Username: "+ Data.username;
+			this.lbId.Text = "UserID: " + Data.iduser;
+			this.lbEmail.Text = "Email: " + sql.FindEmail(Data.username);
+			this.lbToLearn.Text = "To Learn: " + sql.countToLearn();
+			this.lbLearned.Text = "Learned: " + sql.countLearned();
+		}
+		private void btBack3_Click(object sender, EventArgs e)
+		{
+			this.pnStatistic.Visible = false;
+		}
 		private void btFlip2_Click(object sender, EventArgs e)
 		{
 			isflipping = true;
