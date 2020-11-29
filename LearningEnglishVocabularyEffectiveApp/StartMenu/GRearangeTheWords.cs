@@ -19,7 +19,10 @@ namespace StartMenu
         int dm = 0;
         int demso = 0;
 
-        String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+        // The: @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+        // Phi: @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+        string connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+        
         public string iduser = "1";
         public string[] EL = new string[10];
         public string[] VN = new string[10];
@@ -29,7 +32,7 @@ namespace StartMenu
         {
             SqlConnection connection = new SqlConnection(connString);
             connection.Open();
-            String sqlQuery = "select * from ToLearn y join VOCABULARY v on y.id_word = v.id where y.id_user="+Data.iduser;
+            String sqlQuery = "select * from Learned y join VOCABULARY v on y.id_word = v.id where y.id_user="+Data.iduser;
             SqlCommand command = new SqlCommand(sqlQuery, connection);
 
             SqlDataReader reader = command.ExecuteReader();
@@ -41,7 +44,11 @@ namespace StartMenu
                     while (EL[i] != null)
                     {
                         i = rd.Next(0, 10);
-                        if (demso == 10) return;
+                        if (demso == 10)
+                        {
+                            connection.Close();
+                            return;
+                        }
                     }
                    EL[i] = reader[3].ToString();
                    VN[i] = reader[4].ToString();

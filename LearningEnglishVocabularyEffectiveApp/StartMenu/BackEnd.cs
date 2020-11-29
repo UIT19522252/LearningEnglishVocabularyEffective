@@ -16,7 +16,10 @@ namespace StartMenu
 
 		public static void LoadData()
 		{
-			string connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+			Data.newWord.Clear();
+			// The: @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+			// Phi: @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+			string connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
 
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();

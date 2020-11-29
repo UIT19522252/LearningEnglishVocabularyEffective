@@ -51,6 +51,12 @@
   <ItemGroup>
     <Compile Include="BackEnd.cs" />
     <Compile Include="Data.cs" />
+    <Compile Include="FCarRacingGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCarRacingGame.Designer.cs">
+      <DependentUpon>FCarRacingGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="FError.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     <Compile Include="sqlConnection.cs" />
     <Compile Include="User.cs" />
     <Compile Include="WebActivity.cs" />
+    <EmbeddedResource Include="FCarRacingGame.resx">
+      <DependentUpon>FCarRacingGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FError.resx">
       <DependentUpon>FError.cs</DependentUpon>
     </EmbeddedResource>
@@ -285,6 +294,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Race-PNG-Free-Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMGBIN_watercolor-painting-tree-drawing-art-png_FcRiM2x4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63d38d8cbba4335a6d28b5e19f67be8d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-button-2369025-1978303.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\klipartz.com.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
