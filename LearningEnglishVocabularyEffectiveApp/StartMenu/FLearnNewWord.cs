@@ -99,7 +99,7 @@ namespace StartMenu
         public void loadAnswer()
         {
             Data.listAnswer.Clear();
-            string connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+            string connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
 
             SqlConnection connection = new SqlConnection(connString);
             connection.Open();
@@ -113,7 +113,7 @@ namespace StartMenu
             while (reader.HasRows)
             {
                 if (reader.Read() == false) break;
-                Data.listAnswer.Add(new Question(reader[0].ToString(), reader[1].ToString()));
+                Data.listAnswer.Add(new Question(reader[1].ToString(), reader[2].ToString()));
             }
             connection.Close();
             Data.listAnswer.Add(Data.currentQuestion);

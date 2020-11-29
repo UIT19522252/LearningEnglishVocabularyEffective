@@ -57,12 +57,6 @@
     <Compile Include="FError.Designer.cs">
       <DependentUpon>FError.cs</DependentUpon>
     </Compile>
-    <Compile Include="FAllFlashCards.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FAllFlashCards.Designer.cs">
-      <DependentUpon>FAllFlashCards.cs</DependentUpon>
-    </Compile>
     <Compile Include="FLearnNewWord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,11 +111,11 @@
     <Compile Include="FSignUp.Designer.cs">
       <DependentUpon>FSignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="FYourWords.cs">
+    <Compile Include="Dictionary.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FYourWords.Designer.cs">
-      <DependentUpon>FYourWords.cs</DependentUpon>
+    <Compile Include="Dictionary.Designer.cs">
+      <DependentUpon>Dictionary.cs</DependentUpon>
     </Compile>
     <Compile Include="GRearangeTheWords.cs">
       <SubType>Form</SubType>
@@ -139,13 +133,11 @@
     <Compile Include="ReLearn.Designer.cs">
       <DependentUpon>ReLearn.cs</DependentUpon>
     </Compile>
+    <Compile Include="sqlConnection.cs" />
     <Compile Include="User.cs" />
     <Compile Include="WebActivity.cs" />
     <EmbeddedResource Include="FError.resx">
       <DependentUpon>FError.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FAllFlashCards.resx">
-      <DependentUpon>FAllFlashCards.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FLearnNewWord.resx">
       <DependentUpon>FLearnNewWord.cs</DependentUpon>
@@ -174,8 +166,8 @@
     <EmbeddedResource Include="FSignUp.resx">
       <DependentUpon>FSignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FYourWords.resx">
-      <DependentUpon>FYourWords.cs</DependentUpon>
+    <EmbeddedResource Include="Dictionary.resx">
+      <DependentUpon>Dictionary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GRearangeTheWords.resx">
       <DependentUpon>GRearangeTheWords.cs</DependentUpon>
