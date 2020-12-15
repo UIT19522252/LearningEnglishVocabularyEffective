@@ -57,6 +57,12 @@
     <Compile Include="FError.Designer.cs">
       <DependentUpon>FError.cs</DependentUpon>
     </Compile>
+    <Compile Include="FInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInterface.Designer.cs">
+      <DependentUpon>FInterface.cs</DependentUpon>
+    </Compile>
     <Compile Include="FLearnNewWord.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     <Compile Include="WebActivity.cs" />
     <EmbeddedResource Include="FError.resx">
       <DependentUpon>FError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInterface.resx">
+      <DependentUpon>FInterface.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FLearnNewWord.resx">
       <DependentUpon>FLearnNewWord.cs</DependentUpon>
@@ -285,6 +294,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check your word view.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LearnNewWords1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginNewForm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Practice view.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Practice1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PreLearnNewWords.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Revision.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YourFlashcard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YourFlashcard1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check your word.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brand-royaltyfree-yes-and-no-check-mark-flat-design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sm_5afb099b30a2a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check your word1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

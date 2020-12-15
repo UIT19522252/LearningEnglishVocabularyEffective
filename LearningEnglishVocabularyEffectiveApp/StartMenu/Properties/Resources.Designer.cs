@@ -93,6 +93,16 @@ namespace StartMenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap brand_royaltyfree_yes_and_no_check_mark_flat_design {
+            get {
+                object obj = ResourceManager.GetObject("brand-royaltyfree-yes-and-no-check-mark-flat-design", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap butFlash {
             get {
                 object obj = ResourceManager.GetObject("butFlash", resourceCulture);
@@ -106,6 +116,36 @@ namespace StartMenu.Properties {
         internal static System.Drawing.Bitmap Capture2 {
             get {
                 object obj = ResourceManager.GetObject("Capture2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Check_your_word {
+            get {
+                object obj = ResourceManager.GetObject("Check your word", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Check_your_word_view {
+            get {
+                object obj = ResourceManager.GetObject("Check your word view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Check_your_word1 {
+            get {
+                object obj = ResourceManager.GetObject("Check your word1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +243,16 @@ namespace StartMenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LearnNewWords2 {
+            get {
+                object obj = ResourceManager.GetObject("LearnNewWords2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap learnnewworduser {
             get {
                 object obj = ResourceManager.GetObject("learnnewworduser", resourceCulture);
@@ -216,6 +266,16 @@ namespace StartMenu.Properties {
         internal static System.Drawing.Bitmap Login2 {
             get {
                 object obj = ResourceManager.GetObject("Login2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoginNewForm {
+            get {
+                object obj = ResourceManager.GetObject("LoginNewForm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,6 +303,16 @@ namespace StartMenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Practice_view {
+            get {
+                object obj = ResourceManager.GetObject("Practice view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Practice1 {
             get {
                 object obj = ResourceManager.GetObject("Practice1", resourceCulture);
@@ -256,6 +326,26 @@ namespace StartMenu.Properties {
         internal static System.Drawing.Bitmap Practice2 {
             get {
                 object obj = ResourceManager.GetObject("Practice2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Practice3 {
+            get {
+                object obj = ResourceManager.GetObject("Practice3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PreLearnNewWords {
+            get {
+                object obj = ResourceManager.GetObject("PreLearnNewWords", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -323,6 +413,16 @@ namespace StartMenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Revision {
+            get {
+                object obj = ResourceManager.GetObject("Revision", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Revision_Background__2_ {
             get {
                 object obj = ResourceManager.GetObject("Revision_Background (2)", resourceCulture);
@@ -336,6 +436,36 @@ namespace StartMenu.Properties {
         internal static System.Drawing.Bitmap SignUp {
             get {
                 object obj = ResourceManager.GetObject("SignUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sm_5afb099b30a2a {
+            get {
+                object obj = ResourceManager.GetObject("sm_5afb099b30a2a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YourFlashcard {
+            get {
+                object obj = ResourceManager.GetObject("YourFlashcard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap YourFlashcard1 {
+            get {
+                object obj = ResourceManager.GetObject("YourFlashcard1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

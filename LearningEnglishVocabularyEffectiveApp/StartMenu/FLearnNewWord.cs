@@ -57,7 +57,7 @@ namespace StartMenu
             f.ShowDialog();
             this.Show();
             TimerVisitable.Start();
-            this.Questions.Text = "";
+            //-this.Questions.Text = "";
             this.lblCorrect.Visible = true;
 
         }
@@ -70,7 +70,7 @@ namespace StartMenu
 
             if (temp != -1)
             {
-                this.Questions.Text = Data.newWord[temp % 5].question.ToString();
+                //-this.Questions.Text = Data.newWord[temp % 5].question.ToString();
                 Data.currentQuestion = Data.newWord[temp % 5];
                 loadAnswer();
             }
@@ -80,8 +80,8 @@ namespace StartMenu
                 this.lblCorrect.Text = "Congratulation !\n You have learn 5 new words!";
                 Data.XONG = true;
                 this.btnDone.Visible = true;
-                this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
-                Questions.Enabled = false;
+                //-this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
+                //-Questions.Enabled = false;
             }
         }
 
@@ -90,7 +90,7 @@ namespace StartMenu
             temp = BackEnd.getQuestion();
             if (temp != -1)
             {
-                this.Questions.Text = Data.newWord[temp % 5].question.ToString();
+                //-this.Questions.Text = Data.newWord[temp % 5].question.ToString();
                 Data.currentQuestion = Data.newWord[temp % 5];
                 loadAnswer();
             }
@@ -123,10 +123,10 @@ namespace StartMenu
             Data.listAnswer[3] = Data.listAnswer[rdIndex];
             Data.listAnswer[rdIndex] = tmp;
 
-            this.AnswerA.Text = "A. " + Data.listAnswer[0].answer;
+           /*-- this.AnswerA.Text = "A. " + Data.listAnswer[0].answer;
             this.AnswerB.Text = "B. " + Data.listAnswer[1].answer;
             this.AnswerC.Text = "C. " + Data.listAnswer[2].answer;
-            this.AnswerD.Text = "D. " + Data.listAnswer[3].answer;
+            this.AnswerD.Text = "D. " + Data.listAnswer[3].answer;*/
 
 
         }
