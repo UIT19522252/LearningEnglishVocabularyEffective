@@ -19,7 +19,7 @@ namespace StartMenu
         int dm = 0;
         int demso = 0;
 
-        String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+        String connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
         public string iduser = "1";
         public string[] EL = new string[10];
         public string[] VN = new string[10];

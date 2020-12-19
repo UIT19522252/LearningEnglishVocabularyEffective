@@ -11,7 +11,7 @@ namespace StartMenu
         public string username;
         private string password;
         public FLogin formLogin ;
-        public StartMenu formMenu ;
+        public FInterface formMenu ;
         public FPractice formPractice ;
         public FLearnNewWord formLNW;
         public FIntroduction formIntroduce;

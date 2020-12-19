@@ -23,7 +23,7 @@ namespace StartMenu
             if (lg.checkUser(tbxUsrname.Text,tbxPassword.Text)==true)
             {
                 this.Hide();
-                temp.formMenu = new StartMenu(temp.username);
+                temp.formMenu = new FInterface();
                 Data.username = tbxUsrname.Text;
                 Data.iduser = lg.FindID(tbxUsrname.Text).ToString();
                 temp.formMenu.ShowDialog();

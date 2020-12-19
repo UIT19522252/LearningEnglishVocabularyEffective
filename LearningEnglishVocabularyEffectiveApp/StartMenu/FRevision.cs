@@ -29,10 +29,7 @@ namespace StartMenu
 			timer2.Interval = 1;
 			this.DoubleBuffered = true;
 		}
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-			this.Close();
-		}
+        
 		private void btFlip_Click(object sender, EventArgs e)
 		{
 			if (isflipping == true) return;
@@ -224,7 +221,14 @@ namespace StartMenu
 		{
 			this.pnStatistic.Visible = false;
 		}
-		private void btFlip2_Click(object sender, EventArgs e)
+
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+			this.pnCheck.Visible = false;
+        }
+
+        private void btFlip2_Click(object sender, EventArgs e)
 		{
 			isflipping = true;
 			timer2.Enabled = true;

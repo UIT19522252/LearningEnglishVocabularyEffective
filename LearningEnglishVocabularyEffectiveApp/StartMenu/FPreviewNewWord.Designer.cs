@@ -39,7 +39,6 @@
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.btlStart = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button11 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2Button1
@@ -241,7 +240,7 @@
             this.btlStart.AutoRoundedCorners = true;
             this.btlStart.BackColor = System.Drawing.Color.Transparent;
             this.btlStart.BorderColor = System.Drawing.Color.White;
-            this.btlStart.BorderRadius = 17;
+            this.btlStart.BorderRadius = 31;
             this.btlStart.CheckedState.Parent = this.btlStart;
             this.btlStart.CustomImages.Parent = this.btlStart;
             this.btlStart.FillColor = System.Drawing.Color.Transparent;
@@ -256,32 +255,12 @@
             this.btlStart.UseTransparentBackground = true;
             this.btlStart.Click += new System.EventHandler(this.btlStart_Click);
             // 
-            // guna2Button11
-            // 
-            this.guna2Button11.AutoRoundedCorners = true;
-            this.guna2Button11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button11.BorderRadius = 38;
-            this.guna2Button11.CheckedState.Parent = this.guna2Button11;
-            this.guna2Button11.CustomImages.Parent = this.guna2Button11;
-            this.guna2Button11.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button11.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button11.ForeColor = System.Drawing.Color.White;
-            this.guna2Button11.HoverState.Parent = this.guna2Button11;
-            this.guna2Button11.Location = new System.Drawing.Point(11, 5);
-            this.guna2Button11.Name = "guna2Button11";
-            this.guna2Button11.ShadowDecoration.Parent = this.guna2Button11;
-            this.guna2Button11.Size = new System.Drawing.Size(82, 79);
-            this.guna2Button11.TabIndex = 12;
-            this.guna2Button11.UseTransparentBackground = true;
-            this.guna2Button11.Click += new System.EventHandler(this.guna2Button11_Click);
-            // 
             // FPreviewNewWord
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::StartMenu.Properties.Resources.PreLearnNewWords;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 628);
-            this.Controls.Add(this.guna2Button11);
             this.Controls.Add(this.btlStart);
             this.Controls.Add(this.guna2Button10);
             this.Controls.Add(this.guna2Button9);
@@ -315,6 +294,5 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button9;
         private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private Guna.UI2.WinForms.Guna2Button btlStart;
-        private Guna.UI2.WinForms.Guna2Button guna2Button11;
     }
 }

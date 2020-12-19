@@ -32,10 +32,6 @@ namespace StartMenu
         
 
         // btnBack
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
 
         int getIndexofQuestion()
@@ -99,7 +95,7 @@ namespace StartMenu
         public void loadAnswer()
         {
             Data.listAnswer.Clear();
-            string connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+            string connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
 
             SqlConnection connection = new SqlConnection(connString);
             connection.Open();
@@ -131,7 +127,13 @@ namespace StartMenu
 
         }
 
-        private void AnswerA_Click(object sender, EventArgs e)
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Answer(object sender, EventArgs e)
         {
             Button a = sender as Button;
             string s = a.Text.Remove(0, 3);
@@ -143,11 +145,6 @@ namespace StartMenu
                 this.lblCorrect.Visible = true;
             }
             else WrongAnswer();
-        }
-
-        private void btnDone_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

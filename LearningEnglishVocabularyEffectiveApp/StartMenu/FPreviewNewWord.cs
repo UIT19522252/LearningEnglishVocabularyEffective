@@ -80,10 +80,5 @@ namespace StartMenu
         {
 
         }
-
-        private void guna2Button11_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

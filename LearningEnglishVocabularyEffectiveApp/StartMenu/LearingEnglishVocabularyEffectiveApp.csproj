@@ -334,5 +334,65 @@
   <ItemGroup>
     <None Include="Resources\Check your word1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LearnNewWords2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LearnNewWords3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dictionary.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dictionary1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dictionary2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPEAEKER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ec61d3114cc5269485d508244f531bdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin_computer-icons-statistics-chart-business-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Revision2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dnhso.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nônnnon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check your word view1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oke1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mkFlashcard.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

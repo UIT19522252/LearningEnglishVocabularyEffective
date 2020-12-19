@@ -24,7 +24,7 @@ namespace StartMenu
 	};
 	class sqlConnection
 	{
-		String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+		String connString = @"Server=LAPTOP-QJ254BVV\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
 		public List<Word> getWord()
 		{
 			List<Word> res = new List<Word>();

@@ -118,18 +118,12 @@ namespace StartMenu
             wa.openAudio("temp.mp3");
             wa.stopAudio();
         }
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
         private void btFind1_Click(object sender, EventArgs e)
         {
             this.rtbMean1.Text = sql.Find(this.tbWord1.Text);
         }
-        private void btBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
         private void btDicoffline_Click(object sender, EventArgs e)
         {
             this.pnOfflineDic.Visible = true;
@@ -185,6 +179,16 @@ namespace StartMenu
         private void tbWord1_TextChanged(object sender, EventArgs e)
         {
             this.rtbMean1.Text = "";
+        }
+
+        private void Dictionary_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hideMKFL_Click(object sender, EventArgs e)
+        {
+            this.pnMakeFlashCard.Visible = false;
         }
     }
 }

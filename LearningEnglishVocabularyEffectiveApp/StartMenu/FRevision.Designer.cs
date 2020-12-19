@@ -34,10 +34,13 @@
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.btLearnNewWord = new Guna.UI2.WinForms.Guna2Button();
-            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.btYourFlashCard = new Guna.UI2.WinForms.Guna2Button();
             this.btCheck = new Guna.UI2.WinForms.Guna2Button();
             this.pnYourFlashCard = new System.Windows.Forms.Panel();
+            this.btFlip = new Guna.UI2.WinForms.Guna2Button();
+            this.btFlashCard = new Guna.UI2.WinForms.Guna2Button();
+            this.btBack = new Guna.UI2.WinForms.Guna2Button();
+            this.btBack2 = new Guna.UI2.WinForms.Guna2Button();
             this.pnStatistic = new System.Windows.Forms.Panel();
             this.lbLearned = new System.Windows.Forms.Label();
             this.lbToLearn = new System.Windows.Forms.Label();
@@ -46,12 +49,9 @@
             this.btBack3 = new Guna.UI2.WinForms.Guna2Button();
             this.lbUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btFlip = new Guna.UI2.WinForms.Guna2Button();
-            this.btFlashCard = new Guna.UI2.WinForms.Guna2Button();
-            this.btBack = new Guna.UI2.WinForms.Guna2Button();
-            this.btBack2 = new Guna.UI2.WinForms.Guna2Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnCheck = new System.Windows.Forms.Panel();
+            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
             this.btFlip2 = new Guna.UI2.WinForms.Guna2Button();
             this.btNope = new Guna.UI2.WinForms.Guna2Button();
             this.btKnow = new Guna.UI2.WinForms.Guna2Button();
@@ -149,211 +149,79 @@
             // 
             // btLearnNewWord
             // 
-            this.btLearnNewWord.AutoRoundedCorners = true;
             this.btLearnNewWord.BackColor = System.Drawing.Color.Transparent;
             this.btLearnNewWord.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btLearnNewWord.BorderRadius = 93;
+            this.btLearnNewWord.BorderRadius = 18;
             this.btLearnNewWord.CheckedState.Parent = this.btLearnNewWord;
             this.btLearnNewWord.CustomImages.Parent = this.btLearnNewWord;
-            this.btLearnNewWord.FillColor = System.Drawing.Color.Transparent;
-            this.btLearnNewWord.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btLearnNewWord.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btLearnNewWord.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Bold);
             this.btLearnNewWord.ForeColor = System.Drawing.Color.White;
             this.btLearnNewWord.HoverState.Parent = this.btLearnNewWord;
-            this.btLearnNewWord.Location = new System.Drawing.Point(73, 361);
+            this.btLearnNewWord.Location = new System.Drawing.Point(73, 315);
             this.btLearnNewWord.Margin = new System.Windows.Forms.Padding(4);
             this.btLearnNewWord.Name = "btLearnNewWord";
             this.btLearnNewWord.ShadowDecoration.Parent = this.btLearnNewWord;
             this.btLearnNewWord.Size = new System.Drawing.Size(330, 188);
             this.btLearnNewWord.TabIndex = 4;
+            this.btLearnNewWord.Text = "LEARN NEW WORD";
             this.btLearnNewWord.Click += new System.EventHandler(this.btLearnNewWord_Click);
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBack.BorderRadius = 50;
-            this.btnBack.CheckedState.Parent = this.btnBack;
-            this.btnBack.CustomImages.Parent = this.btnBack;
-            this.btnBack.FillColor = System.Drawing.Color.Transparent;
-            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnBack.ForeColor = System.Drawing.Color.Transparent;
-            this.btnBack.HoverState.Parent = this.btnBack;
-            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
-            this.btnBack.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btnBack.ImageSize = new System.Drawing.Size(100, 100);
-            this.btnBack.Location = new System.Drawing.Point(13, 13);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.ShadowDecoration.Parent = this.btnBack;
-            this.btnBack.Size = new System.Drawing.Size(103, 99);
-            this.btnBack.TabIndex = 2;
-            this.btnBack.Text = "guna2Button3";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btYourFlashCard
             // 
-            this.btYourFlashCard.AutoRoundedCorners = true;
             this.btYourFlashCard.BackColor = System.Drawing.Color.Transparent;
             this.btYourFlashCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btYourFlashCard.BorderRadius = 93;
+            this.btYourFlashCard.BorderRadius = 18;
             this.btYourFlashCard.CheckedState.Parent = this.btYourFlashCard;
             this.btYourFlashCard.CustomImages.Parent = this.btYourFlashCard;
-            this.btYourFlashCard.FillColor = System.Drawing.Color.Transparent;
-            this.btYourFlashCard.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btYourFlashCard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btYourFlashCard.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Bold);
             this.btYourFlashCard.ForeColor = System.Drawing.Color.White;
             this.btYourFlashCard.HoverState.Parent = this.btYourFlashCard;
-            this.btYourFlashCard.Location = new System.Drawing.Point(432, 361);
+            this.btYourFlashCard.Location = new System.Drawing.Point(432, 315);
             this.btYourFlashCard.Margin = new System.Windows.Forms.Padding(4);
             this.btYourFlashCard.Name = "btYourFlashCard";
             this.btYourFlashCard.ShadowDecoration.Parent = this.btYourFlashCard;
             this.btYourFlashCard.Size = new System.Drawing.Size(330, 188);
             this.btYourFlashCard.TabIndex = 4;
+            this.btYourFlashCard.Text = "YOUR FLASH CARD";
             this.btYourFlashCard.Click += new System.EventHandler(this.btYourFlashCard_Click);
             // 
             // btCheck
             // 
-            this.btCheck.AutoRoundedCorners = true;
             this.btCheck.BackColor = System.Drawing.Color.Transparent;
             this.btCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btCheck.BorderColor = System.Drawing.Color.White;
-            this.btCheck.BorderRadius = 93;
+            this.btCheck.BorderRadius = 18;
             this.btCheck.CheckedState.Parent = this.btCheck;
             this.btCheck.CustomImages.Parent = this.btCheck;
-            this.btCheck.FillColor = System.Drawing.Color.Transparent;
-            this.btCheck.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btCheck.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btCheck.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Bold);
             this.btCheck.ForeColor = System.Drawing.Color.White;
             this.btCheck.HoverState.Parent = this.btCheck;
-            this.btCheck.Location = new System.Drawing.Point(792, 361);
+            this.btCheck.Location = new System.Drawing.Point(792, 315);
             this.btCheck.Margin = new System.Windows.Forms.Padding(4);
             this.btCheck.Name = "btCheck";
             this.btCheck.ShadowDecoration.Parent = this.btCheck;
             this.btCheck.Size = new System.Drawing.Size(330, 188);
             this.btCheck.TabIndex = 4;
+            this.btCheck.Text = "CHECK YOUR KNOWLEDGE";
             this.btCheck.Click += new System.EventHandler(this.btCheck_Click);
             // 
             // pnYourFlashCard
             // 
             this.pnYourFlashCard.BackgroundImage = global::StartMenu.Properties.Resources.YourFlashcard1;
             this.pnYourFlashCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnYourFlashCard.Controls.Add(this.pnStatistic);
             this.pnYourFlashCard.Controls.Add(btNext);
             this.pnYourFlashCard.Controls.Add(this.btFlip);
             this.pnYourFlashCard.Controls.Add(this.btFlashCard);
             this.pnYourFlashCard.Controls.Add(this.btBack);
             this.pnYourFlashCard.Controls.Add(this.btBack2);
-            this.pnYourFlashCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnYourFlashCard.Location = new System.Drawing.Point(0, 0);
+            this.pnYourFlashCard.Location = new System.Drawing.Point(432, 34);
             this.pnYourFlashCard.Name = "pnYourFlashCard";
-            this.pnYourFlashCard.Size = new System.Drawing.Size(1182, 628);
+            this.pnYourFlashCard.Size = new System.Drawing.Size(314, 158);
             this.pnYourFlashCard.TabIndex = 5;
             this.pnYourFlashCard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnYourFlashCard_Paint);
-            // 
-            // pnStatistic
-            // 
-            this.pnStatistic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnStatistic.BackgroundImage")));
-            this.pnStatistic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnStatistic.Controls.Add(this.lbLearned);
-            this.pnStatistic.Controls.Add(this.lbToLearn);
-            this.pnStatistic.Controls.Add(this.lbEmail);
-            this.pnStatistic.Controls.Add(this.lbId);
-            this.pnStatistic.Controls.Add(this.btBack3);
-            this.pnStatistic.Controls.Add(this.lbUsername);
-            this.pnStatistic.Controls.Add(this.pictureBox1);
-            this.pnStatistic.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnStatistic.Location = new System.Drawing.Point(0, 0);
-            this.pnStatistic.Name = "pnStatistic";
-            this.pnStatistic.Size = new System.Drawing.Size(1182, 628);
-            this.pnStatistic.TabIndex = 8;
-            this.pnStatistic.Visible = false;
-            // 
-            // lbLearned
-            // 
-            this.lbLearned.AutoSize = true;
-            this.lbLearned.BackColor = System.Drawing.Color.Transparent;
-            this.lbLearned.Font = new System.Drawing.Font("MS Reference Sans Serif", 22F);
-            this.lbLearned.Location = new System.Drawing.Point(13, 398);
-            this.lbLearned.Name = "lbLearned";
-            this.lbLearned.Size = new System.Drawing.Size(199, 46);
-            this.lbLearned.TabIndex = 2;
-            this.lbLearned.Text = "Learned: ";
-            // 
-            // lbToLearn
-            // 
-            this.lbToLearn.AutoSize = true;
-            this.lbToLearn.BackColor = System.Drawing.Color.Transparent;
-            this.lbToLearn.Font = new System.Drawing.Font("MS Reference Sans Serif", 22F);
-            this.lbToLearn.Location = new System.Drawing.Point(13, 349);
-            this.lbToLearn.Name = "lbToLearn";
-            this.lbToLearn.Size = new System.Drawing.Size(212, 46);
-            this.lbToLearn.TabIndex = 2;
-            this.lbToLearn.Text = "To Learn: ";
-            // 
-            // lbEmail
-            // 
-            this.lbEmail.AutoSize = true;
-            this.lbEmail.BackColor = System.Drawing.Color.Transparent;
-            this.lbEmail.Font = new System.Drawing.Font("MS Reference Sans Serif", 22F);
-            this.lbEmail.Location = new System.Drawing.Point(156, 293);
-            this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(151, 46);
-            this.lbEmail.TabIndex = 2;
-            this.lbEmail.Text = "Email: ";
-            // 
-            // lbId
-            // 
-            this.lbId.AutoSize = true;
-            this.lbId.BackColor = System.Drawing.Color.Transparent;
-            this.lbId.Font = new System.Drawing.Font("MS Reference Sans Serif", 22F);
-            this.lbId.Location = new System.Drawing.Point(156, 250);
-            this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(160, 46);
-            this.lbId.TabIndex = 2;
-            this.lbId.Text = "UserId:";
-            // 
-            // btBack3
-            // 
-            this.btBack3.BackColor = System.Drawing.Color.Transparent;
-            this.btBack3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btBack3.BorderRadius = 50;
-            this.btBack3.CheckedState.Parent = this.btBack3;
-            this.btBack3.CustomImages.Parent = this.btBack3;
-            this.btBack3.FillColor = System.Drawing.Color.Transparent;
-            this.btBack3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btBack3.ForeColor = System.Drawing.Color.Transparent;
-            this.btBack3.HoverState.Parent = this.btBack3;
-            this.btBack3.Image = ((System.Drawing.Image)(resources.GetObject("btBack3.Image")));
-            this.btBack3.ImageOffset = new System.Drawing.Point(20, 0);
-            this.btBack3.ImageSize = new System.Drawing.Size(100, 100);
-            this.btBack3.Location = new System.Drawing.Point(10, 4);
-            this.btBack3.Margin = new System.Windows.Forms.Padding(4);
-            this.btBack3.Name = "btBack3";
-            this.btBack3.ShadowDecoration.Parent = this.btBack3;
-            this.btBack3.Size = new System.Drawing.Size(103, 99);
-            this.btBack3.TabIndex = 2;
-            this.btBack3.Text = "guna2Button3";
-            this.btBack3.Click += new System.EventHandler(this.btBack3_Click);
-            // 
-            // lbUsername
-            // 
-            this.lbUsername.AutoSize = true;
-            this.lbUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lbUsername.Font = new System.Drawing.Font("MS Reference Sans Serif", 22F);
-            this.lbUsername.Location = new System.Drawing.Point(156, 200);
-            this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(237, 46);
-            this.lbUsername.TabIndex = 2;
-            this.lbUsername.Text = "Username: ";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 200);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 131);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btFlip
             // 
@@ -399,6 +267,7 @@
             // btBack
             // 
             this.btBack.BackColor = System.Drawing.Color.Transparent;
+            this.btBack.BackgroundImage = global::StartMenu.Properties.Resources.brand_royaltyfree_yes_and_no_check_mark_flat_design;
             this.btBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btBack.BorderRadius = 50;
             this.btBack.CheckedState.Parent = this.btBack;
@@ -407,14 +276,13 @@
             this.btBack.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btBack.ForeColor = System.Drawing.Color.Transparent;
             this.btBack.HoverState.Parent = this.btBack;
-            this.btBack.Image = ((System.Drawing.Image)(resources.GetObject("btBack.Image")));
             this.btBack.ImageOffset = new System.Drawing.Point(20, 0);
             this.btBack.ImageSize = new System.Drawing.Size(100, 100);
-            this.btBack.Location = new System.Drawing.Point(16, 11);
+            this.btBack.Location = new System.Drawing.Point(4, 4);
             this.btBack.Margin = new System.Windows.Forms.Padding(4);
             this.btBack.Name = "btBack";
             this.btBack.ShadowDecoration.Parent = this.btBack;
-            this.btBack.Size = new System.Drawing.Size(103, 99);
+            this.btBack.Size = new System.Drawing.Size(72, 75);
             this.btBack.TabIndex = 2;
             this.btBack.Text = "guna2Button3";
             this.btBack.Click += new System.EventHandler(this.btBack_Click);
@@ -442,6 +310,113 @@
             this.btBack2.Text = "guna2Button3";
             this.btBack2.Click += new System.EventHandler(this.btBack2_Click);
             // 
+            // pnStatistic
+            // 
+            this.pnStatistic.BackgroundImage = global::StartMenu.Properties.Resources.statistics;
+            this.pnStatistic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnStatistic.Controls.Add(this.lbLearned);
+            this.pnStatistic.Controls.Add(this.lbToLearn);
+            this.pnStatistic.Controls.Add(this.lbEmail);
+            this.pnStatistic.Controls.Add(this.lbId);
+            this.pnStatistic.Controls.Add(this.btBack3);
+            this.pnStatistic.Controls.Add(this.lbUsername);
+            this.pnStatistic.Controls.Add(this.pictureBox1);
+            this.pnStatistic.Location = new System.Drawing.Point(769, 34);
+            this.pnStatistic.Name = "pnStatistic";
+            this.pnStatistic.Size = new System.Drawing.Size(303, 160);
+            this.pnStatistic.TabIndex = 8;
+            this.pnStatistic.Visible = false;
+            // 
+            // lbLearned
+            // 
+            this.lbLearned.AutoSize = true;
+            this.lbLearned.BackColor = System.Drawing.Color.Transparent;
+            this.lbLearned.Font = new System.Drawing.Font("FS Nokio Regular", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbLearned.Location = new System.Drawing.Point(13, 411);
+            this.lbLearned.Name = "lbLearned";
+            this.lbLearned.Size = new System.Drawing.Size(198, 58);
+            this.lbLearned.TabIndex = 2;
+            this.lbLearned.Text = "Learned: ";
+            // 
+            // lbToLearn
+            // 
+            this.lbToLearn.AutoSize = true;
+            this.lbToLearn.BackColor = System.Drawing.Color.Transparent;
+            this.lbToLearn.Font = new System.Drawing.Font("FS Nokio Regular", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbToLearn.Location = new System.Drawing.Point(6, 361);
+            this.lbToLearn.Name = "lbToLearn";
+            this.lbToLearn.Size = new System.Drawing.Size(211, 58);
+            this.lbToLearn.TabIndex = 2;
+            this.lbToLearn.Text = "To Learn: ";
+            // 
+            // lbEmail
+            // 
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lbEmail.Font = new System.Drawing.Font("FS Nokio Regular", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbEmail.Location = new System.Drawing.Point(186, 307);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(138, 58);
+            this.lbEmail.TabIndex = 2;
+            this.lbEmail.Text = "Email: ";
+            // 
+            // lbId
+            // 
+            this.lbId.AutoSize = true;
+            this.lbId.BackColor = System.Drawing.Color.Transparent;
+            this.lbId.Font = new System.Drawing.Font("FS Nokio Regular", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbId.Location = new System.Drawing.Point(186, 245);
+            this.lbId.Name = "lbId";
+            this.lbId.Size = new System.Drawing.Size(141, 58);
+            this.lbId.TabIndex = 2;
+            this.lbId.Text = "UserId:";
+            // 
+            // btBack3
+            // 
+            this.btBack3.BackColor = System.Drawing.Color.Transparent;
+            this.btBack3.BackgroundImage = global::StartMenu.Properties.Resources.brand_royaltyfree_yes_and_no_check_mark_flat_design;
+            this.btBack3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btBack3.BorderRadius = 50;
+            this.btBack3.CheckedState.Parent = this.btBack3;
+            this.btBack3.CustomImages.Parent = this.btBack3;
+            this.btBack3.FillColor = System.Drawing.Color.Transparent;
+            this.btBack3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btBack3.ForeColor = System.Drawing.Color.Transparent;
+            this.btBack3.HoverState.Parent = this.btBack3;
+            this.btBack3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btBack3.ImageOffset = new System.Drawing.Point(20, 0);
+            this.btBack3.ImageSize = new System.Drawing.Size(100, 100);
+            this.btBack3.Location = new System.Drawing.Point(4, 4);
+            this.btBack3.Margin = new System.Windows.Forms.Padding(4);
+            this.btBack3.Name = "btBack3";
+            this.btBack3.ShadowDecoration.Parent = this.btBack3;
+            this.btBack3.Size = new System.Drawing.Size(68, 69);
+            this.btBack3.TabIndex = 2;
+            this.btBack3.Text = "guna2Button3";
+            this.btBack3.Click += new System.EventHandler(this.btBack3_Click);
+            // 
+            // lbUsername
+            // 
+            this.lbUsername.AutoSize = true;
+            this.lbUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lbUsername.Font = new System.Drawing.Font("FS Nokio Regular", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbUsername.Location = new System.Drawing.Point(186, 187);
+            this.lbUsername.Name = "lbUsername";
+            this.lbUsername.Size = new System.Drawing.Size(228, 58);
+            this.lbUsername.TabIndex = 2;
+            this.lbUsername.Text = "Username: ";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::StartMenu.Properties.Resources.ec61d3114cc5269485d508244f531bdf;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 200);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(165, 158);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // timer1
             // 
             this.timer1.Interval = 1;
@@ -451,15 +426,39 @@
             // 
             this.pnCheck.BackgroundImage = global::StartMenu.Properties.Resources.Check_your_word1;
             this.pnCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnCheck.Controls.Add(this.btnBack);
             this.pnCheck.Controls.Add(this.btFlip2);
             this.pnCheck.Controls.Add(this.btNope);
             this.pnCheck.Controls.Add(this.btKnow);
             this.pnCheck.Controls.Add(this.btFlashCard2);
-            this.pnCheck.Location = new System.Drawing.Point(0, 0);
+            this.pnCheck.Location = new System.Drawing.Point(123, 34);
             this.pnCheck.Name = "pnCheck";
-            this.pnCheck.Size = new System.Drawing.Size(1182, 628);
+            this.pnCheck.Size = new System.Drawing.Size(294, 147);
             this.pnCheck.TabIndex = 6;
             this.pnCheck.Visible = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = global::StartMenu.Properties.Resources.brand_royaltyfree_yes_and_no_check_mark_flat_design;
+            this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBack.BorderRadius = 50;
+            this.btnBack.CheckedState.Parent = this.btnBack;
+            this.btnBack.CustomImages.Parent = this.btnBack;
+            this.btnBack.FillColor = System.Drawing.Color.Transparent;
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBack.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBack.HoverState.Parent = this.btnBack;
+            this.btnBack.ImageOffset = new System.Drawing.Point(20, 0);
+            this.btnBack.ImageSize = new System.Drawing.Size(100, 100);
+            this.btnBack.Location = new System.Drawing.Point(1, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.ShadowDecoration.Parent = this.btnBack;
+            this.btnBack.Size = new System.Drawing.Size(77, 72);
+            this.btnBack.TabIndex = 6;
+            this.btnBack.Text = "guna2Button3";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
             // btFlip2
             // 
@@ -544,7 +543,7 @@
             // btStatistic
             // 
             this.btStatistic.BackColor = System.Drawing.Color.Transparent;
-            this.btStatistic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btStatistic.BackgroundImage")));
+            this.btStatistic.BackgroundImage = global::StartMenu.Properties.Resources.imgbin_computer_icons_statistics_chart_business_png;
             this.btStatistic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btStatistic.CheckedState.Parent = this.btStatistic;
             this.btStatistic.CustomImages.Parent = this.btStatistic;
@@ -552,28 +551,28 @@
             this.btStatistic.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btStatistic.ForeColor = System.Drawing.Color.White;
             this.btStatistic.HoverState.Parent = this.btStatistic;
-            this.btStatistic.Location = new System.Drawing.Point(13, 540);
+            this.btStatistic.Location = new System.Drawing.Point(10, 556);
             this.btStatistic.Name = "btStatistic";
             this.btStatistic.ShadowDecoration.Parent = this.btStatistic;
-            this.btStatistic.Size = new System.Drawing.Size(126, 86);
+            this.btStatistic.Size = new System.Drawing.Size(77, 70);
             this.btStatistic.TabIndex = 7;
             this.btStatistic.Click += new System.EventHandler(this.btStatistic_Click);
             // 
             // FRevision
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::StartMenu.Properties.Resources.Revision;
+            this.BackgroundImage = global::StartMenu.Properties.Resources.Revision2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.Controls.Add(this.pnCheck);
             this.Controls.Add(this.btStatistic);
             this.Controls.Add(this.pnYourFlashCard);
             this.Controls.Add(this.btCheck);
             this.Controls.Add(this.btYourFlashCard);
             this.Controls.Add(this.btLearnNewWord);
+            this.Controls.Add(this.pnStatistic);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.pnCheck);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FRevision";
@@ -592,7 +591,6 @@
 		private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
 		private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
 		private Guna.UI2.WinForms.Guna2Button btLearnNewWord;
-        private Guna.UI2.WinForms.Guna2Button btnBack;
         private Guna.UI2.WinForms.Guna2Button btYourFlashCard;
         private Guna.UI2.WinForms.Guna2Button btCheck;
 		private System.Windows.Forms.Panel pnYourFlashCard;
@@ -616,5 +614,6 @@
 		private Guna.UI2.WinForms.Guna2Button btBack3;
 		private System.Windows.Forms.Label lbUsername;
 		private System.Windows.Forms.PictureBox pictureBox1;
-	}
+        private Guna.UI2.WinForms.Guna2Button btnBack;
+    }
 }
