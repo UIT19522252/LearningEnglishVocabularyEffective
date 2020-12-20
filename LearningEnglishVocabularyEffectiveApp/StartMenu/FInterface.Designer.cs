@@ -198,7 +198,7 @@
             this.btnClose.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnClose.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btnClose.HoverState.Parent = this.btnClose;
-            this.btnClose.Location = new System.Drawing.Point(1113, 17);
+            this.btnClose.Location = new System.Drawing.Point(1113, 13);
             this.btnClose.Name = "btnClose";
             this.btnClose.ShadowDecoration.Parent = this.btnClose;
             this.btnClose.Size = new System.Drawing.Size(30, 30);
