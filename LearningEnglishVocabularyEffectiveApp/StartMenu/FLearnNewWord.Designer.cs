@@ -192,6 +192,7 @@
             this.Controls.Add(this.AnswerD);
             this.Controls.Add(this.AnswerA);
             this.Controls.Add(this.AnswerB);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FLearnNewWord";

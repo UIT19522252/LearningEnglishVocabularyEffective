@@ -30,6 +30,7 @@
         {
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlLoad = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // guna2Button1
@@ -68,14 +69,24 @@
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
+            // pnlLoad
+            // 
+            this.pnlLoad.BackColor = System.Drawing.Color.Transparent;
+            this.pnlLoad.Location = new System.Drawing.Point(1009, 55);
+            this.pnlLoad.Name = "pnlLoad";
+            this.pnlLoad.Size = new System.Drawing.Size(200, 100);
+            this.pnlLoad.TabIndex = 2;
+            // 
             // FPractice
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::StartMenu.Properties.Resources.Practice3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.Controls.Add(this.pnlLoad);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
+            this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.DarkGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FPractice";
@@ -89,5 +100,6 @@
 
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private System.Windows.Forms.Panel pnlLoad;
     }
 }

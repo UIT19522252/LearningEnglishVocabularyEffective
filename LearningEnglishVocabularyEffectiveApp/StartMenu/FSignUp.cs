@@ -14,7 +14,9 @@ namespace StartMenu
     {
         public FSignUp()
         {
+           
             InitializeComponent();
+          
         }
         private void btnSignin_Click(object sender, EventArgs e)
         {

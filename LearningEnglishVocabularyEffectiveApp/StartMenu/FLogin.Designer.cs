@@ -152,7 +152,7 @@
             this.lblWrong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.lblWrong.Location = new System.Drawing.Point(746, 218);
             this.lblWrong.Name = "lblWrong";
-            this.lblWrong.Size = new System.Drawing.Size(224, 23);
+            this.lblWrong.Size = new System.Drawing.Size(239, 25);
             this.lblWrong.TabIndex = 5;
             this.lblWrong.Text = "*Incorrect Username or Password";
             // 
@@ -164,7 +164,7 @@
             this.name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.name.Location = new System.Drawing.Point(605, 391);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(348, 47);
+            this.name.Size = new System.Drawing.Size(368, 48);
             this.name.TabIndex = 6;
             this.name.Text = "Don\'t you have account?";
             // 
@@ -185,6 +185,7 @@
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.tbxUsrname);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

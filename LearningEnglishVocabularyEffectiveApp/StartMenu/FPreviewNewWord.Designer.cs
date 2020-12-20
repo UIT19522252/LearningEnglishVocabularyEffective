@@ -39,6 +39,7 @@
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
             this.btlStart = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlLoad = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // guna2Button1
@@ -255,12 +256,22 @@
             this.btlStart.UseTransparentBackground = true;
             this.btlStart.Click += new System.EventHandler(this.btlStart_Click);
             // 
+            // pnlLoad
+            // 
+            this.pnlLoad.BackColor = System.Drawing.Color.Transparent;
+            this.pnlLoad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlLoad.Location = new System.Drawing.Point(0, 0);
+            this.pnlLoad.Name = "pnlLoad";
+            this.pnlLoad.Size = new System.Drawing.Size(1182, 628);
+            this.pnlLoad.TabIndex = 12;
+            // 
             // FPreviewNewWord
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::StartMenu.Properties.Resources.PreLearnNewWords;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.Controls.Add(this.pnlLoad);
             this.Controls.Add(this.btlStart);
             this.Controls.Add(this.guna2Button10);
             this.Controls.Add(this.guna2Button9);
@@ -272,6 +283,7 @@
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FPreviewNewWord";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -294,5 +306,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button9;
         private Guna.UI2.WinForms.Guna2Button guna2Button10;
         private Guna.UI2.WinForms.Guna2Button btlStart;
+        private System.Windows.Forms.Panel pnlLoad;
     }
 }

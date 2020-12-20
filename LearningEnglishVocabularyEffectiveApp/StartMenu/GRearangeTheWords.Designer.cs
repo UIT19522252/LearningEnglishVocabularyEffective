@@ -70,7 +70,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button1.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(17, 507);
+            this.button1.Location = new System.Drawing.Point(7, 512);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(288, 108);
             this.button1.TabIndex = 0;
@@ -82,7 +82,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button2.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(17, 400);
+            this.button2.Location = new System.Drawing.Point(7, 405);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(288, 108);
             this.button2.TabIndex = 1;
@@ -94,7 +94,7 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button3.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(17, 293);
+            this.button3.Location = new System.Drawing.Point(7, 298);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(288, 108);
             this.button3.TabIndex = 2;
@@ -106,7 +106,7 @@
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button4.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(17, 187);
+            this.button4.Location = new System.Drawing.Point(7, 192);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(288, 108);
             this.button4.TabIndex = 3;
@@ -118,7 +118,7 @@
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button5.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(17, 81);
+            this.button5.Location = new System.Drawing.Point(7, 86);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(288, 108);
             this.button5.TabIndex = 4;
@@ -130,7 +130,7 @@
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button6.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(304, 507);
+            this.button6.Location = new System.Drawing.Point(294, 512);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(288, 108);
             this.button6.TabIndex = 5;
@@ -142,7 +142,7 @@
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button7.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(304, 400);
+            this.button7.Location = new System.Drawing.Point(294, 405);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(288, 108);
             this.button7.TabIndex = 6;
@@ -154,7 +154,7 @@
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button8.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(304, 293);
+            this.button8.Location = new System.Drawing.Point(294, 298);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(288, 108);
             this.button8.TabIndex = 7;
@@ -166,7 +166,7 @@
             this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button9.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(304, 187);
+            this.button9.Location = new System.Drawing.Point(294, 192);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(288, 108);
             this.button9.TabIndex = 8;
@@ -178,7 +178,7 @@
             this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button10.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(304, 81);
+            this.button10.Location = new System.Drawing.Point(294, 86);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(288, 108);
             this.button10.TabIndex = 9;
@@ -190,7 +190,7 @@
             this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button11.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(591, 507);
+            this.button11.Location = new System.Drawing.Point(581, 512);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(288, 108);
             this.button11.TabIndex = 10;
@@ -202,7 +202,7 @@
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button12.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(591, 400);
+            this.button12.Location = new System.Drawing.Point(581, 405);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(288, 108);
             this.button12.TabIndex = 11;
@@ -214,7 +214,7 @@
             this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button13.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(591, 293);
+            this.button13.Location = new System.Drawing.Point(581, 298);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(288, 108);
             this.button13.TabIndex = 12;
@@ -226,7 +226,7 @@
             this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button14.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button14.ForeColor = System.Drawing.Color.White;
-            this.button14.Location = new System.Drawing.Point(591, 187);
+            this.button14.Location = new System.Drawing.Point(581, 192);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(288, 108);
             this.button14.TabIndex = 13;
@@ -238,7 +238,7 @@
             this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button15.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Location = new System.Drawing.Point(591, 81);
+            this.button15.Location = new System.Drawing.Point(581, 86);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(288, 108);
             this.button15.TabIndex = 14;
@@ -250,7 +250,7 @@
             this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button16.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Location = new System.Drawing.Point(878, 507);
+            this.button16.Location = new System.Drawing.Point(868, 512);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(288, 108);
             this.button16.TabIndex = 15;
@@ -262,7 +262,7 @@
             this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button17.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Location = new System.Drawing.Point(878, 400);
+            this.button17.Location = new System.Drawing.Point(868, 405);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(288, 108);
             this.button17.TabIndex = 16;
@@ -274,7 +274,7 @@
             this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button18.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.Location = new System.Drawing.Point(878, 293);
+            this.button18.Location = new System.Drawing.Point(868, 298);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(288, 108);
             this.button18.TabIndex = 17;
@@ -286,7 +286,7 @@
             this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button19.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button19.ForeColor = System.Drawing.Color.White;
-            this.button19.Location = new System.Drawing.Point(878, 187);
+            this.button19.Location = new System.Drawing.Point(868, 192);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(288, 108);
             this.button19.TabIndex = 18;
@@ -298,7 +298,7 @@
             this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.button20.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button20.ForeColor = System.Drawing.Color.White;
-            this.button20.Location = new System.Drawing.Point(878, 81);
+            this.button20.Location = new System.Drawing.Point(868, 86);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(288, 108);
             this.button20.TabIndex = 19;
@@ -328,7 +328,7 @@
             this.incorrect.BackColor = System.Drawing.Color.Transparent;
             this.incorrect.Font = new System.Drawing.Font("Berlin Sans FB", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.incorrect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.incorrect.Location = new System.Drawing.Point(466, 21);
+            this.incorrect.Location = new System.Drawing.Point(458, 21);
             this.incorrect.Name = "incorrect";
             this.incorrect.Size = new System.Drawing.Size(247, 44);
             this.incorrect.TabIndex = 21;
@@ -340,7 +340,7 @@
             this.lbtime.BackColor = System.Drawing.Color.Transparent;
             this.lbtime.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbtime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.lbtime.Location = new System.Drawing.Point(803, 9);
+            this.lbtime.Location = new System.Drawing.Point(740, 9);
             this.lbtime.Name = "lbtime";
             this.lbtime.Size = new System.Drawing.Size(129, 43);
             this.lbtime.TabIndex = 22;
@@ -352,7 +352,7 @@
             this.lbpoint.BackColor = System.Drawing.Color.Transparent;
             this.lbpoint.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbpoint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.lbpoint.Location = new System.Drawing.Point(1013, 9);
+            this.lbpoint.Location = new System.Drawing.Point(984, 9);
             this.lbpoint.Name = "lbpoint";
             this.lbpoint.Size = new System.Drawing.Size(119, 43);
             this.lbpoint.TabIndex = 23;
@@ -364,7 +364,7 @@
             this.time.BackColor = System.Drawing.Color.Transparent;
             this.time.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.time.ForeColor = System.Drawing.Color.Red;
-            this.time.Location = new System.Drawing.Point(898, 9);
+            this.time.Location = new System.Drawing.Point(861, 9);
             this.time.Name = "time";
             this.time.Size = new System.Drawing.Size(132, 43);
             this.time.TabIndex = 24;
@@ -375,7 +375,7 @@
             this.diem.BackColor = System.Drawing.Color.Transparent;
             this.diem.Font = new System.Drawing.Font("FS Nokio Regular", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.diem.ForeColor = System.Drawing.Color.Red;
-            this.diem.Location = new System.Drawing.Point(1109, 9);
+            this.diem.Location = new System.Drawing.Point(1084, 9);
             this.diem.Name = "diem";
             this.diem.Size = new System.Drawing.Size(72, 43);
             this.diem.TabIndex = 25;
@@ -476,7 +476,7 @@
             // GRearangeTheWords
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1184, 626);
+            this.ClientSize = new System.Drawing.Size(1162, 628);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.again);
@@ -510,6 +510,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GRearangeTheWords";

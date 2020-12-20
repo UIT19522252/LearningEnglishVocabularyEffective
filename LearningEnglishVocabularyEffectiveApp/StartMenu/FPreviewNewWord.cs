@@ -33,6 +33,7 @@ namespace StartMenu
 
             this.guna2Button5.Text = Data.crrWord[4].question;
             this.guna2Button10.Text = Data.crrWord[4].answer;
+            pnlLoad.Visible = false;
 
 
 
@@ -44,11 +45,20 @@ namespace StartMenu
 
         private void btlStart_Click(object sender, EventArgs e)
         {
-            FLearnNewWord f = new FLearnNewWord();
+            /*FLearnNewWord f = new FLearnNewWord();
             this.Hide();
             f.ShowDialog();
             if (Data.XONG == true) this.Close();
-            this.Show();
+            this.Show();*/
+            FLearnNewWord tabLearnNewWord = new FLearnNewWord();
+            tabLearnNewWord.AutoScroll = true;
+            tabLearnNewWord.TopLevel = false;
+            pnlLoad.Controls.Clear();
+            pnlLoad.Controls.Add(tabLearnNewWord);
+
+            tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
+            tabLearnNewWord.Show();
+            pnlLoad.Visible = true;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

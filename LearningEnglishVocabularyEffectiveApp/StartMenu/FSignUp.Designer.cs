@@ -191,6 +191,7 @@
             this.Controls.Add(this.tbxRepeatPass);
             this.Controls.Add(this.tbxPass);
             this.Controls.Add(this.tbxUsername);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FSignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

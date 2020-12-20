@@ -21,11 +21,11 @@ namespace StartMenu
         public FInterface()
         {
             InitializeComponent();
-            this.pnlMenu.Visible = false;
-            this.pnlMenu.Left = -1 * this.pnlMenu.Width;
+            this.pnlMenu1.Visible = false;
+            this.pnlMenu1.Left = -1 * this.pnlMenu1.Width;
             this.btnShowMenu.Visible = true;
-           // this.button1.Text= this.Height.ToString() + "\n" + this.pnlLoadForm.Height.ToString() + "\n" + this.pnlStatusBar.Height.ToString();
-            
+            // this.button1.Text= this.Height.ToString() + "\n" + this.pnlLoadForm.Height.ToString() + "\n" + this.pnlStatusBar.Height.ToString();
+            //this.btnShowMenu.Visible = false;
         }
 
         void HideMenuBar()
@@ -36,36 +36,36 @@ namespace StartMenu
         }
         private void timerHideMenu_Tick(object sender, EventArgs e)
         {
-            if (this.pnlMenu.Right <= 0)
+            if (this.pnlMenu1.Right <= 0)
             {
                 timerHideMenu.Stop();
-                this.pnlMenu.Visible = false;
+                this.pnlMenu1.Visible = false;
             }
             else
             {
-                this.pnlMenu.Left -= 30;
+                this.pnlMenu1.Left -= 30;
             }
         }
 
         private void timerShowMenu_Tick(object sender, EventArgs e)
         {
-            if (this.pnlMenu.Left >= this.btnShowMenu.Right)
+            if (this.pnlMenu1.Left >= this.btnShowMenu.Right)
             {
                 timerShowMenu.Stop();
-                this.pnlMenu.Left = this.btnShowMenu.Right;
+                this.pnlMenu1.Left = this.btnShowMenu.Right;
             }
               
             else
             {
-                this.pnlMenu.Left += 30;
+                this.pnlMenu1.Left += 30;
             }
         }
 
         private void btnShowMenu_Click(object sender, EventArgs e)
         {
-            if (this.pnlMenu.Left < 0)
+            if (this.pnlMenu1.Left < 0)
             {
-                this.pnlMenu.Visible = true;
+                this.pnlMenu1.Visible = true;
                 timerShowMenu.Start();
                 timerHideMenu.Stop();
             }

@@ -28,6 +28,7 @@ namespace StartMenu
 				btFlashCard.Text = st[k].eng;
 			timer2.Interval = 1;
 			this.DoubleBuffered = true;
+			this.pnlLoad.Dock = DockStyle.Fill;
 		}
         
 		private void btFlip_Click(object sender, EventArgs e)
@@ -228,6 +229,11 @@ namespace StartMenu
 			this.pnCheck.Visible = false;
         }
 
+        private void FRevision_Load(object sender, EventArgs e)
+        {
+			pnlLoad.Visible = false;
+        }
+
         private void btFlip2_Click(object sender, EventArgs e)
 		{
 			isflipping = true;
@@ -235,10 +241,19 @@ namespace StartMenu
 		}
 		private void btLearnNewWord_Click(object sender, EventArgs e)
 		{
-			FLearnNewWord f = new FLearnNewWord();
+			/*FLearnNewWord f = new FLearnNewWord();
 			this.Hide();
 			f.ShowDialog();
-			this.Show();
+			this.Show();*/
+			FPreviewNewWord tabLearnNewWord = new FPreviewNewWord();
+			tabLearnNewWord.AutoScroll = true;
+			tabLearnNewWord.TopLevel = false;
+			pnlLoad.Controls.Clear();
+			pnlLoad.Controls.Add(tabLearnNewWord);
+
+			tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
+			tabLearnNewWord.Show();
+			pnlLoad.Visible = true;
 		}
 		private void btYourFlashCard_Click(object sender, EventArgs e)
 		{

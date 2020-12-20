@@ -12,6 +12,7 @@ namespace StartMenu
 {
     public partial class FLogin : Form
     {
+        
         User temp = new User();
         public FLogin()
         {
@@ -45,6 +46,7 @@ namespace StartMenu
         {
             FSignUp f = new FSignUp();
             f.ShowDialog();
+           
             this.tbxPassword.Text = "";
             this.tbxUsrname.Text = "";
             this.lblWrong.Visible = false;

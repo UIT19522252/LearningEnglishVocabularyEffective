@@ -242,6 +242,7 @@
             // 
             // rtbMean1
             // 
+            this.rtbMean1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtbMean1.Font = new System.Drawing.Font("FS Nokio Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.rtbMean1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.rtbMean1.Location = new System.Drawing.Point(156, 254);
@@ -430,7 +431,7 @@
             this.lbWord.BackColor = System.Drawing.Color.Transparent;
             this.lbWord.Font = new System.Drawing.Font("FS Nokio Bold", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.lbWord.Location = new System.Drawing.Point(455, 135);
+            this.lbWord.Location = new System.Drawing.Point(487, 131);
             this.lbWord.Name = "lbWord";
             this.lbWord.Size = new System.Drawing.Size(269, 136);
             this.lbWord.TabIndex = 13;

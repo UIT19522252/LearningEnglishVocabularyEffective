@@ -33,17 +33,17 @@
             this.timerHideMenu = new System.Windows.Forms.Timer(this.components);
             this.timerShowMenu = new System.Windows.Forms.Timer(this.components);
             this.pnlStatusBar = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnlMenu = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.btnPractice = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRevision = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDictionary = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlMenu1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.btnLearnNewWord = new Guna.UI2.WinForms.Guna2Button();
-            this.pnlLoadForm = new System.Windows.Forms.Panel();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPractice = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDictionary = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRevision = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnShowMenu = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlLoadForm = new System.Windows.Forms.Panel();
             this.pnlStatusBar.SuspendLayout();
-            this.pnlMenu.SuspendLayout();
+            this.pnlMenu1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -64,7 +64,7 @@
             // pnlStatusBar
             // 
             this.pnlStatusBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.pnlStatusBar.Controls.Add(this.pnlMenu);
+            this.pnlStatusBar.Controls.Add(this.pnlMenu1);
             this.pnlStatusBar.Controls.Add(this.btnClose);
             this.pnlStatusBar.Controls.Add(this.btnShowMenu);
             this.pnlStatusBar.Location = new System.Drawing.Point(0, 0);
@@ -73,98 +73,26 @@
             this.pnlStatusBar.Size = new System.Drawing.Size(1162, 55);
             this.pnlStatusBar.TabIndex = 2;
             // 
-            // pnlMenu
+            // pnlMenu1
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.pnlMenu.BorderColor = System.Drawing.Color.White;
-            this.pnlMenu.Controls.Add(this.btnLearnNewWord);
-            this.pnlMenu.Controls.Add(this.btnHome);
-            this.pnlMenu.Controls.Add(this.btnPractice);
-            this.pnlMenu.Controls.Add(this.btnDictionary);
-            this.pnlMenu.Controls.Add(this.btnRevision);
-            this.pnlMenu.CustomBorderColor = System.Drawing.Color.White;
-            this.pnlMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.pnlMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.pnlMenu.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.pnlMenu.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.pnlMenu.ForeColor = System.Drawing.Color.White;
-            this.pnlMenu.Location = new System.Drawing.Point(46, 3);
-            this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.ShadowDecoration.Parent = this.pnlMenu;
-            this.pnlMenu.Size = new System.Drawing.Size(729, 47);
-            this.pnlMenu.TabIndex = 0;
-            // 
-            // btnPractice
-            // 
-            this.btnPractice.BorderColor = System.Drawing.Color.White;
-            this.btnPractice.BorderThickness = 2;
-            this.btnPractice.CheckedState.Parent = this.btnPractice;
-            this.btnPractice.CustomImages.Parent = this.btnPractice;
-            this.btnPractice.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.btnPractice.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnPractice.ForeColor = System.Drawing.Color.White;
-            this.btnPractice.HoverState.Parent = this.btnPractice;
-            this.btnPractice.Location = new System.Drawing.Point(227, 7);
-            this.btnPractice.Name = "btnPractice";
-            this.btnPractice.ShadowDecoration.Parent = this.btnPractice;
-            this.btnPractice.Size = new System.Drawing.Size(116, 40);
-            this.btnPractice.TabIndex = 6;
-            this.btnPractice.Text = "Practice";
-            this.btnPractice.Click += new System.EventHandler(this.btnPractice_Click);
-            // 
-            // btnRevision
-            // 
-            this.btnRevision.BorderColor = System.Drawing.Color.White;
-            this.btnRevision.BorderThickness = 2;
-            this.btnRevision.CheckedState.Parent = this.btnRevision;
-            this.btnRevision.CustomImages.Parent = this.btnRevision;
-            this.btnRevision.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.btnRevision.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnRevision.ForeColor = System.Drawing.Color.White;
-            this.btnRevision.HoverState.Parent = this.btnRevision;
-            this.btnRevision.Location = new System.Drawing.Point(349, 6);
-            this.btnRevision.Name = "btnRevision";
-            this.btnRevision.ShadowDecoration.Parent = this.btnRevision;
-            this.btnRevision.Size = new System.Drawing.Size(127, 40);
-            this.btnRevision.TabIndex = 5;
-            this.btnRevision.Text = "Revision";
-            this.btnRevision.Click += new System.EventHandler(this.btnRevision_Click);
-            // 
-            // btnDictionary
-            // 
-            this.btnDictionary.BorderColor = System.Drawing.Color.White;
-            this.btnDictionary.BorderThickness = 2;
-            this.btnDictionary.CheckedState.Parent = this.btnDictionary;
-            this.btnDictionary.CustomImages.Parent = this.btnDictionary;
-            this.btnDictionary.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.btnDictionary.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnDictionary.ForeColor = System.Drawing.Color.White;
-            this.btnDictionary.HoverState.Parent = this.btnDictionary;
-            this.btnDictionary.Location = new System.Drawing.Point(482, 7);
-            this.btnDictionary.Name = "btnDictionary";
-            this.btnDictionary.ShadowDecoration.Parent = this.btnDictionary;
-            this.btnDictionary.Size = new System.Drawing.Size(151, 40);
-            this.btnDictionary.TabIndex = 4;
-            this.btnDictionary.Text = "Dictionary";
-            this.btnDictionary.Click += new System.EventHandler(this.btnDictionary_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.BorderColor = System.Drawing.Color.White;
-            this.btnHome.BorderThickness = 2;
-            this.btnHome.CheckedState.Parent = this.btnHome;
-            this.btnHome.CustomImages.Parent = this.btnHome;
-            this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.btnHome.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.HoverState.Parent = this.btnHome;
-            this.btnHome.Location = new System.Drawing.Point(639, 7);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.ShadowDecoration.Parent = this.btnHome;
-            this.btnHome.Size = new System.Drawing.Size(80, 40);
-            this.btnHome.TabIndex = 3;
-            this.btnHome.Text = "Home";
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.pnlMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.pnlMenu1.BorderColor = System.Drawing.Color.White;
+            this.pnlMenu1.Controls.Add(this.btnLearnNewWord);
+            this.pnlMenu1.Controls.Add(this.btnHome);
+            this.pnlMenu1.Controls.Add(this.btnPractice);
+            this.pnlMenu1.Controls.Add(this.btnDictionary);
+            this.pnlMenu1.Controls.Add(this.btnRevision);
+            this.pnlMenu1.CustomBorderColor = System.Drawing.Color.White;
+            this.pnlMenu1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.pnlMenu1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.pnlMenu1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.pnlMenu1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.pnlMenu1.ForeColor = System.Drawing.Color.White;
+            this.pnlMenu1.Location = new System.Drawing.Point(46, 3);
+            this.pnlMenu1.Name = "pnlMenu1";
+            this.pnlMenu1.ShadowDecoration.Parent = this.pnlMenu1;
+            this.pnlMenu1.Size = new System.Drawing.Size(1061, 47);
+            this.pnlMenu1.TabIndex = 0;
             // 
             // btnLearnNewWord
             // 
@@ -184,14 +112,77 @@
             this.btnLearnNewWord.Text = "Learn New Words";
             this.btnLearnNewWord.Click += new System.EventHandler(this.btnLearnNewWord_Click);
             // 
-            // pnlLoadForm
+            // btnHome
             // 
-            this.pnlLoadForm.BackColor = System.Drawing.Color.Transparent;
-            this.pnlLoadForm.BackgroundImage = global::StartMenu.Properties.Resources.home1;
-            this.pnlLoadForm.Location = new System.Drawing.Point(0, 53);
-            this.pnlLoadForm.Name = "pnlLoadForm";
-            this.pnlLoadForm.Size = new System.Drawing.Size(1162, 628);
-            this.pnlLoadForm.TabIndex = 3;
+            this.btnHome.BorderColor = System.Drawing.Color.White;
+            this.btnHome.BorderThickness = 2;
+            this.btnHome.CheckedState.Parent = this.btnHome;
+            this.btnHome.CustomImages.Parent = this.btnHome;
+            this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnHome.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.HoverState.Parent = this.btnHome;
+            this.btnHome.Location = new System.Drawing.Point(845, 7);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.ShadowDecoration.Parent = this.btnHome;
+            this.btnHome.Size = new System.Drawing.Size(200, 40);
+            this.btnHome.TabIndex = 3;
+            this.btnHome.Text = "Home";
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // btnPractice
+            // 
+            this.btnPractice.BorderColor = System.Drawing.Color.White;
+            this.btnPractice.BorderThickness = 2;
+            this.btnPractice.CheckedState.Parent = this.btnPractice;
+            this.btnPractice.CustomImages.Parent = this.btnPractice;
+            this.btnPractice.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnPractice.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnPractice.ForeColor = System.Drawing.Color.White;
+            this.btnPractice.HoverState.Parent = this.btnPractice;
+            this.btnPractice.Location = new System.Drawing.Point(227, 7);
+            this.btnPractice.Name = "btnPractice";
+            this.btnPractice.ShadowDecoration.Parent = this.btnPractice;
+            this.btnPractice.Size = new System.Drawing.Size(200, 40);
+            this.btnPractice.TabIndex = 6;
+            this.btnPractice.Text = "Practice";
+            this.btnPractice.Click += new System.EventHandler(this.btnPractice_Click);
+            // 
+            // btnDictionary
+            // 
+            this.btnDictionary.BorderColor = System.Drawing.Color.White;
+            this.btnDictionary.BorderThickness = 2;
+            this.btnDictionary.CheckedState.Parent = this.btnDictionary;
+            this.btnDictionary.CustomImages.Parent = this.btnDictionary;
+            this.btnDictionary.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnDictionary.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnDictionary.ForeColor = System.Drawing.Color.White;
+            this.btnDictionary.HoverState.Parent = this.btnDictionary;
+            this.btnDictionary.Location = new System.Drawing.Point(639, 7);
+            this.btnDictionary.Name = "btnDictionary";
+            this.btnDictionary.ShadowDecoration.Parent = this.btnDictionary;
+            this.btnDictionary.Size = new System.Drawing.Size(200, 40);
+            this.btnDictionary.TabIndex = 4;
+            this.btnDictionary.Text = "Dictionary";
+            this.btnDictionary.Click += new System.EventHandler(this.btnDictionary_Click);
+            // 
+            // btnRevision
+            // 
+            this.btnRevision.BorderColor = System.Drawing.Color.White;
+            this.btnRevision.BorderThickness = 2;
+            this.btnRevision.CheckedState.Parent = this.btnRevision;
+            this.btnRevision.CustomImages.Parent = this.btnRevision;
+            this.btnRevision.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnRevision.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnRevision.ForeColor = System.Drawing.Color.White;
+            this.btnRevision.HoverState.Parent = this.btnRevision;
+            this.btnRevision.Location = new System.Drawing.Point(433, 7);
+            this.btnRevision.Name = "btnRevision";
+            this.btnRevision.ShadowDecoration.Parent = this.btnRevision;
+            this.btnRevision.Size = new System.Drawing.Size(200, 40);
+            this.btnRevision.TabIndex = 5;
+            this.btnRevision.Text = "Revision";
+            this.btnRevision.Click += new System.EventHandler(this.btnRevision_Click);
             // 
             // btnClose
             // 
@@ -237,27 +228,35 @@
             this.btnShowMenu.UseTransparentBackground = true;
             this.btnShowMenu.Click += new System.EventHandler(this.btnShowMenu_Click);
             // 
+            // pnlLoadForm
+            // 
+            this.pnlLoadForm.BackColor = System.Drawing.Color.White;
+            this.pnlLoadForm.Location = new System.Drawing.Point(0, 53);
+            this.pnlLoadForm.Name = "pnlLoadForm";
+            this.pnlLoadForm.Size = new System.Drawing.Size(1162, 628);
+            this.pnlLoadForm.TabIndex = 3;
+            // 
             // FInterface
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1162, 678);
-            this.Controls.Add(this.pnlLoadForm);
             this.Controls.Add(this.pnlStatusBar);
+            this.Controls.Add(this.pnlLoadForm);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FInterface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FInterface";
             this.pnlStatusBar.ResumeLayout(false);
-            this.pnlMenu.ResumeLayout(false);
+            this.pnlMenu1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlMenu;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlMenu1;
         private Guna.UI2.WinForms.Guna2Button btnShowMenu;
         private System.Windows.Forms.Timer timerHideMenu;
         private System.Windows.Forms.Timer timerShowMenu;
