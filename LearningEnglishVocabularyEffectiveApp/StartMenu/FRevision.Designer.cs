@@ -215,9 +215,10 @@
             this.pnYourFlashCard.Controls.Add(this.btFlip);
             this.pnYourFlashCard.Controls.Add(this.btFlashCard);
             this.pnYourFlashCard.Controls.Add(this.btBack);
-            this.pnYourFlashCard.Location = new System.Drawing.Point(432, 34);
+            this.pnYourFlashCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnYourFlashCard.Location = new System.Drawing.Point(0, 0);
             this.pnYourFlashCard.Name = "pnYourFlashCard";
-            this.pnYourFlashCard.Size = new System.Drawing.Size(314, 158);
+            this.pnYourFlashCard.Size = new System.Drawing.Size(1162, 628);
             this.pnYourFlashCard.TabIndex = 5;
             this.pnYourFlashCard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnYourFlashCard_Paint);
             // 
@@ -254,10 +255,10 @@
             this.btFlashCard.Font = new System.Drawing.Font("FS Nokio Bold", 36F, System.Drawing.FontStyle.Bold);
             this.btFlashCard.ForeColor = System.Drawing.Color.White;
             this.btFlashCard.HoverState.Parent = this.btFlashCard;
-            this.btFlashCard.Location = new System.Drawing.Point(295, 187);
+            this.btFlashCard.Location = new System.Drawing.Point(220, 232);
             this.btFlashCard.Name = "btFlashCard";
             this.btFlashCard.ShadowDecoration.Parent = this.btFlashCard;
-            this.btFlashCard.Size = new System.Drawing.Size(490, 335);
+            this.btFlashCard.Size = new System.Drawing.Size(490, 288);
             this.btFlashCard.TabIndex = 3;
             this.btFlashCard.Text = "WORD";
             this.btFlashCard.Click += new System.EventHandler(this.btFlashCard_Click);
@@ -547,14 +548,14 @@
             this.BackgroundImage = global::StartMenu.Properties.Resources.Revision2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1162, 628);
-            this.Controls.Add(this.pnlLoad);
-            this.Controls.Add(this.pnCheck);
-            this.Controls.Add(this.btStatistic);
+            this.Controls.Add(this.pnStatistic);
             this.Controls.Add(this.pnYourFlashCard);
+            this.Controls.Add(this.pnCheck);
+            this.Controls.Add(this.pnlLoad);
+            this.Controls.Add(this.btStatistic);
             this.Controls.Add(this.btCheck);
             this.Controls.Add(this.btYourFlashCard);
             this.Controls.Add(this.btLearnNewWord);
-            this.Controls.Add(this.pnStatistic);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);
             this.DoubleBuffered = true;
