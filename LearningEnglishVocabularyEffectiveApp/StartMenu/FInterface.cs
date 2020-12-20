@@ -26,6 +26,9 @@ namespace StartMenu
             this.btnShowMenu.Visible = true;
             // this.button1.Text= this.Height.ToString() + "\n" + this.pnlLoadForm.Height.ToString() + "\n" + this.pnlStatusBar.Height.ToString();
             //this.btnShowMenu.Visible = false;
+            object sender = new object();
+            EventArgs e = new EventArgs();
+            btnHome_Click(sender, e);
         }
 
         void HideMenuBar()

@@ -48,7 +48,7 @@
             // 
             // guna2Elipse1
             // 
-            this.guna2Elipse1.BorderRadius = 70;
+            this.guna2Elipse1.BorderRadius = 50;
             this.guna2Elipse1.TargetControl = this;
             // 
             // timerHideMenu
@@ -97,12 +97,12 @@
             // btnLearnNewWord
             // 
             this.btnLearnNewWord.BorderColor = System.Drawing.Color.White;
-            this.btnLearnNewWord.BorderThickness = 2;
+            this.btnLearnNewWord.BorderRadius = 15;
             this.btnLearnNewWord.CheckedState.Parent = this.btnLearnNewWord;
             this.btnLearnNewWord.CustomImages.Parent = this.btnLearnNewWord;
-            this.btnLearnNewWord.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnLearnNewWord.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnLearnNewWord.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnLearnNewWord.ForeColor = System.Drawing.Color.White;
+            this.btnLearnNewWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.btnLearnNewWord.HoverState.Parent = this.btnLearnNewWord;
             this.btnLearnNewWord.Location = new System.Drawing.Point(8, 7);
             this.btnLearnNewWord.Name = "btnLearnNewWord";
@@ -115,12 +115,12 @@
             // btnHome
             // 
             this.btnHome.BorderColor = System.Drawing.Color.White;
-            this.btnHome.BorderThickness = 2;
+            this.btnHome.BorderRadius = 15;
             this.btnHome.CheckedState.Parent = this.btnHome;
             this.btnHome.CustomImages.Parent = this.btnHome;
-            this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnHome.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnHome.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.btnHome.HoverState.Parent = this.btnHome;
             this.btnHome.Location = new System.Drawing.Point(845, 7);
             this.btnHome.Name = "btnHome";
@@ -133,12 +133,12 @@
             // btnPractice
             // 
             this.btnPractice.BorderColor = System.Drawing.Color.White;
-            this.btnPractice.BorderThickness = 2;
+            this.btnPractice.BorderRadius = 15;
             this.btnPractice.CheckedState.Parent = this.btnPractice;
             this.btnPractice.CustomImages.Parent = this.btnPractice;
-            this.btnPractice.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnPractice.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnPractice.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnPractice.ForeColor = System.Drawing.Color.White;
+            this.btnPractice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.btnPractice.HoverState.Parent = this.btnPractice;
             this.btnPractice.Location = new System.Drawing.Point(227, 7);
             this.btnPractice.Name = "btnPractice";
@@ -151,12 +151,12 @@
             // btnDictionary
             // 
             this.btnDictionary.BorderColor = System.Drawing.Color.White;
-            this.btnDictionary.BorderThickness = 2;
+            this.btnDictionary.BorderRadius = 15;
             this.btnDictionary.CheckedState.Parent = this.btnDictionary;
             this.btnDictionary.CustomImages.Parent = this.btnDictionary;
-            this.btnDictionary.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnDictionary.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnDictionary.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnDictionary.ForeColor = System.Drawing.Color.White;
+            this.btnDictionary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.btnDictionary.HoverState.Parent = this.btnDictionary;
             this.btnDictionary.Location = new System.Drawing.Point(639, 7);
             this.btnDictionary.Name = "btnDictionary";
@@ -169,12 +169,12 @@
             // btnRevision
             // 
             this.btnRevision.BorderColor = System.Drawing.Color.White;
-            this.btnRevision.BorderThickness = 2;
+            this.btnRevision.BorderRadius = 15;
             this.btnRevision.CheckedState.Parent = this.btnRevision;
             this.btnRevision.CustomImages.Parent = this.btnRevision;
-            this.btnRevision.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnRevision.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnRevision.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnRevision.ForeColor = System.Drawing.Color.White;
+            this.btnRevision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.btnRevision.HoverState.Parent = this.btnRevision;
             this.btnRevision.Location = new System.Drawing.Point(433, 7);
             this.btnRevision.Name = "btnRevision";
@@ -198,7 +198,7 @@
             this.btnClose.HoverState.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnClose.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btnClose.HoverState.Parent = this.btnClose;
-            this.btnClose.Location = new System.Drawing.Point(1113, 9);
+            this.btnClose.Location = new System.Drawing.Point(1113, 17);
             this.btnClose.Name = "btnClose";
             this.btnClose.ShadowDecoration.Parent = this.btnClose;
             this.btnClose.Size = new System.Drawing.Size(30, 30);

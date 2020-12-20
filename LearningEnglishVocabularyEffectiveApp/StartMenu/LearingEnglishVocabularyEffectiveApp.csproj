@@ -394,5 +394,8 @@
   <ItemGroup>
     <None Include="Resources\mkFlashcard.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -91,5 +91,10 @@ namespace StartMenu
             if (e.KeyCode == Keys.Enter)
                 btnSignUp_Click(sender, e);
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

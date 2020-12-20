@@ -35,6 +35,7 @@
             this.btnSignup = new Guna.UI2.WinForms.Guna2Button();
             this.btnSignin = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // tbxUsername
@@ -180,12 +181,32 @@
             this.guna2Elipse1.BorderRadius = 50;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundImage = global::StartMenu.Properties.Resources.brand_royaltyfree_yes_and_no_check_mark_flat_design;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClose.CheckedState.Parent = this.btnClose;
+            this.btnClose.CustomImages.Parent = this.btnClose;
+            this.btnClose.FillColor = System.Drawing.Color.Transparent;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.HoverState.Parent = this.btnClose;
+            this.btnClose.Location = new System.Drawing.Point(940, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.Size = new System.Drawing.Size(30, 30);
+            this.btnClose.TabIndex = 8;
+            this.btnClose.UseTransparentBackground = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // FSignUp
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::StartMenu.Properties.Resources.signin;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 553);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSignin);
             this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.tbxRepeatPass);
@@ -208,5 +229,6 @@
         private Guna.UI2.WinForms.Guna2Button btnSignup;
         private Guna.UI2.WinForms.Guna2Button btnSignin;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Button btnClose;
     }
 }

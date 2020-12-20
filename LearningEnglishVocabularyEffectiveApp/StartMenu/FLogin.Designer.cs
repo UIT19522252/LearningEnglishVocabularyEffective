@@ -36,6 +36,7 @@
             this.lblWrong = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // tbxUsrname
@@ -173,12 +174,32 @@
             this.guna2Elipse1.BorderRadius = 50;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundImage = global::StartMenu.Properties.Resources.brand_royaltyfree_yes_and_no_check_mark_flat_design;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClose.CheckedState.Parent = this.btnClose;
+            this.btnClose.CustomImages.Parent = this.btnClose;
+            this.btnClose.FillColor = System.Drawing.Color.Transparent;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.HoverState.Parent = this.btnClose;
+            this.btnClose.Location = new System.Drawing.Point(940, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.ShadowDecoration.Parent = this.btnClose;
+            this.btnClose.Size = new System.Drawing.Size(30, 30);
+            this.btnClose.TabIndex = 7;
+            this.btnClose.UseTransparentBackground = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // FLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::StartMenu.Properties.Resources.dnhso;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 553);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.name);
             this.Controls.Add(this.lblWrong);
             this.Controls.Add(this.btnSignUp);
@@ -205,5 +226,6 @@
         private System.Windows.Forms.Label lblWrong;
         private System.Windows.Forms.Label name;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Button btnClose;
     }
 }
