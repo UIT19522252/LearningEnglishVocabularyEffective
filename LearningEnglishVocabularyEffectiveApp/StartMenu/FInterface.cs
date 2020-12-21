@@ -17,6 +17,7 @@ namespace StartMenu
         FRevision tabRevision;
         Dictionary tabDictionary;
         FIntroduction tabHome;
+        FListing tabTraining;
 
         public FInterface()
         {
@@ -157,6 +158,20 @@ namespace StartMenu
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnTraining_Click(object sender, EventArgs e)
+        {
+            tabTraining = new FListing();
+            tabTraining.TopLevel = false;
+            pnlLoadForm.Controls.Clear();
+            pnlLoadForm.Controls.Add(tabTraining);
+            tabTraining.FormBorderStyle = FormBorderStyle.None;
+            tabTraining.Show();
+            /* this.pnlMenu.Visible = false;
+             this.pnlMenu.Left = -1 * this.pnlMenu.Width;*/
+            this.btnShowMenu.Visible = true;
+            HideMenuBar();
         }
     }
 }

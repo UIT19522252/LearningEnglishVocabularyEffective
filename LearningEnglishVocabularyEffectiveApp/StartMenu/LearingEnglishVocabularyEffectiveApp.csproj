@@ -69,6 +69,30 @@
     <Compile Include="FLearnNewWord.Designer.cs">
       <DependentUpon>FLearnNewWord.cs</DependentUpon>
     </Compile>
+    <Compile Include="FListing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListing.Designer.cs">
+      <DependentUpon>FListing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListingMusic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListingMusic.Designer.cs">
+      <DependentUpon>FListingMusic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListingTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListingTest.Designer.cs">
+      <DependentUpon>FListingTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListingVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListingVideo.Designer.cs">
+      <DependentUpon>FListingVideo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +174,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FLearnNewWord.resx">
       <DependentUpon>FLearnNewWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListing.resx">
+      <DependentUpon>FListing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListingMusic.resx">
+      <DependentUpon>FListingMusic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListingTest.resx">
+      <DependentUpon>FListingTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListingVideo.resx">
+      <DependentUpon>FListingVideo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>

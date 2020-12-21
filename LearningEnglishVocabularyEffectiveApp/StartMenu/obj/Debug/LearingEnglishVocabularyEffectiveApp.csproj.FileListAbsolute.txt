@@ -94,3 +94,7 @@ C:\Users\HELLO\Desktop\LTTQ_New Branch\LearningEnglishVocabularyEffective\Learni
 C:\Users\HELLO\Desktop\LTTQ_New Branch\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.Dictionary.resources
 C:\Users\ASUS\Source\Repos\UIT19522252\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FInterface.resources
 C:\Users\ASUS\Source\Repos\UIT19522252\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.Dictionary.resources
+C:\Users\ASUS\source\repos\UIT19522252\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FListing.resources
+C:\Users\ASUS\source\repos\UIT19522252\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FListingMusic.resources
+C:\Users\ASUS\source\repos\UIT19522252\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FListingTest.resources
+C:\Users\ASUS\source\repos\UIT19522252\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FListingVideo.resources
