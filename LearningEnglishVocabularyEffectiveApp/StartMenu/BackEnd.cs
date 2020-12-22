@@ -16,7 +16,11 @@ namespace StartMenu
 
 		public static void LoadData()
 		{
+<<<<<<< Updated upstream
 			string connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+=======
+			string connString = @"Server =LAPTOP-7LJ1B5F3\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=trongphuc123456;";
+>>>>>>> Stashed changes
 
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();

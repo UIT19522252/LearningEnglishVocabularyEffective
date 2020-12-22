@@ -19,7 +19,11 @@ namespace StartMenu
         int dm = 0;
         int demso = 0;
 
+<<<<<<< Updated upstream
         String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+=======
+        String connString = @"Server=LAPTOP-7LJ1B5F3\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=trongphuc123456;";
+>>>>>>> Stashed changes
         public string iduser = "1";
         public string[] EL = new string[10];
         public string[] VN = new string[10];
