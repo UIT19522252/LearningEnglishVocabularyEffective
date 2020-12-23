@@ -16,7 +16,7 @@ namespace StartMenu
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FInterface());
+			Application.Run(new FListing());
 		}
 	}
 }
