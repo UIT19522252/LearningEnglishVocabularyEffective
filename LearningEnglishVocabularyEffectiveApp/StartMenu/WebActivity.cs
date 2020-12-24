@@ -176,6 +176,22 @@ namespace Dictionary
 			}	
 			return ans;
 		}
-		
+		public bool checkWord(string word)
+		{
+			try
+			{
+				string source = getSource("https://dictionary.cambridge.org/vi/dictionary/english/" + word);
+				if (source.IndexOf("lp-m_l-25") == -1)
+				{
+					return true;
+				}
+				return false;
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+				return false;
+			}
+		}
 	}
 }

@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackEnd.cs" />
+    <Compile Include="ConnectionGame.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="FError.cs">
       <SubType>Form</SubType>
@@ -153,6 +154,12 @@
     <Compile Include="GRearangeTheWords.Designer.cs">
       <DependentUpon>GRearangeTheWords.cs</DependentUpon>
     </Compile>
+    <Compile Include="GWordConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GWordConnection.Designer.cs">
+      <DependentUpon>GWordConnection.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginActivity.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -216,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GRearangeTheWords.resx">
       <DependentUpon>GRearangeTheWords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GWordConnection.resx">
+      <DependentUpon>GWordConnection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
