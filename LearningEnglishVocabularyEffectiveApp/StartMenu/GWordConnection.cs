@@ -8,8 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
-using Dictionary;
-
+using System.IO;
 namespace StartMenu
 {
 	public partial class GWordConnection : Form
@@ -79,8 +78,11 @@ namespace StartMenu
 				string ans;
 				if ((ans = game.PotentialAnswer()) != "No Answer")
 				{
-					NOTIFICATION f = new NOTIFICATION(ans, "Thua rồi nha con, Đáp án nè");
-					f.Show();
+					this.rtbWord.Text = ans;
+					this.pnNotification.Dock = DockStyle.Fill;
+					this.lbMessage.Text = "Thua rồi nha con, Đáp án nè";
+					this.rtbDecrip.Text = LoadDecrip(ans);
+					this.pnNotification.Visible = true;
 				}
 				else
 					MessageBox.Show("Tôi cũng không tìm thấy đáp án", "Solution");
@@ -92,8 +94,10 @@ namespace StartMenu
 			string res;
 			if ((res = game.PotentialAnswer()) != "No Answer")
 			{
-				NOTIFICATION f = new NOTIFICATION(res, "Đáp án");
-				f.Show();
+				this.pnNotification.Dock = DockStyle.Fill;
+				this.lbMessage.Text = "ĐÁP ÁN";
+				this.rtbDecrip.Text = LoadDecrip(res);
+				this.pnNotification.Visible = true;
 			}
 			else
 				MessageBox.Show("Tôi cũng không tìm thấy đáp án", "Solution");
@@ -173,8 +177,11 @@ namespace StartMenu
 		}
 		private void NPCLose()
 		{
-			NOTIFICATION f = new NOTIFICATION(tbPlayer.Text, "Bái phục, các hạ thắng rồi");
-			f.Show();
+			this.rtbWord.Text = tbPlayer.Text;
+			this.pnNotification.Dock = DockStyle.Fill;
+			this.lbMessage.Text = "Bái phục, các hạ thắng rồi";
+			this.rtbDecrip.Text = LoadDecrip(tbPlayer.Text);
+			this.pnNotification.Visible = true;
 			this.lbScore.Text = "Score: " + game.score;
 			tbPlayer.Text = "";
 			this.rtbNPC.Text = game.NewGame();
@@ -249,6 +256,10 @@ namespace StartMenu
 		{
 			string data = "";
 			string line;
+			if(File.Exists("HighScore.txt")==false)
+			{
+				return;
+			}	
 			StreamReader file = new StreamReader("HighScore.txt");
 			while ((line = file.ReadLine()) != null)
 			{
@@ -281,7 +292,6 @@ namespace StartMenu
 			MessageBox.Show(data);
 			UsedWord.Clear();
 		}
-
 		private void btOK_Click(object sender, EventArgs e)
 		{
 			this.pnNotification.Visible = false;

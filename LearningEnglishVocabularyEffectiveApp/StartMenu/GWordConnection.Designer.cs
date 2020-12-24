@@ -195,6 +195,7 @@
 			this.btHighScore.TabIndex = 17;
 			this.btHighScore.Text = "High Score";
 			this.btHighScore.UseVisualStyleBackColor = true;
+			this.btHighScore.Click += new System.EventHandler(this.btHighScore_Click);
 			// 
 			// btNewGame
 			// 
@@ -205,6 +206,7 @@
 			this.btNewGame.TabIndex = 16;
 			this.btNewGame.Text = "New Game";
 			this.btNewGame.UseVisualStyleBackColor = true;
+			this.btNewGame.Click += new System.EventHandler(this.btNewGame_Click);
 			// 
 			// btSubmit
 			// 
@@ -215,6 +217,7 @@
 			this.btSubmit.TabIndex = 15;
 			this.btSubmit.Text = "Submit";
 			this.btSubmit.UseVisualStyleBackColor = true;
+			this.btSubmit.Click += new System.EventHandler(this.btSubmit_Click);
 			// 
 			// tbPlayer
 			// 
@@ -240,11 +243,10 @@
 			this.pnNotification.Controls.Add(this.lbMessage);
 			this.pnNotification.Controls.Add(this.rtbWord);
 			this.pnNotification.Controls.Add(this.rtbDecrip);
-			this.pnNotification.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pnNotification.Location = new System.Drawing.Point(0, 0);
+			this.pnNotification.Location = new System.Drawing.Point(437, 12);
 			this.pnNotification.Name = "pnNotification";
 			this.pnNotification.ShadowDecoration.Parent = this.pnNotification;
-			this.pnNotification.Size = new System.Drawing.Size(1166, 589);
+			this.pnNotification.Size = new System.Drawing.Size(215, 94);
 			this.pnNotification.TabIndex = 31;
 			this.pnNotification.Visible = false;
 			// 

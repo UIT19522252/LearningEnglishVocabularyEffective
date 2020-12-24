@@ -7,8 +7,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Security.Policy;
-using Dictionary;
-
 namespace StartMenu
 {
 	struct Word
