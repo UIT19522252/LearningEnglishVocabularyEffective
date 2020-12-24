@@ -102,3 +102,8 @@ C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglis
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FListingTest.resources
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FListingVideo.resources
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.Dictionary.resources
+C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\Interop.WMPLib.dll
+C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\LearingEnglishVocabularyEffectiveApp.csproj.ResolveComReference.cache
+C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\bin\Debug\Interop.WMPLib.dll
+C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\bin\Debug\AxInterop.WMPLib.dll
