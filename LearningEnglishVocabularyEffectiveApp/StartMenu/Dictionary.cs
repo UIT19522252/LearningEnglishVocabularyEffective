@@ -60,31 +60,31 @@ namespace StartMenu
             this.lbPronuciation.Visible = false;
             this.btSpeaker.Visible = false;
             string mean = wa.onlineDict(tbWord.Text);
-            if (mean == "") return;
+            if (mean == "")
+            {
+                this.rtbMean.Text = "Không tìm thấy từ được nhập";
+                return;
+            }
+            this.btSpeaker.Visible = true;
             this.rtbMean.Text = mean;
             this.btMakeFlashCard.Visible = true;
             this.btMakeFlashCard.Enabled = true;
         }
         private void btSpeaker_Click(object sender, EventArgs e)
         {
-            
-            timer1.Interval = 5000;
-            timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            timer1.Enabled = true;
-            WebActivity wa = new WebActivity();
-            wa.openAudio("temp.mp3");
-            wa.playAudio();
-        }
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            timer1.Enabled = false;
-            WebActivity wa = new WebActivity();
-            wa.openAudio("temp.mp3");
-            wa.stopAudio();
+            if(this.pnOfflineDic.Visible == true)
+                Data.voice.Read(tbWord1.Text);
+            else
+                Data.voice.Read(tbWord.Text);
         }
         private void btFind1_Click(object sender, EventArgs e)
         {
             this.rtbMean1.Text = sql.Decription(this.tbWord1.Text);
+            if (this.rtbMean1.Text == "")
+            {
+                this.rtbMean1.Text = "Không tìm thấy từ được nhập";
+            }
+            else this.btSpeaker.Visible = true;
         }
         
         private void btDicoffline_Click(object sender, EventArgs e)
@@ -97,6 +97,7 @@ namespace StartMenu
         private void btOnlineDictionary_Click(object sender, EventArgs e)
         {
             this.pnOfflineDic.Visible = false;
+            this.btSpeaker.Visible = false;
         }
         private void btMakeFlashCard_Click(object sender, EventArgs e)
         {

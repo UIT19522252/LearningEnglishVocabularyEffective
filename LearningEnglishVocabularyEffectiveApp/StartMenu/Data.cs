@@ -20,7 +20,7 @@ namespace StartMenu
         public static Question currentQuestion;
         // Luu trang thai da hoc xong hay chua
         public static bool XONG = false;
-
+        public static Voice voice = new Voice();
         
     }
 }

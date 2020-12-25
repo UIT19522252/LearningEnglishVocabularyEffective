@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -172,6 +173,7 @@
     </Compile>
     <Compile Include="sqlConnection.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="Voice.cs" />
     <Compile Include="WebActivity.cs" />
     <EmbeddedResource Include="FError.resx">
       <DependentUpon>FError.cs</DependentUpon>
