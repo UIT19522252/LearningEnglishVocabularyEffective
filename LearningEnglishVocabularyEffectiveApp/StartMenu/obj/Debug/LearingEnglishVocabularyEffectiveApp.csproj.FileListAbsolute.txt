@@ -177,3 +177,4 @@ C:\Users\HELLO\Desktop\Task 4\LearningEnglishVocabularyEffective\LearningEnglish
 C:\Users\HELLO\Desktop\Task 4\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\LearingEnglishVocabularyEffectiveApp.csproj.CopyComplete
 C:\Users\HELLO\Desktop\Task 4\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.exe
 C:\Users\HELLO\Desktop\Task 4\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.pdb
+C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.GWordConnection.resources

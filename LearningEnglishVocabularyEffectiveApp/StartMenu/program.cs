@@ -16,7 +16,7 @@ namespace StartMenu
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Dictionary());
+			Application.Run(new FSignUp());
 		}
 	}
 }
