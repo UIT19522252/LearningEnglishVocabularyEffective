@@ -341,6 +341,7 @@ namespace StartMenu
 					res += "Classifier: " + reader[1].ToString() + "\n";
 					res += "Means: " + reader[2].ToString() + "\n";
 					res += "Example: " + reader[3].ToString() + "\n";
+					if(reader[4].ToString()!="")
 					res += "Pronuciation: " + reader[4].ToString() + "\n";
 					break;
 				}

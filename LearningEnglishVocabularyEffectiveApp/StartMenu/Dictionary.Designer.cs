@@ -49,7 +49,6 @@
 			this.pnMakeFlashCard = new System.Windows.Forms.Panel();
 			this.hideMKFL = new Guna.UI2.WinForms.Guna2Button();
 			this.btChoose = new Guna.UI2.WinForms.Guna2Button();
-			this.btNext = new Guna.UI2.WinForms.Guna2Button();
 			this.btFlashCard = new Guna.UI2.WinForms.Guna2Button();
 			this.lbWord = new System.Windows.Forms.Label();
 			this.panel1 = new System.Windows.Forms.Panel();
@@ -359,7 +358,6 @@
 			this.pnMakeFlashCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.pnMakeFlashCard.Controls.Add(this.hideMKFL);
 			this.pnMakeFlashCard.Controls.Add(this.btChoose);
-			this.pnMakeFlashCard.Controls.Add(this.btNext);
 			this.pnMakeFlashCard.Controls.Add(this.btFlashCard);
 			this.pnMakeFlashCard.Controls.Add(this.lbWord);
 			this.pnMakeFlashCard.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -406,24 +404,6 @@
 			this.btChoose.Text = "Choose";
 			this.btChoose.Click += new System.EventHandler(this.btChoose_Click);
 			// 
-			// btNext
-			// 
-			this.btNext.BackColor = System.Drawing.Color.Transparent;
-			this.btNext.BorderRadius = 15;
-			this.btNext.CheckedState.Parent = this.btNext;
-			this.btNext.CustomImages.Parent = this.btNext;
-			this.btNext.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-			this.btNext.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btNext.ForeColor = System.Drawing.Color.White;
-			this.btNext.HoverState.Parent = this.btNext;
-			this.btNext.Location = new System.Drawing.Point(886, 373);
-			this.btNext.Name = "btNext";
-			this.btNext.ShadowDecoration.Parent = this.btNext;
-			this.btNext.Size = new System.Drawing.Size(100, 45);
-			this.btNext.TabIndex = 15;
-			this.btNext.Text = "Next";
-			this.btNext.Click += new System.EventHandler(this.btNext_Click);
-			// 
 			// btFlashCard
 			// 
 			this.btFlashCard.AllowDrop = true;
@@ -450,7 +430,7 @@
 			this.lbWord.BackColor = System.Drawing.Color.Transparent;
 			this.lbWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
 			this.lbWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-			this.lbWord.Location = new System.Drawing.Point(487, 131);
+			this.lbWord.Location = new System.Drawing.Point(476, 184);
 			this.lbWord.Name = "lbWord";
 			this.lbWord.Size = new System.Drawing.Size(238, 73);
 			this.lbWord.TabIndex = 13;
@@ -556,7 +536,6 @@
 		private Guna.UI2.WinForms.Guna2Button btMakeFlashCard;
 		private System.Windows.Forms.Panel pnMakeFlashCard;
 		private Guna.UI2.WinForms.Guna2Button btChoose;
-		private Guna.UI2.WinForms.Guna2Button btNext;
 		private Guna.UI2.WinForms.Guna2Button btFlashCard;
 		private System.Windows.Forms.Label lbWord;
 		private System.Windows.Forms.Panel panel1;

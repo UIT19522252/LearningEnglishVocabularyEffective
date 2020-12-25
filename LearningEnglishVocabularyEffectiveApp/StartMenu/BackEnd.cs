@@ -21,7 +21,7 @@ namespace StartMenu
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
 
-			string sqlQuery = "select top 5 * from VOCABULARY order by newid()";
+			string sqlQuery = "select top 5 ID, WORD,MEAN from VOCABULARY order by newid()";
 
 			SqlCommand command = new SqlCommand(sqlQuery, connection);
 

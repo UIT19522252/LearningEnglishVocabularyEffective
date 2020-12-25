@@ -100,16 +100,19 @@ namespace StartMenu
         }
         private void btMakeFlashCard_Click(object sender, EventArgs e)
         {
-            //this.pnMakeFlashCard.Visible = true;
-            //this.pnMakeFlashCard.Dock = DockStyle.Fill;
-            //this.btSpeaker.Visible = false;
-            //this.lbPronuciation.Visible = false;
-            //lbWord.Text = this.tbWord.Text;
+            this.pnMakeFlashCard.Visible = true;
+            this.pnMakeFlashCard.Dock = DockStyle.Fill;
+            this.btSpeaker.Visible = false;
+            this.lbPronuciation.Visible = false;
+            lbWord.Text = this.tbWord.Text;
             //index = 1;
             //string m = ;
             //m = m.Substring(0, m.IndexOf(";"));
-            //btFlashCard.Text = m;
-            //this.btMakeFlashCard.Enabled = false;
+            string m = this.rtbMean.Text;
+            m = m.Substring(m.IndexOf("Means: ") + 7);
+            m = m.Substring(0, m.IndexOf("E"));
+            btFlashCard.Text = m;
+            this.btMakeFlashCard.Enabled = false;
         }
         private void tbWord_TextChanged(object sender, EventArgs e)
         {
@@ -126,17 +129,6 @@ namespace StartMenu
             this.tbWord.Text = "";
             this.btMakeFlashCard.Enabled = false;
             this.rtbMean.Text = "";
-        }
-        private void btNext_Click(object sender, EventArgs e)
-        {
-            index += 1;
-            if (index == Meanings.Count)
-            {
-                index = 1;
-            }
-            string m = Meanings[index];
-            m = m.Substring(0, m.IndexOf(";"));
-            btFlashCard.Text = m;
         }
 
         private void tbWord1_TextChanged(object sender, EventArgs e)

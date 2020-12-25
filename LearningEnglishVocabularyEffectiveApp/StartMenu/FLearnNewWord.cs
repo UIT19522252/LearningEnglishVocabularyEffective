@@ -100,7 +100,7 @@ namespace StartMenu
             SqlConnection connection = new SqlConnection(connString);
             connection.Open();
 
-            string sqlQuery = "select top 3 * from VOCABULARY order by newid()";
+            string sqlQuery = "select top 3 ID, WORD, MEAN from VOCABULARY order by newid()";
 
             SqlCommand command = new SqlCommand(sqlQuery, connection);
 
