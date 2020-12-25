@@ -34,16 +34,22 @@ namespace StartMenu
                 f.StartPosition = FormStartPosition.CenterScreen;
                 f.ShowDialog();
             }
-            else if(tbxRepeatPass.Text!=tbxPass.Text)
+            else if(!tbxRepeatPass.Text.Equals(tbxPass.Text))
             {
                 FError f = new FError("Password and repeat password are not match ", "Message");
                 f.StartPosition = FormStartPosition.CenterScreen;
                 f.ShowDialog();
             } 
+            else if(tbEmail.Text==""|| tbEmail.Text.IndexOf("@gmail.com")==-1)
+            {
+                FError f = new FError("Email is not valid", "Message");
+                f.StartPosition = FormStartPosition.CenterScreen;
+                f.ShowDialog();
+            }    
             else
             {
                 LoginActivity lg = new LoginActivity();
-                if (lg.Signup(tbxUsername.Text, tbxPass.Text))
+                if (lg.Signup(tbxUsername.Text, tbxPass.Text,tbEmail.Text))
                 {
                     MessageBox.Show("Sign up succesfully!", "Congratulation!");
                     this.Hide();
@@ -120,7 +126,7 @@ namespace StartMenu
             this.lbSentmail.Hide();
             System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
             mail.From = new System.Net.Mail.MailAddress("app.english.vocabulary@gmail.com");
-            if (this.tbxUsername.Text =="")
+            if (this.tbEmail.Text =="")
             {
                 FError f = new FError("Enter your mail", "Message");
                 f.StartPosition = FormStartPosition.CenterScreen;
@@ -128,7 +134,7 @@ namespace StartMenu
             }
             else
             {
-                mail.To.Add(this.tbxUsername.Text);
+                mail.To.Add(this.tbEmail.Text);
                 mail.Subject = "Confirm account";
                 code = random_Digit().ToString();
                 mail.Body = code + " is your confirm code ";
@@ -155,7 +161,7 @@ namespace StartMenu
             this.lbSentmail.Hide();
             System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
             mail.From = new System.Net.Mail.MailAddress("app.english.vocabulary@gmail.com");
-            if (this.tbxUsername.Text == null)
+            if (this.tbEmail.Text == null)
             {
                 FError f = new FError("Enter your mail", "Message");
                 f.StartPosition = FormStartPosition.CenterScreen;
@@ -165,7 +171,7 @@ namespace StartMenu
             {
                 try
                 {
-                    mail.To.Add(this.tbxUsername.Text);
+                    mail.To.Add(this.tbEmail.Text);
                     mail.Subject = "Confirm account";
                     code = random_Digit().ToString();
                     mail.Body = code + " is your confirm code ";
