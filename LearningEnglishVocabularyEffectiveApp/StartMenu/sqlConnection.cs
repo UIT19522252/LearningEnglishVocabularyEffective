@@ -23,7 +23,7 @@ namespace StartMenu
 	};
 	class sqlConnection
 	{
-		String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+		String connString = Data.ConnString;
 		WebActivity wa = new WebActivity();
 		public List<Word> getWord()
 		{

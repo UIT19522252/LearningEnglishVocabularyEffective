@@ -22,6 +22,6 @@ namespace StartMenu
         public static bool XONG = false;
         public static Voice voice = new Voice();
         public static int type = 0;
-        
+        public static string ConnString = "Server=tcp:hacthesql.database.windows.net,1433;Initial Catalog=QUICKLEARN;Persist Security Info=False;User ID=hacthe;Password=Dht07072001;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
     }
 }

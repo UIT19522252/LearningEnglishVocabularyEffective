@@ -28,7 +28,7 @@ namespace StartMenu
         }
         private void SQLconnect()
         {
-            String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+            String connString =Data.ConnString;
             SqlConnection connection = new SqlConnection(connString);
             connection.Open();
 
