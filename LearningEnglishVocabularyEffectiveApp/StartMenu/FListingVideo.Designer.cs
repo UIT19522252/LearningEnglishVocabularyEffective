@@ -59,7 +59,7 @@
             // 
             // treeView
             // 
-            this.treeView.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treeView.Font = new System.Drawing.Font("FS Nokio Regular", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.treeView.Location = new System.Drawing.Point(4, 4);
             this.treeView.Name = "treeView";
             this.treeView.Size = new System.Drawing.Size(315, 524);
@@ -67,10 +67,10 @@
             // 
             // lbNameClip
             // 
-            this.lbNameClip.Font = new System.Drawing.Font("MV Boli", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameClip.Font = new System.Drawing.Font("FS Nokio Bold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameClip.Location = new System.Drawing.Point(14, 485);
             this.lbNameClip.Name = "lbNameClip";
-            this.lbNameClip.Size = new System.Drawing.Size(828, 38);
+            this.lbNameClip.Size = new System.Drawing.Size(828, 56);
             this.lbNameClip.TabIndex = 4;
             this.lbNameClip.Text = "Chose the clip from list";
             // 

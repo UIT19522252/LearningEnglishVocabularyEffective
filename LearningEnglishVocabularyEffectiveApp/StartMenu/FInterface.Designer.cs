@@ -34,6 +34,7 @@
             this.timerShowMenu = new System.Windows.Forms.Timer(this.components);
             this.pnlStatusBar = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlMenu1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.btnTraining = new Guna.UI2.WinForms.Guna2Button();
             this.btnLearnNewWord = new Guna.UI2.WinForms.Guna2Button();
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.btnPractice = new Guna.UI2.WinForms.Guna2Button();
@@ -42,7 +43,6 @@
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnShowMenu = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLoadForm = new System.Windows.Forms.Panel();
-            this.btnTraining = new Guna.UI2.WinForms.Guna2Button();
             this.pnlStatusBar.SuspendLayout();
             this.pnlMenu1.SuspendLayout();
             this.SuspendLayout();
@@ -96,13 +96,31 @@
             this.pnlMenu1.Size = new System.Drawing.Size(1061, 47);
             this.pnlMenu1.TabIndex = 0;
             // 
+            // btnTraining
+            // 
+            this.btnTraining.BorderColor = System.Drawing.Color.White;
+            this.btnTraining.BorderRadius = 15;
+            this.btnTraining.CheckedState.Parent = this.btnTraining;
+            this.btnTraining.CustomImages.Parent = this.btnTraining;
+            this.btnTraining.FillColor = System.Drawing.Color.Azure;
+            this.btnTraining.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnTraining.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnTraining.HoverState.Parent = this.btnTraining;
+            this.btnTraining.Location = new System.Drawing.Point(707, 7);
+            this.btnTraining.Name = "btnTraining";
+            this.btnTraining.ShadowDecoration.Parent = this.btnTraining;
+            this.btnTraining.Size = new System.Drawing.Size(170, 40);
+            this.btnTraining.TabIndex = 7;
+            this.btnTraining.Text = "Training";
+            this.btnTraining.Click += new System.EventHandler(this.btnTraining_Click);
+            // 
             // btnLearnNewWord
             // 
             this.btnLearnNewWord.BorderColor = System.Drawing.Color.White;
             this.btnLearnNewWord.BorderRadius = 15;
             this.btnLearnNewWord.CheckedState.Parent = this.btnLearnNewWord;
             this.btnLearnNewWord.CustomImages.Parent = this.btnLearnNewWord;
-            this.btnLearnNewWord.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnLearnNewWord.FillColor = System.Drawing.Color.Azure;
             this.btnLearnNewWord.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnLearnNewWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.btnLearnNewWord.HoverState.Parent = this.btnLearnNewWord;
@@ -120,7 +138,7 @@
             this.btnHome.BorderRadius = 15;
             this.btnHome.CheckedState.Parent = this.btnHome;
             this.btnHome.CustomImages.Parent = this.btnHome;
-            this.btnHome.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnHome.FillColor = System.Drawing.Color.Azure;
             this.btnHome.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.btnHome.HoverState.Parent = this.btnHome;
@@ -138,7 +156,7 @@
             this.btnPractice.BorderRadius = 15;
             this.btnPractice.CheckedState.Parent = this.btnPractice;
             this.btnPractice.CustomImages.Parent = this.btnPractice;
-            this.btnPractice.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnPractice.FillColor = System.Drawing.Color.Azure;
             this.btnPractice.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnPractice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.btnPractice.HoverState.Parent = this.btnPractice;
@@ -156,7 +174,7 @@
             this.btnDictionary.BorderRadius = 15;
             this.btnDictionary.CheckedState.Parent = this.btnDictionary;
             this.btnDictionary.CustomImages.Parent = this.btnDictionary;
-            this.btnDictionary.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnDictionary.FillColor = System.Drawing.Color.Azure;
             this.btnDictionary.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnDictionary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.btnDictionary.HoverState.Parent = this.btnDictionary;
@@ -174,7 +192,7 @@
             this.btnRevision.BorderRadius = 15;
             this.btnRevision.CheckedState.Parent = this.btnRevision;
             this.btnRevision.CustomImages.Parent = this.btnRevision;
-            this.btnRevision.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnRevision.FillColor = System.Drawing.Color.Azure;
             this.btnRevision.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnRevision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.btnRevision.HoverState.Parent = this.btnRevision;
@@ -237,24 +255,6 @@
             this.pnlLoadForm.Name = "pnlLoadForm";
             this.pnlLoadForm.Size = new System.Drawing.Size(1162, 628);
             this.pnlLoadForm.TabIndex = 3;
-            // 
-            // btnTraining
-            // 
-            this.btnTraining.BorderColor = System.Drawing.Color.White;
-            this.btnTraining.BorderRadius = 15;
-            this.btnTraining.CheckedState.Parent = this.btnTraining;
-            this.btnTraining.CustomImages.Parent = this.btnTraining;
-            this.btnTraining.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.btnTraining.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnTraining.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.btnTraining.HoverState.Parent = this.btnTraining;
-            this.btnTraining.Location = new System.Drawing.Point(707, 7);
-            this.btnTraining.Name = "btnTraining";
-            this.btnTraining.ShadowDecoration.Parent = this.btnTraining;
-            this.btnTraining.Size = new System.Drawing.Size(170, 40);
-            this.btnTraining.TabIndex = 7;
-            this.btnTraining.Text = "Training";
-            this.btnTraining.Click += new System.EventHandler(this.btnTraining_Click);
             // 
             // FInterface
             // 

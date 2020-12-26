@@ -39,17 +39,19 @@
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.lbForgot = new System.Windows.Forms.LinkLabel();
             this.pnGmail = new System.Windows.Forms.Panel();
-            this.lbGmail = new System.Windows.Forms.Label();
-            this.btConfirm = new Guna.UI2.WinForms.Guna2Button();
-            this.tbEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbCode = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbSentmail = new System.Windows.Forms.LinkLabel();
             this.pnNewPass = new System.Windows.Forms.Panel();
-            this.tbNewpass = new Guna.UI2.WinForms.Guna2TextBox();
-            this.tbCNewpass = new Guna.UI2.WinForms.Guna2TextBox();
             this.btRePass = new Guna.UI2.WinForms.Guna2Button();
+            this.tbCNewpass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tbNewpass = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbSentmailAgain = new System.Windows.Forms.LinkLabel();
+            this.lbSentmail = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbCode = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btConfirm = new Guna.UI2.WinForms.Guna2Button();
+            this.lbGmail = new System.Windows.Forms.Label();
+            this.tbEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnGmail.SuspendLayout();
             this.pnNewPass.SuspendLayout();
             this.SuspendLayout();
@@ -168,7 +170,7 @@
             this.lblWrong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.lblWrong.Location = new System.Drawing.Point(746, 218);
             this.lblWrong.Name = "lblWrong";
-            this.lblWrong.Size = new System.Drawing.Size(278, 20);
+            this.lblWrong.Size = new System.Drawing.Size(250, 17);
             this.lblWrong.TabIndex = 5;
             this.lblWrong.Text = "*Incorrect Username or Password";
             // 
@@ -180,7 +182,7 @@
             this.name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.name.Location = new System.Drawing.Point(605, 391);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(399, 38);
+            this.name.Size = new System.Drawing.Size(348, 32);
             this.name.TabIndex = 6;
             this.name.Text = "Don\'t you have account?";
             // 
@@ -211,12 +213,15 @@
             // lbForgot
             // 
             this.lbForgot.AutoSize = true;
-            this.lbForgot.Location = new System.Drawing.Point(695, 345);
+            this.lbForgot.BackColor = System.Drawing.Color.Transparent;
+            this.lbForgot.Font = new System.Drawing.Font("FS Nokio Regular", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbForgot.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.lbForgot.Location = new System.Drawing.Point(689, 328);
             this.lbForgot.Name = "lbForgot";
-            this.lbForgot.Size = new System.Drawing.Size(123, 20);
+            this.lbForgot.Size = new System.Drawing.Size(153, 22);
             this.lbForgot.TabIndex = 8;
             this.lbForgot.TabStop = true;
-            this.lbForgot.Text = "forgot password";
+            this.lbForgot.Text = "Forgot password???";
             this.lbForgot.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbForgot_LinkClicked);
             // 
             // pnGmail
@@ -230,137 +235,45 @@
             this.pnGmail.Controls.Add(this.btConfirm);
             this.pnGmail.Controls.Add(this.lbGmail);
             this.pnGmail.Controls.Add(this.tbEmail);
-            this.pnGmail.Location = new System.Drawing.Point(489, -2);
+            this.pnGmail.Location = new System.Drawing.Point(500, 31);
             this.pnGmail.Name = "pnGmail";
-            this.pnGmail.Size = new System.Drawing.Size(493, 555);
+            this.pnGmail.Size = new System.Drawing.Size(486, 520);
             this.pnGmail.TabIndex = 9;
-            // 
-            // lbGmail
-            // 
-            this.lbGmail.Location = new System.Drawing.Point(41, 178);
-            this.lbGmail.Name = "lbGmail";
-            this.lbGmail.Size = new System.Drawing.Size(100, 23);
-            this.lbGmail.TabIndex = 1;
-            this.lbGmail.Text = "Your gmail";
-            // 
-            // btConfirm
-            // 
-            this.btConfirm.CheckedState.Parent = this.btConfirm;
-            this.btConfirm.CustomImages.Parent = this.btConfirm;
-            this.btConfirm.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btConfirm.ForeColor = System.Drawing.Color.White;
-            this.btConfirm.HoverState.Parent = this.btConfirm;
-            this.btConfirm.Location = new System.Drawing.Point(293, 330);
-            this.btConfirm.Name = "btConfirm";
-            this.btConfirm.ShadowDecoration.Parent = this.btConfirm;
-            this.btConfirm.Size = new System.Drawing.Size(128, 37);
-            this.btConfirm.TabIndex = 2;
-            this.btConfirm.Text = "Confirm";
-            this.btConfirm.Click += new System.EventHandler(this.btConfirm_Click);
-            // 
-            // tbEmail
-            // 
-            this.tbEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbEmail.DefaultText = "";
-            this.tbEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbEmail.DisabledState.Parent = this.tbEmail;
-            this.tbEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbEmail.FocusedState.Parent = this.tbEmail;
-            this.tbEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbEmail.HoverState.Parent = this.tbEmail;
-            this.tbEmail.Location = new System.Drawing.Point(147, 169);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.PasswordChar = '\0';
-            this.tbEmail.PlaceholderText = "";
-            this.tbEmail.SelectedText = "";
-            this.tbEmail.ShadowDecoration.Parent = this.tbEmail;
-            this.tbEmail.Size = new System.Drawing.Size(274, 36);
-            this.tbEmail.TabIndex = 0;
-            // 
-            // tbCode
-            // 
-            this.tbCode.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbCode.DefaultText = "";
-            this.tbCode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbCode.DisabledState.Parent = this.tbCode;
-            this.tbCode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbCode.FocusedState.Parent = this.tbCode;
-            this.tbCode.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbCode.HoverState.Parent = this.tbCode;
-            this.tbCode.Location = new System.Drawing.Point(147, 231);
-            this.tbCode.Name = "tbCode";
-            this.tbCode.PasswordChar = '\0';
-            this.tbCode.PlaceholderText = "";
-            this.tbCode.SelectedText = "";
-            this.tbCode.ShadowDecoration.Parent = this.tbCode;
-            this.tbCode.Size = new System.Drawing.Size(274, 36);
-            this.tbCode.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(73, 245);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 22);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Code";
-            // 
-            // lbSentmail
-            // 
-            this.lbSentmail.AutoSize = true;
-            this.lbSentmail.BackColor = System.Drawing.Color.Transparent;
-            this.lbSentmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSentmail.LinkColor = System.Drawing.Color.Red;
-            this.lbSentmail.Location = new System.Drawing.Point(199, 280);
-            this.lbSentmail.Name = "lbSentmail";
-            this.lbSentmail.Size = new System.Drawing.Size(162, 29);
-            this.lbSentmail.TabIndex = 5;
-            this.lbSentmail.TabStop = true;
-            this.lbSentmail.Text = "Sent me code";
-            this.lbSentmail.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbSentGmail_LinkClicked);
             // 
             // pnNewPass
             // 
+            this.pnNewPass.Controls.Add(this.label3);
+            this.pnNewPass.Controls.Add(this.label2);
             this.pnNewPass.Controls.Add(this.btRePass);
             this.pnNewPass.Controls.Add(this.tbCNewpass);
             this.pnNewPass.Controls.Add(this.tbNewpass);
-            this.pnNewPass.Location = new System.Drawing.Point(3, 12);
+            this.pnNewPass.Location = new System.Drawing.Point(9, 15);
             this.pnNewPass.Name = "pnNewPass";
-            this.pnNewPass.Size = new System.Drawing.Size(481, 540);
+            this.pnNewPass.Size = new System.Drawing.Size(461, 495);
             this.pnNewPass.TabIndex = 6;
             // 
-            // tbNewpass
+            // btRePass
             // 
-            this.tbNewpass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbNewpass.DefaultText = "";
-            this.tbNewpass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbNewpass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbNewpass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbNewpass.DisabledState.Parent = this.tbNewpass;
-            this.tbNewpass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbNewpass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbNewpass.FocusedState.Parent = this.tbNewpass;
-            this.tbNewpass.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tbNewpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbNewpass.HoverState.Parent = this.tbNewpass;
-            this.tbNewpass.Location = new System.Drawing.Point(173, 165);
-            this.tbNewpass.Name = "tbNewpass";
-            this.tbNewpass.PasswordChar = '\0';
-            this.tbNewpass.PlaceholderText = "";
-            this.tbNewpass.SelectedText = "";
-            this.tbNewpass.ShadowDecoration.Parent = this.tbNewpass;
-            this.tbNewpass.Size = new System.Drawing.Size(200, 36);
-            this.tbNewpass.TabIndex = 0;
+            this.btRePass.BorderRadius = 18;
+            this.btRePass.CheckedState.Parent = this.btRePass;
+            this.btRePass.CustomImages.Parent = this.btRePass;
+            this.btRePass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btRePass.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRePass.ForeColor = System.Drawing.Color.White;
+            this.btRePass.HoverState.Parent = this.btRePass;
+            this.btRePass.Location = new System.Drawing.Point(264, 259);
+            this.btRePass.Name = "btRePass";
+            this.btRePass.ShadowDecoration.Parent = this.btRePass;
+            this.btRePass.Size = new System.Drawing.Size(180, 45);
+            this.btRePass.TabIndex = 2;
+            this.btRePass.Text = "Repassword";
+            this.btRePass.Click += new System.EventHandler(this.btRePass_Click);
             // 
             // tbCNewpass
             // 
+            this.tbCNewpass.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.tbCNewpass.BorderRadius = 15;
+            this.tbCNewpass.BorderThickness = 2;
             this.tbCNewpass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.tbCNewpass.DefaultText = "";
             this.tbCNewpass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -373,7 +286,7 @@
             this.tbCNewpass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.tbCNewpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbCNewpass.HoverState.Parent = this.tbCNewpass;
-            this.tbCNewpass.Location = new System.Drawing.Point(173, 239);
+            this.tbCNewpass.Location = new System.Drawing.Point(184, 198);
             this.tbCNewpass.Name = "tbCNewpass";
             this.tbCNewpass.PasswordChar = '\0';
             this.tbCNewpass.PlaceholderText = "";
@@ -382,34 +295,167 @@
             this.tbCNewpass.Size = new System.Drawing.Size(200, 36);
             this.tbCNewpass.TabIndex = 1;
             // 
-            // btRePass
+            // tbNewpass
             // 
-            this.btRePass.CheckedState.Parent = this.btRePass;
-            this.btRePass.CustomImages.Parent = this.btRePass;
-            this.btRePass.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btRePass.ForeColor = System.Drawing.Color.White;
-            this.btRePass.HoverState.Parent = this.btRePass;
-            this.btRePass.Location = new System.Drawing.Point(237, 341);
-            this.btRePass.Name = "btRePass";
-            this.btRePass.ShadowDecoration.Parent = this.btRePass;
-            this.btRePass.Size = new System.Drawing.Size(180, 45);
-            this.btRePass.TabIndex = 2;
-            this.btRePass.Text = "Repassword";
-            this.btRePass.Click += new System.EventHandler(this.btRePass_Click);
+            this.tbNewpass.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.tbNewpass.BorderRadius = 15;
+            this.tbNewpass.BorderThickness = 2;
+            this.tbNewpass.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbNewpass.DefaultText = "";
+            this.tbNewpass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbNewpass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbNewpass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbNewpass.DisabledState.Parent = this.tbNewpass;
+            this.tbNewpass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbNewpass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbNewpass.FocusedState.Parent = this.tbNewpass;
+            this.tbNewpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.tbNewpass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbNewpass.HoverState.Parent = this.tbNewpass;
+            this.tbNewpass.Location = new System.Drawing.Point(184, 153);
+            this.tbNewpass.Name = "tbNewpass";
+            this.tbNewpass.PasswordChar = '\0';
+            this.tbNewpass.PlaceholderText = "";
+            this.tbNewpass.SelectedText = "";
+            this.tbNewpass.ShadowDecoration.Parent = this.tbNewpass;
+            this.tbNewpass.Size = new System.Drawing.Size(200, 36);
+            this.tbNewpass.TabIndex = 0;
             // 
             // lbSentmailAgain
             // 
             this.lbSentmailAgain.AutoSize = true;
             this.lbSentmailAgain.BackColor = System.Drawing.Color.Transparent;
-            this.lbSentmailAgain.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSentmailAgain.Font = new System.Drawing.Font("FS Nokio Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbSentmailAgain.LinkColor = System.Drawing.Color.Red;
             this.lbSentmailAgain.Location = new System.Drawing.Point(199, 280);
             this.lbSentmailAgain.Name = "lbSentmailAgain";
-            this.lbSentmailAgain.Size = new System.Drawing.Size(227, 29);
+            this.lbSentmailAgain.Size = new System.Drawing.Size(230, 30);
             this.lbSentmailAgain.TabIndex = 6;
             this.lbSentmailAgain.TabStop = true;
             this.lbSentmailAgain.Text = "Sent me code again";
             this.lbSentmailAgain.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbSentmailAgain_LinkClicked);
+            // 
+            // lbSentmail
+            // 
+            this.lbSentmail.AutoSize = true;
+            this.lbSentmail.BackColor = System.Drawing.Color.Transparent;
+            this.lbSentmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSentmail.LinkColor = System.Drawing.Color.Red;
+            this.lbSentmail.Location = new System.Drawing.Point(199, 280);
+            this.lbSentmail.Name = "lbSentmail";
+            this.lbSentmail.Size = new System.Drawing.Size(133, 25);
+            this.lbSentmail.TabIndex = 5;
+            this.lbSentmail.TabStop = true;
+            this.lbSentmail.Text = "Sent me code";
+            this.lbSentmail.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbSentGmail_LinkClicked);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(73, 227);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 22);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Code";
+            // 
+            // tbCode
+            // 
+            this.tbCode.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.tbCode.BorderRadius = 16;
+            this.tbCode.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbCode.DefaultText = "";
+            this.tbCode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbCode.DisabledState.Parent = this.tbCode;
+            this.tbCode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbCode.FocusedState.Parent = this.tbCode;
+            this.tbCode.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(149)))));
+            this.tbCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbCode.HoverState.Parent = this.tbCode;
+            this.tbCode.Location = new System.Drawing.Point(147, 217);
+            this.tbCode.Name = "tbCode";
+            this.tbCode.PasswordChar = '\0';
+            this.tbCode.PlaceholderText = "";
+            this.tbCode.SelectedText = "";
+            this.tbCode.ShadowDecoration.Parent = this.tbCode;
+            this.tbCode.Size = new System.Drawing.Size(274, 36);
+            this.tbCode.TabIndex = 3;
+            // 
+            // btConfirm
+            // 
+            this.btConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.btConfirm.BorderRadius = 16;
+            this.btConfirm.CheckedState.Parent = this.btConfirm;
+            this.btConfirm.CustomImages.Parent = this.btConfirm;
+            this.btConfirm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btConfirm.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConfirm.ForeColor = System.Drawing.Color.White;
+            this.btConfirm.HoverState.Parent = this.btConfirm;
+            this.btConfirm.Location = new System.Drawing.Point(293, 330);
+            this.btConfirm.Name = "btConfirm";
+            this.btConfirm.ShadowDecoration.Parent = this.btConfirm;
+            this.btConfirm.Size = new System.Drawing.Size(128, 37);
+            this.btConfirm.TabIndex = 2;
+            this.btConfirm.Text = "Confirm";
+            this.btConfirm.UseTransparentBackground = true;
+            this.btConfirm.Click += new System.EventHandler(this.btConfirm_Click);
+            // 
+            // lbGmail
+            // 
+            this.lbGmail.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbGmail.Location = new System.Drawing.Point(41, 181);
+            this.lbGmail.Name = "lbGmail";
+            this.lbGmail.Size = new System.Drawing.Size(100, 23);
+            this.lbGmail.TabIndex = 1;
+            this.lbGmail.Text = "Your gmail";
+            // 
+            // tbEmail
+            // 
+            this.tbEmail.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.tbEmail.BorderRadius = 16;
+            this.tbEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbEmail.DefaultText = "";
+            this.tbEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbEmail.DisabledState.Parent = this.tbEmail;
+            this.tbEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbEmail.FocusedState.Parent = this.tbEmail;
+            this.tbEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tbEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbEmail.HoverState.Parent = this.tbEmail;
+            this.tbEmail.Location = new System.Drawing.Point(147, 175);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.PasswordChar = '\0';
+            this.tbEmail.PlaceholderText = "";
+            this.tbEmail.SelectedText = "";
+            this.tbEmail.ShadowDecoration.Parent = this.tbEmail;
+            this.tbEmail.Size = new System.Drawing.Size(274, 36);
+            this.tbEmail.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(79, 156);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 23);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "New password";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(120, 202);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 23);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Confirm";
             // 
             // FLogin
             // 
@@ -427,6 +473,7 @@
             this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.tbxUsrname);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -435,6 +482,7 @@
             this.pnGmail.ResumeLayout(false);
             this.pnGmail.PerformLayout();
             this.pnNewPass.ResumeLayout(false);
+            this.pnNewPass.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,5 +511,7 @@
         private Guna.UI2.WinForms.Guna2TextBox tbCNewpass;
         private Guna.UI2.WinForms.Guna2TextBox tbNewpass;
         private System.Windows.Forms.LinkLabel lbSentmailAgain;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

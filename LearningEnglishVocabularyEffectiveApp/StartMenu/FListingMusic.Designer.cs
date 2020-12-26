@@ -41,7 +41,7 @@
             // 
             // treeView
             // 
-            this.treeView.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.treeView.Font = new System.Drawing.Font("FS Nokio Bold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.treeView.Location = new System.Drawing.Point(0, 0);
             this.treeView.Name = "treeView";
             this.treeView.Size = new System.Drawing.Size(324, 532);
@@ -50,10 +50,10 @@
             // 
             // lbNameSong
             // 
-            this.lbNameSong.Font = new System.Drawing.Font("MV Boli", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameSong.Font = new System.Drawing.Font("FS Nokio Bold", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNameSong.Location = new System.Drawing.Point(12, 437);
             this.lbNameSong.Name = "lbNameSong";
-            this.lbNameSong.Size = new System.Drawing.Size(828, 38);
+            this.lbNameSong.Size = new System.Drawing.Size(828, 49);
             this.lbNameSong.TabIndex = 3;
             this.lbNameSong.Text = "Chose the Song from list";
             this.lbNameSong.Click += new System.EventHandler(this.label1_Click_1);

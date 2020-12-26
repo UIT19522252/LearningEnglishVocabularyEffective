@@ -33,7 +33,7 @@
             // FIntroduction
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::StartMenu.Properties.Resources.home2;
+            this.BackgroundImage = global::StartMenu.Properties.Resources.home22;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 628);
             this.DoubleBuffered = true;
