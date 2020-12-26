@@ -12,6 +12,10 @@ namespace StartMenu
 {
     public partial class FListing : Form
     {
+        FListingVideo tabVideo = new FListingVideo();
+        FListingMusic tabMusic =  new FListingMusic();
+        FListingTest tabTest = new FListingTest();
+
         public FListing()
         {
             InitializeComponent();
@@ -22,11 +26,13 @@ namespace StartMenu
 
         private void btnViDeoTab_Click(object sender, EventArgs e)
         {
+            tabMusic.Close();
+            tabTest.Close();
             videoSelected.Visible = true;
             musicSelected.Visible = false;
             testSelected.Visible = false;
 
-            FListingVideo tabVideo = new FListingVideo();
+            tabVideo = new FListingVideo();
             tabVideo.TopLevel = false;
             pnlLoadForm.Controls.Clear();
             pnlLoadForm.Controls.Add(tabVideo);
@@ -36,11 +42,13 @@ namespace StartMenu
 
         private void btnMusicTab_Click(object sender, EventArgs e)
         {
+            tabTest.Close();
+            tabVideo.Close();
             videoSelected.Visible = false;
             musicSelected.Visible = true;
             testSelected.Visible = false;
 
-            FListingMusic tabMusic = new FListingMusic();
+            tabMusic = new FListingMusic();
             tabMusic.TopLevel = false;
             pnlLoadForm.Controls.Clear();
             pnlLoadForm.Controls.Add(tabMusic);
@@ -50,11 +58,13 @@ namespace StartMenu
 
         private void btnTestTab_Click(object sender, EventArgs e)
         {
+            tabVideo.Close();
+            tabMusic.Close();
             videoSelected.Visible = false;
             musicSelected.Visible = false;
             testSelected.Visible = true;
 
-            FListingTest tabTest = new FListingTest();
+            tabTest = new FListingTest();
             tabTest.TopLevel = false;
             pnlLoadForm.Controls.Clear();
             pnlLoadForm.Controls.Add(tabTest);

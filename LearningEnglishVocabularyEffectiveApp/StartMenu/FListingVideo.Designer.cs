@@ -94,6 +94,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FListingVideo";
             this.Text = "FListingVideo";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FListingVideo_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.pnList.ResumeLayout(false);
             this.pnMedia.ResumeLayout(false);

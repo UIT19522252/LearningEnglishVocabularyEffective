@@ -97,6 +97,15 @@ namespace StartMenu
             this.pnlMenu.Left = -1 * this.pnlMenu.Width;*/
             this.btnShowMenu.Visible = true;
             HideMenuBar();
+            if (Data.simpleLove.Created)
+            {
+                Data.simpleLove.Ctlcontrols.stop();
+                
+            }
+            if (Data.simpleSound.IsLoadCompleted)
+            {
+                Data.simpleSound.Stop();
+            }
         }
 
         private void btnPractice_Click(object sender, EventArgs e)
@@ -111,6 +120,15 @@ namespace StartMenu
             this.pnlMenu.Left = -1 * this.pnlMenu.Width;*/
             this.btnShowMenu.Visible = true;
             HideMenuBar();
+            if (Data.simpleLove.Created)
+            {
+                Data.simpleLove.Ctlcontrols.stop();
+
+            }
+            if (Data.simpleSound.IsLoadCompleted)
+            {
+                Data.simpleSound.Stop();
+            }
         }
 
         private void btnRevision_Click(object sender, EventArgs e)
@@ -125,6 +143,15 @@ namespace StartMenu
             this.pnlMenu.Left = -1 * this.pnlMenu.Width;*/
             this.btnShowMenu.Visible = true;
             HideMenuBar();
+            if (Data.simpleLove.Created)
+            {
+                Data.simpleLove.Ctlcontrols.stop();
+
+            }
+            if (Data.simpleSound.IsLoadCompleted)
+            {
+                Data.simpleSound.Stop();
+            }
         }
 
         private void btnDictionary_Click(object sender, EventArgs e)
@@ -139,6 +166,15 @@ namespace StartMenu
             this.pnlMenu.Left = -1 * this.pnlMenu.Width;*/
             this.btnShowMenu.Visible = true;
             HideMenuBar();
+            if (Data.simpleLove.Created)
+            {
+                Data.simpleLove.Ctlcontrols.stop();
+
+            }
+            if (Data.simpleSound.IsLoadCompleted)
+            {
+                Data.simpleSound.Stop();
+            }
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -153,6 +189,15 @@ namespace StartMenu
             this.pnlMenu.Left = -1 * this.pnlMenu.Width;*/
             this.btnShowMenu.Visible = true;
             HideMenuBar();
+            if (Data.simpleLove.Created)
+            {
+                Data.simpleLove.Ctlcontrols.stop();
+
+            }
+            if (Data.simpleSound.IsLoadCompleted)
+            {
+                Data.simpleSound.Stop();
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -172,6 +217,15 @@ namespace StartMenu
              this.pnlMenu.Left = -1 * this.pnlMenu.Width;*/
             this.btnShowMenu.Visible = true;
             HideMenuBar();
+            if (Data.simpleLove.Created)
+            {
+                Data.simpleLove.Ctlcontrols.stop();
+
+            }
+            if (Data.simpleSound.IsLoadCompleted)
+            {
+                Data.simpleSound.Stop();
+            }
         }
     }
 }

@@ -16,8 +16,7 @@ namespace StartMenu
         {
             InitializeComponent();
             BackEnd.LoadData();
-            BackEnd.addWord();
-            BackEnd.addWord();
+            Data.crrWord.Clear();
             BackEnd.addWord();
             this.guna2Button1.Text = Data.crrWord[0].question;
             this.guna2Button6.Text = Data.crrWord[0].answer;
@@ -45,12 +44,8 @@ namespace StartMenu
 
         private void btlStart_Click(object sender, EventArgs e)
         {
-            /*FLearnNewWord f = new FLearnNewWord();
-            this.Hide();
-            f.ShowDialog();
-            if (Data.XONG == true) this.Close();
-            this.Show();*/
-            FLearnNewWord tabLearnNewWord = new FLearnNewWord();
+            Data.ArrNumber = new List<int>() { 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5 };
+            FLearnNewWord tabLearnNewWord = new FLearnNewWord(pnlLoad);
             tabLearnNewWord.AutoScroll = true;
             tabLearnNewWord.TopLevel = false;
             pnlLoad.Controls.Clear();
@@ -59,36 +54,6 @@ namespace StartMenu
             tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
             tabLearnNewWord.Show();
             pnlLoad.Visible = true;
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FPreviewNewWord_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

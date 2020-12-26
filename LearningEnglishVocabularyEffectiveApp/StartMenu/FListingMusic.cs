@@ -23,7 +23,7 @@ namespace StartMenu
         public FListingMusic()
         {
             InitializeComponent();
-            
+            Data.simpleLove = this.axWindowsMediaPlayer1;
 
             treeImages.Images.Add(songImagekey, Image.FromFile("./images/song.png"));
             SQLconnect();
@@ -126,6 +126,11 @@ namespace StartMenu
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void FListingMusic_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.axWindowsMediaPlayer1.Ctlcontrols.stop();
         }
     }
 }

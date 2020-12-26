@@ -21,7 +21,7 @@ namespace StartMenu
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
 
-			string sqlQuery = "select top 5 ID, WORD,MEAN from VOCABULARY order by newid()";
+			string sqlQuery = @"select top 5 * from VOCABULARY x where x.id not in ( select id_word from Learned l where l.id_user =" + Data.iduser + " )  order by newid()"; 
 
 			SqlCommand command = new SqlCommand(sqlQuery, connection);
 
@@ -30,57 +30,19 @@ namespace StartMenu
 			while (reader.HasRows)
 			{
 				if (reader.Read() == false) break;
-				Data.newWord.Add(new Question(reader[1].ToString(), reader[2].ToString()));
+				Data.newWord.Add(new Question(reader[1].ToString(), reader[3].ToString()));
+				Data.id.Add(reader[0].ToString());
 			}
 			connection.Close();
 
 		}
 		public static void addWord()
 		{
-			if (Data.crrWord.Count == 0)
-			{
-				Data.crrWord.Add(Data.newWord[0]);
-				Data.ArrNumber.Add(0);
-				Data.ArrNumber.Add(0);
-				Data.ArrNumber.Add(0);
-				Data.ArrNumber.Add(0);
-				Data.ArrNumber.Add(0);
-
-				Data.crrWord.Add(Data.newWord[1]);
-				Data.ArrNumber.Add(1);
-				Data.ArrNumber.Add(1);
-				Data.ArrNumber.Add(1);
-				Data.ArrNumber.Add(1);
-				Data.ArrNumber.Add(1);
-
-			}
-			else if (Data.crrWord.Count == 2)
-			{
-				Data.crrWord.Add(Data.newWord[2]);
-				Data.ArrNumber.Add(2);
-				Data.ArrNumber.Add(2);
-				Data.ArrNumber.Add(2);
-				Data.ArrNumber.Add(2);
-				Data.ArrNumber.Add(2);
-
-				Data.crrWord.Add(Data.newWord[3]);
-				Data.ArrNumber.Add(3);
-				Data.ArrNumber.Add(3);
-				Data.ArrNumber.Add(3);
-				Data.ArrNumber.Add(3);
-				Data.ArrNumber.Add(3);
-
-			}
-			else if (Data.crrWord.Count == 4)
-			{
-				Data.crrWord.Add(Data.newWord[4]);
-				Data.ArrNumber.Add(4);
-				Data.ArrNumber.Add(4);
-				Data.ArrNumber.Add(4);
-				Data.ArrNumber.Add(4);
-				Data.ArrNumber.Add(4);
-			}
-
+			Data.crrWord.Add(Data.newWord[4]);
+			Data.crrWord.Add(Data.newWord[3]);
+			Data.crrWord.Add(Data.newWord[2]);
+			Data.crrWord.Add(Data.newWord[1]);
+			Data.crrWord.Add(Data.newWord[0]);
 		}
 		public static int getQuestion()
 		{

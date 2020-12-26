@@ -96,6 +96,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FListingMusic";
             this.Text = "FListingMusic";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FListingMusic_FormClosed);
             this.pnList.ResumeLayout(false);
             this.pnMedia.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();

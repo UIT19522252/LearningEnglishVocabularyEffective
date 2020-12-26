@@ -32,7 +32,6 @@
             this.B = new System.Windows.Forms.CheckBox();
             this.C = new System.Windows.Forms.CheckBox();
             this.D = new System.Windows.Forms.CheckBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -42,9 +41,10 @@
             this.btNote = new Guna.UI2.WinForms.Guna2Button();
             this.lbKetQua = new System.Windows.Forms.Label();
             this.btketqua = new Guna.UI2.WinForms.Guna2Button();
-            this.btAfter = new Guna.UI2.WinForms.Guna2Button();
             this.btBefore = new Guna.UI2.WinForms.Guna2Button();
             this.Pic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.btAfter = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -91,27 +91,6 @@
             this.D.Size = new System.Drawing.Size(18, 17);
             this.D.TabIndex = 4;
             this.D.UseVisualStyleBackColor = true;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BackgroundImage = global::StartMenu.Properties.Resources.SPEAEKER;
-            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Button1.BorderRadius = 21;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DialogResult = System.Windows.Forms.DialogResult.Retry;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(568, 19);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(45, 45);
-            this.guna2Button1.TabIndex = 5;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // panel1
             // 
@@ -220,24 +199,6 @@
             this.btketqua.Text = "Result";
             this.btketqua.Click += new System.EventHandler(this.btketqua_Click);
             // 
-            // btAfter
-            // 
-            this.btAfter.BorderRadius = 5;
-            this.btAfter.CheckedState.Parent = this.btAfter;
-            this.btAfter.CustomImages.Parent = this.btAfter;
-            this.btAfter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.btAfter.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btAfter.ForeColor = System.Drawing.Color.White;
-            this.btAfter.HoverState.Parent = this.btAfter;
-            this.btAfter.Image = global::StartMenu.Properties.Resources.next;
-            this.btAfter.ImageSize = new System.Drawing.Size(50, 50);
-            this.btAfter.Location = new System.Drawing.Point(4, 7);
-            this.btAfter.Name = "btAfter";
-            this.btAfter.ShadowDecoration.Parent = this.btAfter;
-            this.btAfter.Size = new System.Drawing.Size(100, 425);
-            this.btAfter.TabIndex = 7;
-            this.btAfter.Click += new System.EventHandler(this.guna2Button3_Click);
-            // 
             // btBefore
             // 
             this.btBefore.BorderRadius = 5;
@@ -267,6 +228,45 @@
             this.Pic.TabStop = false;
             this.Pic.Click += new System.EventHandler(this.Pic_Click);
             // 
+            // btAfter
+            // 
+            this.btAfter.BorderRadius = 5;
+            this.btAfter.CheckedState.Parent = this.btAfter;
+            this.btAfter.CustomImages.Parent = this.btAfter;
+            this.btAfter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btAfter.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btAfter.ForeColor = System.Drawing.Color.White;
+            this.btAfter.HoverState.Parent = this.btAfter;
+            this.btAfter.Image = global::StartMenu.Properties.Resources.next;
+            this.btAfter.ImageSize = new System.Drawing.Size(50, 50);
+            this.btAfter.Location = new System.Drawing.Point(4, 7);
+            this.btAfter.Name = "btAfter";
+            this.btAfter.ShadowDecoration.Parent = this.btAfter;
+            this.btAfter.Size = new System.Drawing.Size(100, 425);
+            this.btAfter.TabIndex = 7;
+            this.btAfter.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BackgroundImage = global::StartMenu.Properties.Resources.SPEAEKER;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button1.BorderRadius = 21;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.DialogResult = System.Windows.Forms.DialogResult.Retry;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(568, 19);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(45, 45);
+            this.guna2Button1.TabIndex = 5;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // FListingTest
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -279,6 +279,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FListingTest";
             this.Text = "FListingTest";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FListingTest_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

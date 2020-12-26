@@ -20,6 +20,7 @@ namespace StartMenu
         public FListingVideo()
         {
             InitializeComponent();
+            Data.simpleLove = this.axWindowsMediaPlayer1;
             treeImages.Images.Add(clipImagekey, Image.FromFile("./images/clip.png"));
             SQLconnect();
             InitTreeView();
@@ -89,6 +90,11 @@ namespace StartMenu
         private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void FListingVideo_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.axWindowsMediaPlayer1.Ctlcontrols.stop();
         }
     }
 }

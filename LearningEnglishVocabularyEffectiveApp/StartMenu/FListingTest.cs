@@ -23,6 +23,7 @@ namespace StartMenu
         public FListingTest()
         {
             InitializeComponent();
+            
             SQLconnect();
             Showf();
         }
@@ -55,8 +56,10 @@ namespace StartMenu
             string path = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
             path = path.Substring(6) + @"\picandsound\" + id[chiSo] + @".wav";
             
-            SoundPlayer simpleSound = new SoundPlayer(path);
-            simpleSound.Play();
+            Data.simpleSound = new SoundPlayer(path);
+            
+            Data.simpleSound.Play();
+            
         }
         private void Showf()
         {
@@ -145,6 +148,11 @@ namespace StartMenu
         private void lbKetQua_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FListingTest_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Data.simpleSound.Stop();
         }
     }
 }

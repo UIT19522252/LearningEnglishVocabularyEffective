@@ -40,6 +40,8 @@
             this.lbForgot = new System.Windows.Forms.LinkLabel();
             this.pnGmail = new System.Windows.Forms.Panel();
             this.pnNewPass = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.btRePass = new Guna.UI2.WinForms.Guna2Button();
             this.tbCNewpass = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbNewpass = new Guna.UI2.WinForms.Guna2TextBox();
@@ -50,8 +52,6 @@
             this.btConfirm = new Guna.UI2.WinForms.Guna2Button();
             this.lbGmail = new System.Windows.Forms.Label();
             this.tbEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pnGmail.SuspendLayout();
             this.pnNewPass.SuspendLayout();
             this.SuspendLayout();
@@ -235,7 +235,7 @@
             this.pnGmail.Controls.Add(this.btConfirm);
             this.pnGmail.Controls.Add(this.lbGmail);
             this.pnGmail.Controls.Add(this.tbEmail);
-            this.pnGmail.Location = new System.Drawing.Point(500, 31);
+            this.pnGmail.Location = new System.Drawing.Point(495, 8);
             this.pnGmail.Name = "pnGmail";
             this.pnGmail.Size = new System.Drawing.Size(486, 520);
             this.pnGmail.TabIndex = 9;
@@ -247,10 +247,30 @@
             this.pnNewPass.Controls.Add(this.btRePass);
             this.pnNewPass.Controls.Add(this.tbCNewpass);
             this.pnNewPass.Controls.Add(this.tbNewpass);
-            this.pnNewPass.Location = new System.Drawing.Point(9, 15);
+            this.pnNewPass.Location = new System.Drawing.Point(9, 16);
             this.pnNewPass.Name = "pnNewPass";
             this.pnNewPass.Size = new System.Drawing.Size(461, 495);
             this.pnNewPass.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(120, 202);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 23);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Confirm";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(79, 156);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 23);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "New password";
             // 
             // btRePass
             // 
@@ -436,26 +456,6 @@
             this.tbEmail.ShadowDecoration.Parent = this.tbEmail;
             this.tbEmail.Size = new System.Drawing.Size(274, 36);
             this.tbEmail.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(79, 156);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 23);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "New password";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(120, 202);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 23);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Confirm";
             // 
             // FLogin
             // 
