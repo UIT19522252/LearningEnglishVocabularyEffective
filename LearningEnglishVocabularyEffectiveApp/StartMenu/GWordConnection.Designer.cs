@@ -114,7 +114,7 @@
 			// 
 			this.pbWord.Location = new System.Drawing.Point(26, 139);
 			this.pbWord.Name = "pbWord";
-			this.pbWord.Size = new System.Drawing.Size(241, 213);
+			this.pbWord.Size = new System.Drawing.Size(253, 213);
 			this.pbWord.TabIndex = 25;
 			this.pbWord.TabStop = false;
 			// 
@@ -159,7 +159,7 @@
 			// 
 			// richTextBox1
 			// 
-			this.richTextBox1.Font = new System.Drawing.Font("SVN-Aptima", 10.75F);
+			this.richTextBox1.Font = new System.Drawing.Font("SVN-Aptima", 12.75F);
 			this.richTextBox1.Location = new System.Drawing.Point(973, 99);
 			this.richTextBox1.Name = "richTextBox1";
 			this.richTextBox1.Size = new System.Drawing.Size(169, 282);

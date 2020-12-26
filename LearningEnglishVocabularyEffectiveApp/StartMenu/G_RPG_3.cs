@@ -113,6 +113,7 @@ namespace StartMenu
 					k = r.Next(0, Means.Count);
 				}
 				answer.Add(k);
+				this.pbList[i].Image = null;
 				this.pbList[i].LoadAsync(Means[k]);
 			}
 		}
@@ -141,14 +142,6 @@ namespace StartMenu
 			tempPen.StartCap = LineCap.NoAnchor;
 			tempPen.EndCap = LineCap.NoAnchor;
 			tempPen.DashStyle = DashStyle.Solid;
-		}
-		private void NormalStage2_Paint(object sender, PaintEventArgs e)
-		{
-			
-		}
-		private void Submit(object sender, EventArgs e)
-		{
-			
 		}
 		private void btNewGame_Click(object sender, EventArgs e)
 		{
@@ -189,8 +182,16 @@ namespace StartMenu
 			else
 			{
 				MessageBox.Show("Sai cmnr");
+				this.HPPlayer.Value -= 10;
+				if(this.HPPlayer.Value==0)
+				{
+					MessageBox.Show("You was defeated");
+					this.Close();
+				}	
+				Newgame(Words, Means);
 				start.Clear();
 				end.Clear();
+				Seq.Clear();
 				isStart = true;
 				AddEventClick();
 				this.Invalidate();

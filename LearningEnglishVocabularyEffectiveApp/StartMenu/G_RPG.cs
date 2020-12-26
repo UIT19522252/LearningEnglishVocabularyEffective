@@ -62,7 +62,7 @@ namespace StartMenu
 		{
 			for (int i = 0; i < 3; i++)
 			{
-				Pic[i].InitialImage = null;
+				Pic[i].Image = null;
 				Pic[i].LoadAsync(LinkPic[currentIndex * 3 + i]);
 				Mean[i].Text = Means[currentIndex * 3 + i];
 				Word[i].Text = Words[currentIndex * 3 + i];

@@ -94,8 +94,9 @@ namespace StartMenu
 			string res;
 			if ((res = game.PotentialAnswer()) != "No Answer")
 			{
+				this.rtbWord.Text = res;
 				this.pnNotification.Dock = DockStyle.Fill;
-				this.lbMessage.Text = "ĐÁP ÁN";
+				this.lbMessage.Text = "Bạn thua rồi, đáp án là: ";
 				this.rtbDecrip.Text = LoadDecrip(res);
 				this.pnNotification.Visible = true;
 			}
@@ -177,10 +178,8 @@ namespace StartMenu
 		}
 		private void NPCLose()
 		{
-			this.rtbWord.Text = tbPlayer.Text;
 			this.pnNotification.Dock = DockStyle.Fill;
 			this.lbMessage.Text = "Bái phục, các hạ thắng rồi";
-			this.rtbDecrip.Text = LoadDecrip(tbPlayer.Text);
 			this.pnNotification.Visible = true;
 			this.lbScore.Text = "Score: " + game.score;
 			tbPlayer.Text = "";

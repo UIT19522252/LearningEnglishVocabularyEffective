@@ -170,6 +170,7 @@
 			// 
 			// pictureBox3
 			// 
+			this.pictureBox3.InitialImage = null;
 			this.pictureBox3.Location = new System.Drawing.Point(768, 53);
 			this.pictureBox3.Name = "pictureBox3";
 			this.pictureBox3.Size = new System.Drawing.Size(206, 172);
@@ -178,6 +179,7 @@
 			// 
 			// pictureBox2
 			// 
+			this.pictureBox2.InitialImage = null;
 			this.pictureBox2.Location = new System.Drawing.Point(470, 53);
 			this.pictureBox2.Name = "pictureBox2";
 			this.pictureBox2.Size = new System.Drawing.Size(224, 172);
@@ -186,6 +188,7 @@
 			// 
 			// pictureBox1
 			// 
+			this.pictureBox1.InitialImage = null;
 			this.pictureBox1.Location = new System.Drawing.Point(155, 53);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(216, 172);

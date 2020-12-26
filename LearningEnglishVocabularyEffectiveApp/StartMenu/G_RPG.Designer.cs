@@ -181,6 +181,7 @@
 			// pictureBox3
 			// 
 			this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox3.InitialImage = null;
 			this.pictureBox3.Location = new System.Drawing.Point(743, 234);
 			this.pictureBox3.Name = "pictureBox3";
 			this.pictureBox3.Size = new System.Drawing.Size(222, 197);
@@ -190,6 +191,7 @@
 			// pictureBox1
 			// 
 			this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox1.InitialImage = null;
 			this.pictureBox1.Location = new System.Drawing.Point(200, 234);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(222, 197);
@@ -199,6 +201,7 @@
 			// pictureBox2
 			// 
 			this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+			this.pictureBox2.InitialImage = null;
 			this.pictureBox2.Location = new System.Drawing.Point(480, 234);
 			this.pictureBox2.Name = "pictureBox2";
 			this.pictureBox2.Size = new System.Drawing.Size(222, 197);

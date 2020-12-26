@@ -396,7 +396,7 @@
 			this.btChoose.Font = new System.Drawing.Font("Berlin Sans FB Demi", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btChoose.ForeColor = System.Drawing.Color.White;
 			this.btChoose.HoverState.Parent = this.btChoose;
-			this.btChoose.Location = new System.Drawing.Point(540, 554);
+			this.btChoose.Location = new System.Drawing.Point(536, 544);
 			this.btChoose.Name = "btChoose";
 			this.btChoose.ShadowDecoration.Parent = this.btChoose;
 			this.btChoose.Size = new System.Drawing.Size(110, 45);
@@ -416,23 +416,21 @@
 			this.btFlashCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
 			this.btFlashCard.ForeColor = System.Drawing.Color.White;
 			this.btFlashCard.HoverState.Parent = this.btFlashCard;
-			this.btFlashCard.Location = new System.Drawing.Point(311, 276);
+			this.btFlashCard.Location = new System.Drawing.Point(308, 266);
 			this.btFlashCard.Name = "btFlashCard";
 			this.btFlashCard.ShadowDecoration.Parent = this.btFlashCard;
 			this.btFlashCard.Size = new System.Drawing.Size(560, 255);
 			this.btFlashCard.TabIndex = 14;
 			this.btFlashCard.Text = "Meanings";
-			this.btFlashCard.Click += new System.EventHandler(this.btFlashCard_Click);
 			// 
 			// lbWord
 			// 
-			this.lbWord.AutoSize = true;
 			this.lbWord.BackColor = System.Drawing.Color.Transparent;
 			this.lbWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
 			this.lbWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-			this.lbWord.Location = new System.Drawing.Point(476, 184);
+			this.lbWord.Location = new System.Drawing.Point(198, 184);
 			this.lbWord.Name = "lbWord";
-			this.lbWord.Size = new System.Drawing.Size(238, 73);
+			this.lbWord.Size = new System.Drawing.Size(797, 73);
 			this.lbWord.TabIndex = 13;
 			this.lbWord.Text = "WORD";
 			this.lbWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -509,7 +507,6 @@
 			this.Load += new System.EventHandler(this.Dictionary_Load);
 			this.pnOfflineDic.ResumeLayout(false);
 			this.pnMakeFlashCard.ResumeLayout(false);
-			this.pnMakeFlashCard.PerformLayout();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.ResumeLayout(false);

@@ -7,72 +7,14 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Security.Policy;
+using System.Security.AccessControl;
+
 namespace StartMenu
 {
-	struct Word
-	{
-		public string id;
-		public string eng;
-		public string viet;
-		public Word(string a, string b, string c)
-		{
-			id = a;
-			eng = b;
-			viet = c;
-		}
-	};
 	class sqlConnection
 	{
 		String connString = Data.ConnString;
 		WebActivity wa = new WebActivity();
-		public List<Word> getWord()
-		{
-			List<Word> res = new List<Word>();
-			SqlConnection connection = new SqlConnection(connString);
-			connection.Open();
-
-			String sqlQuery = "select v.id, v.WORD, v.MEAN  from VOCABULARY v where v.id not in (select id_word from Learned l where l.id_user = " + Data.iduser + ") and v.id not in (select id_word from ToLearn t where t.id_user = " + Data.iduser + ") order by v.id";
-
-			SqlCommand command = new SqlCommand(sqlQuery, connection);
-
-			SqlDataReader reader = command.ExecuteReader();
-
-			int target = 11;
-			while (reader.HasRows)
-			{
-				if (reader.Read() == false) break;
-				{
-					Word w = new Word(reader[0].ToString(), reader[1].ToString(), reader[2].ToString());
-					res.Add(w);
-					target--;
-					if (target == 0)
-						return res;
-				}
-			}
-			reader.Close();
-			connection.Close();
-			return res;
-		}
-		public string Find(string word)
-		{
-			string res = "Không tìm thấy từ được nhập";
-			SqlConnection connection = new SqlConnection(connString);
-			connection.Open();
-			String sqlQuery = "select MEAN from VOCABULARY where WORD='" + word + "'";
-			SqlCommand command = new SqlCommand(sqlQuery, connection);
-			SqlDataReader reader = command.ExecuteReader();
-			while (reader.HasRows)
-			{
-				if (reader.Read() == false) break;
-				else
-				{
-					res = reader[0].ToString();
-				}
-			}
-			reader.Close();
-			connection.Close();
-			return res;
-		}
 		public List<string> Suggest(string word)
 		{
 			List<string> res = new List<string>();
@@ -165,9 +107,12 @@ namespace StartMenu
 			reader.Close();
 			return -1;
 		}
-		public List<Word> getOwnFlashCard()
+		public List<List<string>> getOwnFlashCard()
 		{
-			List<Word> res = new List<Word>();
+			List<List<string>> ls = new List<List<string>>();
+			List<string> id = new List<string>();
+			List<string> word = new List<string>();
+			List<string> mean = new List<string>();
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
 			String sqlQuery = "select f.id, f.word, f.mean from FlashCard f where f.userID =" + Data.iduser + "order by f.id";
@@ -177,13 +122,17 @@ namespace StartMenu
 			{
 				if (reader.Read() == false) break;
 				{
-					Word w = new Word(reader[0].ToString(), reader[1].ToString(), reader[2].ToString());
-					res.Add(w);
+					id.Add(reader[0].ToString());
+					word.Add(reader[1].ToString());
+					mean.Add(reader[2].ToString());
 				}
 			}
+			ls.Add(id);
+			ls.Add(word);
+			ls.Add(mean);
 			reader.Close();
 			connection.Close();
-			return res;
+			return ls;
 		}
 		public string FindEmail(string a)
 		{

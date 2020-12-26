@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
 			Guna.UI2.WinForms.Guna2Button btNext;
 			this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
 			this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -47,17 +46,15 @@
 			this.btBack3 = new Guna.UI2.WinForms.Guna2Button();
 			this.lbUsername = new System.Windows.Forms.Label();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.pnCheck = new System.Windows.Forms.Panel();
+			this.pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.btnBack = new Guna.UI2.WinForms.Guna2Button();
 			this.btFlip2 = new Guna.UI2.WinForms.Guna2Button();
 			this.btNope = new Guna.UI2.WinForms.Guna2Button();
 			this.btKnow = new Guna.UI2.WinForms.Guna2Button();
 			this.btFlashCard2 = new Guna.UI2.WinForms.Guna2Button();
-			this.timer2 = new System.Windows.Forms.Timer(this.components);
 			this.btStatistic = new Guna.UI2.WinForms.Guna2Button();
 			this.pnlLoad = new System.Windows.Forms.Panel();
-			this.pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
 			btNext = new Guna.UI2.WinForms.Guna2Button();
 			this.pnYourFlashCard.SuspendLayout();
 			this.pnStatistic.SuspendLayout();
@@ -217,9 +214,10 @@
 			this.pnYourFlashCard.Controls.Add(this.btFlip);
 			this.pnYourFlashCard.Controls.Add(this.btFlashCard);
 			this.pnYourFlashCard.Controls.Add(this.btBack);
-			this.pnYourFlashCard.Location = new System.Drawing.Point(226, 38);
+			this.pnYourFlashCard.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pnYourFlashCard.Location = new System.Drawing.Point(0, 0);
 			this.pnYourFlashCard.Name = "pnYourFlashCard";
-			this.pnYourFlashCard.Size = new System.Drawing.Size(287, 157);
+			this.pnYourFlashCard.Size = new System.Drawing.Size(1162, 628);
 			this.pnYourFlashCard.TabIndex = 5;
 			this.pnYourFlashCard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnYourFlashCard_Paint);
 			// 
@@ -235,13 +233,12 @@
 			this.btFlip.Font = new System.Drawing.Font("Berlin Sans FB", 16.2F, System.Drawing.FontStyle.Bold);
 			this.btFlip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
 			this.btFlip.HoverState.Parent = this.btFlip;
-			this.btFlip.Location = new System.Drawing.Point(513, 556);
+			this.btFlip.Location = new System.Drawing.Point(220, 555);
 			this.btFlip.Name = "btFlip";
 			this.btFlip.ShadowDecoration.Parent = this.btFlip;
-			this.btFlip.Size = new System.Drawing.Size(153, 43);
+			this.btFlip.Size = new System.Drawing.Size(631, 43);
 			this.btFlip.TabIndex = 4;
 			this.btFlip.Text = "Flip";
-			this.btFlip.Click += new System.EventHandler(this.btFlip_Click);
 			// 
 			// btFlashCard
 			// 
@@ -256,13 +253,12 @@
 			this.btFlashCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold);
 			this.btFlashCard.ForeColor = System.Drawing.Color.White;
 			this.btFlashCard.HoverState.Parent = this.btFlashCard;
-			this.btFlashCard.Location = new System.Drawing.Point(220, 232);
+			this.btFlashCard.Location = new System.Drawing.Point(220, 246);
 			this.btFlashCard.Name = "btFlashCard";
 			this.btFlashCard.ShadowDecoration.Parent = this.btFlashCard;
-			this.btFlashCard.Size = new System.Drawing.Size(490, 288);
+			this.btFlashCard.Size = new System.Drawing.Size(631, 288);
 			this.btFlashCard.TabIndex = 3;
 			this.btFlashCard.Text = "WORD";
-			this.btFlashCard.Click += new System.EventHandler(this.btFlashCard_Click);
 			// 
 			// btBack
 			// 
@@ -394,11 +390,6 @@
 			this.pictureBox1.TabIndex = 0;
 			this.pictureBox1.TabStop = false;
 			// 
-			// timer1
-			// 
-			this.timer1.Interval = 1;
-			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-			// 
 			// pnCheck
 			// 
 			this.pnCheck.BackgroundImage = global::StartMenu.Properties.Resources.Check_your_word1;
@@ -409,12 +400,26 @@
 			this.pnCheck.Controls.Add(this.btNope);
 			this.pnCheck.Controls.Add(this.btKnow);
 			this.pnCheck.Controls.Add(this.btFlashCard2);
-			this.pnCheck.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pnCheck.Location = new System.Drawing.Point(0, 0);
+			this.pnCheck.Location = new System.Drawing.Point(556, 16);
 			this.pnCheck.Name = "pnCheck";
-			this.pnCheck.Size = new System.Drawing.Size(1162, 628);
+			this.pnCheck.Size = new System.Drawing.Size(260, 134);
 			this.pnCheck.TabIndex = 6;
 			this.pnCheck.Visible = false;
+			// 
+			// pbImage
+			// 
+			this.pbImage.BackColor = System.Drawing.Color.Transparent;
+			this.pbImage.FillColor = System.Drawing.Color.Transparent;
+			this.pbImage.InitialImage = null;
+			this.pbImage.Location = new System.Drawing.Point(410, 198);
+			this.pbImage.Name = "pbImage";
+			this.pbImage.ShadowDecoration.Parent = this.pbImage;
+			this.pbImage.Size = new System.Drawing.Size(335, 335);
+			this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pbImage.TabIndex = 7;
+			this.pbImage.TabStop = false;
+			this.pbImage.UseTransparentBackground = true;
+			this.pbImage.Click += new System.EventHandler(this.pbImage_Click);
 			// 
 			// btnBack
 			// 
@@ -516,10 +521,6 @@
 			this.btFlashCard2.Text = "WORD";
 			this.btFlashCard2.Click += new System.EventHandler(this.btFlashCard2_Click);
 			// 
-			// timer2
-			// 
-			this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
-			// 
 			// btStatistic
 			// 
 			this.btStatistic.BackColor = System.Drawing.Color.Transparent;
@@ -546,29 +547,15 @@
 			this.pnlLoad.Size = new System.Drawing.Size(252, 237);
 			this.pnlLoad.TabIndex = 9;
 			// 
-			// pbImage
-			// 
-			this.pbImage.BackColor = System.Drawing.Color.Transparent;
-			this.pbImage.FillColor = System.Drawing.Color.Transparent;
-			this.pbImage.Location = new System.Drawing.Point(410, 198);
-			this.pbImage.Name = "pbImage";
-			this.pbImage.ShadowDecoration.Parent = this.pbImage;
-			this.pbImage.Size = new System.Drawing.Size(335, 335);
-			this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pbImage.TabIndex = 7;
-			this.pbImage.TabStop = false;
-			this.pbImage.UseTransparentBackground = true;
-			this.pbImage.Click += new System.EventHandler(this.pbImage_Click);
-			// 
 			// FRevision
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackgroundImage = global::StartMenu.Properties.Resources.Revision2;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(1162, 628);
-			this.Controls.Add(this.pnStatistic);
-			this.Controls.Add(this.pnCheck);
 			this.Controls.Add(this.pnYourFlashCard);
+			this.Controls.Add(this.pnCheck);
+			this.Controls.Add(this.pnStatistic);
 			this.Controls.Add(this.pnlLoad);
 			this.Controls.Add(this.btStatistic);
 			this.Controls.Add(this.btCheck);
@@ -603,13 +590,11 @@
 		private Guna.UI2.WinForms.Guna2Button btFlip;
 		private Guna.UI2.WinForms.Guna2Button btFlashCard;
 		private Guna.UI2.WinForms.Guna2Button btBack;
-		private System.Windows.Forms.Timer timer1;
 		private System.Windows.Forms.Panel pnCheck;
 		private Guna.UI2.WinForms.Guna2Button btFlip2;
 		private Guna.UI2.WinForms.Guna2Button btNope;
 		private Guna.UI2.WinForms.Guna2Button btKnow;
 		private Guna.UI2.WinForms.Guna2Button btFlashCard2;
-		private System.Windows.Forms.Timer timer2;
 		private Guna.UI2.WinForms.Guna2Button btStatistic;
 		private System.Windows.Forms.Panel pnStatistic;
 		private System.Windows.Forms.Label lbLearned;

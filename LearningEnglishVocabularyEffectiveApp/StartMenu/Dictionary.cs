@@ -119,10 +119,6 @@ namespace StartMenu
         {
             this.btMakeFlashCard.Enabled = false;
         }
-        private void btFlashCard_Click(object sender, EventArgs e)
-        {
-
-        }
         private void btChoose_Click(object sender, EventArgs e)
         {
             sql.CustomFlashCard(this.lbWord.Text, this.btFlashCard.Text);
