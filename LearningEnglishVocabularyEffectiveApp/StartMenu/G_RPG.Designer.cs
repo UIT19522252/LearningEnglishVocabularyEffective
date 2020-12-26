@@ -207,9 +207,8 @@
 			// 
 			// G_RPG
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1166, 589);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+			this.ClientSize = new System.Drawing.Size(1182, 628);
 			this.Controls.Add(this.btHighScore);
 			this.Controls.Add(this.pictureBox3);
 			this.Controls.Add(this.pictureBox1);

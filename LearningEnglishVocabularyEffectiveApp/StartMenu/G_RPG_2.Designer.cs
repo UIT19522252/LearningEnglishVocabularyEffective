@@ -165,7 +165,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1150, 550);
+			this.ClientSize = new System.Drawing.Size(1182, 628);
 			this.Controls.Add(this.HPBoss);
 			this.Controls.Add(this.HPPlayer);
 			this.Controls.Add(this.lbPractice);

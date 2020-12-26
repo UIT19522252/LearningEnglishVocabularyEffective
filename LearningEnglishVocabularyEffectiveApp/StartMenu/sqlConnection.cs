@@ -421,5 +421,37 @@ namespace StartMenu
 			connection.Close();
 			return ls;
 		}
+		public List<List<string>> getMeanID()
+		{
+			List<List<string>> ls = new List<List<string>>();
+			List<string> WORD = new List<string>();
+			List<string> MEAN = new List<string>();
+			List<string> LINKPIC = new List<string>();
+			List<string> ID = new List<string>();
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			String sqlQuery = "select WORD, MEAN, LINKPIC, ID from VOCABULARY";
+			//MessageBox.Show(sqlQuery);
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+			SqlDataReader reader = command.ExecuteReader();
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					WORD.Add(reader[0].ToString());
+					MEAN.Add(reader[1].ToString());
+					LINKPIC.Add(reader[2].ToString());
+					ID.Add(reader[3].ToString());
+				}
+			}
+			ls.Add(WORD);
+			ls.Add(MEAN);
+			ls.Add(LINKPIC);
+			ls.Add(ID);
+			reader.Close();
+			connection.Close();
+			return ls;
+		}
 	}
 }

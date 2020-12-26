@@ -57,11 +57,13 @@
 			this.timer2 = new System.Windows.Forms.Timer(this.components);
 			this.btStatistic = new Guna.UI2.WinForms.Guna2Button();
 			this.pnlLoad = new System.Windows.Forms.Panel();
+			this.pbImage = new Guna.UI2.WinForms.Guna2PictureBox();
 			btNext = new Guna.UI2.WinForms.Guna2Button();
 			this.pnYourFlashCard.SuspendLayout();
 			this.pnStatistic.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.pnCheck.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// btNext
@@ -211,15 +213,13 @@
 			// 
 			this.pnYourFlashCard.BackgroundImage = global::StartMenu.Properties.Resources.YourFlashcard1;
 			this.pnYourFlashCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.pnYourFlashCard.Controls.Add(this.pnStatistic);
 			this.pnYourFlashCard.Controls.Add(btNext);
 			this.pnYourFlashCard.Controls.Add(this.btFlip);
 			this.pnYourFlashCard.Controls.Add(this.btFlashCard);
 			this.pnYourFlashCard.Controls.Add(this.btBack);
-			this.pnYourFlashCard.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pnYourFlashCard.Location = new System.Drawing.Point(0, 0);
+			this.pnYourFlashCard.Location = new System.Drawing.Point(226, 38);
 			this.pnYourFlashCard.Name = "pnYourFlashCard";
-			this.pnYourFlashCard.Size = new System.Drawing.Size(1162, 628);
+			this.pnYourFlashCard.Size = new System.Drawing.Size(287, 157);
 			this.pnYourFlashCard.TabIndex = 5;
 			this.pnYourFlashCard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnYourFlashCard_Paint);
 			// 
@@ -298,7 +298,7 @@
 			this.pnStatistic.Controls.Add(this.btBack3);
 			this.pnStatistic.Controls.Add(this.lbUsername);
 			this.pnStatistic.Controls.Add(this.pictureBox1);
-			this.pnStatistic.Location = new System.Drawing.Point(792, 38);
+			this.pnStatistic.Location = new System.Drawing.Point(819, 16);
 			this.pnStatistic.Name = "pnStatistic";
 			this.pnStatistic.Size = new System.Drawing.Size(303, 160);
 			this.pnStatistic.TabIndex = 8;
@@ -403,14 +403,16 @@
 			// 
 			this.pnCheck.BackgroundImage = global::StartMenu.Properties.Resources.Check_your_word1;
 			this.pnCheck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.pnCheck.Controls.Add(this.pbImage);
 			this.pnCheck.Controls.Add(this.btnBack);
 			this.pnCheck.Controls.Add(this.btFlip2);
 			this.pnCheck.Controls.Add(this.btNope);
 			this.pnCheck.Controls.Add(this.btKnow);
 			this.pnCheck.Controls.Add(this.btFlashCard2);
-			this.pnCheck.Location = new System.Drawing.Point(123, 34);
+			this.pnCheck.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pnCheck.Location = new System.Drawing.Point(0, 0);
 			this.pnCheck.Name = "pnCheck";
-			this.pnCheck.Size = new System.Drawing.Size(294, 147);
+			this.pnCheck.Size = new System.Drawing.Size(1162, 628);
 			this.pnCheck.TabIndex = 6;
 			this.pnCheck.Visible = false;
 			// 
@@ -447,15 +449,15 @@
 			this.btFlip2.CheckedState.Parent = this.btFlip2;
 			this.btFlip2.CustomImages.Parent = this.btFlip2;
 			this.btFlip2.FillColor = System.Drawing.Color.Transparent;
-			this.btFlip2.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Bold);
+			this.btFlip2.Font = new System.Drawing.Font("Berlin Sans FB", 22F, System.Drawing.FontStyle.Bold);
 			this.btFlip2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
 			this.btFlip2.HoverState.Parent = this.btFlip2;
-			this.btFlip2.Location = new System.Drawing.Point(497, 556);
+			this.btFlip2.Location = new System.Drawing.Point(301, 539);
 			this.btFlip2.Name = "btFlip2";
 			this.btFlip2.ShadowDecoration.Parent = this.btFlip2;
-			this.btFlip2.Size = new System.Drawing.Size(154, 42);
+			this.btFlip2.Size = new System.Drawing.Size(540, 60);
 			this.btFlip2.TabIndex = 5;
-			this.btFlip2.Text = "FLIP";
+			this.btFlip2.Text = "WORD";
 			this.btFlip2.Click += new System.EventHandler(this.btFlip2_Click);
 			// 
 			// btNope
@@ -511,7 +513,8 @@
 			this.btFlashCard2.ShadowDecoration.Parent = this.btFlashCard2;
 			this.btFlashCard2.Size = new System.Drawing.Size(540, 335);
 			this.btFlashCard2.TabIndex = 3;
-			this.btFlashCard2.Text = "guna2Button1";
+			this.btFlashCard2.Text = "WORD";
+			this.btFlashCard2.Click += new System.EventHandler(this.btFlashCard2_Click);
 			// 
 			// timer2
 			// 
@@ -540,8 +543,22 @@
 			this.pnlLoad.BackColor = System.Drawing.Color.Transparent;
 			this.pnlLoad.Location = new System.Drawing.Point(0, 0);
 			this.pnlLoad.Name = "pnlLoad";
-			this.pnlLoad.Size = new System.Drawing.Size(201, 164);
+			this.pnlLoad.Size = new System.Drawing.Size(252, 237);
 			this.pnlLoad.TabIndex = 9;
+			// 
+			// pbImage
+			// 
+			this.pbImage.BackColor = System.Drawing.Color.Transparent;
+			this.pbImage.FillColor = System.Drawing.Color.Transparent;
+			this.pbImage.Location = new System.Drawing.Point(410, 198);
+			this.pbImage.Name = "pbImage";
+			this.pbImage.ShadowDecoration.Parent = this.pbImage;
+			this.pbImage.Size = new System.Drawing.Size(335, 335);
+			this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pbImage.TabIndex = 7;
+			this.pbImage.TabStop = false;
+			this.pbImage.UseTransparentBackground = true;
+			this.pbImage.Click += new System.EventHandler(this.pbImage_Click);
 			// 
 			// FRevision
 			// 
@@ -549,8 +566,9 @@
 			this.BackgroundImage = global::StartMenu.Properties.Resources.Revision2;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(1162, 628);
-			this.Controls.Add(this.pnYourFlashCard);
+			this.Controls.Add(this.pnStatistic);
 			this.Controls.Add(this.pnCheck);
+			this.Controls.Add(this.pnYourFlashCard);
 			this.Controls.Add(this.pnlLoad);
 			this.Controls.Add(this.btStatistic);
 			this.Controls.Add(this.btCheck);
@@ -570,6 +588,7 @@
 			this.pnStatistic.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.pnCheck.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -602,5 +621,6 @@
 		private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnBack;
         private System.Windows.Forms.Panel pnlLoad;
-    }
+		private Guna.UI2.WinForms.Guna2PictureBox pbImage;
+	}
 }
