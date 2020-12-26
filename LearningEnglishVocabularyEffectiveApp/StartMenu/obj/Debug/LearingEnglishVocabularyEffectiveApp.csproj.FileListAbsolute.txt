@@ -178,3 +178,6 @@ C:\Users\HELLO\Desktop\Task 4\LearningEnglishVocabularyEffective\LearningEnglish
 C:\Users\HELLO\Desktop\Task 4\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.exe
 C:\Users\HELLO\Desktop\Task 4\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.pdb
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.GWordConnection.resources
+C:\Users\HELLO\Desktop\Task 4\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.G_RPG.resources
+C:\Users\HELLO\Desktop\Task 4\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.G_RPG_2.resources
+C:\Users\HELLO\Desktop\Task 4\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.G_RPG_3.resources

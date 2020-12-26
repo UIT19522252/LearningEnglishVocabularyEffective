@@ -372,5 +372,54 @@ namespace StartMenu
 			connection.Close();
 			return res;
 		}
+		public List<string> GetAllType()
+		{
+			List<string> AllType = new List<string>();
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			String sqlQuery = "select TENLOAI from LOAI";
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+			SqlDataReader reader = command.ExecuteReader();
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					AllType.Add(reader[0].ToString());
+				}
+			}
+			reader.Close();
+			connection.Close();
+			return AllType;
+		}
+		public List<List<string>> getMean(int type)
+		{
+			List<List<string>> ls = new List<List<string>>();
+			List<string> WORD = new List<string>();
+			List<string> MEAN = new List<string>();
+			List<string> LINKPIC = new List<string>();
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			String sqlQuery = "select WORD, MEAN, LINKPIC from VOCABULARY where MALOAI=" + type;
+			//MessageBox.Show(sqlQuery);
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+			SqlDataReader reader = command.ExecuteReader();
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					WORD.Add(reader[0].ToString());
+					MEAN.Add(reader[1].ToString());
+					LINKPIC.Add(reader[2].ToString());
+				}
+			}
+			ls.Add(WORD);
+			ls.Add(MEAN);
+			ls.Add(LINKPIC);
+			reader.Close();
+			connection.Close();
+			return ls;
+		}
 	}
 }

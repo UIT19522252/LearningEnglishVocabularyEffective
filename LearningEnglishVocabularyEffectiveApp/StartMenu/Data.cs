@@ -21,6 +21,7 @@ namespace StartMenu
         // Luu trang thai da hoc xong hay chua
         public static bool XONG = false;
         public static Voice voice = new Voice();
+        public static int type = 0;
         
     }
 }

@@ -16,7 +16,7 @@ namespace StartMenu
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FSignUp());
+			Application.Run(new G_RPG());
 		}
 	}
 }
