@@ -323,6 +323,16 @@ namespace StartMenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap home23 {
+            get {
+                object obj = ResourceManager.GetObject("home23", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imgbin_computer_icons_statistics_chart_business_png {
             get {
                 object obj = ResourceManager.GetObject("imgbin_computer-icons-statistics-chart-business-png", resourceCulture);
@@ -536,6 +546,16 @@ namespace StartMenu.Properties {
         internal static System.Drawing.Bitmap Practice3 {
             get {
                 object obj = ResourceManager.GetObject("Practice3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Practice4 {
+            get {
+                object obj = ResourceManager.GetObject("Practice4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

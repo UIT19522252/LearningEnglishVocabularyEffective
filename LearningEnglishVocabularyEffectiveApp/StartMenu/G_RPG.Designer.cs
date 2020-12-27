@@ -41,7 +41,6 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnGame = new Guna.UI2.WinForms.Guna2Button();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHighScore = new Guna.UI2.WinForms.Guna2Button();
             this.btnPrevious = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLoad = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -190,25 +189,6 @@
             this.btnNext.UseTransparentBackground = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // btnHighScore
-            // 
-            this.btnHighScore.BackColor = System.Drawing.Color.Transparent;
-            this.btnHighScore.BorderRadius = 15;
-            this.btnHighScore.CheckedState.Parent = this.btnHighScore;
-            this.btnHighScore.CustomImages.Parent = this.btnHighScore;
-            this.btnHighScore.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnHighScore.Font = new System.Drawing.Font("Berlin Sans FB", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnHighScore.ForeColor = System.Drawing.Color.White;
-            this.btnHighScore.HoverState.Parent = this.btnHighScore;
-            this.btnHighScore.Location = new System.Drawing.Point(988, 29);
-            this.btnHighScore.Name = "btnHighScore";
-            this.btnHighScore.ShadowDecoration.Parent = this.btnHighScore;
-            this.btnHighScore.Size = new System.Drawing.Size(128, 45);
-            this.btnHighScore.TabIndex = 34;
-            this.btnHighScore.Text = "Progress";
-            this.btnHighScore.UseTransparentBackground = true;
-            this.btnHighScore.Click += new System.EventHandler(this.btnHighScore_Click);
-            // 
             // btnPrevious
             // 
             this.btnPrevious.BackColor = System.Drawing.Color.Transparent;
@@ -273,7 +253,6 @@
             this.ClientSize = new System.Drawing.Size(1182, 628);
             this.Controls.Add(this.pnlLoad);
             this.Controls.Add(this.btnPrevious);
-            this.Controls.Add(this.btnHighScore);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnGame);
             this.Controls.Add(this.pictureBox3);
@@ -317,7 +296,6 @@
 		private System.Windows.Forms.RichTextBox richTextBox1;
         private Guna.UI2.WinForms.Guna2Button btnGame;
         private Guna.UI2.WinForms.Guna2Button btnNext;
-        private Guna.UI2.WinForms.Guna2Button btnHighScore;
         private Guna.UI2.WinForms.Guna2Button btnPrevious;
         private System.Windows.Forms.Panel pnlLoad;
     }

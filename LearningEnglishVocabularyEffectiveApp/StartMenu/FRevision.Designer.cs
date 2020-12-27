@@ -65,18 +65,19 @@
             // 
             // btNext
             // 
+            btNext.AutoRoundedCorners = true;
             btNext.BackColor = System.Drawing.Color.Transparent;
-            btNext.BorderRadius = 12;
+            btNext.BorderRadius = 35;
             btNext.CheckedState.Parent = btNext;
             btNext.CustomImages.Parent = btNext;
             btNext.FillColor = System.Drawing.Color.Transparent;
             btNext.Font = new System.Drawing.Font("Segoe UI", 9F);
             btNext.ForeColor = System.Drawing.Color.White;
             btNext.HoverState.Parent = btNext;
-            btNext.Location = new System.Drawing.Point(916, 337);
+            btNext.Location = new System.Drawing.Point(899, 334);
             btNext.Name = "btNext";
             btNext.ShadowDecoration.Parent = btNext;
-            btNext.Size = new System.Drawing.Size(71, 65);
+            btNext.Size = new System.Drawing.Size(72, 72);
             btNext.TabIndex = 4;
             btNext.Click += new System.EventHandler(this.btNext_Click);
             // 
@@ -261,10 +262,11 @@
             // 
             // btBack
             // 
+            this.btBack.AutoRoundedCorners = true;
             this.btBack.BackColor = System.Drawing.Color.Transparent;
             this.btBack.BackgroundImage = global::StartMenu.Properties.Resources.brand_royaltyfree_yes_and_no_check_mark_flat_design;
             this.btBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btBack.BorderRadius = 50;
+            this.btBack.BorderRadius = 35;
             this.btBack.CheckedState.Parent = this.btBack;
             this.btBack.CustomImages.Parent = this.btBack;
             this.btBack.FillColor = System.Drawing.Color.Transparent;
@@ -277,7 +279,7 @@
             this.btBack.Margin = new System.Windows.Forms.Padding(4);
             this.btBack.Name = "btBack";
             this.btBack.ShadowDecoration.Parent = this.btBack;
-            this.btBack.Size = new System.Drawing.Size(72, 75);
+            this.btBack.Size = new System.Drawing.Size(72, 72);
             this.btBack.TabIndex = 2;
             this.btBack.Text = "guna2Button3";
             this.btBack.Click += new System.EventHandler(this.btBack_Click);
@@ -320,6 +322,7 @@
             this.lbToLearn.Size = new System.Drawing.Size(192, 44);
             this.lbToLearn.TabIndex = 2;
             this.lbToLearn.Text = "To Learn: ";
+            this.lbToLearn.Visible = false;
             // 
             // lbEmail
             // 
@@ -345,10 +348,11 @@
             // 
             // btBack3
             // 
+            this.btBack3.AutoRoundedCorners = true;
             this.btBack3.BackColor = System.Drawing.Color.Transparent;
             this.btBack3.BackgroundImage = global::StartMenu.Properties.Resources.brand_royaltyfree_yes_and_no_check_mark_flat_design;
             this.btBack3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btBack3.BorderRadius = 50;
+            this.btBack3.BorderRadius = 33;
             this.btBack3.CheckedState.Parent = this.btBack3;
             this.btBack3.CustomImages.Parent = this.btBack3;
             this.btBack3.FillColor = System.Drawing.Color.Transparent;
@@ -422,10 +426,11 @@
             // 
             // btnBack
             // 
+            this.btnBack.AutoRoundedCorners = true;
             this.btnBack.BackColor = System.Drawing.Color.Transparent;
             this.btnBack.BackgroundImage = global::StartMenu.Properties.Resources.brand_royaltyfree_yes_and_no_check_mark_flat_design;
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBack.BorderRadius = 50;
+            this.btnBack.BorderRadius = 37;
             this.btnBack.CheckedState.Parent = this.btnBack;
             this.btnBack.CustomImages.Parent = this.btnBack;
             this.btnBack.FillColor = System.Drawing.Color.Transparent;
@@ -438,7 +443,7 @@
             this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.ShadowDecoration.Parent = this.btnBack;
-            this.btnBack.Size = new System.Drawing.Size(77, 72);
+            this.btnBack.Size = new System.Drawing.Size(77, 77);
             this.btnBack.TabIndex = 6;
             this.btnBack.Text = "guna2Button3";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
@@ -466,9 +471,11 @@
             // 
             // btNope
             // 
+            this.btNope.AutoRoundedCorners = true;
             this.btNope.BackColor = System.Drawing.Color.Transparent;
             this.btNope.BackgroundImage = global::StartMenu.Properties.Resources.brand_royaltyfree_yes_and_no_check_mark_flat_design;
             this.btNope.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btNope.BorderRadius = 40;
             this.btNope.CheckedState.Parent = this.btNope;
             this.btNope.CustomImages.Parent = this.btNope;
             this.btNope.FillColor = System.Drawing.Color.Transparent;
@@ -484,9 +491,11 @@
             // 
             // btKnow
             // 
+            this.btKnow.AutoRoundedCorners = true;
             this.btKnow.BackColor = System.Drawing.Color.Transparent;
             this.btKnow.BackgroundImage = global::StartMenu.Properties.Resources.sm_5afb099b30a2a;
             this.btKnow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btKnow.BorderRadius = 39;
             this.btKnow.CheckedState.Parent = this.btKnow;
             this.btKnow.CustomImages.Parent = this.btKnow;
             this.btKnow.FillColor = System.Drawing.Color.Transparent;
@@ -496,7 +505,7 @@
             this.btKnow.Location = new System.Drawing.Point(904, 325);
             this.btKnow.Name = "btKnow";
             this.btKnow.ShadowDecoration.Parent = this.btKnow;
-            this.btKnow.Size = new System.Drawing.Size(82, 78);
+            this.btKnow.Size = new System.Drawing.Size(80, 80);
             this.btKnow.TabIndex = 4;
             this.btKnow.Click += new System.EventHandler(this.btKnow_Click);
             // 

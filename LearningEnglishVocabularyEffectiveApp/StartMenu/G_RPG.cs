@@ -105,37 +105,8 @@ namespace StartMenu
 
         private void btnHighScore_Click(object sender, EventArgs e)
         {
-			string path = "HighScore2.txt";
-			if (File.Exists(path) == false)
-			{
-				MessageBox.Show("Không có dữ liệu");
-			}
-			else
-			{
-				int counter = 0;
-				string data = "";
-				string line;
-				System.IO.StreamReader file =
-					new System.IO.StreamReader(@"HighScore2.txt");
-				while ((line = file.ReadLine()) != null)
-				{
-					data += (line) + "\t";
-					counter++;
-				}
-				MessageBox.Show(data);
-			}
-			if (!File.Exists(path))
-			{
-				using (StreamWriter sw = File.CreateText(path))
-				{
-					for (int i = 0; i < this.cbbType.Items.Count; i++)
-					{
-						sw.WriteLine("[" + i + "]: " + "0");
-					}
-				}
-			}
 
-		}
+        }
 
         private void btnPrevious_Click(object sender, EventArgs e)
         {

@@ -42,7 +42,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(1090, 536);
+            this.guna2Button1.Location = new System.Drawing.Point(1076, 536);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(80, 80);
@@ -54,7 +54,7 @@
             // FIntroduction
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::StartMenu.Properties.Resources.home22;
+            this.BackgroundImage = global::StartMenu.Properties.Resources.home23;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 628);
             this.Controls.Add(this.guna2Button1);

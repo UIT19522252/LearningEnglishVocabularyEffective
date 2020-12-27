@@ -118,6 +118,8 @@ namespace StartMenu
             {
                 this.lblCorrect.Visible = true;
                 this.lblCorrect.Text = "Congratulation !\n You have learn 5 new words!";
+                timerOutOfTime.Stop();
+                this.lblTime.Hide();
                 this.LearnSuccess();
                 Data.XONG = true;
                 this.btnDone.Visible = true;
