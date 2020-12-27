@@ -160,7 +160,9 @@ namespace StartMenu
             {
                 pnNewPass.Show();
                 this.lblUserName.Text = "Hello "+ login.CheckUserNameFromMail(tbEmail.Text) +" !";
-                
+                Data.username = login.CheckUserNameFromMail(tbEmail.Text);
+
+
             }
             else
             {

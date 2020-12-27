@@ -322,7 +322,6 @@
             this.BackgroundImage = global::StartMenu.Properties.Resources.LearnNewWords4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 628);
-            this.Controls.Add(this.lblTime);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnLearnAgain);
             this.Controls.Add(this.btnDone);
@@ -334,6 +333,7 @@
             this.Controls.Add(this.AnswerA);
             this.Controls.Add(this.AnswerB);
             this.Controls.Add(this.lblCorrect);
+            this.Controls.Add(this.lblTime);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

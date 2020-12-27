@@ -52,7 +52,7 @@ namespace StartMenu
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
 			newpass = HashPassword(newpass);
-			String sqlQuery = "update USERINFO set hashPass = '" + newpass + "' where id = '" + Data.iduser +"'";
+			String sqlQuery = "update USERINFO set hashPass = '" + newpass + "' where username = '" + Data.username +"'";
 
 			SqlCommand command = new SqlCommand(sqlQuery, connection);
 
