@@ -41,6 +41,7 @@
             this.btSpeaker = new Guna.UI2.WinForms.Guna2Button();
             this.lbPronuciation = new System.Windows.Forms.Label();
             this.pnOfflineDic = new System.Windows.Forms.Panel();
+            this.btspeaker2 = new Guna.UI2.WinForms.Guna2Button();
             this.rtbMean1 = new System.Windows.Forms.RichTextBox();
             this.tbWord1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.btFind1 = new Guna.UI2.WinForms.Guna2Button();
@@ -54,7 +55,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.btspeaker2 = new Guna.UI2.WinForms.Guna2Button();
             this.pnOfflineDic.SuspendLayout();
             this.pnMakeFlashCard.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -235,12 +235,30 @@
             this.pnOfflineDic.Controls.Add(this.tbWord1);
             this.pnOfflineDic.Controls.Add(this.btFind1);
             this.pnOfflineDic.Controls.Add(this.btOnlineDictionary);
-            this.pnOfflineDic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnOfflineDic.Location = new System.Drawing.Point(0, 0);
             this.pnOfflineDic.Name = "pnOfflineDic";
-            this.pnOfflineDic.Size = new System.Drawing.Size(1182, 628);
+            this.pnOfflineDic.Size = new System.Drawing.Size(377, 126);
             this.pnOfflineDic.TabIndex = 15;
             this.pnOfflineDic.Visible = false;
+            // 
+            // btspeaker2
+            // 
+            this.btspeaker2.BackColor = System.Drawing.Color.Transparent;
+            this.btspeaker2.BackgroundImage = global::StartMenu.Properties.Resources.SPEAEKER;
+            this.btspeaker2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btspeaker2.CheckedState.Parent = this.btspeaker2;
+            this.btspeaker2.CustomImages.Parent = this.btspeaker2;
+            this.btspeaker2.FillColor = System.Drawing.Color.Transparent;
+            this.btspeaker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btspeaker2.ForeColor = System.Drawing.Color.White;
+            this.btspeaker2.HoverState.Parent = this.btspeaker2;
+            this.btspeaker2.Location = new System.Drawing.Point(1021, 254);
+            this.btspeaker2.Name = "btspeaker2";
+            this.btspeaker2.ShadowDecoration.Parent = this.btspeaker2;
+            this.btspeaker2.Size = new System.Drawing.Size(49, 48);
+            this.btspeaker2.TabIndex = 13;
+            this.btspeaker2.Visible = false;
+            this.btspeaker2.Click += new System.EventHandler(this.btspeaker2_Click);
             // 
             // rtbMean1
             // 
@@ -284,6 +302,7 @@
             this.tbWord1.Size = new System.Drawing.Size(862, 47);
             this.tbWord1.TabIndex = 10;
             this.tbWord1.TextChanged += new System.EventHandler(this.tbWord1_TextChanged);
+            this.tbWord1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbWord1_KeyDown);
             // 
             // btFind1
             // 
@@ -480,25 +499,6 @@
             this.guna2Button3.Size = new System.Drawing.Size(89, 84);
             this.guna2Button3.TabIndex = 12;
             this.guna2Button3.Text = "guna2Button2";
-            // 
-            // btspeaker2
-            // 
-            this.btspeaker2.BackColor = System.Drawing.Color.Transparent;
-            this.btspeaker2.BackgroundImage = global::StartMenu.Properties.Resources.SPEAEKER;
-            this.btspeaker2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btspeaker2.CheckedState.Parent = this.btspeaker2;
-            this.btspeaker2.CustomImages.Parent = this.btspeaker2;
-            this.btspeaker2.FillColor = System.Drawing.Color.Transparent;
-            this.btspeaker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btspeaker2.ForeColor = System.Drawing.Color.White;
-            this.btspeaker2.HoverState.Parent = this.btspeaker2;
-            this.btspeaker2.Location = new System.Drawing.Point(1021, 254);
-            this.btspeaker2.Name = "btspeaker2";
-            this.btspeaker2.ShadowDecoration.Parent = this.btspeaker2;
-            this.btspeaker2.Size = new System.Drawing.Size(49, 48);
-            this.btspeaker2.TabIndex = 13;
-            this.btspeaker2.Visible = false;
-            this.btspeaker2.Click += new System.EventHandler(this.btspeaker2_Click);
             // 
             // Dictionary
             // 

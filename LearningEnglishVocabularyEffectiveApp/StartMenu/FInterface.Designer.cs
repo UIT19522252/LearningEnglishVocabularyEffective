@@ -40,9 +40,9 @@
             this.btnPractice = new Guna.UI2.WinForms.Guna2Button();
             this.btnDictionary = new Guna.UI2.WinForms.Guna2Button();
             this.btnRevision = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlLoadForm = new System.Windows.Forms.Panel();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.btnShowMenu = new Guna.UI2.WinForms.Guna2Button();
-            this.pnlLoadForm = new System.Windows.Forms.Panel();
             this.pnlStatusBar.SuspendLayout();
             this.pnlMenu1.SuspendLayout();
             this.SuspendLayout();
@@ -111,7 +111,7 @@
             this.btnTraining.ShadowDecoration.Parent = this.btnTraining;
             this.btnTraining.Size = new System.Drawing.Size(170, 40);
             this.btnTraining.TabIndex = 7;
-            this.btnTraining.Text = "Training";
+            this.btnTraining.Text = "Listening";
             this.btnTraining.Click += new System.EventHandler(this.btnTraining_Click);
             // 
             // btnLearnNewWord
@@ -204,6 +204,14 @@
             this.btnRevision.Text = "Revision";
             this.btnRevision.Click += new System.EventHandler(this.btnRevision_Click);
             // 
+            // pnlLoadForm
+            // 
+            this.pnlLoadForm.BackColor = System.Drawing.Color.White;
+            this.pnlLoadForm.Location = new System.Drawing.Point(0, 53);
+            this.pnlLoadForm.Name = "pnlLoadForm";
+            this.pnlLoadForm.Size = new System.Drawing.Size(1162, 628);
+            this.pnlLoadForm.TabIndex = 3;
+            // 
             // btnClose
             // 
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
@@ -247,14 +255,6 @@
             this.btnShowMenu.TabIndex = 1;
             this.btnShowMenu.UseTransparentBackground = true;
             this.btnShowMenu.Click += new System.EventHandler(this.btnShowMenu_Click);
-            // 
-            // pnlLoadForm
-            // 
-            this.pnlLoadForm.BackColor = System.Drawing.Color.White;
-            this.pnlLoadForm.Location = new System.Drawing.Point(0, 53);
-            this.pnlLoadForm.Name = "pnlLoadForm";
-            this.pnlLoadForm.Size = new System.Drawing.Size(1162, 628);
-            this.pnlLoadForm.TabIndex = 3;
             // 
             // FInterface
             // 

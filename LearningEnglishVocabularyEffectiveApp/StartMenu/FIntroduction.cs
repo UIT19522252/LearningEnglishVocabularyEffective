@@ -17,5 +17,11 @@ namespace StartMenu
             InitializeComponent();
         }
 
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            FReportUs f = new FReportUs();
+            f.ShowDialog();
+
+        }
     }
 }

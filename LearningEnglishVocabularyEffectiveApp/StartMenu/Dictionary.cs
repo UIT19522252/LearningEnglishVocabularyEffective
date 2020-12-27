@@ -150,5 +150,13 @@ namespace StartMenu
             else
                 Data.voice.Read(tbWord.Text);
         }
+
+        private void tbWord1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                this.btFind1_Click(sender, e);
+            }
+        }
     }
 }

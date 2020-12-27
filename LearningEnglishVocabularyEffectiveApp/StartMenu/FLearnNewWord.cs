@@ -16,12 +16,14 @@ namespace StartMenu
 {
     public partial class FLearnNewWord : Form
     {
+        int time = 0;
         int temp = 0;
         int score = 0;
         Panel root = new Panel();
         public FLearnNewWord()
         {
             InitializeComponent();
+            timerOutOfTime.Start();
             lblCorrect.Visible = false;
             this.btnDone.Visible = false;
             pnlLoad.Visible = false;
@@ -40,6 +42,8 @@ namespace StartMenu
         public FLearnNewWord(Panel frame)
         {
             InitializeComponent();
+            timerOutOfTime.Start();
+
             lblCorrect.Visible = false;
             this.btnDone.Visible = false;
             pnlLoad.Visible = false;
@@ -280,6 +284,23 @@ namespace StartMenu
         {
             root.Visible = false;
             this.Close();
+        }
+
+        private void timerOutOfTime_Tick(object sender, EventArgs e)
+        {
+            time += 1;
+            if (time == 180)
+            {
+                timerOutOfTime.Stop();
+                this.lblCorrect.Visible = true;
+                this.lblCorrect.Text = "Out of time!\nYour must be learn 5 new words again!";
+                btnLearnAgain.Visible = true;
+                Data.XONG = true;
+                this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
+                Questions.Enabled = false;
+            }
+            lblTime.Text = "Time: " + time.ToString();
+
         }
     }
 }

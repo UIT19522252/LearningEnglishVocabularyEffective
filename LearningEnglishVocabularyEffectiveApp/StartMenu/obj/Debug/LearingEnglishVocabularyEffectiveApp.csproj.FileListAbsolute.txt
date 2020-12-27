@@ -224,3 +224,4 @@ C:\Users\ASUS\Desktop\a1p1 (2)\LearningEnglishVocabularyEffective\LearningEnglis
 C:\Users\ASUS\Desktop\a1p1 (2)\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.pdb
 C:\Users\ASUS\Desktop\a1p1 (2)\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FOptionLearns.resources
 C:\Users\Asus\Documents\GitHub\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FOptionLearns.resources
+C:\Users\ASUS\Desktop\a1p1 (2)\LearningEnglishVocabularyEffective\LearningEnglishVocabularyEffectiveApp\StartMenu\obj\Debug\StartMenu.FReportUs.resources

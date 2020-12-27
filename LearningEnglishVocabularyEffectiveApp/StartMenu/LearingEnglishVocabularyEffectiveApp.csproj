@@ -137,6 +137,12 @@
     <Compile Include="FIntroduction.Designer.cs">
       <DependentUpon>FIntroduction.cs</DependentUpon>
     </Compile>
+    <Compile Include="FReportUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FReportUs.Designer.cs">
+      <DependentUpon>FReportUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRevision.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FIntroduction.resx">
       <DependentUpon>FIntroduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FReportUs.resx">
+      <DependentUpon>FReportUs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRevision.resx">
       <DependentUpon>FRevision.cs</DependentUpon>

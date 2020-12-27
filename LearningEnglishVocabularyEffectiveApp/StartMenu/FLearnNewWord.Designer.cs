@@ -39,11 +39,13 @@
             this.Questions = new Guna.UI2.WinForms.Guna2Button();
             this.btnScore = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLoad = new System.Windows.Forms.Panel();
-            this.TimerWrong = new System.Windows.Forms.Timer(this.components);
-            this.lblWordRL = new System.Windows.Forms.Label();
             this.btnOK = new Guna.UI2.WinForms.Guna2Button();
+            this.lblWordRL = new System.Windows.Forms.Label();
+            this.TimerWrong = new System.Windows.Forms.Timer(this.components);
             this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             this.btnLearnAgain = new Guna.UI2.WinForms.Guna2Button();
+            this.timerOutOfTime = new System.Windows.Forms.Timer(this.components);
+            this.lblTime = new System.Windows.Forms.Label();
             this.pnlLoad.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -219,22 +221,6 @@
             this.pnlLoad.Size = new System.Drawing.Size(1182, 628);
             this.pnlLoad.TabIndex = 19;
             // 
-            // TimerWrong
-            // 
-            this.TimerWrong.Interval = 1000;
-            this.TimerWrong.Tick += new System.EventHandler(this.TimerWrong_Tick);
-            // 
-            // lblWordRL
-            // 
-            this.lblWordRL.AutoSize = true;
-            this.lblWordRL.Font = new System.Drawing.Font("FS Nokio Bold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblWordRL.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblWordRL.Location = new System.Drawing.Point(552, 287);
-            this.lblWordRL.Name = "lblWordRL";
-            this.lblWordRL.Size = new System.Drawing.Size(79, 41);
-            this.lblWordRL.TabIndex = 0;
-            this.lblWordRL.Text = "label1";
-            // 
             // btnOK
             // 
             this.btnOK.BorderRadius = 20;
@@ -251,6 +237,22 @@
             this.btnOK.TabIndex = 1;
             this.btnOK.Text = "OK";
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            // 
+            // lblWordRL
+            // 
+            this.lblWordRL.AutoSize = true;
+            this.lblWordRL.Font = new System.Drawing.Font("FS Nokio Bold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblWordRL.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblWordRL.Location = new System.Drawing.Point(552, 287);
+            this.lblWordRL.Name = "lblWordRL";
+            this.lblWordRL.Size = new System.Drawing.Size(79, 41);
+            this.lblWordRL.TabIndex = 0;
+            this.lblWordRL.Text = "label1";
+            // 
+            // TimerWrong
+            // 
+            this.TimerWrong.Interval = 1000;
+            this.TimerWrong.Tick += new System.EventHandler(this.TimerWrong_Tick);
             // 
             // btnHome
             // 
@@ -298,12 +300,29 @@
             this.btnLearnAgain.Visible = false;
             this.btnLearnAgain.Click += new System.EventHandler(this.btnLearnAgain_Click);
             // 
+            // timerOutOfTime
+            // 
+            this.timerOutOfTime.Interval = 1000;
+            this.timerOutOfTime.Tick += new System.EventHandler(this.timerOutOfTime_Tick);
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Location = new System.Drawing.Point(12, 12);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(20, 22);
+            this.lblTime.TabIndex = 22;
+            this.lblTime.Text = "0";
+            // 
             // FLearnNewWord
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::StartMenu.Properties.Resources.LearnNewWords4;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.Controls.Add(this.lblTime);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.btnLearnAgain);
             this.Controls.Add(this.btnDone);
@@ -325,6 +344,7 @@
             this.pnlLoad.ResumeLayout(false);
             this.pnlLoad.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -344,5 +364,7 @@
         private Guna.UI2.WinForms.Guna2Button btnOK;
         private Guna.UI2.WinForms.Guna2Button btnHome;
         private Guna.UI2.WinForms.Guna2Button btnLearnAgain;
+        private System.Windows.Forms.Timer timerOutOfTime;
+        private System.Windows.Forms.Label lblTime;
     }
 }
