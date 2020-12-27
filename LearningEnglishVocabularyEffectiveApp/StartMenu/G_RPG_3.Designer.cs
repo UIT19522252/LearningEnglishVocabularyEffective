@@ -42,11 +42,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pbPLayer = new System.Windows.Forms.PictureBox();
-            this.pbNPC = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnNewGame = new Guna.UI2.WinForms.Guna2Button();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
@@ -56,12 +51,17 @@
             this.lblEndGame = new System.Windows.Forms.Label();
             this.btnYes = new Guna.UI2.WinForms.Guna2Button();
             this.btnNo = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbPLayer = new System.Windows.Forms.PictureBox();
+            this.pbNPC = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pnlLoad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPLayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNPC)).BeginInit();
-            this.pnlLoad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // HPBoss
@@ -165,54 +165,6 @@
             this.textBox2.Size = new System.Drawing.Size(205, 37);
             this.textBox2.TabIndex = 44;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(799, 103);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(187, 173);
-            this.pictureBox3.TabIndex = 58;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(501, 103);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(205, 173);
-            this.pictureBox2.TabIndex = 57;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(186, 103);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(197, 173);
-            this.pictureBox1.TabIndex = 56;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pbPLayer
-            // 
-            this.pbPLayer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbPLayer.BackgroundImage")));
-            this.pbPLayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbPLayer.Location = new System.Drawing.Point(186, 406);
-            this.pbPLayer.Name = "pbPLayer";
-            this.pbPLayer.Size = new System.Drawing.Size(181, 171);
-            this.pbPLayer.TabIndex = 41;
-            this.pbPLayer.TabStop = false;
-            // 
-            // pbNPC
-            // 
-            this.pbNPC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbNPC.BackgroundImage")));
-            this.pbNPC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbNPC.Location = new System.Drawing.Point(810, 393);
-            this.pbNPC.Name = "pbNPC";
-            this.pbNPC.Size = new System.Drawing.Size(187, 171);
-            this.pbNPC.TabIndex = 40;
-            this.pbNPC.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -271,6 +223,7 @@
             this.lblCorrect.TabIndex = 62;
             this.lblCorrect.Text = "Correct";
             this.lblCorrect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblCorrect.Visible = false;
             // 
             // timerCorrect
             // 
@@ -337,6 +290,54 @@
             this.btnNo.UseTransparentBackground = true;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 
+            // pbPLayer
+            // 
+            this.pbPLayer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbPLayer.BackgroundImage")));
+            this.pbPLayer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbPLayer.Location = new System.Drawing.Point(186, 406);
+            this.pbPLayer.Name = "pbPLayer";
+            this.pbPLayer.Size = new System.Drawing.Size(181, 171);
+            this.pbPLayer.TabIndex = 41;
+            this.pbPLayer.TabStop = false;
+            // 
+            // pbNPC
+            // 
+            this.pbNPC.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbNPC.BackgroundImage")));
+            this.pbNPC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbNPC.Location = new System.Drawing.Point(810, 393);
+            this.pbNPC.Name = "pbNPC";
+            this.pbNPC.Size = new System.Drawing.Size(187, 171);
+            this.pbNPC.TabIndex = 40;
+            this.pbNPC.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(186, 103);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(197, 173);
+            this.pictureBox1.TabIndex = 56;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(501, 103);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(205, 173);
+            this.pictureBox2.TabIndex = 57;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.InitialImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(799, 103);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(187, 173);
+            this.pictureBox3.TabIndex = 58;
+            this.pictureBox3.TabStop = false;
+            // 
             // G_RPG_3
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -370,13 +371,13 @@
             this.Text = "G_RPG_3";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.G_RPG_3_Paint);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.G_RPG_3_MouseMove);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPLayer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNPC)).EndInit();
             this.pnlLoad.ResumeLayout(false);
             this.pnlLoad.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPLayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNPC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
