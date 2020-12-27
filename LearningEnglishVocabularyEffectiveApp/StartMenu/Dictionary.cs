@@ -47,7 +47,7 @@ namespace StartMenu
         private void tbxWord_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-                btnAddWord_Click(sender, e);
+               btFind_Click(sender, e);
         }
         private void btnAddWord_Click(object sender, EventArgs e)
         {

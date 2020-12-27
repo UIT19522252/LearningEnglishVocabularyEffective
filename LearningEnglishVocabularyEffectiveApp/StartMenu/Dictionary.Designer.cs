@@ -81,7 +81,7 @@
             this.tbWord.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbWord.HoverState.Parent = this.tbWord;
             this.tbWord.Location = new System.Drawing.Point(325, 165);
-            this.tbWord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbWord.Margin = new System.Windows.Forms.Padding(4);
             this.tbWord.Name = "tbWord";
             this.tbWord.PasswordChar = '\0';
             this.tbWord.PlaceholderText = "";
@@ -221,7 +221,7 @@
             this.lbPronuciation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.lbPronuciation.Location = new System.Drawing.Point(185, 227);
             this.lbPronuciation.Name = "lbPronuciation";
-            this.lbPronuciation.Size = new System.Drawing.Size(132, 25);
+            this.lbPronuciation.Size = new System.Drawing.Size(159, 29);
             this.lbPronuciation.TabIndex = 13;
             this.lbPronuciation.Text = "Pronuciation";
             this.lbPronuciation.Visible = false;
@@ -475,7 +475,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
             this.label1.Location = new System.Drawing.Point(520, 199);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 95);
+            this.label1.Size = new System.Drawing.Size(364, 113);
             this.label1.TabIndex = 13;
             this.label1.Text = "WORD";
             // 
