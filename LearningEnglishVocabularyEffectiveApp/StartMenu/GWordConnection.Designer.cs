@@ -88,7 +88,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(19, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(58, 46);
+            this.button1.Size = new System.Drawing.Size(58, 58);
             this.button1.TabIndex = 28;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@
             this.rtbDecription.Name = "rtbDecription";
             this.rtbDecription.Size = new System.Drawing.Size(626, 334);
             this.rtbDecription.TabIndex = 24;
-            this.rtbDecription.Text = "sdfh";
+            this.rtbDecription.Text = "";
             // 
             // richTextBox1
             // 
@@ -134,7 +134,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(204, 282);
             this.richTextBox1.TabIndex = 20;
-            this.richTextBox1.Text = "sdfgh";
+            this.richTextBox1.Text = "";
             // 
             // label1
             // 
@@ -163,7 +163,6 @@
             this.tbPlayer.Name = "tbPlayer";
             this.tbPlayer.Size = new System.Drawing.Size(496, 48);
             this.tbPlayer.TabIndex = 14;
-            this.tbPlayer.Text = "sdffdsg";
             // 
             // rtbNPC
             // 
@@ -175,7 +174,7 @@
             this.rtbNPC.Name = "rtbNPC";
             this.rtbNPC.Size = new System.Drawing.Size(253, 34);
             this.rtbNPC.TabIndex = 13;
-            this.rtbNPC.Text = "sdfh";
+            this.rtbNPC.Text = "";
             // 
             // pnNotification
             // 

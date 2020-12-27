@@ -31,6 +31,7 @@
             this.btnMultipleChoices = new Guna.UI2.WinForms.Guna2Button();
             this.btnCategory = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLoad = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnMultipleChoices
@@ -43,7 +44,7 @@
             this.btnMultipleChoices.Font = new System.Drawing.Font("Berlin Sans FB", 25.8F, System.Drawing.FontStyle.Bold);
             this.btnMultipleChoices.ForeColor = System.Drawing.Color.White;
             this.btnMultipleChoices.HoverState.Parent = this.btnMultipleChoices;
-            this.btnMultipleChoices.Location = new System.Drawing.Point(177, 224);
+            this.btnMultipleChoices.Location = new System.Drawing.Point(167, 335);
             this.btnMultipleChoices.Name = "btnMultipleChoices";
             this.btnMultipleChoices.ShadowDecoration.Parent = this.btnMultipleChoices;
             this.btnMultipleChoices.Size = new System.Drawing.Size(367, 181);
@@ -58,11 +59,11 @@
             this.btnCategory.BorderRadius = 25;
             this.btnCategory.CheckedState.Parent = this.btnCategory;
             this.btnCategory.CustomImages.Parent = this.btnCategory;
-            this.btnCategory.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnCategory.FillColor = System.Drawing.Color.Maroon;
             this.btnCategory.Font = new System.Drawing.Font("Berlin Sans FB", 25.8F, System.Drawing.FontStyle.Bold);
             this.btnCategory.ForeColor = System.Drawing.Color.White;
             this.btnCategory.HoverState.Parent = this.btnCategory;
-            this.btnCategory.Location = new System.Drawing.Point(638, 224);
+            this.btnCategory.Location = new System.Drawing.Point(628, 335);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.ShadowDecoration.Parent = this.btnCategory;
             this.btnCategory.Size = new System.Drawing.Size(367, 181);
@@ -73,16 +74,29 @@
             // 
             // pnlLoad
             // 
-            this.pnlLoad.Location = new System.Drawing.Point(537, 125);
+            this.pnlLoad.Location = new System.Drawing.Point(12, 12);
             this.pnlLoad.Name = "pnlLoad";
             this.pnlLoad.Size = new System.Drawing.Size(200, 100);
             this.pnlLoad.TabIndex = 2;
             this.pnlLoad.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Blackadder ITC", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.label1.Location = new System.Drawing.Point(266, 160);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(631, 103);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Let make your choice!";
+            // 
             // FOptionLearns
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(1162, 628);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlLoad);
             this.Controls.Add(this.btnCategory);
             this.Controls.Add(this.btnMultipleChoices);
@@ -91,6 +105,7 @@
             this.Name = "FOptionLearns";
             this.Text = "FOptionLearns";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -99,5 +114,6 @@
         private Guna.UI2.WinForms.Guna2Button btnMultipleChoices;
         private Guna.UI2.WinForms.Guna2Button btnCategory;
         private System.Windows.Forms.Panel pnlLoad;
+        private System.Windows.Forms.Label label1;
     }
 }
