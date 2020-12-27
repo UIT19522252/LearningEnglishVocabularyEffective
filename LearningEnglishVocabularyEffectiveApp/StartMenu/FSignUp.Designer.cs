@@ -63,7 +63,7 @@
             this.tbxUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.tbxUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbxUsername.HoverState.Parent = this.tbxUsername;
-            this.tbxUsername.Location = new System.Drawing.Point(691, 118);
+            this.tbxUsername.Location = new System.Drawing.Point(693, 125);
             this.tbxUsername.Margin = new System.Windows.Forms.Padding(4);
             this.tbxUsername.Name = "tbxUsername";
             this.tbxUsername.PasswordChar = '\0';
@@ -94,7 +94,7 @@
             this.tbxRepeatPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.tbxRepeatPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbxRepeatPass.HoverState.Parent = this.tbxRepeatPass;
-            this.tbxRepeatPass.Location = new System.Drawing.Point(691, 196);
+            this.tbxRepeatPass.Location = new System.Drawing.Point(691, 200);
             this.tbxRepeatPass.Margin = new System.Windows.Forms.Padding(4);
             this.tbxRepeatPass.Name = "tbxRepeatPass";
             this.tbxRepeatPass.PasswordChar = '*';
@@ -125,7 +125,7 @@
             this.tbxPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.tbxPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbxPass.HoverState.Parent = this.tbxPass;
-            this.tbxPass.Location = new System.Drawing.Point(691, 153);
+            this.tbxPass.Location = new System.Drawing.Point(692, 164);
             this.tbxPass.Margin = new System.Windows.Forms.Padding(4);
             this.tbxPass.Name = "tbxPass";
             this.tbxPass.PasswordChar = '*';
@@ -244,7 +244,7 @@
             this.lbCode.ForeColor = System.Drawing.Color.LightSlateGray;
             this.lbCode.Location = new System.Drawing.Point(540, 280);
             this.lbCode.Name = "lbCode";
-            this.lbCode.Size = new System.Drawing.Size(125, 21);
+            this.lbCode.Size = new System.Drawing.Size(112, 19);
             this.lbCode.TabIndex = 11;
             this.lbCode.Text = "CODE CONFIRM";
             // 
@@ -257,7 +257,7 @@
             this.lbSentmailAgain.LinkColor = System.Drawing.Color.Red;
             this.lbSentmailAgain.Location = new System.Drawing.Point(688, 307);
             this.lbSentmailAgain.Name = "lbSentmailAgain";
-            this.lbSentmailAgain.Size = new System.Drawing.Size(278, 20);
+            this.lbSentmailAgain.Size = new System.Drawing.Size(253, 17);
             this.lbSentmailAgain.TabIndex = 12;
             this.lbSentmailAgain.TabStop = true;
             this.lbSentmailAgain.Text = "Give me code again with my gmail";
@@ -272,7 +272,7 @@
             this.lbSentmail.LinkColor = System.Drawing.Color.Red;
             this.lbSentmail.Location = new System.Drawing.Point(710, 307);
             this.lbSentmail.Name = "lbSentmail";
-            this.lbSentmail.Size = new System.Drawing.Size(229, 20);
+            this.lbSentmail.Size = new System.Drawing.Size(208, 17);
             this.lbSentmail.TabIndex = 10;
             this.lbSentmail.TabStop = true;
             this.lbSentmail.Text = "Give me code with my gmail";
@@ -316,14 +316,14 @@
             this.label2.ForeColor = System.Drawing.Color.LightSlateGray;
             this.label2.Location = new System.Drawing.Point(602, 244);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 21);
+            this.label2.Size = new System.Drawing.Size(49, 19);
             this.label2.TabIndex = 11;
             this.label2.Text = "EMAIL";
             // 
             // FSignUp
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::StartMenu.Properties.Resources.signin;
+            this.BackgroundImage = global::StartMenu.Properties.Resources.signin1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.lbSentmailAgain);

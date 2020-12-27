@@ -203,6 +203,16 @@ namespace StartMenu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap duma {
+            get {
+                object obj = ResourceManager.GetObject("duma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ec61d3114cc5269485d508244f531bdf {
             get {
                 object obj = ResourceManager.GetObject("ec61d3114cc5269485d508244f531bdf", resourceCulture);
@@ -676,6 +686,16 @@ namespace StartMenu.Properties {
         internal static System.Drawing.Bitmap signin {
             get {
                 object obj = ResourceManager.GetObject("signin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap signin1 {
+            get {
+                object obj = ResourceManager.GetObject("signin1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

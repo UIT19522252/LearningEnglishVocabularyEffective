@@ -39,12 +39,14 @@
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
             this.lbForgot = new System.Windows.Forms.LinkLabel();
             this.pnGmail = new System.Windows.Forms.Panel();
+            this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.pnNewPass = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblUserName = new System.Windows.Forms.Label();
             this.btRePass = new Guna.UI2.WinForms.Guna2Button();
             this.tbCNewpass = new Guna.UI2.WinForms.Guna2TextBox();
             this.tbNewpass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.lbSentmailAgain = new System.Windows.Forms.LinkLabel();
             this.lbSentmail = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,8 +54,6 @@
             this.btConfirm = new Guna.UI2.WinForms.Guna2Button();
             this.lbGmail = new System.Windows.Forms.Label();
             this.tbEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblUserName = new System.Windows.Forms.Label();
-            this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.lblTextonPnGmail = new System.Windows.Forms.Label();
             this.pnGmail.SuspendLayout();
             this.pnNewPass.SuspendLayout();
@@ -246,6 +246,23 @@
             this.pnGmail.Size = new System.Drawing.Size(504, 487);
             this.pnGmail.TabIndex = 9;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.BorderRadius = 18;
+            this.btnCancel.CheckedState.Parent = this.btnCancel;
+            this.btnCancel.CustomImages.Parent = this.btnCancel;
+            this.btnCancel.FillColor = System.Drawing.Color.Maroon;
+            this.btnCancel.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.HoverState.Parent = this.btnCancel;
+            this.btnCancel.Location = new System.Drawing.Point(302, 373);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
+            this.btnCancel.Size = new System.Drawing.Size(119, 45);
+            this.btnCancel.TabIndex = 7;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // pnNewPass
             // 
             this.pnNewPass.Controls.Add(this.lblUserName);
@@ -259,27 +276,16 @@
             this.pnNewPass.Size = new System.Drawing.Size(461, 321);
             this.pnNewPass.TabIndex = 6;
             // 
-            // label3
+            // lblUserName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.label3.Location = new System.Drawing.Point(120, 202);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Confirm";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.label2.Location = new System.Drawing.Point(79, 156);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "New password";
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.lblUserName.Location = new System.Drawing.Point(77, 76);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(176, 38);
+            this.lblUserName.TabIndex = 5;
+            this.lblUserName.Text = "Hello User!";
             // 
             // btRePass
             // 
@@ -349,6 +355,28 @@
             this.tbNewpass.ShadowDecoration.Parent = this.tbNewpass;
             this.tbNewpass.Size = new System.Drawing.Size(200, 36);
             this.tbNewpass.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.label3.Location = new System.Drawing.Point(120, 202);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 25);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Confirm";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.label2.Location = new System.Drawing.Point(79, 156);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "New password";
             // 
             // lbSentmailAgain
             // 
@@ -468,34 +496,6 @@
             this.tbEmail.Size = new System.Drawing.Size(274, 36);
             this.tbEmail.TabIndex = 0;
             // 
-            // lblUserName
-            // 
-            this.lblUserName.AutoSize = true;
-            this.lblUserName.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.lblUserName.Location = new System.Drawing.Point(77, 76);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(182, 39);
-            this.lblUserName.TabIndex = 5;
-            this.lblUserName.Text = "Hello User!";
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BorderRadius = 18;
-            this.btnCancel.CheckedState.Parent = this.btnCancel;
-            this.btnCancel.CustomImages.Parent = this.btnCancel;
-            this.btnCancel.FillColor = System.Drawing.Color.Maroon;
-            this.btnCancel.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
-            this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.HoverState.Parent = this.btnCancel;
-            this.btnCancel.Location = new System.Drawing.Point(302, 373);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
-            this.btnCancel.Size = new System.Drawing.Size(119, 45);
-            this.btnCancel.TabIndex = 7;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
             // lblTextonPnGmail
             // 
             this.lblTextonPnGmail.AutoSize = true;
@@ -510,7 +510,7 @@
             // FLogin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::StartMenu.Properties.Resources.dnhso;
+            this.BackgroundImage = global::StartMenu.Properties.Resources.duma;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 553);
             this.Controls.Add(this.pnGmail);

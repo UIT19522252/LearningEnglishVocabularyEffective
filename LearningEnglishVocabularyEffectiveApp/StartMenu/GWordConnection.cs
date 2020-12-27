@@ -32,7 +32,7 @@ namespace StartMenu
 		}
 		private void GameOver()
 		{
-			MessageBox.Show("Thua rồi nhé hihi", "GameOver");
+			MessageBox.Show("Thua rồi nhé hihi, chơi lại nào", "GameOver");
 			game.AllOver();
 			ShowDuplicated();
 			game = new ConnectionGame();
