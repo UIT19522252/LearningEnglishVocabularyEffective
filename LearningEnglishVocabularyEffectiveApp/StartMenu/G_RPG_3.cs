@@ -178,22 +178,41 @@ namespace StartMenu
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-			if (answer[Seq[0]] == Words.IndexOf(tbList[Seq[1] % 3].Text)
-				&& answer[Seq[2]] == Words.IndexOf(tbList[Seq[3] % 3].Text)
-				&& answer[Seq[4]] == Words.IndexOf(tbList[Seq[5] % 3].Text))
+			try
 			{
-				MessageBox.Show("Đúng rồi");
-				this.HPBoss.Value -= 10;
+				if (answer[Seq[0]] == Words.IndexOf(tbList[Seq[1] % 3].Text)
+					&& answer[Seq[2]] == Words.IndexOf(tbList[Seq[3] % 3].Text)
+					&& answer[Seq[4]] == Words.IndexOf(tbList[Seq[5] % 3].Text))
+				{
+					lblCorrect.Text = "Correct";
+					lblCorrect.Visible = true;
+				}
+				else
+				{
+					lblCorrect.Text = "Incorrect";
+					lblCorrect.Visible = true;
+				}
+			}
+			catch
+            {
+
+				lblCorrect.Text = "You must match all of them!";
+				lblCorrect.Visible = true;
+			}
+			timerCorrect.Start();
+		}
+
+        private void timerCorrect_Tick(object sender, EventArgs e)
+        {
+			timerCorrect.Stop();
+			if (lblCorrect.Text == "Correct")
+			{
+				this.HPBoss.Value -= 20;
 				if (this.HPBoss.Value == 0)
 				{
-					MessageBox.Show("Boss was defeated");
-					string[] arrLine = File.ReadAllLines("HighScore2.txt");
-					string linetype = arrLine[Data.type];
-					int time = int.Parse(linetype.Substring(linetype.IndexOf(": ") + 2));
-					time++;
-					arrLine[Data.type] = "[" + Data.type + "]: " + time;
-					File.WriteAllLines("HighScore2.txt", arrLine);
-					this.Close();
+					this.btnNewGame.Visible = false;
+					this.lblEndGame.Text = "You lose, want to learn again?";
+					this.pnlLoad.Visible = true;
 				}
 				Newgame(Words, Means);
 				start.Clear();
@@ -201,14 +220,15 @@ namespace StartMenu
 				Seq.Clear();
 				this.Invalidate();
 			}
-			else
+			else if (lblCorrect.Text == "Incorrect")
 			{
-				MessageBox.Show("Sai cmnr");
-				this.HPPlayer.Value -= 10;
+				this.HPPlayer.Value -= 20;
 				if (this.HPPlayer.Value == 0)
 				{
-					MessageBox.Show("You was defeated");
-					this.Close();
+					this.btnNewGame.Visible = false;
+					this.lblEndGame.Text = "You lose, want to learn again?";
+					this.pnlLoad.Visible = true;
+
 				}
 				Newgame(Words, Means);
 				start.Clear();
@@ -218,6 +238,35 @@ namespace StartMenu
 				AddEventClick();
 				this.Invalidate();
 			}
+			
+			lblCorrect.Visible = false;
+		}
+
+        private void btnYes_Click(object sender, EventArgs e)
+        {
+			G_RPG tabLearnNewWord = new G_RPG();
+			tabLearnNewWord.AutoScroll = true;
+			tabLearnNewWord.TopLevel = false;
+			pnlLoad.Controls.Clear();
+			pnlLoad.Controls.Add(tabLearnNewWord);
+			pnlLoad.Dock = DockStyle.Fill;
+			tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
+			tabLearnNewWord.Show();
+			pnlLoad.Visible = true;
+		}
+
+        private void btnNo_Click(object sender, EventArgs e)
+        {
+			FIntroduction tabLearnNewWord = new FIntroduction();
+			tabLearnNewWord.AutoScroll = true;
+			tabLearnNewWord.TopLevel = false;
+			pnlLoad.Controls.Clear();
+			pnlLoad.Controls.Add(tabLearnNewWord);
+			pnlLoad.Dock = DockStyle.Fill;
+
+			tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
+			tabLearnNewWord.Show();
+			pnlLoad.Visible = true;
 		}
     }
 }

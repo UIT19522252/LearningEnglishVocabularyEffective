@@ -79,7 +79,22 @@ namespace StartMenu
 			if (comboBox1.SelectedIndex == answer[0] && comboBox2.SelectedIndex == answer[1]
 				&& comboBox3.SelectedIndex == answer[2])
 			{
-				MessageBox.Show("Đúng rồi giỏi vcl");
+				lblCorrect.Text = "Correct";
+				lblCorrect.Visible = true;
+			}
+			else
+			{
+				lblCorrect.Text = "Incorrect";
+				lblCorrect.Visible = true;
+			}
+			timerCorrect.Start();
+		}
+
+        private void timerCorrect_Tick(object sender, EventArgs e)
+        {
+			timerCorrect.Stop();
+			if (lblCorrect.Text == "Correct")
+            {
 				G_RPG_3 game = new G_RPG_3(Words, LinkPic);
 				game.AutoScroll = true;
 				game.TopLevel = false;
@@ -91,14 +106,10 @@ namespace StartMenu
 				pnlLoad.Dock = DockStyle.Fill;
 				pnlLoad.Visible = true;
 			}
-			else
-			{
-				MessageBox.Show("Sai rồi");
-				string data = answer[0] + "-" + comboBox1.SelectedIndex + "\n";
-				data += answer[1] + "-" + comboBox2.SelectedIndex + "\n";
-				data += answer[2] + "-" + comboBox3.SelectedIndex + "\n";
-				MessageBox.Show(data);
+			else if (lblCorrect.Text == "Incorrect")
+			{ 
 			}
-		}
+			lblCorrect.Visible = false;
+        }
     }
 }

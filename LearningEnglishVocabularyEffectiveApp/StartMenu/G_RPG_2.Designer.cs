@@ -44,6 +44,8 @@
             this.richTextBox2 = new Guna.UI2.WinForms.Guna2Button();
             this.richTextBox3 = new Guna.UI2.WinForms.Guna2Button();
             this.richTextBox4 = new Guna.UI2.WinForms.Guna2Button();
+            this.lblCorrect = new System.Windows.Forms.Label();
+            this.timerCorrect = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWitch)).BeginInit();
             this.SuspendLayout();
@@ -214,11 +216,29 @@
             this.richTextBox4.TabIndex = 62;
             this.richTextBox4.Text = "guna2Button3";
             // 
+            // lblCorrect
+            // 
+            this.lblCorrect.AutoSize = true;
+            this.lblCorrect.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorrect.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCorrect.Location = new System.Drawing.Point(520, 369);
+            this.lblCorrect.Name = "lblCorrect";
+            this.lblCorrect.Size = new System.Drawing.Size(121, 37);
+            this.lblCorrect.TabIndex = 63;
+            this.lblCorrect.Text = "Correct";
+            this.lblCorrect.Visible = false;
+            // 
+            // timerCorrect
+            // 
+            this.timerCorrect.Interval = 1000;
+            this.timerCorrect.Tick += new System.EventHandler(this.timerCorrect_Tick);
+            // 
             // G_RPG_2
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.Controls.Add(this.lblCorrect);
             this.Controls.Add(this.pnlLoad);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.HPBoss);
@@ -260,5 +280,7 @@
         private Guna.UI2.WinForms.Guna2Button richTextBox2;
         private Guna.UI2.WinForms.Guna2Button richTextBox3;
         private Guna.UI2.WinForms.Guna2Button richTextBox4;
+        private System.Windows.Forms.Label lblCorrect;
+        private System.Windows.Forms.Timer timerCorrect;
     }
 }

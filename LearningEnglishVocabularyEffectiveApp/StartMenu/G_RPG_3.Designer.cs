@@ -50,11 +50,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnNewGame = new Guna.UI2.WinForms.Guna2Button();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
+            this.lblCorrect = new System.Windows.Forms.Label();
+            this.timerCorrect = new System.Windows.Forms.Timer(this.components);
+            this.pnlLoad = new System.Windows.Forms.Panel();
+            this.lblEndGame = new System.Windows.Forms.Label();
+            this.btnYes = new Guna.UI2.WinForms.Guna2Button();
+            this.btnNo = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPLayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNPC)).BeginInit();
+            this.pnlLoad.SuspendLayout();
             this.SuspendLayout();
             // 
             // HPBoss
@@ -222,11 +229,11 @@
             this.btnNewGame.BorderRadius = 15;
             this.btnNewGame.CheckedState.Parent = this.btnNewGame;
             this.btnNewGame.CustomImages.Parent = this.btnNewGame;
-            this.btnNewGame.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnNewGame.FillColor = System.Drawing.Color.Green;
             this.btnNewGame.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewGame.ForeColor = System.Drawing.Color.White;
             this.btnNewGame.HoverState.Parent = this.btnNewGame;
-            this.btnNewGame.Location = new System.Drawing.Point(503, 447);
+            this.btnNewGame.Location = new System.Drawing.Point(21, 22);
             this.btnNewGame.Name = "btnNewGame";
             this.btnNewGame.ShadowDecoration.Parent = this.btnNewGame;
             this.btnNewGame.Size = new System.Drawing.Size(192, 53);
@@ -254,11 +261,88 @@
             this.btnSubmit.UseTransparentBackground = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // lblCorrect
+            // 
+            this.lblCorrect.Font = new System.Drawing.Font("Berlin Sans FB Demi", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorrect.ForeColor = System.Drawing.Color.Maroon;
+            this.lblCorrect.Location = new System.Drawing.Point(12, 433);
+            this.lblCorrect.Name = "lblCorrect";
+            this.lblCorrect.Size = new System.Drawing.Size(1158, 42);
+            this.lblCorrect.TabIndex = 62;
+            this.lblCorrect.Text = "Correct";
+            this.lblCorrect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timerCorrect
+            // 
+            this.timerCorrect.Interval = 1000;
+            this.timerCorrect.Tick += new System.EventHandler(this.timerCorrect_Tick);
+            // 
+            // pnlLoad
+            // 
+            this.pnlLoad.Controls.Add(this.btnNo);
+            this.pnlLoad.Controls.Add(this.btnYes);
+            this.pnlLoad.Controls.Add(this.lblEndGame);
+            this.pnlLoad.Location = new System.Drawing.Point(114, 81);
+            this.pnlLoad.Name = "pnlLoad";
+            this.pnlLoad.Size = new System.Drawing.Size(982, 535);
+            this.pnlLoad.TabIndex = 63;
+            this.pnlLoad.Visible = false;
+            // 
+            // lblEndGame
+            // 
+            this.lblEndGame.AutoSize = true;
+            this.lblEndGame.Font = new System.Drawing.Font("Berlin Sans FB Demi", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndGame.ForeColor = System.Drawing.Color.Maroon;
+            this.lblEndGame.Location = new System.Drawing.Point(275, 105);
+            this.lblEndGame.Name = "lblEndGame";
+            this.lblEndGame.Size = new System.Drawing.Size(441, 50);
+            this.lblEndGame.TabIndex = 0;
+            this.lblEndGame.Text = "Want to learn again?";
+            // 
+            // btnYes
+            // 
+            this.btnYes.BackColor = System.Drawing.Color.Transparent;
+            this.btnYes.BorderRadius = 15;
+            this.btnYes.CheckedState.Parent = this.btnYes;
+            this.btnYes.CustomImages.Parent = this.btnYes;
+            this.btnYes.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btnYes.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnYes.ForeColor = System.Drawing.Color.White;
+            this.btnYes.HoverState.Parent = this.btnYes;
+            this.btnYes.Location = new System.Drawing.Point(225, 276);
+            this.btnYes.Name = "btnYes";
+            this.btnYes.ShadowDecoration.Parent = this.btnYes;
+            this.btnYes.Size = new System.Drawing.Size(192, 53);
+            this.btnYes.TabIndex = 61;
+            this.btnYes.Text = "Yes";
+            this.btnYes.UseTransparentBackground = true;
+            this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
+            // 
+            // btnNo
+            // 
+            this.btnNo.BackColor = System.Drawing.Color.Transparent;
+            this.btnNo.BorderRadius = 15;
+            this.btnNo.CheckedState.Parent = this.btnNo;
+            this.btnNo.CustomImages.Parent = this.btnNo;
+            this.btnNo.FillColor = System.Drawing.Color.Maroon;
+            this.btnNo.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnNo.ForeColor = System.Drawing.Color.White;
+            this.btnNo.HoverState.Parent = this.btnNo;
+            this.btnNo.Location = new System.Drawing.Point(547, 276);
+            this.btnNo.Name = "btnNo";
+            this.btnNo.ShadowDecoration.Parent = this.btnNo;
+            this.btnNo.Size = new System.Drawing.Size(192, 53);
+            this.btnNo.TabIndex = 62;
+            this.btnNo.Text = "No";
+            this.btnNo.UseTransparentBackground = true;
+            this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
+            // 
             // G_RPG_3
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.Controls.Add(this.pnlLoad);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnNewGame);
             this.Controls.Add(this.HPBoss);
@@ -278,6 +362,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.lblCorrect);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -290,6 +375,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPLayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNPC)).EndInit();
+            this.pnlLoad.ResumeLayout(false);
+            this.pnlLoad.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,5 +404,11 @@
 		private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btnNewGame;
         private Guna.UI2.WinForms.Guna2Button btnSubmit;
+        private System.Windows.Forms.Label lblCorrect;
+        private System.Windows.Forms.Timer timerCorrect;
+        private System.Windows.Forms.Panel pnlLoad;
+        private Guna.UI2.WinForms.Guna2Button btnNo;
+        private Guna.UI2.WinForms.Guna2Button btnYes;
+        private System.Windows.Forms.Label lblEndGame;
     }
 }
