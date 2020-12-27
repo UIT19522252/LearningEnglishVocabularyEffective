@@ -29,6 +29,8 @@ namespace StartMenu
             tabPreviewNewWord.Show();
             pnlLoad.Dock = DockStyle.Fill;
             pnlLoad.Visible = true;
+            this.label1.Visible = false;
+
         }
 
         private void btnCategory_Click(object sender, EventArgs e)
@@ -42,6 +44,13 @@ namespace StartMenu
             game.FormBorderStyle = FormBorderStyle.None;
             game.Show();
             pnlLoad.Visible = true;
+            this.label1.Visible = false;
+
+        }
+
+        private void pnlLoad_EnabledChanged(object sender, EventArgs e)
+        {
+            this.label1.Visible = false;
         }
     }
 }
