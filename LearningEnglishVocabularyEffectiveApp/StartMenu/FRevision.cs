@@ -27,6 +27,9 @@ namespace StartMenu
 			this.pnYourFlashCard.Visible = false;
 			this.DoubleBuffered = true;
 			this.pnlLoad.Dock = DockStyle.Fill;
+			this.pnCheck.Hide();
+			this.pnStatistic.Hide();
+			pnYourFlashCard.Hide();
 		}
 		private void btNext_Click(object sender, EventArgs e)
 		{
@@ -96,6 +99,8 @@ namespace StartMenu
 		}
 		private void btStatistic_Click(object sender, EventArgs e)
 		{
+			this.pnCheck.Hide();
+			pnYourFlashCard.Hide();
 			this.pnStatistic.Visible = true;
 			this.pnStatistic.Dock = DockStyle.Fill;
 			this.lbUsername.Text ="Username: "+ Data.username;
@@ -103,6 +108,7 @@ namespace StartMenu
 			this.lbEmail.Text = "Email: " + sql.FindEmail(Data.username);
 			this.lbToLearn.Text = "To Learn: " + sql.countToLearn();
 			this.lbLearned.Text = "Learned: " + sql.countLearned();
+			pnStatistic.Show();
 		}
 		private void btBack3_Click(object sender, EventArgs e)
 		{
@@ -157,10 +163,9 @@ namespace StartMenu
 		}
 		private void btLearnNewWord_Click(object sender, EventArgs e)
 		{
-			/*FLearnNewWord f = new FLearnNewWord();
-			this.Hide();
-			f.ShowDialog();
-			this.Show();*/
+			this.pnCheck.Hide();
+			this.pnStatistic.Hide();
+			pnYourFlashCard.Hide();
 			FPreviewNewWord tabLearnNewWord = new FPreviewNewWord();
 			tabLearnNewWord.AutoScroll = true;
 			tabLearnNewWord.TopLevel = false;
@@ -173,6 +178,9 @@ namespace StartMenu
 		}
 		private void btYourFlashCard_Click(object sender, EventArgs e)
 		{
+			this.pnCheck.Hide();
+			this.pnStatistic.Hide();
+			
 			this.pnYourFlashCard.Visible = true;
 			this.pnYourFlashCard.Dock = DockStyle.Fill;
 			List<List<string>> ls = sql.getOwnFlashCard();
@@ -184,11 +192,14 @@ namespace StartMenu
 				btFlashCard.Text = yFWord[k];
 				btFlip.Text = yFMean[k];
 			}
+			pnYourFlashCard.Show();
 		}
 		private void btCheck_Click(object sender, EventArgs e)
 		{
-			this.pnCheck.Visible = true;
+			this.pnStatistic.Hide();
+			this.pnYourFlashCard.Hide();
 			this.pnCheck.Dock = DockStyle.Fill;
+			this.pnCheck.Visible = true;
 			List<List<string>> st = sql.getMeanID();
 			Eng = st[0];
 			Vie = st[1];
@@ -203,6 +214,7 @@ namespace StartMenu
 				pbImage.LoadAsync(LinkPic[k]);
 				this.btFlip2.Text = Eng[k];
 			}
+			this.pnCheck.Show();
 		}
 	}
 }

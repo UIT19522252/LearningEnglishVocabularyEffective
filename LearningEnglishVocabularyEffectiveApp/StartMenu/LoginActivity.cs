@@ -26,6 +26,40 @@ namespace StartMenu
 				return builder.ToString();
 			}
 		}
+		public string CheckUserNameFromMail(string mail)
+        {
+			string username = "No";
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+
+			String sqlQuery = "select username from USERINFO where email='" + mail + "'";
+
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+
+			SqlDataReader reader = command.ExecuteReader();
+
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				username = reader[0].ToString();
+				
+			}
+			connection.Close();
+			return username;
+        }
+		public void ChangePassword(string newpass)
+        {
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			newpass = HashPassword(newpass);
+			String sqlQuery = "update USERINFO set hashPass = '" + newpass + "' where id = '" + Data.iduser +"'";
+
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+
+			SqlDataReader reader = command.ExecuteReader();
+
+			connection.Close();
+		}
 		public bool checkUser(string a, string b)
 		{
 			SqlConnection connection = new SqlConnection(connString);

@@ -52,6 +52,9 @@
             this.btConfirm = new Guna.UI2.WinForms.Guna2Button();
             this.lbGmail = new System.Windows.Forms.Label();
             this.tbEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
+            this.lblTextonPnGmail = new System.Windows.Forms.Label();
             this.pnGmail.SuspendLayout();
             this.pnNewPass.SuspendLayout();
             this.SuspendLayout();
@@ -215,18 +218,20 @@
             this.lbForgot.AutoSize = true;
             this.lbForgot.BackColor = System.Drawing.Color.Transparent;
             this.lbForgot.Font = new System.Drawing.Font("FS Nokio Regular", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbForgot.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.lbForgot.Location = new System.Drawing.Point(689, 328);
+            this.lbForgot.ForeColor = System.Drawing.Color.Maroon;
+            this.lbForgot.LinkColor = System.Drawing.Color.Maroon;
+            this.lbForgot.Location = new System.Drawing.Point(644, 328);
             this.lbForgot.Name = "lbForgot";
-            this.lbForgot.Size = new System.Drawing.Size(153, 22);
+            this.lbForgot.Size = new System.Drawing.Size(282, 22);
             this.lbForgot.TabIndex = 8;
             this.lbForgot.TabStop = true;
-            this.lbForgot.Text = "Forgot password???";
+            this.lbForgot.Text = "Forgot password or set new password";
             this.lbForgot.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbForgot_LinkClicked);
             // 
             // pnGmail
             // 
             this.pnGmail.BackColor = System.Drawing.Color.White;
+            this.pnGmail.Controls.Add(this.btnCancel);
             this.pnGmail.Controls.Add(this.pnNewPass);
             this.pnGmail.Controls.Add(this.lbSentmailAgain);
             this.pnGmail.Controls.Add(this.lbSentmail);
@@ -235,30 +240,33 @@
             this.pnGmail.Controls.Add(this.btConfirm);
             this.pnGmail.Controls.Add(this.lbGmail);
             this.pnGmail.Controls.Add(this.tbEmail);
-            this.pnGmail.Location = new System.Drawing.Point(495, 8);
+            this.pnGmail.Controls.Add(this.lblTextonPnGmail);
+            this.pnGmail.Location = new System.Drawing.Point(496, 40);
             this.pnGmail.Name = "pnGmail";
-            this.pnGmail.Size = new System.Drawing.Size(486, 520);
+            this.pnGmail.Size = new System.Drawing.Size(504, 487);
             this.pnGmail.TabIndex = 9;
             // 
             // pnNewPass
             // 
-            this.pnNewPass.Controls.Add(this.label3);
-            this.pnNewPass.Controls.Add(this.label2);
+            this.pnNewPass.Controls.Add(this.lblUserName);
             this.pnNewPass.Controls.Add(this.btRePass);
             this.pnNewPass.Controls.Add(this.tbCNewpass);
             this.pnNewPass.Controls.Add(this.tbNewpass);
-            this.pnNewPass.Location = new System.Drawing.Point(9, 16);
+            this.pnNewPass.Controls.Add(this.label3);
+            this.pnNewPass.Controls.Add(this.label2);
+            this.pnNewPass.Location = new System.Drawing.Point(8, 51);
             this.pnNewPass.Name = "pnNewPass";
-            this.pnNewPass.Size = new System.Drawing.Size(461, 495);
+            this.pnNewPass.Size = new System.Drawing.Size(461, 321);
             this.pnNewPass.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.label3.Location = new System.Drawing.Point(120, 202);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 23);
+            this.label3.Size = new System.Drawing.Size(63, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Confirm";
             // 
@@ -266,9 +274,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("FS Nokio Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.label2.Location = new System.Drawing.Point(79, 156);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 23);
+            this.label2.Size = new System.Drawing.Size(108, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "New password";
             // 
@@ -281,7 +290,7 @@
             this.btRePass.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btRePass.ForeColor = System.Drawing.Color.White;
             this.btRePass.HoverState.Parent = this.btRePass;
-            this.btRePass.Location = new System.Drawing.Point(264, 259);
+            this.btRePass.Location = new System.Drawing.Point(233, 262);
             this.btRePass.Name = "btRePass";
             this.btRePass.ShadowDecoration.Parent = this.btRePass;
             this.btRePass.Size = new System.Drawing.Size(180, 45);
@@ -308,7 +317,7 @@
             this.tbCNewpass.HoverState.Parent = this.tbCNewpass;
             this.tbCNewpass.Location = new System.Drawing.Point(184, 198);
             this.tbCNewpass.Name = "tbCNewpass";
-            this.tbCNewpass.PasswordChar = '\0';
+            this.tbCNewpass.PasswordChar = '*';
             this.tbCNewpass.PlaceholderText = "";
             this.tbCNewpass.SelectedText = "";
             this.tbCNewpass.ShadowDecoration.Parent = this.tbCNewpass;
@@ -334,7 +343,7 @@
             this.tbNewpass.HoverState.Parent = this.tbNewpass;
             this.tbNewpass.Location = new System.Drawing.Point(184, 153);
             this.tbNewpass.Name = "tbNewpass";
-            this.tbNewpass.PasswordChar = '\0';
+            this.tbNewpass.PasswordChar = '*';
             this.tbNewpass.PlaceholderText = "";
             this.tbNewpass.SelectedText = "";
             this.tbNewpass.ShadowDecoration.Parent = this.tbNewpass;
@@ -403,6 +412,7 @@
             this.tbCode.ShadowDecoration.Parent = this.tbCode;
             this.tbCode.Size = new System.Drawing.Size(274, 36);
             this.tbCode.TabIndex = 3;
+            this.tbCode.TextChanged += new System.EventHandler(this.tbCode_TextChanged);
             // 
             // btConfirm
             // 
@@ -410,6 +420,7 @@
             this.btConfirm.BorderRadius = 16;
             this.btConfirm.CheckedState.Parent = this.btConfirm;
             this.btConfirm.CustomImages.Parent = this.btConfirm;
+            this.btConfirm.Enabled = false;
             this.btConfirm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.btConfirm.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btConfirm.ForeColor = System.Drawing.Color.White;
@@ -456,6 +467,45 @@
             this.tbEmail.ShadowDecoration.Parent = this.tbEmail;
             this.tbEmail.Size = new System.Drawing.Size(274, 36);
             this.tbEmail.TabIndex = 0;
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Berlin Sans FB Demi", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.lblUserName.Location = new System.Drawing.Point(77, 76);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(182, 39);
+            this.lblUserName.TabIndex = 5;
+            this.lblUserName.Text = "Hello User!";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.BorderRadius = 18;
+            this.btnCancel.CheckedState.Parent = this.btnCancel;
+            this.btnCancel.CustomImages.Parent = this.btnCancel;
+            this.btnCancel.FillColor = System.Drawing.Color.Maroon;
+            this.btnCancel.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.HoverState.Parent = this.btnCancel;
+            this.btnCancel.Location = new System.Drawing.Point(302, 373);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
+            this.btnCancel.Size = new System.Drawing.Size(119, 45);
+            this.btnCancel.TabIndex = 7;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // lblTextonPnGmail
+            // 
+            this.lblTextonPnGmail.AutoSize = true;
+            this.lblTextonPnGmail.Font = new System.Drawing.Font("Berlin Sans FB Demi", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextonPnGmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.lblTextonPnGmail.Location = new System.Drawing.Point(20, 59);
+            this.lblTextonPnGmail.Name = "lblTextonPnGmail";
+            this.lblTextonPnGmail.Size = new System.Drawing.Size(438, 45);
+            this.lblTextonPnGmail.TabIndex = 8;
+            this.lblTextonPnGmail.Text = "Set your new password!";
             // 
             // FLogin
             // 
@@ -513,5 +563,8 @@
         private System.Windows.Forms.LinkLabel lbSentmailAgain;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblUserName;
+        private Guna.UI2.WinForms.Guna2Button btnCancel;
+        private System.Windows.Forms.Label lblTextonPnGmail;
     }
 }

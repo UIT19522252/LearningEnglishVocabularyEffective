@@ -14,6 +14,7 @@ namespace StartMenu
 {
     public partial class FLogin : Form
     {
+        LoginActivity login = new LoginActivity();
         string code = "";
         User temp = new User();
         public FLogin()
@@ -116,37 +117,41 @@ namespace StartMenu
         }
         private void lbSentGmail_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            this.lbSentmailAgain.Show();
-            this.lbSentmail.Hide();
-            System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
-            mail.From = new System.Net.Mail.MailAddress("app.english.vocabulary@gmail.com");
-            if (this.tbEmail.Text == "")
+            if (login.CheckUserNameFromMail(this.tbEmail.Text.ToString()) != "No")
             {
-                FError f = new FError("Enter your mail", "Message");
-                f.StartPosition = FormStartPosition.CenterScreen;
-                f.ShowDialog();
-            }
-            else
-            {
-                mail.To.Add(this.tbEmail.Text);
-                mail.Subject = "Confirm account";
-                code = random_Digit().ToString();
-                mail.Body = code + " is your confirm code ";
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-
-                smtp.EnableSsl = true;
-                smtp.Credentials = new NetworkCredential("app.english.vocabulary@gmail.com", "phiphucthe");
-
-                try
+                this.lbSentmailAgain.Show();
+                this.lbSentmail.Hide();
+                System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
+                mail.From = new System.Net.Mail.MailAddress("app.english.vocabulary@gmail.com");
+                if (this.tbEmail.Text == "")
                 {
-                    smtp.Send(mail);
+                    FError f = new FError("Enter your mail", "Message");
+                    f.StartPosition = FormStartPosition.CenterScreen;
+                    f.ShowDialog();
                 }
-
-                catch (SmtpException ex)
+                else
                 {
-                    MessageBox.Show("Can't sent your mail");
+                    mail.To.Add(this.tbEmail.Text);
+                    mail.Subject = "Confirm account";
+                    code = random_Digit().ToString();
+                    mail.Body = code + " is your confirm code ";
+                    SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+
+                    smtp.EnableSsl = true;
+                    smtp.Credentials = new NetworkCredential("app.english.vocabulary@gmail.com", "phiphucthe");
+
+                    try
+                    {
+                        smtp.Send(mail);
+                    }
+
+                    catch (SmtpException ex)
+                    {
+                        MessageBox.Show("Can't sent your mail");
+                    }
                 }
             }
+            else MessageBox.Show("Ban chua co tai khoan voi email nay!");
         }
 
         private void btConfirm_Click(object sender, EventArgs e)
@@ -154,6 +159,7 @@ namespace StartMenu
             if(code == tbCode.Text)
             {
                 pnNewPass.Show();
+                this.lblUserName.Text = "Hello "+ login.CheckUserNameFromMail(tbEmail.Text) +" !";
                 
             }
             else
@@ -167,7 +173,17 @@ namespace StartMenu
 
         private void btRePass_Click(object sender, EventArgs e)
         {
-
+            if (this.tbNewpass.Text == this.tbCNewpass.Text)
+            {
+                login.ChangePassword(tbCNewpass.Text);
+                this.pnGmail.Hide();
+                this.pnNewPass.Hide();
+                MessageBox.Show("Dat lai mat khau thanh cong!");
+            }
+            else
+            {
+                MessageBox.Show("Nhap lai mat khau khong chinh xac!");
+            }
         }
 
         private void lbSentmailAgain_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -203,6 +219,18 @@ namespace StartMenu
                     MessageBox.Show("Can't sent your mail");
                 }
             }
+        }
+
+        private void tbCode_TextChanged(object sender, EventArgs e)
+        {
+            if (this.tbCode.Text == "") this.btConfirm.Enabled = false;
+            else this.btConfirm.Enabled = true;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.pnNewPass.Hide();
+            this.pnGmail.Hide();
         }
     }
 }
