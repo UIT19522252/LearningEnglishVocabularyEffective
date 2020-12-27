@@ -22,12 +22,12 @@ namespace StartMenu
 		{
 			InitializeComponent();
 			this.pbWord.SizeMode = PictureBoxSizeMode.Zoom;
-			this.rtbNPC.Text = game.Init();
-			richTextBox1.Text = this.rtbNPC.Text + "\n";
-			this.rtbDecription.Text = game.Decription(this.rtbNPC.Text);
+			this.rtbNPC1.Text = game.Init();
+			richTextBox1.Text = this.rtbNPC1.Text + "\n";
+			this.rtbDecription.Text = game.Decription(this.rtbNPC1.Text);
 			pbWord.InitialImage = null;
-			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC.Text));
-			this.lbSeq.Text = this.rtbNPC.Text.Substring(this.rtbNPC.Text.Length - 2);
+			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC1.Text));
+			this.lbSeq.Text = this.rtbNPC1.Text.Substring(this.rtbNPC1.Text.Length - 2);
 			Control.CheckForIllegalCrossThreadCalls = false;
 		}
 		private void GameOver()
@@ -52,12 +52,12 @@ namespace StartMenu
 					((RichTextBox)x).Text = "";
 				}
 			}
-			this.rtbNPC.Text = game.Init();
-			richTextBox1.Text = this.rtbNPC.Text + "\n";
-			this.rtbDecription.Text = game.Decription(this.rtbNPC.Text);
+			this.rtbNPC1.Text = game.Init();
+			richTextBox1.Text = this.rtbNPC1.Text + "\n";
+			this.rtbDecription.Text = game.Decription(this.rtbNPC1.Text);
 			pbWord.InitialImage = null;
-			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC.Text));
-			this.lbSeq.Text = this.rtbNPC.Text.Substring(this.rtbNPC.Text.Length - 2);
+			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC1.Text));
+			this.lbSeq.Text = this.rtbNPC1.Text.Substring(this.rtbNPC1.Text.Length - 2);
 		}
 		private void Lose()
 		{
@@ -102,11 +102,11 @@ namespace StartMenu
 			}
 			else
 				MessageBox.Show("Tôi cũng không tìm thấy đáp án", "Solution");
-			this.rtbNPC.Text = game.NewGame();
-			this.rtbDecription.Text = game.Decription(this.rtbNPC.Text);
+			this.rtbNPC1.Text = game.NewGame();
+			this.rtbDecription.Text = game.Decription(this.rtbNPC1.Text);
 			pbWord.Image = null;
-			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC.Text));
-			this.lbSeq.Text = this.rtbNPC.Text.Substring(this.rtbNPC.Text.Length - 2);
+			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC1.Text));
+			this.lbSeq.Text = this.rtbNPC1.Text.Substring(this.rtbNPC1.Text.Length - 2);
 			richTextBox1.Text = "";
 		}
 		public string LoadDecrip(string word)
@@ -165,18 +165,18 @@ namespace StartMenu
 			Level();
 			this.lbScore.Text = "Score: " + game.score;
 			richTextBox1.Text += tbPlayer.Text + "\n";
-			this.rtbNPC.Text = game.NextTurn();
-			if (this.rtbNPC.Text == "No Answer")
+			this.rtbNPC1.Text = game.NextTurn();
+			if (this.rtbNPC1.Text == "No Answer")
 			{
 				tbPlayer.Text = "";
 				NPCLose();
 				return;
 			}
-			richTextBox1.Text += this.rtbNPC.Text + "\n";
-			this.rtbDecription.Text = game.Decription(this.rtbNPC.Text);
+			richTextBox1.Text += this.rtbNPC1.Text + "\n";
+			this.rtbDecription.Text = game.Decription(this.rtbNPC1.Text);
 			pbWord.Image = null;
-			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC.Text));
-			this.lbSeq.Text = this.rtbNPC.Text.Substring(this.rtbNPC.Text.Length - 2);
+			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC1.Text));
+			this.lbSeq.Text = this.rtbNPC1.Text.Substring(this.rtbNPC1.Text.Length - 2);
 			tbPlayer.Text = "";
 		}
 		private void NPCLose()
@@ -186,12 +186,12 @@ namespace StartMenu
 			this.pnNotification.Visible = true;
 			this.lbScore.Text = "Score: " + game.score;
 			tbPlayer.Text = "";
-			this.rtbNPC.Text = game.NewGame();
-			this.rtbDecription.Text = game.Decription(this.rtbNPC.Text);
+			this.rtbNPC1.Text = game.NewGame();
+			this.rtbDecription.Text = game.Decription(this.rtbNPC1.Text);
 			pbWord.Image = null;
-			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC.Text));
-			this.lbSeq.Text = this.rtbNPC.Text.Substring(this.rtbNPC.Text.Length - 2);
-			this.richTextBox1.Text = this.rtbNPC.Text + "\n";
+			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC1.Text));
+			this.lbSeq.Text = this.rtbNPC1.Text.Substring(this.rtbNPC1.Text.Length - 2);
+			this.richTextBox1.Text = this.rtbNPC1.Text + "\n";
 		}
 		private void GameOver1()
 		{
@@ -225,12 +225,12 @@ namespace StartMenu
 				}
 			}
 			this.lbScore.Text = "Score: " + 0;
-			this.rtbNPC.Text = game.Init();
-			richTextBox1.Text = this.rtbNPC.Text + "\n";
-			this.rtbDecription.Text = game.Decription(this.rtbNPC.Text);
+			this.rtbNPC1.Text = game.Init();
+			richTextBox1.Text = this.rtbNPC1.Text + "\n";
+			this.rtbDecription.Text = game.Decription(this.rtbNPC1.Text);
 			pbWord.InitialImage = null;
-			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC.Text));
-			this.lbSeq.Text = this.rtbNPC.Text.Substring(this.rtbNPC.Text.Length - 2);
+			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC1.Text));
+			this.lbSeq.Text = this.rtbNPC1.Text.Substring(this.rtbNPC1.Text.Length - 2);
 		}
 		private void Level()
 		{
@@ -261,7 +261,7 @@ namespace StartMenu
         {
 			if (tbPlayer.Text.Length < 2) return;
 			//Check xem đã nối đúng chưa
-			string NPC = rtbNPC.Text;
+			string NPC = rtbNPC1.Text;
 			string Player = tbPlayer.Text;
 			if (game.CheckAnswer(NPC, Player) == true)
 			{

@@ -67,6 +67,10 @@ namespace StartMenu
             }
             this.btSpeaker.Visible = true;
             this.rtbMean.Text = mean;
+            if(mean.IndexOf("Means: ")==-1)
+            {
+                return;
+            }    
             this.btMakeFlashCard.Visible = true;
             this.btMakeFlashCard.Enabled = true;
         }
@@ -79,7 +83,7 @@ namespace StartMenu
         }
         private void btFind1_Click(object sender, EventArgs e)
         {
-            this.rtbMean1.Text = sql.Decription(this.tbWord1.Text);
+            this.rtbMean1.Text = sql.Decription2(this.tbWord1.Text);
             if (this.rtbMean1.Text == "")
             {
                 this.rtbMean1.Text = "Không tìm thấy từ được nhập";

@@ -21,7 +21,7 @@ namespace StartMenu
 			res.Add(word);
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
-			String sqlQuery = "select WORD from VOCABULARY where WORD like '" + word + "%'";
+			String sqlQuery = "select WORD,MEAN from VOCABULARY where WORD like '" + word + "%'";
 			SqlCommand command = new SqlCommand(sqlQuery, connection);
 			SqlDataReader reader = command.ExecuteReader();
 			while (reader.HasRows)
@@ -29,7 +29,10 @@ namespace StartMenu
 				if (reader.Read() == false) break;
 				else
 				{
-					res.Add(reader[0].ToString());
+					if(reader[0].ToString().IndexOf("?")==-1)
+						res.Add(reader[0].ToString());
+					if (reader[1].ToString().IndexOf("?") == -1)
+						res.Add(reader[1].ToString());
 				}
 			}
 			reader.Close();
@@ -278,7 +281,7 @@ namespace StartMenu
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
 			String sqlQuery = "select WORD, WORDTYPE, MEAN, EXAMPLE,PRONUN from" +
-				" VOCABULARY where WORD = '" + word + "'";
+				" VOCABULARY where WORD = '" + word + "'" ;
 			SqlCommand command = new SqlCommand(sqlQuery, connection);
 			SqlDataReader reader = command.ExecuteReader();
 			while (reader.HasRows)
@@ -296,6 +299,54 @@ namespace StartMenu
 				}
 			}
 			reader.Close();
+			connection.Close();
+			return res;
+		}
+		public string Decription2(string word)
+		{
+			string res = "";
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			String sqlQuery = "select WORD, WORDTYPE, MEAN, EXAMPLE,PRONUN from" +
+				" VOCABULARY where WORD = '" + word + "'";
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+			SqlDataReader reader = command.ExecuteReader();
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					res += "Word: " + reader[0].ToString() + "\n";
+					res += "Classifier: " + reader[1].ToString() + "\n";
+					res += "Means: " + reader[2].ToString() + "\n";
+					res += "Example: " + reader[3].ToString() + "\n";
+					if (reader[4].ToString() != "")
+						res += "Pronuciation: " + reader[4].ToString() + "\n";
+					break;
+				}
+			}
+			reader.Close();
+			if (res=="")
+			{
+				sqlQuery = "select WORD, WORDTYPE, MEAN, EXAMPLE,PRONUN from" +
+				" VOCABULARY where MEAN = N'" + word + "'";
+				command = new SqlCommand(sqlQuery, connection);
+				reader = command.ExecuteReader();
+				while (reader.HasRows)
+				{
+					if (reader.Read() == false) break;
+					else
+					{
+						res += "Word: " + reader[0].ToString() + "\n";
+						res += "Classifier: " + reader[1].ToString() + "\n";
+						res += "Means: " + reader[2].ToString() + "\n";
+						res += "Example: " + reader[3].ToString() + "\n";
+						if (reader[4].ToString() != "")
+							res += "Pronuciation: " + reader[4].ToString() + "\n";
+						break;
+					}
+				}
+			}
 			connection.Close();
 			return res;
 		}

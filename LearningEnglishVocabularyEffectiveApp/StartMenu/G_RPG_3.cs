@@ -211,7 +211,7 @@ namespace StartMenu
 				if (this.HPBoss.Value == 0)
 				{
 					this.btnNewGame.Visible = false;
-					this.lblEndGame.Text = "You lose, want to learn again?";
+					this.lblEndGame.Text = "You won";
 					this.pnlLoad.Visible = true;
 				}
 				Newgame(Words, Means);
