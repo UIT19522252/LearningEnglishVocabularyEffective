@@ -153,11 +153,14 @@ namespace StartMenu
 		}
 		private void Correct()
 		{
-			this.rtbWord.Text = this.tbPlayer.Text;
-			this.pnNotification.Dock = DockStyle.Fill;
+			
 			this.lbMessage.Text = "Bạn giỏi quá";
-			this.rtbDecrip.Text = LoadDecrip(this.tbPlayer.Text);
+			this.pnNotification.Dock = DockStyle.Fill;
 			this.pnNotification.Visible = true;
+			string s1 = LoadDecrip(this.tbPlayer.Text);
+			string s2 = this.tbPlayer.Text;
+			this.rtbDecrip.Text = s1;
+			this.rtbWord.Text = s2;
 
 			Level();
 			this.lbScore.Text = "Score: " + game.score;
@@ -189,28 +192,6 @@ namespace StartMenu
 			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC.Text));
 			this.lbSeq.Text = this.rtbNPC.Text.Substring(this.rtbNPC.Text.Length - 2);
 			this.richTextBox1.Text = this.rtbNPC.Text + "\n";
-		}
-		private void btSubmit_Click(object sender, EventArgs e)
-		{
-			if (tbPlayer.Text.Length < 2) return;
-			//Check xem đã nối đúng chưa
-			string NPC = rtbNPC.Text;
-			string Player = tbPlayer.Text;
-			if (game.CheckAnswer(NPC, Player) == true)
-			{
-				Correct();
-				UsedWord.Add(Player);
-			}
-			else
-			{
-				Lose();
-			}
-		}
-		private void btNewGame_Click(object sender, EventArgs e)
-		{
-			Thread th = new Thread(GameOver1);
-			th.IsBackground = true;
-			th.Start();
 		}
 		private void GameOver1()
 		{
@@ -251,22 +232,6 @@ namespace StartMenu
 			this.pbWord.LoadAsync(game.getLinkPic(this.rtbNPC.Text));
 			this.lbSeq.Text = this.rtbNPC.Text.Substring(this.rtbNPC.Text.Length - 2);
 		}
-		private void btHighScore_Click(object sender, EventArgs e)
-		{
-			string data = "";
-			string line;
-			if(File.Exists("HighScore.txt")==false)
-			{
-				return;
-			}	
-			StreamReader file = new StreamReader("HighScore.txt");
-			while ((line = file.ReadLine()) != null)
-			{
-				data += line + "\n";
-			}
-			file.Close();
-			MessageBox.Show(data, "High Score");
-		}
 		private void Level()
 		{
 			int index = 0;
@@ -291,9 +256,58 @@ namespace StartMenu
 			MessageBox.Show(data);
 			UsedWord.Clear();
 		}
-		private void btOK_Click(object sender, EventArgs e)
-		{
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+			if (tbPlayer.Text.Length < 2) return;
+			//Check xem đã nối đúng chưa
+			string NPC = rtbNPC.Text;
+			string Player = tbPlayer.Text;
+			if (game.CheckAnswer(NPC, Player) == true)
+			{
+				Correct();
+				UsedWord.Add(Player);
+			}
+			else
+			{
+				Lose();
+			}
+		}
+
+        private void btnNewGame_Click(object sender, EventArgs e)
+        {
+			Thread th = new Thread(GameOver1);
+			th.IsBackground = true;
+			th.Start();
+		}
+
+        private void btnHighScore_Click(object sender, EventArgs e)
+        {
+			string data = "";
+			string line;
+			if (File.Exists("HighScore.txt") == false)
+			{
+				return;
+			}
+			StreamReader file = new StreamReader("HighScore.txt");
+			while ((line = file.ReadLine()) != null)
+			{
+				data += line + "\n";
+			}
+			file.Close();
+			MessageBox.Show(data, "High Score");
+		}
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+			this.rtbDecrip.Text = "";
+			this.rtbWord.Text = "";
 			this.pnNotification.Visible = false;
 		}
-	}
+
+        private void btnAddToKnow_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

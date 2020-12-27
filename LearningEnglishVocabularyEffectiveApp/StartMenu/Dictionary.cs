@@ -84,7 +84,7 @@ namespace StartMenu
             {
                 this.rtbMean1.Text = "Không tìm thấy từ được nhập";
             }
-            else this.btSpeaker.Visible = true;
+            else this.btspeaker2.Visible = true;
         }
         
         private void btDicoffline_Click(object sender, EventArgs e)
@@ -141,6 +141,14 @@ namespace StartMenu
         private void hideMKFL_Click(object sender, EventArgs e)
         {
             this.pnMakeFlashCard.Visible = false;
+        }
+
+        private void btspeaker2_Click(object sender, EventArgs e)
+        {
+            if (this.pnOfflineDic.Visible == true)
+                Data.voice.Read(tbWord1.Text);
+            else
+                Data.voice.Read(tbWord.Text);
         }
     }
 }

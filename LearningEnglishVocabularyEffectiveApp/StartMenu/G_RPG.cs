@@ -69,36 +69,6 @@ namespace StartMenu
 			}
 		}
 
-		private void btGame_Click(object sender, EventArgs e)
-		{
-			G_RPG_2 N = new G_RPG_2(Words, Means, LinkPic);
-			this.Hide();
-			N.ShowDialog();
-			this.Show();
-		}
-
-		private void btNext_Click(object sender, EventArgs e)
-		{
-			currentIndex++;
-			if (currentIndex * 3 + 3 >= Words.Count)
-			{
-				currentIndex = 0;
-			}
-			RandomToLearn();
-			this.lbPage.Text = currentIndex + "/" + (Words.Count / 3 - 1);
-		}
-
-		private void btPrevious_Click(object sender, EventArgs e)
-		{
-			currentIndex--;
-			if (currentIndex <= 0)
-			{
-				currentIndex = Words.Count / 3 - 1;
-			}
-			RandomToLearn();
-			this.lbPage.Text = currentIndex + "/" + (Words.Count / 3 - 1);
-		}
-
 		private void cbbType_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			currentIndex = 0;
@@ -108,8 +78,33 @@ namespace StartMenu
 			this.lbPage.Text = currentIndex + "/" + (Words.Count / 3 - 1);
 		}
 
-		private void btHighScore_Click(object sender, EventArgs e)
-		{
+        private void btnGame_Click(object sender, EventArgs e)
+        {
+			G_RPG_2 game = new G_RPG_2(Words, Means,LinkPic);
+			game.AutoScroll = true;
+			game.TopLevel = false;
+			pnlLoad.Controls.Clear();
+			pnlLoad.Controls.Add(game);
+
+			game.FormBorderStyle = FormBorderStyle.None;
+			game.Show();
+			pnlLoad.Dock = DockStyle.Fill;
+			pnlLoad.Visible = true;
+		}
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+			currentIndex++;
+			if (currentIndex * 3 + 3 >= Words.Count)
+			{
+				currentIndex = 0;
+			}
+			RandomToLearn();
+			this.lbPage.Text = currentIndex + "/" + (Words.Count / 3 - 1);
+		}
+
+        private void btnHighScore_Click(object sender, EventArgs e)
+        {
 			string path = "HighScore2.txt";
 			if (File.Exists(path) == false)
 			{
@@ -141,5 +136,16 @@ namespace StartMenu
 			}
 
 		}
-	}
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+			currentIndex--;
+			if (currentIndex <= 0)
+			{
+				currentIndex = Words.Count / 3 - 1;
+			}
+			RandomToLearn();
+			this.lbPage.Text = currentIndex + "/" + (Words.Count / 3 - 1);
+		}
+    }
 }

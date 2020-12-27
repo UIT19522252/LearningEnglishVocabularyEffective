@@ -10,38 +10,35 @@ using System.Windows.Forms;
 
 namespace StartMenu
 {
-    public partial class FPractice : Form
+    public partial class FOptionLearns : Form
     {
-        public FPractice()
+        public FOptionLearns()
         {
             InitializeComponent();
-            this.pnlLoad.Dock = DockStyle.Fill;
-            this.pnlLoad.Visible = false;
         }
 
-        //Game chon tu giong nhau
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void btnMultipleChoices_Click(object sender, EventArgs e)
         {
-            GRearangeTheWords game = new GRearangeTheWords();
-            game.AutoScroll = true;
-            game.TopLevel = false;
+            FPreviewNewWord tabPreviewNewWord = new FPreviewNewWord();
+            tabPreviewNewWord.AutoScroll = true;
+            tabPreviewNewWord.TopLevel = false;
             pnlLoad.Controls.Clear();
-            pnlLoad.Controls.Add(game);
+            pnlLoad.Controls.Add(tabPreviewNewWord);
 
-            game.FormBorderStyle = FormBorderStyle.None;
-            game.Show();
+            tabPreviewNewWord.FormBorderStyle = FormBorderStyle.None;
+            tabPreviewNewWord.Show();
+            pnlLoad.Dock = DockStyle.Fill;
             pnlLoad.Visible = true;
         }
 
-        //Game giet boss
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void btnCategory_Click(object sender, EventArgs e)
         {
-            GWordConnection game = new GWordConnection();
+            G_RPG game = new G_RPG();
             game.AutoScroll = true;
             game.TopLevel = false;
             pnlLoad.Controls.Clear();
             pnlLoad.Controls.Add(game);
-
+            pnlLoad.Dock = DockStyle.Fill;
             game.FormBorderStyle = FormBorderStyle.None;
             game.Show();
             pnlLoad.Visible = true;

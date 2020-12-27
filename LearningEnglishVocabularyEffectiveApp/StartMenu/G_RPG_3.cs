@@ -95,7 +95,7 @@ namespace StartMenu
 				end.Add(point);
 				if (end.Count == 3)
 				{
-					this.btSubmit.Enabled = true;
+					this.btnSubmit.Enabled = true;
 				}
 			}
 			((Button)(sender)).Click -= Connect;
@@ -143,8 +143,30 @@ namespace StartMenu
 			tempPen.EndCap = LineCap.NoAnchor;
 			tempPen.DashStyle = DashStyle.Solid;
 		}
-		private void btNewGame_Click(object sender, EventArgs e)
+        private void G_RPG_3_MouseMove(object sender, MouseEventArgs e)
 		{
+			MouseLocation = e.Location;
+			if (isStart == false)
+			{
+				tempPoint = MouseLocation;
+				this.Invalidate();
+			}
+		}
+
+		private void G_RPG_3_Paint(object sender, PaintEventArgs e)
+		{
+			for (int i = 0; i < start.Count && i < end.Count; i++)
+			{
+				e.Graphics.DrawLine(tempPen, start[i], end[i]);
+			}
+			if (isStart == false)
+			{
+				e.Graphics.DrawLine(tempPen, start[start.Count - 1], tempPoint);
+			}
+		}
+
+        private void btnNewGame_Click(object sender, EventArgs e)
+        {
 			Newgame(Words, Means);
 			start.Clear();
 			end.Clear();
@@ -154,8 +176,8 @@ namespace StartMenu
 			this.HPPlayer.Value = 100;
 		}
 
-		private void btSubmit_Click(object sender, EventArgs e)
-		{
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
 			if (answer[Seq[0]] == Words.IndexOf(tbList[Seq[1] % 3].Text)
 				&& answer[Seq[2]] == Words.IndexOf(tbList[Seq[3] % 3].Text)
 				&& answer[Seq[4]] == Words.IndexOf(tbList[Seq[5] % 3].Text))
@@ -183,11 +205,11 @@ namespace StartMenu
 			{
 				MessageBox.Show("Sai cmnr");
 				this.HPPlayer.Value -= 10;
-				if(this.HPPlayer.Value==0)
+				if (this.HPPlayer.Value == 0)
 				{
 					MessageBox.Show("You was defeated");
 					this.Close();
-				}	
+				}
 				Newgame(Words, Means);
 				start.Clear();
 				end.Clear();
@@ -197,27 +219,5 @@ namespace StartMenu
 				this.Invalidate();
 			}
 		}
-
-		private void G_RPG_3_MouseMove(object sender, MouseEventArgs e)
-		{
-			MouseLocation = e.Location;
-			if (isStart == false)
-			{
-				tempPoint = MouseLocation;
-				this.Invalidate();
-			}
-		}
-
-		private void G_RPG_3_Paint(object sender, PaintEventArgs e)
-		{
-			for (int i = 0; i < start.Count && i < end.Count; i++)
-			{
-				e.Graphics.DrawLine(tempPen, start[i], end[i]);
-			}
-			if (isStart == false)
-			{
-				e.Graphics.DrawLine(tempPen, start[start.Count - 1], tempPoint);
-			}
-		}
-	}
+    }
 }

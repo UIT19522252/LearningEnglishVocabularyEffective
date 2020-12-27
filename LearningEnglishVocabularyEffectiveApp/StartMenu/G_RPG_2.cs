@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-
+using Guna.UI2.WinForms;
 namespace StartMenu
 {
 	public partial class G_RPG_2 : Form
@@ -16,7 +16,7 @@ namespace StartMenu
 		List<string> Words = new List<string>();
 		List<string> Means = new List<string>();
 		List<string> LinkPic = new List<string>();
-		List<RichTextBox> rtbList = new List<RichTextBox>();
+		List<Guna2Button> rtbList = new List<Guna2Button>();
 		Random r = new Random();
 		List<int> answer = new List<int>();
 		public G_RPG_2()
@@ -73,16 +73,23 @@ namespace StartMenu
 				Means.Add(line.Substring(line.IndexOf(":") + 2));
 			}
 		}
-		private void btSubmit_Click(object sender, EventArgs e)
-		{
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
 			if (comboBox1.SelectedIndex == answer[0] && comboBox2.SelectedIndex == answer[1]
 				&& comboBox3.SelectedIndex == answer[2])
 			{
 				MessageBox.Show("Đúng rồi giỏi vcl");
-				this.Hide();
-				G_RPG_3 f = new G_RPG_3(Words, LinkPic);
-				f.ShowDialog();
-				this.Close();
+				G_RPG_3 game = new G_RPG_3(Words, LinkPic);
+				game.AutoScroll = true;
+				game.TopLevel = false;
+				pnlLoad.Controls.Clear();
+				pnlLoad.Controls.Add(game);
+
+				game.FormBorderStyle = FormBorderStyle.None;
+				game.Show();
+				pnlLoad.Dock = DockStyle.Fill;
+				pnlLoad.Visible = true;
 			}
 			else
 			{
@@ -93,5 +100,5 @@ namespace StartMenu
 				MessageBox.Show(data);
 			}
 		}
-	}
+    }
 }

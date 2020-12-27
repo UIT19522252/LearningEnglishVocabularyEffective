@@ -379,7 +379,7 @@ namespace StartMenu
 			List<string> ID = new List<string>();
 			SqlConnection connection = new SqlConnection(connString);
 			connection.Open();
-			String sqlQuery = "select WORD, MEAN, LINKPIC, ID from VOCABULARY";
+			String sqlQuery = "select WORD, MEAN, LINKPIC, ID from VOCABULARY v where v.id not in (select id_word from Learned l where l.id_user = " + Data.iduser + ") and v.id not in (select id_word from ToLearn t where t.id_user = " + Data.iduser + ") order by v.id";
 			//MessageBox.Show(sqlQuery);
 			SqlCommand command = new SqlCommand(sqlQuery, connection);
 			SqlDataReader reader = command.ExecuteReader();

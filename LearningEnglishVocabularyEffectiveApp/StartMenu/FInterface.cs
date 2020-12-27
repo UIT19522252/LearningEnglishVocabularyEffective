@@ -12,7 +12,7 @@ namespace StartMenu
 {
     public partial class FInterface : Form
     {
-        FPreviewNewWord tabPreviewNewWord;
+        FOptionLearns tabPreviewNewWord;
         FPractice tabPractice;
         FRevision tabRevision;
         Dictionary tabDictionary;
@@ -85,7 +85,7 @@ namespace StartMenu
 
         private void btnLearnNewWord_Click(object sender, EventArgs e)
         {
-            tabPreviewNewWord = new FPreviewNewWord();
+            tabPreviewNewWord = new FOptionLearns();
             tabPreviewNewWord.AutoScroll = true;
             tabPreviewNewWord.TopLevel = false;
             pnlLoadForm.Controls.Clear();
