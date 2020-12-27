@@ -29,7 +29,7 @@ namespace StartMenu
         {
             SqlConnection connection = new SqlConnection(connString);
             connection.Open();
-            String sqlQuery = "select * from ToLearn y join VOCABULARY v on y.id_word = v.id where y.id_user="+Data.iduser;
+            String sqlQuery = "select WORD,MEAN from ToLearn y join VOCABULARY v on y.id_word = v.id where y.id_user="+Data.iduser;
             SqlCommand command = new SqlCommand(sqlQuery, connection);
 
             SqlDataReader reader = command.ExecuteReader();
@@ -43,8 +43,8 @@ namespace StartMenu
                         i = rd.Next(0, 10);
                         if (demso == 10) return;
                     }
-                   EL[i] = reader[3].ToString();
-                   VN[i] = reader[4].ToString();
+                   EL[i] = reader[0].ToString();
+                   VN[i] = reader[1].ToString();
                   demso += 1;
             }
             connection.Close();
@@ -1372,14 +1372,21 @@ namespace StartMenu
 
         private void exit_Click(object sender, EventArgs e)
         {
+            
             FPractice newpractice = new FPractice();
-            this.Hide();
-            newpractice.ShowDialog();
+            newpractice.TopLevel = false;
+            newpractice.FormBorderStyle = FormBorderStyle.None;
+            newpractice.Show();
             this.Close();
+
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            FPractice newpractice = new FPractice();
+            newpractice.TopLevel = false;
+            newpractice.FormBorderStyle = FormBorderStyle.None;
+            newpractice.Show();
             this.Close();
         }
     }

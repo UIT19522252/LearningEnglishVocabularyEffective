@@ -28,46 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btGame1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btGame2 = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLoad = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // guna2Button1
+            // btGame1
             // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 37;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(207, 296);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(776, 76);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btGame1.AutoRoundedCorners = true;
+            this.btGame1.BackColor = System.Drawing.Color.Transparent;
+            this.btGame1.BorderRadius = 37;
+            this.btGame1.CheckedState.Parent = this.btGame1;
+            this.btGame1.CustomImages.Parent = this.btGame1;
+            this.btGame1.FillColor = System.Drawing.Color.Transparent;
+            this.btGame1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btGame1.ForeColor = System.Drawing.Color.White;
+            this.btGame1.HoverState.Parent = this.btGame1;
+            this.btGame1.Location = new System.Drawing.Point(207, 296);
+            this.btGame1.Name = "btGame1";
+            this.btGame1.ShadowDecoration.Parent = this.btGame1;
+            this.btGame1.Size = new System.Drawing.Size(776, 76);
+            this.btGame1.TabIndex = 0;
+            this.btGame1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // guna2Button2
+            // btGame2
             // 
-            this.guna2Button2.AutoRoundedCorners = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 35;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(216, 413);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(775, 72);
-            this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.btGame2.AutoRoundedCorners = true;
+            this.btGame2.BackColor = System.Drawing.Color.Transparent;
+            this.btGame2.BorderRadius = 35;
+            this.btGame2.CheckedState.Parent = this.btGame2;
+            this.btGame2.CustomImages.Parent = this.btGame2;
+            this.btGame2.FillColor = System.Drawing.Color.Transparent;
+            this.btGame2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btGame2.ForeColor = System.Drawing.Color.White;
+            this.btGame2.HoverState.Parent = this.btGame2;
+            this.btGame2.Location = new System.Drawing.Point(207, 411);
+            this.btGame2.Name = "btGame2";
+            this.btGame2.ShadowDecoration.Parent = this.btGame2;
+            this.btGame2.Size = new System.Drawing.Size(775, 72);
+            this.btGame2.TabIndex = 1;
+            this.btGame2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // pnlLoad
             // 
@@ -82,10 +82,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackgroundImage = global::StartMenu.Properties.Resources.Practice3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1182, 628);
+            this.ClientSize = new System.Drawing.Size(1182, 620);
             this.Controls.Add(this.pnlLoad);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btGame2);
+            this.Controls.Add(this.btGame1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.DarkGray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -98,8 +98,8 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btGame1;
+        private Guna.UI2.WinForms.Guna2Button btGame2;
         private System.Windows.Forms.Panel pnlLoad;
     }
 }
