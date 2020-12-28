@@ -10,36 +10,12 @@ using System.CodeDom.Compiler;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-namespace Dictionary
+namespace StartMenu
 {
 	class WebActivity
 	{
-		[DllImport("winmm.dll")]
-		private static extern long mciSendString(string lpstrCommand, StringBuilder lpstrReturnString, int uReturnLength, int hwdCallBack);
-		public void openAudio(string File)
-		{
-			string Format = @"open ""{0}"" type MPEGVideo alias MediaFile";
-			string command = string.Format(Format, File);
-			mciSendString(command, null, 0, 0);
-		}
-		public void playAudio()
-		{
-			string command = "play MediaFile REPEAT";
-			mciSendString(command, null, 0, 0);
-		}
-		public void stopAudio()
-		{
-			string command = "stop MediaFile";
-			mciSendString(command, null, 0, 0);
-			command = "close MediaFile";
-			mciSendString(command, null, 0, 0);
-		}
 		public WebActivity()
 		{
-		}
-		public string renderLinkWord(string word)
-		{
-			return "https://iapi.glosbe.com/en/vi/" + word;
 		}
 		public string getSource(string link)
 		{
@@ -57,125 +33,117 @@ namespace Dictionary
 			}
 			return res;
 		}
-		public void getAudio(string linkaudio)
+		public bool checkWord(string word)
 		{
-			using (WebClient wc = new WebClient())
+			try
 			{
-				try
+				string source = getSource("https://dictionary.cambridge.org/vi/dictionary/english/" + word);
+				if (source.IndexOf("lp-m_l-25") == -1)
 				{
-					wc.DownloadFile(new Uri(linkaudio), "temp.mp3");
+					return true;
 				}
-				catch(Exception ex)
-				{
-					
-				}
+				return false;
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+				return false;
 			}
 		}
-		public string getLinkAudio(string source)
+		public string onlineDict(string word)
 		{
-			int k = source.IndexOf("data-url-mp3");
-			string h = source;
-			if(h.Length < 14 || k == -1)
+			string des = "";
+			try
 			{
-				return "";
-			}	
-			h = h.Substring(k + 14, h.Length - k - 14);
-			string shortlink = "https://iapi.glosbe.com/" + h.Substring(0, h.IndexOf('\"'));
-			return shortlink;
-		}
-		public List<string> getMeanings(string source)
-		{
-
-			List<string> ans=new List<string>();
-			while(true)
-			{
-				int typeindex = source.IndexOf("defmeta\">Type:");
-				string l = source.Substring(typeindex + 28);
-				string df = l.Substring(0, l.IndexOf(";"));
-
-				if (source.IndexOf("Show declension of") == -1) break;
-				int k = source.IndexOf("strong class");
-				if (k == -1) break;
-				//MessageBox.Show("Đã lấy đc cái strong class" + k);
-				source = source.Substring(k + 20, source.Length - k - 20);
-				string res = source.Substring(0, source.IndexOf('<'));
-				//MessageBox.Show(res);
-				//MessageBox.Show(h);
-				k = source.IndexOf("gender-n-phrase\">");
-				string wordformat;
-				if (k == -1)
+				for(int i=0;i<des.Length;i++)
+                {
+					if ((des[i] <= 'Z' && des[i] >= 'A') || (des[i] <= 'z' && des[i] >= 'a'))
+					{
+						continue;
+					}
+					else return "";
+                }					
+				des += "WORD: " + word + "\n";
+				word = word.Replace(" ", "%20");
+				string h = getSource("https://dictionary.cambridge.org/vi/dictionary/english-vietnamese/" + word);
+				if (h.IndexOf("lp-m_l-25") != -1) return "";
+				h = h.Substring(h.IndexOf("ti tb") + 7);
+				string type = h.Substring(0, h.IndexOf("<"));
+				des += "Classifier: " + type + "\n";
+				h = h.Substring(h.IndexOf("ipa dipa") + 10);
+				string pro = h.Substring(0, h.IndexOf("<"));
+				if(pro.IndexOf("<")==-1&& pro.IndexOf(">") == -1)
+				des += "Pronuciation: " + pro + "\n";
+				int ki;
+				if ((ki = h.IndexOf("trans dtrans")) != -1)
 				{
-					wordformat = df;
+					h = h.Substring(ki);
+					h = h.Substring(h.IndexOf(">") + 1);
+					string VI = h.Substring(0, h.IndexOf("<"));
+					des += "Means: " + VI + "\n";
+				}
+				h = h.Substring(h.IndexOf("eg deg") + 8);
+				string etc = h.Substring(0, h.IndexOf("</div>"));
+				while (etc.IndexOf("<") != -1)
+				{
+					string k = etc.Substring(etc.IndexOf("<"), etc.IndexOf(">") - etc.IndexOf("<") + 1);
+					etc = etc.Replace(k, "");
+				}
+				if (etc.IndexOf("<") == -1 && etc.IndexOf(">") == -1)
+					des += "Example: " + etc + "\n";
+			}
+			catch (Exception ex)
+			{
+
+			}
+			return des;
+		}
+		public string VieToEng(string key)
+		{
+			try
+			{
+				string url;
+				if (key == "")
+				{
+					return "Không tìm thấy từ được nhập";
 				}
 				else
 				{
-					source = source.Substring(k + 40, source.Length - k - 40);
-					wordformat = source.Substring(0, source.IndexOf("\t"));
+					key.Replace(" ", "%20");
+					url = getSource("https://iapi.glosbe.com/vi/en/" + key);
 				}
-
-				//get more detail
-
-				//if (wordformat.Length > 12) continue;
-				//Cập nhật các điều kiện để fix mấy cái bug của chữ in
-				string illegal = "!<>|:;";
-				bool isOk = true;
-				for (int i = 0; i < illegal.Length; i++)
+				if (url.IndexOf("less-relia") != -1)
 				{
-					if (wordformat.IndexOf(illegal[i]) != -1)
+					string res1 = "";
+					int count = 0;
+					while (url.IndexOf("phr  text-info") != -1 && count < 5)
 					{
-						isOk = false;
-						break;
+						string k = url = url.Substring(url.IndexOf("phr  text-info") + 16);
+						k = k.Substring(0, k.IndexOf("<"));
+						res1 += k + "\n";
+						count++;
 					}
+					if (res1 == "") return "Không tìm thấy từ được nhập";
+					return res1;
 				}
-				if (isOk == false) continue;
-				//Cập nhật để fix chữ optimize
-				for (int i = 0; i < illegal.Length; i++)
+				if (url.IndexOf("alert alert - info") != -1)
 				{
-					if (res.IndexOf(illegal[i]) != -1)
-					{
-						isOk = false;
-						break;
-					}
+					return "Không tìm thấy từ đươc nhâp";
 				}
-				if (isOk == false) continue;
-				string result = res + " ; " + wordformat;
-				ans.Add(result);
-			}	
-			return ans;
-		}
-		public List<string> onlineDictionary(string word)
-		{
-			string link = renderLinkWord(word);
-			string source = getSource(link);
-			getAudio(getLinkAudio(source));
-			List<string> ans = new List<string>();
-			if(source=="")
-			{
-				ans.Add("Error");
-				return ans;
+				string res = "";
+				while (url.IndexOf("text-info\">") != -1)
+				{
+					string k = url = url.Substring(url.IndexOf("text-info\">") + 10);
+					k = k.Substring(k.IndexOf("phr\">") + 5);
+					k = k.Substring(0, k.IndexOf("<"));
+					res += k + "\n";
+				}
+				return res;
 			}
-
-			int k = source.IndexOf("IPA");
-			string h = source.Substring(k + 18);
-
-			string u = h.Substring(0, h.IndexOf(';'));
-			if(u.IndexOf(',') != -1)
+			catch
 			{
-				u = u.Substring(0, u.IndexOf(','));
-			}	
-			if (u.IndexOf('>') != -1)
-			{
-				ans.Add("Null");
+				return "Không tìm thấy từ đươc nhâp";
 			}
-			else ans.Add(u);
-			List<string> meanings = new List<string>();
-			meanings = getMeanings(source);
-			for(int i=0;i<meanings.Count;i++)
-			{
-				ans.Add(meanings[i]);
-			}	
-			return ans;
 		}
-		
 	}
 }

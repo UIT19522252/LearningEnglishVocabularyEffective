@@ -15,27 +15,52 @@ namespace StartMenu
         public FPractice()
         {
             InitializeComponent();
-        }
-        //btn Back
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-         
-            this.Hide();
-            this.Close();
-            
+            this.pnlLoad.Dock = DockStyle.Fill;
+            this.pnlLoad.Visible = false;
         }
 
+        //Game chon tu giong nhau
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            GRearangeTheWords game1 = new GRearangeTheWords();
-            this.Hide();
-            game1.ShowDialog();
-            this.Show();
+            if (Data.CheckForInternetConnection())
+            {
+                GRearangeTheWords game = new GRearangeTheWords();
+                game.AutoScroll = true;
+                game.TopLevel = false;
+                pnlLoad.Controls.Clear();
+                pnlLoad.Controls.Add(game);
+
+                game.FormBorderStyle = FormBorderStyle.None;
+                game.Show();
+                pnlLoad.Visible = true;
+            }
+            else
+            {
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
+            }    
         }
 
+        //Game giet boss
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+            if (Data.CheckForInternetConnection())
+            {
+                GWordConnection game = new GWordConnection();
+                game.AutoScroll = true;
+                game.TopLevel = false;
+                pnlLoad.Controls.Clear();
+                pnlLoad.Controls.Add(game);
 
+                game.FormBorderStyle = FormBorderStyle.None;
+                game.Show();
+                pnlLoad.Visible = true;
+            }
+            else
+            {
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
+            }    
         }
     }
 }

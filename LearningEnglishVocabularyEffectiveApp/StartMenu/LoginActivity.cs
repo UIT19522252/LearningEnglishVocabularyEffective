@@ -12,7 +12,7 @@ namespace StartMenu
 {
 	class LoginActivity
 	{
-		String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+		String connString = Data.ConnString;
 		static string HashPassword(string rawData)
 		{
 			using (SHA256 sha256Hash = SHA256.Create())
@@ -25,6 +25,40 @@ namespace StartMenu
 				}
 				return builder.ToString();
 			}
+		}
+		public string CheckUserNameFromMail(string mail)
+        {
+			string username = "No";
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+
+			String sqlQuery = "select username from USERINFO where email='" + mail + "'";
+
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+
+			SqlDataReader reader = command.ExecuteReader();
+
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				username = reader[0].ToString();
+				
+			}
+			connection.Close();
+			return username;
+        }
+		public void ChangePassword(string newpass)
+        {
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			newpass = HashPassword(newpass);
+			String sqlQuery = "update USERINFO set hashPass = '" + newpass + "' where username = '" + Data.username +"'";
+
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+
+			SqlDataReader reader = command.ExecuteReader();
+
+			connection.Close();
 		}
 		public bool checkUser(string a, string b)
 		{
@@ -51,7 +85,31 @@ namespace StartMenu
 			connection.Close();
 			return false;
 		}
-		public bool Signup(string a, string b)
+		public bool checkEmail(string email)
+		{
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+
+			String sqlQuery = "select * from USERINFO where email='" + email + "'";
+
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+
+			SqlDataReader reader = command.ExecuteReader();
+
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					reader.Close();
+					connection.Close();
+					return true;
+				}
+			}
+			connection.Close();
+			return false;
+		}	
+		public bool Signup(string a, string b,string c)
 		{
 			if (a.Length < 6 || b.Length < 8)
 			{
@@ -67,11 +125,18 @@ namespace StartMenu
 				f.ShowDialog();
 				return false;
 			}
+			if (checkEmail(c) == true)
+			{
+				FError f = new FError("Email were used", "Message");
+				f.StartPosition = FormStartPosition.CenterScreen;
+				f.ShowDialog();
+				return false;
+			}
 			SqlConnection connection = new SqlConnection(connString);
 			try
 			{
-				string statement = "insert into USERINFO(username, hashPass) values ("
-					+ "'" + a + "'," + "'" + HashPassword(b) + "')";
+				string statement = "insert into USERINFO(username, hashPass,email) values ("
+					+ "'" + a + "'," + "'" + HashPassword(b) +"','"+c +"')";
 				connection.Open();
 				SqlCommand command = new SqlCommand(statement, connection);
 				command.ExecuteNonQuery();

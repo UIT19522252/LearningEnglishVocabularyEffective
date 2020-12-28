@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
+using System.Net;
 
 namespace StartMenu
 {
     public partial class FSignUp : Form
     {
+        string code = "";
         public FSignUp()
         {
+           
             InitializeComponent();
+            this.lbSentmailAgain.Hide();
         }
         private void btnSignin_Click(object sender, EventArgs e)
         {
@@ -23,22 +28,41 @@ namespace StartMenu
         }
         private void btnSignup_Click(object sender, EventArgs e)
         {
-
-            if(tbxRepeatPass.Text!=tbxPass.Text)
+            if (Data.CheckForInternetConnection())
             {
-                FError f = new FError("Password and repeat password are not match ", "Message");
-                f.StartPosition = FormStartPosition.CenterScreen;
-                f.ShowDialog();
-            } 
+                if (this.tbCode.Text != code)
+                {
+                    FError f = new FError(" Code confirm was wrong", "Message");
+                    f.StartPosition = FormStartPosition.CenterScreen;
+                    f.ShowDialog();
+                }
+                else if (!tbxRepeatPass.Text.Equals(tbxPass.Text))
+                {
+                    FError f = new FError("Password and repeat password are not match ", "Message");
+                    f.StartPosition = FormStartPosition.CenterScreen;
+                    f.ShowDialog();
+                }
+                else if (tbEmail.Text == "" || tbEmail.Text.IndexOf("@gmail.com") == -1)
+                {
+                    FError f = new FError("Email is not valid", "Message");
+                    f.StartPosition = FormStartPosition.CenterScreen;
+                    f.ShowDialog();
+                }
+                else
+                {
+                    LoginActivity lg = new LoginActivity();
+                    if (lg.Signup(tbxUsername.Text, tbxPass.Text, tbEmail.Text))
+                    {
+                        MessageBox.Show("Sign up succesfully!", "Congratulation!");
+                        this.Hide();
+                        this.Close();
+                    }
+                }
+            }
             else
             {
-                LoginActivity lg = new LoginActivity();
-                if (lg.Signup(tbxUsername.Text, tbxPass.Text))
-                {
-                    MessageBox.Show("Sign up succesfully!", "Congratulation!");
-                    this.Hide();
-                    this.Close();
-                }
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
             }    
         }
 
@@ -86,6 +110,101 @@ namespace StartMenu
                 btnSignup.Focus();
             if (e.KeyCode == Keys.Enter)
                 btnSignin_Click(sender, e);
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private double random_Digit()
+        {
+            double cd;
+            Random rd = new Random();
+            cd = rd.Next(100000, 999999);
+            return cd;
+        }
+        private void lbSentmail_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.lbSentmailAgain.Show();
+            this.lbSentmail.Hide();
+            System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
+            mail.From = new System.Net.Mail.MailAddress("app.english.vocabulary@gmail.com");
+            if (this.tbEmail.Text =="")
+            {
+                FError f = new FError("Enter your mail", "Message");
+                f.StartPosition = FormStartPosition.CenterScreen;
+                f.ShowDialog();
+            }
+            else
+            {
+                mail.To.Add(this.tbEmail.Text);
+                mail.Subject = "Confirm account";
+                code = random_Digit().ToString();
+                mail.Body = code + " is your confirm code ";
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+
+                smtp.EnableSsl = true;
+                smtp.Credentials = new NetworkCredential("app.english.vocabulary@gmail.com", "phiphucthe");
+
+                try
+                {
+                    smtp.Send(mail);
+                }
+
+                catch (SmtpException ex)
+                {
+                    MessageBox.Show("Can't sent your mail");
+                }
+            }
+        }
+
+        private void lbSentmailAgain_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.lbSentmailAgain.Show();
+            this.lbSentmail.Hide();
+            System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
+            mail.From = new System.Net.Mail.MailAddress("app.english.vocabulary@gmail.com");
+            if (this.tbEmail.Text == null)
+            {
+                FError f = new FError("Enter your mail", "Message");
+                f.StartPosition = FormStartPosition.CenterScreen;
+                f.ShowDialog();
+            }
+            else
+            {
+                try
+                {
+                    mail.To.Add(this.tbEmail.Text);
+                    mail.Subject = "Confirm account";
+                    code = random_Digit().ToString();
+                    mail.Body = code + " is your confirm code ";
+                    SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+
+                    smtp.EnableSsl = true;
+                    smtp.Credentials = new NetworkCredential("app.english.vocabulary@gmail.com", "phiphucthe");
+
+                    try
+                    {
+                        smtp.Send(mail);
+                    }
+
+                    catch (SmtpException ex)
+                    {
+                        MessageBox.Show("Can't sent your mail");
+                    }
+                }
+                catch
+                {
+                    FError f = new FError("Your gmail was wrong", "Message");
+                    f.StartPosition = FormStartPosition.CenterScreen;
+                    f.ShowDialog();
+                }
+            }
         }
     }
 }

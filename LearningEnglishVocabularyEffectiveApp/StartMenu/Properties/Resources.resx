@@ -118,32 +118,74 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="game1return" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\game1return.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Capture2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Capture2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="radomreturnPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\radomreturnPNG.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AllflashcardsBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AllflashcardsBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Menu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ramdomflipnext" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ramdomflipnext.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SignUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SignUp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Practice3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Practice1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="learnnewwordreturn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\learnnewwordreturn.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SPEAEKER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SPEAEKER.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mkFlashcard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mkFlashcard.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LearnNewWords3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LearnNewWords2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oke1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oke1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Revision" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Revision.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="signin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\signin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="game1return" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game1return.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gameuserPNG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gameuserPNG1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ec61d3114cc5269485d508244f531bdf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ec61d3114cc5269485d508244f531bdf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="butFlash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\butFlash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Revision_Background (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Revision_Background (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Introduction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Introduction.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dnhso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dnhso.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Practice1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Practice1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dictionary2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dictionary2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="errorIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\errorIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,58 +193,142 @@
   <data name="LearnNewWords" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LearnNewWords.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="butFlash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\butFlash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Check your word view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Check your word view.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="game1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\game1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="YourFlashcard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YourFlashcard.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gameuserPNG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gameuserPNG1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gameuserPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gameuserPNG.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Practice2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Practice.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="YourWord" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\YourWord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Check your word1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Check your word1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LearnNewWords1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LearnNewWords.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="learnnewworduser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\learnnewworduser.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dictionary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dictionary.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Capture2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Capture2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brand-royaltyfree-yes-and-no-check-mark-flat-design" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brand-royaltyfree-yes-and-no-check-mark-flat-design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PreLearnNewWords" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PreLearnNewWords.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="game1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\game1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Practice view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Practice view.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oke" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oke.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SignUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SignUp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dictionary1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dictionary1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sm_5afb099b30a2a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sm_5afb099b30a2a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YourFlashcard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YourFlashcard1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="duma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\duma.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Random-10-flash-cards" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Random-10-flash-cards.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="radomflipall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\radomflipall.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="radomuser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\radomuser.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Practice1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Practice1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Introduction" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Introduction.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Practice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Practice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="YourWord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YourWord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Revision_Background (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Revision_Background (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Check your word" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Check your word.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nônnnon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nônnnon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="imgbin_computer-icons-statistics-chart-business-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\imgbin_computer-icons-statistics-chart-business-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Login2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Login2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="learnnewwordreturn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\learnnewwordreturn.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radomuser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\radomuser.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Check your word view1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Check your word view1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Practice2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Practice.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Practice4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Practice3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gameuserPNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gameuserPNG.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Practice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Practice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LearnNewWords2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LearnNewWords1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radomflipall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\radomflipall.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="learnnewworduser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\learnnewworduser.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LearnNewWords4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LearnNewWords3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statistics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statistics.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AllflashcardsBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AllflashcardsBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Revision2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Revision2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginNewForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LoginNewForm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="signin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\signin1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

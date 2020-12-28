@@ -1,5 +1,4 @@
-﻿using Dictionary;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,15 +21,18 @@ namespace StartMenu
         List<string> my_list = new List<string>();
         bool isChange = false;
         int index = 1;
+        bool isEng = true;
         public Dictionary()
-		{
-			InitializeComponent();
-            this.DoubleBuffered = true;
-            var acsc = new AutoCompleteStringCollection();
-            acsc.AddRange(sql.Suggest("").ToArray());
-            tbWord1.AutoCompleteCustomSource = acsc;
-            isChange = false;
-            this.btMakeFlashCard.Enabled = false;
+        {
+            
+                InitializeComponent();
+                this.DoubleBuffered = true;
+                var acsc = new AutoCompleteStringCollection();
+                acsc.AddRange(sql.Suggest("").ToArray());
+                tbWord1.AutoCompleteCustomSource = acsc;
+                isChange = false;
+                this.btMakeFlashCard.Enabled = false;
+            
         }
         public void AppendText(RichTextBox box, string text, Color color)
         {
@@ -48,7 +50,7 @@ namespace StartMenu
         private void tbxWord_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
-                btnAddWord_Click(sender, e);
+               btFind_Click(sender, e);
         }
         private void btnAddWord_Click(object sender, EventArgs e)
         {
@@ -56,80 +58,65 @@ namespace StartMenu
         }
         private void btFind_Click(object sender, EventArgs e)
         {
-            this.rtbMean.Text = "";
-            if (File.Exists("temp.mp3"))
+            if (!Data.CheckForInternetConnection())
             {
-                try
-                {
-                    File.Delete("temp.mp3");
-                }
-                catch (Exception ev)
-                {
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
+                
+            }
+            else
+            {
+                this.rtbMean.Text = "";
+                if (tbWord.Text == "") return;
+                this.lbPronuciation.Visible = false;
+                this.btSpeaker.Visible = false;
 
+                string mean;
+                if (isEng == true)
+                    mean = wa.onlineDict(tbWord.Text);
+                else
+                    mean = wa.VieToEng(tbWord.Text);
+                if (mean == "")
+                {
+                    this.rtbMean.Text = "Không tìm thấy từ được nhập";
+                    return;
                 }
-            }
-            
-            if (tbWord.Text == "") return;
-            this.lbPronuciation.Visible = false;
-            this.btSpeaker.Visible = false;
-            Meanings = wa.onlineDictionary(tbWord.Text);
-            if (Meanings.Count == 0 || Meanings[0] == "Error")
-            {
-                AppendText(rtbMean, "Không tìm thấy từ được nhập", Color.Blue);
-                this.btMakeFlashCard.Enabled = false;
-                return;
-            }
-            this.btMakeFlashCard.Visible = true;
-            if (Meanings[0] != "Null")
-            {
-                this.lbPronuciation.Text = "Pronuciation: " + Meanings[0];
-                this.lbPronuciation.Visible = true;
-            }
-            if (File.Exists("temp.mp3"))
-            {
                 this.btSpeaker.Visible = true;
+                this.rtbMean.Text = mean;
+                if (mean.IndexOf("Means: ") == -1)
+                {
+                    return;
+                }
+                this.btMakeFlashCard.Visible = true;
+                this.btMakeFlashCard.Enabled = true;
             }
-
-            for (int i = 1; i < Meanings.Count; i++)
-            {
-                int k = Meanings[i].IndexOf(";");
-                if (k == -1) continue;
-                string mean = Meanings[i].Substring(0, k);
-                string wordformat = Meanings[i].Substring(k + 1, Meanings[i].Length - k - 1);
-                AppendText(rtbMean, wordformat + "\n", Color.Blue);
-                AppendText(rtbMean, "     " + mean + "\n", Color.Black);
-            }
-            this.btMakeFlashCard.Enabled = true;
         }
         private void btSpeaker_Click(object sender, EventArgs e)
         {
-            
-            timer1.Interval = 5000;
-            timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            timer1.Enabled = true;
-            WebActivity wa = new WebActivity();
-            wa.openAudio("temp.mp3");
-            wa.playAudio();
-        }
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            timer1.Enabled = false;
-            WebActivity wa = new WebActivity();
-            wa.openAudio("temp.mp3");
-            wa.stopAudio();
-        }
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
+            if(this.pnOfflineDic.Visible == true)
+                Data.voice.Read(tbWord1.Text);
+            else
+                Data.voice.Read(tbWord.Text);
         }
         private void btFind1_Click(object sender, EventArgs e)
         {
-            this.rtbMean1.Text = sql.Find(this.tbWord1.Text);
+            if (!Data.CheckForInternetConnection())
+            {
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
+                
+            }
+            else
+            {
+                this.rtbMean1.Text = sql.Decription2(this.tbWord1.Text);
+                if (this.rtbMean1.Text == "")
+                {
+                    this.rtbMean1.Text = "Không tìm thấy từ được nhập";
+                }
+                else this.btspeaker2.Visible = true;
+            }
         }
-        private void btBack_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
         private void btDicoffline_Click(object sender, EventArgs e)
         {
             this.pnOfflineDic.Visible = true;
@@ -140,6 +127,7 @@ namespace StartMenu
         private void btOnlineDictionary_Click(object sender, EventArgs e)
         {
             this.pnOfflineDic.Visible = false;
+            this.btSpeaker.Visible = false;
         }
         private void btMakeFlashCard_Click(object sender, EventArgs e)
         {
@@ -148,19 +136,18 @@ namespace StartMenu
             this.btSpeaker.Visible = false;
             this.lbPronuciation.Visible = false;
             lbWord.Text = this.tbWord.Text;
-            index = 1;
-            string m = Meanings[index];
-            m = m.Substring(0, m.IndexOf(";"));
+            //index = 1;
+            //string m = ;
+            //m = m.Substring(0, m.IndexOf(";"));
+            string m = this.rtbMean.Text;
+            m = m.Substring(m.IndexOf("Means: ") + 7);
+            m = m.Substring(0, m.IndexOf("E"));
             btFlashCard.Text = m;
             this.btMakeFlashCard.Enabled = false;
         }
         private void tbWord_TextChanged(object sender, EventArgs e)
         {
             this.btMakeFlashCard.Enabled = false;
-        }
-        private void btFlashCard_Click(object sender, EventArgs e)
-        {
-
         }
         private void btChoose_Click(object sender, EventArgs e)
         {
@@ -170,21 +157,50 @@ namespace StartMenu
             this.btMakeFlashCard.Enabled = false;
             this.rtbMean.Text = "";
         }
-        private void btNext_Click(object sender, EventArgs e)
-        {
-            index += 1;
-            if (index == Meanings.Count)
-            {
-                index = 1;
-            }
-            string m = Meanings[index];
-            m = m.Substring(0, m.IndexOf(";"));
-            btFlashCard.Text = m;
-        }
 
         private void tbWord1_TextChanged(object sender, EventArgs e)
         {
             this.rtbMean1.Text = "";
+        }
+
+        private void Dictionary_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hideMKFL_Click(object sender, EventArgs e)
+        {
+            this.pnMakeFlashCard.Visible = false;
+        }
+
+        private void btspeaker2_Click(object sender, EventArgs e)
+        {
+            if (this.pnOfflineDic.Visible == true)
+                Data.voice.Read(tbWord1.Text);
+            else
+                Data.voice.Read(tbWord.Text);
+        }
+
+        private void tbWord1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                this.btFind1_Click(sender, e);
+            }
+        }
+
+        private void swRemember_Login_CheckedChanged(object sender, EventArgs e)
+        {
+            if(isEng==true)
+            {
+                isEng = false;
+                this.lblLanguge.Text = "Vietnamese to English";
+            }    
+            else
+            {
+                isEng = true;
+                this.lblLanguge.Text = "English to Vietnamese";
+            }                
         }
     }
 }

@@ -19,7 +19,7 @@ namespace StartMenu
         int dm = 0;
         int demso = 0;
 
-        String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+        String connString = Data.ConnString;
         public string iduser = "1";
         public string[] EL = new string[10];
         public string[] VN = new string[10];
@@ -29,7 +29,7 @@ namespace StartMenu
         {
             SqlConnection connection = new SqlConnection(connString);
             connection.Open();
-            String sqlQuery = "select * from ToLearn y join VOCABULARY v on y.id_word = v.id where y.id_user="+Data.iduser;
+            String sqlQuery = "select WORD,MEAN from Learned y join VOCABULARY v on y.id_word = v.id where y.id_user="+Data.iduser;
             SqlCommand command = new SqlCommand(sqlQuery, connection);
 
             SqlDataReader reader = command.ExecuteReader();
@@ -43,8 +43,8 @@ namespace StartMenu
                         i = rd.Next(0, 10);
                         if (demso == 10) return;
                     }
-                   EL[i] = reader[3].ToString();
-                   VN[i] = reader[4].ToString();
+                   EL[i] = reader[0].ToString();
+                   VN[i] = reader[1].ToString();
                   demso += 1;
             }
             connection.Close();
@@ -101,8 +101,8 @@ namespace StartMenu
             this.TBtime.Hide();
             this.diemtb.Hide();
             this.timetb.Hide();
-            this.again.Hide();
-            this.exit.Hide();
+            this.btnAgain.Hide();
+            this.btnExit.Hide();
             this.Get10Words();
             this.RandomButton();
             startime = DateTime.Now;
@@ -1295,17 +1295,16 @@ namespace StartMenu
                 TBtime.Show();
                 diemtb.Show();
                 timetb.Show();
-                exit.Show();
-                again.Show();
+                btnAgain.Show();
+                btnExit.Show();
+                correct.Hide();
+                guna2Button1.Hide();
             }
         }
 
         private void again_Click(object sender, EventArgs e)
         {
-            GRearangeTheWords newgame = new GRearangeTheWords();
-            this.Hide();
-            newgame.ShowDialog();
-            this.Close();
+           
         }
 
        
@@ -1372,15 +1371,52 @@ namespace StartMenu
 
         private void exit_Click(object sender, EventArgs e)
         {
-            FPractice newpractice = new FPractice();
-            this.Hide();
-            newpractice.ShowDialog();
-            this.Close();
+           
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            FPractice tabLearnNewWord = new FPractice();
+            tabLearnNewWord.AutoScroll = true;
+            tabLearnNewWord.TopLevel = false;
+            pnlLoad.Controls.Clear();
+            pnlLoad.Controls.Add(tabLearnNewWord);
+
+            tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
+            tabLearnNewWord.Show();
+            pnlLoad.Dock = DockStyle.Fill;
+            pnlLoad.Visible = true;
+        }
+
+        private void btnAgain_Click(object sender, EventArgs e)
+        {
+            GRearangeTheWords newgame = new GRearangeTheWords();
+
+            newgame.AutoScroll = true;
+            newgame.TopLevel = false;
+            pnlLoad.Controls.Clear();
+            pnlLoad.Controls.Add(newgame);
+
+            newgame.FormBorderStyle = FormBorderStyle.None;
+            newgame.Show();
+            pnlLoad.Dock = DockStyle.Fill;
+            pnlLoad.Visible = true;
+            btnExit.Visible = btnAgain.Visible = false;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            FPractice tabLearnNewWord = new FPractice();
+            tabLearnNewWord.AutoScroll = true;
+            tabLearnNewWord.TopLevel = false;
+            pnlLoad.Controls.Clear();
+            pnlLoad.Controls.Add(tabLearnNewWord);
+
+            tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
+            tabLearnNewWord.Show();
+            pnlLoad.Dock = DockStyle.Fill;
+            pnlLoad.Visible = true;
+            btnExit.Visible = btnAgain.Visible = false;
         }
     }
 }

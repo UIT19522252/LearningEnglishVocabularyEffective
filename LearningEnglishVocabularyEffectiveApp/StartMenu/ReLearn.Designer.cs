@@ -34,11 +34,12 @@
             // 
             // btnOK
             // 
+            this.btnOK.BorderRadius = 25;
             this.btnOK.CheckedState.Parent = this.btnOK;
             this.btnOK.CustomImages.Parent = this.btnOK;
-            this.btnOK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnOK.Font = new System.Drawing.Font("Showcard Gothic", 25.8F, System.Drawing.FontStyle.Bold);
-            this.btnOK.ForeColor = System.Drawing.Color.DarkCyan;
+            this.btnOK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(47)))), ((int)(((byte)(74)))));
+            this.btnOK.Font = new System.Drawing.Font("Berlin Sans FB", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.ForeColor = System.Drawing.Color.White;
             this.btnOK.HoverState.Parent = this.btnOK;
             this.btnOK.Location = new System.Drawing.Point(438, 389);
             this.btnOK.Name = "btnOK";
@@ -54,8 +55,8 @@
             this.lblWordRL.CheckedState.Parent = this.lblWordRL;
             this.lblWordRL.CustomImages.Parent = this.lblWordRL;
             this.lblWordRL.FillColor = System.Drawing.Color.Transparent;
-            this.lblWordRL.Font = new System.Drawing.Font("Segoe UI", 27F, System.Drawing.FontStyle.Bold);
-            this.lblWordRL.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lblWordRL.Font = new System.Drawing.Font("FS Nokio Bold", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblWordRL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
             this.lblWordRL.HoverState.Parent = this.lblWordRL;
             this.lblWordRL.Location = new System.Drawing.Point(260, 260);
             this.lblWordRL.Name = "lblWordRL";
@@ -69,10 +70,11 @@
             // ReLearn
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackgroundImage = global::StartMenu.Properties.Resources.LearnNewWords;
+            this.BackgroundImage = global::StartMenu.Properties.Resources.LearnNewWords4;
             this.ClientSize = new System.Drawing.Size(1182, 628);
             this.Controls.Add(this.lblWordRL);
             this.Controls.Add(this.btnOK);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReLearn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReLearn";

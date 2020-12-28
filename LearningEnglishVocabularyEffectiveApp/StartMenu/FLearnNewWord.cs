@@ -16,26 +16,55 @@ namespace StartMenu
 {
     public partial class FLearnNewWord : Form
     {
+        int time = 0;
         int temp = 0;
-
+        int score = 0;
+        Panel root = new Panel();
         public FLearnNewWord()
         {
             InitializeComponent();
+            timerOutOfTime.Start();
             lblCorrect.Visible = false;
             this.btnDone.Visible = false;
+            pnlLoad.Visible = false;
+            btnScore.Text = score.ToString();
+
+
+            temp = BackEnd.getQuestion();
+            if (temp != -1)
+            {
+                this.Questions.Text = Data.newWord[temp % 5].question.ToString();
+                Data.currentQuestion = Data.newWord[temp % 5];
+                loadAnswer();
+            }
         }
 
-        
+        public FLearnNewWord(Panel frame)
+        {
+            InitializeComponent();
+            timerOutOfTime.Start();
 
-        
+            lblCorrect.Visible = false;
+            this.btnDone.Visible = false;
+            pnlLoad.Visible = false;
+            btnScore.Text = score.ToString();
+            root = frame;
 
-        
+            temp = BackEnd.getQuestion();
+            if (temp != -1)
+            {
+                this.Questions.Text = Data.newWord[temp % 5].question.ToString();
+                Data.currentQuestion = Data.newWord[temp % 5];
+                loadAnswer();
+            }
+        }
+
+
+
+
+
 
         // btnBack
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
 
         int getIndexofQuestion()
@@ -50,15 +79,26 @@ namespace StartMenu
             this.lblCorrect.Text = "Incorrect!";
             int n = getIndexofQuestion();
             if (n < 0) return;
-            Data.ArrNumber.Add(n);
-            Data.ArrNumber.Add(n);
-            ReLearn f = new ReLearn();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
-            TimerVisitable.Start();
-            this.Questions.Text = "";
-            this.lblCorrect.Visible = true;
+            score -= 8;
+            if (score <= -50)
+            {
+                btnScore.Text = score.ToString();
+                this.lblCorrect.Visible = true;
+                this.lblCorrect.Text = "Your must be learn 5 new words again!";
+                btnLearnAgain.Visible = true;
+                Data.XONG = true;
+                this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
+                Questions.Enabled = false;
+            }
+            else
+            {
+                btnScore.Text = score.ToString();
+                Data.ArrNumber.Add(n);
+                Data.ArrNumber.Add(n);
+                lblCorrect.Visible = true;
+                TimerWrong.Start();
+
+            }
 
         }
 
@@ -78,8 +118,12 @@ namespace StartMenu
             {
                 this.lblCorrect.Visible = true;
                 this.lblCorrect.Text = "Congratulation !\n You have learn 5 new words!";
+                timerOutOfTime.Stop();
+                this.lblTime.Hide();
+                this.LearnSuccess();
                 Data.XONG = true;
                 this.btnDone.Visible = true;
+                this.btnHome.Visible = true;
                 this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
                 Questions.Enabled = false;
             }
@@ -87,24 +131,17 @@ namespace StartMenu
 
         private void FLearnNewWord_Load(object sender, EventArgs e)
         {
-            temp = BackEnd.getQuestion();
-            if (temp != -1)
-            {
-                this.Questions.Text = Data.newWord[temp % 5].question.ToString();
-                Data.currentQuestion = Data.newWord[temp % 5];
-                loadAnswer();
-            }
         }
 
         public void loadAnswer()
         {
             Data.listAnswer.Clear();
-            string connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
+            string connString = Data.ConnString;
 
             SqlConnection connection = new SqlConnection(connString);
             connection.Open();
 
-            string sqlQuery = "select top 3 * from VOCABULARY order by newid()";
+            string sqlQuery = "select top 3 ID, WORD, MEAN from VOCABULARY order by newid()";
 
             SqlCommand command = new SqlCommand(sqlQuery, connection);
 
@@ -123,7 +160,7 @@ namespace StartMenu
             Data.listAnswer[3] = Data.listAnswer[rdIndex];
             Data.listAnswer[rdIndex] = tmp;
 
-            this.AnswerA.Text = "A. " + Data.listAnswer[0].answer;
+           this.AnswerA.Text = "A. " + Data.listAnswer[0].answer;
             this.AnswerB.Text = "B. " + Data.listAnswer[1].answer;
             this.AnswerC.Text = "C. " + Data.listAnswer[2].answer;
             this.AnswerD.Text = "D. " + Data.listAnswer[3].answer;
@@ -131,23 +168,149 @@ namespace StartMenu
 
         }
 
+
+        private void btnDone_Click(object sender, EventArgs e)
+        {
+            if (Data.CheckForInternetConnection())
+            {
+                FPreviewNewWord tabLearnNewWord = new FPreviewNewWord();
+                tabLearnNewWord.AutoScroll = true;
+                tabLearnNewWord.TopLevel = false;
+                root.Controls.Clear();
+                root.Controls.Add(tabLearnNewWord);
+
+                tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
+                tabLearnNewWord.Show();
+                root.Visible = true;
+            }
+            else
+            {
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
+            }                
+        }
+
         private void AnswerA_Click(object sender, EventArgs e)
         {
-            Button a = sender as Button;
-            string s = a.Text.Remove(0, 3);
+            string s = AnswerA.Text.Remove(0, 3);
             if (s == Data.currentQuestion.answer)
             {
                 TimerVisitable.Start();
                 this.lblCorrect.Text = "Correct!";
-
+                score += 4;
+                btnScore.Text = score.ToString();
                 this.lblCorrect.Visible = true;
             }
             else WrongAnswer();
         }
 
-        private void btnDone_Click(object sender, EventArgs e)
+        private void AnswerB_Click(object sender, EventArgs e)
         {
+            string s = AnswerB.Text.Remove(0, 3);
+            if (s == Data.currentQuestion.answer)
+            {
+                TimerVisitable.Start();
+                this.lblCorrect.Text = "Correct!";
+                score += 4;
+                btnScore.Text = score.ToString();
+                this.lblCorrect.Visible = true;
+            }
+            else WrongAnswer();
+        }
+
+        private void AnswerC_Click(object sender, EventArgs e)
+        {
+            string s = AnswerC.Text.Remove(0, 3);
+            if (s == Data.currentQuestion.answer)
+            {
+                TimerVisitable.Start();
+                this.lblCorrect.Text = "Correct!";
+                score += 4;
+                btnScore.Text = score.ToString();
+                this.lblCorrect.Visible = true;
+            }
+            else WrongAnswer(); 
+        }
+
+        private void AnswerD_Click(object sender, EventArgs e)
+        {
+            string s = AnswerD.Text.Remove(0, 3);
+            if (s == Data.currentQuestion.answer)
+            {
+                TimerVisitable.Start();
+                this.lblCorrect.Text = "Correct!";
+                score += 4;
+                btnScore.Text = score.ToString();
+                this.lblCorrect.Visible = true;
+            }
+            else WrongAnswer();
+        }
+
+
+        void LearnSuccess()
+        {
+            sqlConnection sql = new sqlConnection();
+            sql.Learned(Data.id[0]);
+            sql.Learned(Data.id[1]);
+            sql.Learned(Data.id[2]);
+            sql.Learned(Data.id[3]);
+            sql.Learned(Data.id[4]);
+
+        }
+
+        private void TimerWrong_Tick(object sender, EventArgs e)
+        {
+                TimerWrong.Stop();
+                this.lblCorrect.Visible = false;
+
+                lblWordRL.Text = Data.currentQuestion.question + " : " + Data.currentQuestion.answer;
+                pnlLoad.Visible = true;
+
+            
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            pnlLoad.Visible = false;
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            FIntroduction tabLearnNewWord = new FIntroduction();
+            tabLearnNewWord.AutoScroll = true;
+            tabLearnNewWord.TopLevel = false;
+            pnlLoad.Controls.Clear();
+            pnlLoad.Controls.Add(tabLearnNewWord);
+
+            tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
+            tabLearnNewWord.Show();
+            pnlLoad.Visible = true;
+            this.lblCorrect.Visible = false;
+            this.btnDone.Visible = false;
+            this.btnHome.Visible = false;
+        }
+
+        private void btnLearnAgain_Click(object sender, EventArgs e)
+        {
+            root.Visible = false;
             this.Close();
+        }
+
+        private void timerOutOfTime_Tick(object sender, EventArgs e)
+        {
+            time += 1;
+            if (time == 180)
+            {
+                timerOutOfTime.Stop();
+                this.lblCorrect.Visible = true;
+                this.lblCorrect.Text = "Out of time!\nYour must be learn 5 new words again!";
+                btnLearnAgain.Visible = true;
+                Data.XONG = true;
+                this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
+                Questions.Enabled = false;
+            }
+            lblTime.Text = "Time: " + time.ToString();
+
         }
     }
 }
