@@ -259,6 +259,7 @@
             this.pnlLoad.Name = "pnlLoad";
             this.pnlLoad.Size = new System.Drawing.Size(1182, 628);
             this.pnlLoad.TabIndex = 12;
+            this.pnlLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLoad_Paint);
             // 
             // FPreviewNewWord
             // 

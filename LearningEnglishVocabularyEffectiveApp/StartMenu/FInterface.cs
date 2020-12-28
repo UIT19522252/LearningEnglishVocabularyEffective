@@ -21,15 +21,18 @@ namespace StartMenu
 
         public FInterface()
         {
-            InitializeComponent();
-            this.pnlMenu1.Visible = false;
-            this.pnlMenu1.Left = -1 * this.pnlMenu1.Width;
-            this.btnShowMenu.Visible = true;
-            // this.button1.Text= this.Height.ToString() + "\n" + this.pnlLoadForm.Height.ToString() + "\n" + this.pnlStatusBar.Height.ToString();
-            //this.btnShowMenu.Visible = false;
-            object sender = new object();
-            EventArgs e = new EventArgs();
-            btnHome_Click(sender, e);
+           
+            
+                InitializeComponent();
+                this.pnlMenu1.Visible = false;
+                this.pnlMenu1.Left = -1 * this.pnlMenu1.Width;
+                this.btnShowMenu.Visible = true;
+                // this.button1.Text= this.Height.ToString() + "\n" + this.pnlLoadForm.Height.ToString() + "\n" + this.pnlStatusBar.Height.ToString();
+                //this.btnShowMenu.Visible = false;
+                object sender = new object();
+                EventArgs e = new EventArgs();
+                btnHome_Click(sender, e);
+            
         }
 
         void HideMenuBar()

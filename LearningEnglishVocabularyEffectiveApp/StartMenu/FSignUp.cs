@@ -28,33 +28,41 @@ namespace StartMenu
         }
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            if(this.tbCode.Text != code)
+            if (Data.CheckForInternetConnection())
             {
-                FError f = new FError(" Code confirm was wrong", "Message");
-                f.StartPosition = FormStartPosition.CenterScreen;
-                f.ShowDialog();
+                if (this.tbCode.Text != code)
+                {
+                    FError f = new FError(" Code confirm was wrong", "Message");
+                    f.StartPosition = FormStartPosition.CenterScreen;
+                    f.ShowDialog();
+                }
+                else if (!tbxRepeatPass.Text.Equals(tbxPass.Text))
+                {
+                    FError f = new FError("Password and repeat password are not match ", "Message");
+                    f.StartPosition = FormStartPosition.CenterScreen;
+                    f.ShowDialog();
+                }
+                else if (tbEmail.Text == "" || tbEmail.Text.IndexOf("@gmail.com") == -1)
+                {
+                    FError f = new FError("Email is not valid", "Message");
+                    f.StartPosition = FormStartPosition.CenterScreen;
+                    f.ShowDialog();
+                }
+                else
+                {
+                    LoginActivity lg = new LoginActivity();
+                    if (lg.Signup(tbxUsername.Text, tbxPass.Text, tbEmail.Text))
+                    {
+                        MessageBox.Show("Sign up succesfully!", "Congratulation!");
+                        this.Hide();
+                        this.Close();
+                    }
+                }
             }
-            else if(!tbxRepeatPass.Text.Equals(tbxPass.Text))
-            {
-                FError f = new FError("Password and repeat password are not match ", "Message");
-                f.StartPosition = FormStartPosition.CenterScreen;
-                f.ShowDialog();
-            } 
-            else if(tbEmail.Text==""|| tbEmail.Text.IndexOf("@gmail.com")==-1)
-            {
-                FError f = new FError("Email is not valid", "Message");
-                f.StartPosition = FormStartPosition.CenterScreen;
-                f.ShowDialog();
-            }    
             else
             {
-                LoginActivity lg = new LoginActivity();
-                if (lg.Signup(tbxUsername.Text, tbxPass.Text,tbEmail.Text))
-                {
-                    MessageBox.Show("Sign up succesfully!", "Congratulation!");
-                    this.Hide();
-                    this.Close();
-                }
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
             }    
         }
 

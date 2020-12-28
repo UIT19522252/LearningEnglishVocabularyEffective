@@ -58,29 +58,38 @@ namespace StartMenu
         }
         private void btFind_Click(object sender, EventArgs e)
         {
-            this.rtbMean.Text = "";    
-            if (tbWord.Text == "") return;
-            this.lbPronuciation.Visible = false;
-            this.btSpeaker.Visible = false;
-
-            string mean;
-            if (isEng == true)
-                mean = wa.onlineDict(tbWord.Text);
-            else
-                mean = wa.VieToEng(tbWord.Text);
-            if (mean == "")
+            if (!Data.CheckForInternetConnection())
             {
-                this.rtbMean.Text = "Không tìm thấy từ được nhập";
-                return;
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
+                
             }
-            this.btSpeaker.Visible = true;
-            this.rtbMean.Text = mean;
-            if(mean.IndexOf("Means: ")==-1)
+            else
             {
-                return;
-            }    
-            this.btMakeFlashCard.Visible = true;
-            this.btMakeFlashCard.Enabled = true;
+                this.rtbMean.Text = "";
+                if (tbWord.Text == "") return;
+                this.lbPronuciation.Visible = false;
+                this.btSpeaker.Visible = false;
+
+                string mean;
+                if (isEng == true)
+                    mean = wa.onlineDict(tbWord.Text);
+                else
+                    mean = wa.VieToEng(tbWord.Text);
+                if (mean == "")
+                {
+                    this.rtbMean.Text = "Không tìm thấy từ được nhập";
+                    return;
+                }
+                this.btSpeaker.Visible = true;
+                this.rtbMean.Text = mean;
+                if (mean.IndexOf("Means: ") == -1)
+                {
+                    return;
+                }
+                this.btMakeFlashCard.Visible = true;
+                this.btMakeFlashCard.Enabled = true;
+            }
         }
         private void btSpeaker_Click(object sender, EventArgs e)
         {
@@ -91,12 +100,21 @@ namespace StartMenu
         }
         private void btFind1_Click(object sender, EventArgs e)
         {
-            this.rtbMean1.Text = sql.Decription2(this.tbWord1.Text);
-            if (this.rtbMean1.Text == "")
+            if (!Data.CheckForInternetConnection())
             {
-                this.rtbMean1.Text = "Không tìm thấy từ được nhập";
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
+                
             }
-            else this.btspeaker2.Visible = true;
+            else
+            {
+                this.rtbMean1.Text = sql.Decription2(this.tbWord1.Text);
+                if (this.rtbMean1.Text == "")
+                {
+                    this.rtbMean1.Text = "Không tìm thấy từ được nhập";
+                }
+                else this.btspeaker2.Visible = true;
+            }
         }
         
         private void btDicoffline_Click(object sender, EventArgs e)

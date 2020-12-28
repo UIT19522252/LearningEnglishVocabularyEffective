@@ -171,15 +171,23 @@ namespace StartMenu
 
         private void btnDone_Click(object sender, EventArgs e)
         {
-            FPreviewNewWord tabLearnNewWord = new FPreviewNewWord();
-            tabLearnNewWord.AutoScroll = true;
-            tabLearnNewWord.TopLevel = false;
-            root.Controls.Clear();
-            root.Controls.Add(tabLearnNewWord);
+            if (Data.CheckForInternetConnection())
+            {
+                FPreviewNewWord tabLearnNewWord = new FPreviewNewWord();
+                tabLearnNewWord.AutoScroll = true;
+                tabLearnNewWord.TopLevel = false;
+                root.Controls.Clear();
+                root.Controls.Add(tabLearnNewWord);
 
-            tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
-            tabLearnNewWord.Show();
-            root.Visible = true;
+                tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
+                tabLearnNewWord.Show();
+                root.Visible = true;
+            }
+            else
+            {
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
+            }                
         }
 
         private void AnswerA_Click(object sender, EventArgs e)

@@ -55,5 +55,10 @@ namespace StartMenu
             tabLearnNewWord.Show();
             pnlLoad.Visible = true;
         }
+
+        private void pnlLoad_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

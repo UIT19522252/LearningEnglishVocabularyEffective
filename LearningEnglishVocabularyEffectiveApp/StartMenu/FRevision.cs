@@ -163,58 +163,82 @@ namespace StartMenu
 		}
 		private void btLearnNewWord_Click(object sender, EventArgs e)
 		{
-			this.pnCheck.Hide();
-			this.pnStatistic.Hide();
-			pnYourFlashCard.Hide();
-			FPreviewNewWord tabLearnNewWord = new FPreviewNewWord();
-			tabLearnNewWord.AutoScroll = true;
-			tabLearnNewWord.TopLevel = false;
-			pnlLoad.Controls.Clear();
-			pnlLoad.Controls.Add(tabLearnNewWord);
+			if (Data.CheckForInternetConnection())
+			{
+				this.pnCheck.Hide();
+				this.pnStatistic.Hide();
+				pnYourFlashCard.Hide();
+				FPreviewNewWord tabLearnNewWord = new FPreviewNewWord();
+				tabLearnNewWord.AutoScroll = true;
+				tabLearnNewWord.TopLevel = false;
+				pnlLoad.Controls.Clear();
+				pnlLoad.Controls.Add(tabLearnNewWord);
 
-			tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
-			tabLearnNewWord.Show();
-			pnlLoad.Visible = true;
+				tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
+				tabLearnNewWord.Show();
+				pnlLoad.Visible = true;
+			}
+			else
+            {
+				FError f = new FError("Turn on your Internet connection!", "Error");
+				f.Show();
+			}				
 		}
 		private void btYourFlashCard_Click(object sender, EventArgs e)
 		{
-			this.pnCheck.Hide();
-			this.pnStatistic.Hide();
-			
-			this.pnYourFlashCard.Visible = true;
-			this.pnYourFlashCard.Dock = DockStyle.Fill;
-			List<List<string>> ls = sql.getOwnFlashCard();
-			yFWord = ls[1];
-			yFMean = ls[2];
-			k = 0;
-			if (yFWord.Count > 0)
+			if (Data.CheckForInternetConnection())
 			{
-				btFlashCard.Text = yFWord[k];
-				btFlip.Text = yFMean[k];
+				this.pnCheck.Hide();
+				this.pnStatistic.Hide();
+
+				this.pnYourFlashCard.Visible = true;
+				this.pnYourFlashCard.Dock = DockStyle.Fill;
+				List<List<string>> ls = sql.getOwnFlashCard();
+				yFWord = ls[1];
+				yFMean = ls[2];
+				k = 0;
+				if (yFWord.Count > 0)
+				{
+					btFlashCard.Text = yFWord[k];
+					btFlip.Text = yFMean[k];
+				}
+				pnYourFlashCard.Show();
 			}
-			pnYourFlashCard.Show();
+			else
+            {
+				FError f = new FError("Turn on your Internet connection!", "Error");
+				f.Show();
+			}				
 		}
 		private void btCheck_Click(object sender, EventArgs e)
 		{
-			this.pnStatistic.Hide();
-			this.pnYourFlashCard.Hide();
-			this.pnCheck.Dock = DockStyle.Fill;
-			this.pnCheck.Visible = true;
-			List<List<string>> st = sql.getMeanID();
-			Eng = st[0];
-			Vie = st[1];
-			LinkPic = st[2];
-			id = st[3];
-			k = 0;
-			btFlip2.Text = Eng[k];
-			if (st.Count > 0)
+			if (Data.CheckForInternetConnection())
 			{
-				btFlashCard2.Text = Eng[k];
-				pbImage.Image = null;
-				pbImage.LoadAsync(LinkPic[k]);
-				this.btFlip2.Text = Eng[k];
+				this.pnStatistic.Hide();
+				this.pnYourFlashCard.Hide();
+				this.pnCheck.Dock = DockStyle.Fill;
+				this.pnCheck.Visible = true;
+				List<List<string>> st = sql.getMeanID();
+				Eng = st[0];
+				Vie = st[1];
+				LinkPic = st[2];
+				id = st[3];
+				k = 0;
+				btFlip2.Text = Eng[k];
+				if (st.Count > 0)
+				{
+					btFlashCard2.Text = Eng[k];
+					pbImage.Image = null;
+					pbImage.LoadAsync(LinkPic[k]);
+					this.btFlip2.Text = Eng[k];
+				}
+				this.pnCheck.Show();
 			}
-			this.pnCheck.Show();
+			else
+            {
+				FError f = new FError("Turn on your Internet connection!", "Error");
+				f.Show();
+			}				
 		}
 	}
 }

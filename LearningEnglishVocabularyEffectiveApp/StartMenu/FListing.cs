@@ -32,50 +32,74 @@ namespace StartMenu
 
         private void btnViDeoTab_Click(object sender, EventArgs e)
         {
-            tabMusic.Close();
-            tabTest.Close();
-            videoSelected.Visible = true;
-            musicSelected.Visible = false;
-            testSelected.Visible = false;
+            if (Data.CheckForInternetConnection())
+            {
+                tabMusic.Close();
+                tabTest.Close();
+                videoSelected.Visible = true;
+                musicSelected.Visible = false;
+                testSelected.Visible = false;
 
-            tabVideo = new FListingVideo();
-            tabVideo.TopLevel = false;
-            pnlLoadForm.Controls.Clear();
-            pnlLoadForm.Controls.Add(tabVideo);
-            tabVideo.FormBorderStyle = FormBorderStyle.None;
-            tabVideo.Show();
+                tabVideo = new FListingVideo();
+                tabVideo.TopLevel = false;
+                pnlLoadForm.Controls.Clear();
+                pnlLoadForm.Controls.Add(tabVideo);
+                tabVideo.FormBorderStyle = FormBorderStyle.None;
+                tabVideo.Show();
+            }
+            else
+            {
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
+            }
         }
 
         private void btnMusicTab_Click(object sender, EventArgs e)
         {
-            tabTest.Close();
-            tabVideo.Close();
-            videoSelected.Visible = false;
-            musicSelected.Visible = true;
-            testSelected.Visible = false;
+            if (Data.CheckForInternetConnection())
+            {
+                tabTest.Close();
+                tabVideo.Close();
+                videoSelected.Visible = false;
+                musicSelected.Visible = true;
+                testSelected.Visible = false;
 
-            tabMusic = new FListingMusic();
-            tabMusic.TopLevel = false;
-            pnlLoadForm.Controls.Clear();
-            pnlLoadForm.Controls.Add(tabMusic);
-            tabMusic.FormBorderStyle = FormBorderStyle.None;
-            tabMusic.Show();
+                tabMusic = new FListingMusic();
+                tabMusic.TopLevel = false;
+                pnlLoadForm.Controls.Clear();
+                pnlLoadForm.Controls.Add(tabMusic);
+                tabMusic.FormBorderStyle = FormBorderStyle.None;
+                tabMusic.Show();
+            }
+            else
+            {
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
+            }
         }
 
         private void btnTestTab_Click(object sender, EventArgs e)
         {
-            tabVideo.Close();
-            tabMusic.Close();
-            videoSelected.Visible = false;
-            musicSelected.Visible = false;
-            testSelected.Visible = true;
+            if (Data.CheckForInternetConnection())
+            {
+                tabVideo.Close();
+                tabMusic.Close();
+                videoSelected.Visible = false;
+                musicSelected.Visible = false;
+                testSelected.Visible = true;
 
-            tabTest = new FListingTest();
-            tabTest.TopLevel = false;
-            pnlLoadForm.Controls.Clear();
-            pnlLoadForm.Controls.Add(tabTest);
-            tabTest.FormBorderStyle = FormBorderStyle.None;
-            tabTest.Show();
+                tabTest = new FListingTest();
+                tabTest.TopLevel = false;
+                pnlLoadForm.Controls.Clear();
+                pnlLoadForm.Controls.Add(tabTest);
+                tabTest.FormBorderStyle = FormBorderStyle.None;
+                tabTest.Show();
+            }
+            else
+            {
+                FError f = new FError("Turn on your Internet connection!", "Error");
+                f.Show();
+            }
         }
     }
 }
