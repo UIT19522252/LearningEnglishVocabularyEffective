@@ -22,6 +22,7 @@ namespace StartMenu
 
         private void btnSend_Click(object sender, EventArgs e)
         {
+            this.btnSend.Enabled = false;
             System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
             mail.From = new System.Net.Mail.MailAddress("app.english.vocabulary@gmail.com");
                 try
@@ -29,7 +30,7 @@ namespace StartMenu
                     mail.To.Add("19522252@gm.uit.edu.vn");
                     mail.Subject = "Report";
 
-                    mail.Body = tbReport.Text;
+                    mail.Body = tbReport.Text + "\n from user: " + Data.username;
                     SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
 
                     smtp.EnableSsl = true;

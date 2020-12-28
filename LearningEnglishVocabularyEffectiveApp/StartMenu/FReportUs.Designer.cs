@@ -49,7 +49,7 @@
             this.btnSend.CheckedState.Parent = this.btnSend;
             this.btnSend.CustomImages.Parent = this.btnSend;
             this.btnSend.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.btnSend.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnSend.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSend.ForeColor = System.Drawing.Color.White;
             this.btnSend.HoverState.Parent = this.btnSend;
             this.btnSend.Location = new System.Drawing.Point(342, 334);
@@ -68,7 +68,7 @@
             this.btnCancel.CheckedState.Parent = this.btnCancel;
             this.btnCancel.CustomImages.Parent = this.btnCancel;
             this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCancel.Font = new System.Drawing.Font("Berlin Sans FB", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.HoverState.Parent = this.btnCancel;
             this.btnCancel.Location = new System.Drawing.Point(69, 334);

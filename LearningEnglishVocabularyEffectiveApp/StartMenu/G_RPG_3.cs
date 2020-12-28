@@ -51,7 +51,7 @@ namespace StartMenu
 			conPoint.Add(button5);
 			conPoint.Add(button6);
 			this.DoubleBuffered = true;
-			AddEventClick();
+			//AddEventClick();
 			Newgame(_Words, _Means);
 			InitPen();
 		}
@@ -138,7 +138,7 @@ namespace StartMenu
 		private void InitPen()
 		{
 			tempPen = new Pen(Color.DarkBlue);
-			tempPen.Width = 4;
+			tempPen.Width = 6;
 			tempPen.StartCap = LineCap.NoAnchor;
 			tempPen.EndCap = LineCap.NoAnchor;
 			tempPen.DashStyle = DashStyle.Solid;
@@ -211,7 +211,7 @@ namespace StartMenu
 				if (this.HPBoss.Value == 0)
 				{
 					this.btnNewGame.Visible = false;
-					this.lblEndGame.Text = "You won";
+					this.lblEndGame.Text = "You won, wanna try again?";
 					this.pnlLoad.Visible = true;
 				}
 				Newgame(Words, Means);
@@ -226,7 +226,7 @@ namespace StartMenu
 				if (this.HPPlayer.Value == 0)
 				{
 					this.btnNewGame.Visible = false;
-					this.lblEndGame.Text = "You lose, want to learn again?";
+					this.lblEndGame.Text = "You lose, wanna learn again?";
 					this.pnlLoad.Visible = true;
 
 				}

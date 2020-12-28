@@ -35,8 +35,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.lbPractice = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pbWitch = new System.Windows.Forms.PictureBox();
             this.HPBoss = new System.Windows.Forms.ProgressBar();
             this.HPPlayer = new System.Windows.Forms.ProgressBar();
             this.btnSubmit = new Guna.UI2.WinForms.Guna2Button();
@@ -46,6 +44,8 @@
             this.richTextBox4 = new Guna.UI2.WinForms.Guna2Button();
             this.lblCorrect = new System.Windows.Forms.Label();
             this.timerCorrect = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbWitch = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWitch)).BeginInit();
             this.SuspendLayout();
@@ -101,43 +101,21 @@
             this.lbPractice.TabIndex = 23;
             this.lbPractice.Text = "Practice";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 335);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pbWitch
-            // 
-            this.pbWitch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWitch.BackgroundImage")));
-            this.pbWitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbWitch.Location = new System.Drawing.Point(894, 335);
-            this.pbWitch.Margin = new System.Windows.Forms.Padding(4);
-            this.pbWitch.Name = "pbWitch";
-            this.pbWitch.Size = new System.Drawing.Size(250, 250);
-            this.pbWitch.TabIndex = 14;
-            this.pbWitch.TabStop = false;
-            // 
             // HPBoss
             // 
-            this.HPBoss.Location = new System.Drawing.Point(1022, 631);
+            this.HPBoss.Location = new System.Drawing.Point(894, 593);
             this.HPBoss.Margin = new System.Windows.Forms.Padding(4);
             this.HPBoss.Name = "HPBoss";
-            this.HPBoss.Size = new System.Drawing.Size(290, 37);
+            this.HPBoss.Size = new System.Drawing.Size(250, 22);
             this.HPBoss.TabIndex = 57;
             this.HPBoss.Value = 100;
             // 
             // HPPlayer
             // 
-            this.HPPlayer.Location = new System.Drawing.Point(16, 631);
+            this.HPPlayer.Location = new System.Drawing.Point(38, 593);
             this.HPPlayer.Margin = new System.Windows.Forms.Padding(4);
             this.HPPlayer.Name = "HPPlayer";
-            this.HPPlayer.Size = new System.Drawing.Size(296, 37);
+            this.HPPlayer.Size = new System.Drawing.Size(250, 22);
             this.HPPlayer.TabIndex = 56;
             this.HPPlayer.Value = 100;
             // 
@@ -232,6 +210,28 @@
             // 
             this.timerCorrect.Interval = 1000;
             this.timerCorrect.Tick += new System.EventHandler(this.timerCorrect_Tick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(38, 335);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pbWitch
+            // 
+            this.pbWitch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbWitch.BackgroundImage")));
+            this.pbWitch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbWitch.Location = new System.Drawing.Point(894, 335);
+            this.pbWitch.Margin = new System.Windows.Forms.Padding(4);
+            this.pbWitch.Name = "pbWitch";
+            this.pbWitch.Size = new System.Drawing.Size(250, 250);
+            this.pbWitch.TabIndex = 14;
+            this.pbWitch.TabStop = false;
             // 
             // G_RPG_2
             // 
