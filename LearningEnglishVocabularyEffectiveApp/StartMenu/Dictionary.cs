@@ -23,14 +23,16 @@ namespace StartMenu
         int index = 1;
         bool isEng = true;
         public Dictionary()
-		{
-			InitializeComponent();
-            this.DoubleBuffered = true;
-            var acsc = new AutoCompleteStringCollection();
-            acsc.AddRange(sql.Suggest("").ToArray());
-            tbWord1.AutoCompleteCustomSource = acsc;
-            isChange = false;
-            this.btMakeFlashCard.Enabled = false;
+        {
+            
+                InitializeComponent();
+                this.DoubleBuffered = true;
+                var acsc = new AutoCompleteStringCollection();
+                acsc.AddRange(sql.Suggest("").ToArray());
+                tbWord1.AutoCompleteCustomSource = acsc;
+                isChange = false;
+                this.btMakeFlashCard.Enabled = false;
+            
         }
         public void AppendText(RichTextBox box, string text, Color color)
         {

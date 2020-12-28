@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Media;
+using System.Net;
 using System.Text;
 
 namespace StartMenu
@@ -28,5 +29,18 @@ namespace StartMenu
         public static List<string> id = new List<string>();
         public static SoundPlayer simpleSound = new SoundPlayer();
         public  static AxWMPLib.AxWindowsMediaPlayer simpleLove = new AxWMPLib.AxWindowsMediaPlayer();
+        public static bool CheckForInternetConnection()
+        {
+            try
+            {
+                using (var client = new WebClient())
+                using (client.OpenRead("http://google.com/generate_204"))
+                    return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
