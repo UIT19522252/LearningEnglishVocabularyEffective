@@ -156,15 +156,16 @@ namespace StartMenu
 			
 			this.lbMessage.Text = "Bạn giỏi quá";
 			this.pnNotification.Dock = DockStyle.Fill;
-			this.pnNotification.Visible = true;
-			string s1 = LoadDecrip(this.tbPlayer.Text);
 			string s2 = this.tbPlayer.Text;
-			this.rtbDecrip.Text = s1;
-			this.rtbWord.Text = s2;
+			
 
 			Level();
 			this.lbScore.Text = "Score: " + game.score;
 			richTextBox1.Text += tbPlayer.Text + "\n";
+			string s1 = LoadDecrip(this.tbPlayer.Text);
+			this.rtbDecrip.Text = s1;
+			this.rtbWord.Text = s2;
+			this.pnNotification.Visible = true;
 			this.rtbNPC1.Text = game.NextTurn();
 			if (this.rtbNPC1.Text == "No Answer")
 			{
@@ -261,6 +262,7 @@ namespace StartMenu
         {
 			if (tbPlayer.Text.Length < 2) return;
 			//Check xem đã nối đúng chưa
+			this.btnSubmit.Enabled = false;
 			string NPC = rtbNPC1.Text;
 			string Player = tbPlayer.Text;
 			if (game.CheckAnswer(NPC, Player) == true)
@@ -300,14 +302,16 @@ namespace StartMenu
 
         private void btnOK_Click(object sender, EventArgs e)
         {
+			this.btnSubmit.Enabled = true;
 			this.rtbDecrip.Text = "";
 			this.rtbWord.Text = "";
 			this.pnNotification.Visible = false;
 		}
 
-        private void btnAddToKnow_Click(object sender, EventArgs e)
+        private void tbPlayer_KeyDown(object sender, KeyEventArgs e)
         {
-
+			if (e.KeyCode == Keys.Enter)
+				btnSubmit_Click(sender, e);
         }
     }
 }

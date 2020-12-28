@@ -17,10 +17,6 @@ namespace StartMenu
 		public WebActivity()
 		{
 		}
-		public string renderLinkWord(string word)
-		{
-			return "https://iapi.glosbe.com/en/vi/" + word;
-		}
 		public string getSource(string link)
 		{
 			WebClient client = new WebClient();
@@ -36,32 +32,6 @@ namespace StartMenu
 
 			}
 			return res;
-		}
-		public void getAudio(string linkaudio)
-		{
-			using (WebClient wc = new WebClient())
-			{
-				try
-				{
-					wc.DownloadFile(new Uri(linkaudio), "temp.mp3");
-				}
-				catch(Exception ex)
-				{
-					
-				}
-			}
-		}
-		public string getLinkAudio(string source)
-		{
-			int k = source.IndexOf("data-url-mp3");
-			string h = source;
-			if(h.Length < 14 || k == -1)
-			{
-				return "";
-			}	
-			h = h.Substring(k + 14, h.Length - k - 14);
-			string shortlink = "https://iapi.glosbe.com/" + h.Substring(0, h.IndexOf('\"'));
-			return shortlink;
 		}
 		public bool checkWord(string word)
 		{
@@ -85,10 +55,18 @@ namespace StartMenu
 			string des = "";
 			try
 			{
+				for(int i=0;i<des.Length;i++)
+                {
+					if ((des[i] <= 'Z' && des[i] >= 'A') || (des[i] <= 'z' && des[i] >= 'a'))
+					{
+						continue;
+					}
+					else return "";
+                }					
 				des += "WORD: " + word + "\n";
 				word = word.Replace(" ", "%20");
 				string h = getSource("https://dictionary.cambridge.org/vi/dictionary/english-vietnamese/" + word);
-				if (h.IndexOf("lp-m_l-25") != -1) return VieToEng(word);
+				if (h.IndexOf("lp-m_l-25") != -1) return "";
 				h = h.Substring(h.IndexOf("ti tb") + 7);
 				string type = h.Substring(0, h.IndexOf("<"));
 				des += "Classifier: " + type + "\n";

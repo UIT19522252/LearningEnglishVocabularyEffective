@@ -21,6 +21,7 @@ namespace StartMenu
         List<string> my_list = new List<string>();
         bool isChange = false;
         int index = 1;
+        bool isEng = true;
         public Dictionary()
 		{
 			InitializeComponent();
@@ -59,7 +60,12 @@ namespace StartMenu
             if (tbWord.Text == "") return;
             this.lbPronuciation.Visible = false;
             this.btSpeaker.Visible = false;
-            string mean = wa.onlineDict(tbWord.Text);
+
+            string mean;
+            if (isEng == true)
+                mean = wa.onlineDict(tbWord.Text);
+            else
+                mean = wa.VieToEng(tbWord.Text);
             if (mean == "")
             {
                 this.rtbMean.Text = "Không tìm thấy từ được nhập";
@@ -161,6 +167,20 @@ namespace StartMenu
             {
                 this.btFind1_Click(sender, e);
             }
+        }
+
+        private void swRemember_Login_CheckedChanged(object sender, EventArgs e)
+        {
+            if(isEng==true)
+            {
+                isEng = false;
+                this.lblLanguge.Text = "Vietnamese to English";
+            }    
+            else
+            {
+                isEng = true;
+                this.lblLanguge.Text = "English to Vietnamese";
+            }                
         }
     }
 }

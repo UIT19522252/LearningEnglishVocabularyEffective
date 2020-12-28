@@ -524,6 +524,7 @@
             this.swRemember_Login.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
             this.swRemember_Login.UncheckedState.InnerColor = System.Drawing.Color.White;
             this.swRemember_Login.UncheckedState.Parent = this.swRemember_Login;
+            this.swRemember_Login.CheckedChanged += new System.EventHandler(this.swRemember_Login_CheckedChanged);
             // 
             // lblLanguge
             // 

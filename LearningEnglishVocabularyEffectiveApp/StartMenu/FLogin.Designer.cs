@@ -196,9 +196,11 @@
             // 
             // btnClose
             // 
+            this.btnClose.AutoRoundedCorners = true;
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.BackgroundImage = global::StartMenu.Properties.Resources.brand_royaltyfree_yes_and_no_check_mark_flat_design;
             this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClose.BorderRadius = 14;
             this.btnClose.CheckedState.Parent = this.btnClose;
             this.btnClose.CustomImages.Parent = this.btnClose;
             this.btnClose.FillColor = System.Drawing.Color.Transparent;
