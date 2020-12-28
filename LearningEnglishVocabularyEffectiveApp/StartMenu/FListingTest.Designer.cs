@@ -39,21 +39,20 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btAfter = new Guna.UI2.WinForms.Guna2Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.lbKetQua = new System.Windows.Forms.Label();
+            this.pnlBao = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlTraloi = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btketqua = new Guna.UI2.WinForms.Guna2Button();
             this.lbIncorrect = new System.Windows.Forms.Label();
             this.lbCorrect = new System.Windows.Forms.Label();
-            this.btNote = new Guna.UI2.WinForms.Guna2Button();
-            this.lbKetQua = new System.Windows.Forms.Label();
-            this.btketqua = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.pnlTraloi = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnlBao = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.pnlTraloi.SuspendLayout();
             this.pnlBao.SuspendLayout();
+            this.pnlTraloi.SuspendLayout();
             this.SuspendLayout();
             // 
             // A
@@ -170,7 +169,6 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.panel3);
-            this.panel4.Controls.Add(this.btNote);
             this.panel4.Controls.Add(this.lbKetQua);
             this.panel4.Controls.Add(this.pnlBao);
             this.panel4.Controls.Add(this.btketqua);
@@ -180,6 +178,82 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1172, 536);
             this.panel4.TabIndex = 11;
+            // 
+            // lbKetQua
+            // 
+            this.lbKetQua.Font = new System.Drawing.Font("FS Nokio Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbKetQua.Location = new System.Drawing.Point(295, 490);
+            this.lbKetQua.Name = "lbKetQua";
+            this.lbKetQua.Size = new System.Drawing.Size(220, 45);
+            this.lbKetQua.TabIndex = 5;
+            this.lbKetQua.Click += new System.EventHandler(this.lbKetQua_Click);
+            // 
+            // pnlBao
+            // 
+            this.pnlBao.BackColor = System.Drawing.Color.Transparent;
+            this.pnlBao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.pnlBao.BorderThickness = 2;
+            this.pnlBao.Controls.Add(this.pnlTraloi);
+            this.pnlBao.CustomBorderThickness = new System.Windows.Forms.Padding(0, 2, 0, 2);
+            this.pnlBao.Location = new System.Drawing.Point(119, 22);
+            this.pnlBao.Name = "pnlBao";
+            this.pnlBao.ShadowDecoration.Parent = this.pnlBao;
+            this.pnlBao.Size = new System.Drawing.Size(918, 422);
+            this.pnlBao.TabIndex = 6;
+            // 
+            // pnlTraloi
+            // 
+            this.pnlTraloi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.pnlTraloi.BorderThickness = 2;
+            this.pnlTraloi.Controls.Add(this.guna2Button1);
+            this.pnlTraloi.Controls.Add(this.B);
+            this.pnlTraloi.Controls.Add(this.D);
+            this.pnlTraloi.Controls.Add(this.C);
+            this.pnlTraloi.Controls.Add(this.A);
+            this.pnlTraloi.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.pnlTraloi.Location = new System.Drawing.Point(0, 0);
+            this.pnlTraloi.Name = "pnlTraloi";
+            this.pnlTraloi.ShadowDecoration.Parent = this.pnlTraloi;
+            this.pnlTraloi.Size = new System.Drawing.Size(486, 422);
+            this.pnlTraloi.TabIndex = 11;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BackgroundImage = global::StartMenu.Properties.Resources.SPEAEKER;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button1.BorderRadius = 21;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.DialogResult = System.Windows.Forms.DialogResult.Retry;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(433, 12);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(45, 45);
+            this.guna2Button1.TabIndex = 5;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // btketqua
+            // 
+            this.btketqua.BorderRadius = 15;
+            this.btketqua.CheckedState.Parent = this.btketqua;
+            this.btketqua.CustomImages.Parent = this.btketqua;
+            this.btketqua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
+            this.btketqua.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold);
+            this.btketqua.ForeColor = System.Drawing.Color.White;
+            this.btketqua.HoverState.Parent = this.btketqua;
+            this.btketqua.Location = new System.Drawing.Point(70, 474);
+            this.btketqua.Name = "btketqua";
+            this.btketqua.ShadowDecoration.Parent = this.btketqua;
+            this.btketqua.Size = new System.Drawing.Size(180, 45);
+            this.btketqua.TabIndex = 0;
+            this.btketqua.Text = "Result";
+            this.btketqua.Click += new System.EventHandler(this.btketqua_Click);
             // 
             // lbIncorrect
             // 
@@ -203,99 +277,6 @@
             this.lbCorrect.TabIndex = 7;
             this.lbCorrect.Text = "Correct";
             // 
-            // btNote
-            // 
-            this.btNote.BorderRadius = 15;
-            this.btNote.CheckedState.Parent = this.btNote;
-            this.btNote.CustomImages.Parent = this.btNote;
-            this.btNote.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.btNote.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btNote.ForeColor = System.Drawing.Color.White;
-            this.btNote.HoverState.Parent = this.btNote;
-            this.btNote.Location = new System.Drawing.Point(803, 474);
-            this.btNote.Name = "btNote";
-            this.btNote.ShadowDecoration.Parent = this.btNote;
-            this.btNote.Size = new System.Drawing.Size(180, 45);
-            this.btNote.TabIndex = 6;
-            this.btNote.Text = "Don\'t Appear again";
-            this.btNote.Click += new System.EventHandler(this.btNote_Click);
-            // 
-            // lbKetQua
-            // 
-            this.lbKetQua.Font = new System.Drawing.Font("FS Nokio Regular", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbKetQua.Location = new System.Drawing.Point(295, 490);
-            this.lbKetQua.Name = "lbKetQua";
-            this.lbKetQua.Size = new System.Drawing.Size(220, 45);
-            this.lbKetQua.TabIndex = 5;
-            this.lbKetQua.Click += new System.EventHandler(this.lbKetQua_Click);
-            // 
-            // btketqua
-            // 
-            this.btketqua.BorderRadius = 15;
-            this.btketqua.CheckedState.Parent = this.btketqua;
-            this.btketqua.CustomImages.Parent = this.btketqua;
-            this.btketqua.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.btketqua.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold);
-            this.btketqua.ForeColor = System.Drawing.Color.White;
-            this.btketqua.HoverState.Parent = this.btketqua;
-            this.btketqua.Location = new System.Drawing.Point(70, 474);
-            this.btketqua.Name = "btketqua";
-            this.btketqua.ShadowDecoration.Parent = this.btketqua;
-            this.btketqua.Size = new System.Drawing.Size(180, 45);
-            this.btketqua.TabIndex = 0;
-            this.btketqua.Text = "Result";
-            this.btketqua.Click += new System.EventHandler(this.btketqua_Click);
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.AutoRoundedCorners = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BackgroundImage = global::StartMenu.Properties.Resources.SPEAEKER;
-            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Button1.BorderRadius = 21;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DialogResult = System.Windows.Forms.DialogResult.Retry;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(433, 12);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(45, 45);
-            this.guna2Button1.TabIndex = 5;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // pnlTraloi
-            // 
-            this.pnlTraloi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.pnlTraloi.BorderThickness = 2;
-            this.pnlTraloi.Controls.Add(this.guna2Button1);
-            this.pnlTraloi.Controls.Add(this.B);
-            this.pnlTraloi.Controls.Add(this.D);
-            this.pnlTraloi.Controls.Add(this.C);
-            this.pnlTraloi.Controls.Add(this.A);
-            this.pnlTraloi.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.pnlTraloi.Location = new System.Drawing.Point(0, 0);
-            this.pnlTraloi.Name = "pnlTraloi";
-            this.pnlTraloi.ShadowDecoration.Parent = this.pnlTraloi;
-            this.pnlTraloi.Size = new System.Drawing.Size(486, 422);
-            this.pnlTraloi.TabIndex = 11;
-            // 
-            // pnlBao
-            // 
-            this.pnlBao.BackColor = System.Drawing.Color.Transparent;
-            this.pnlBao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(49)))), ((int)(((byte)(74)))));
-            this.pnlBao.BorderThickness = 2;
-            this.pnlBao.Controls.Add(this.pnlTraloi);
-            this.pnlBao.CustomBorderThickness = new System.Windows.Forms.Padding(0, 2, 0, 2);
-            this.pnlBao.Location = new System.Drawing.Point(119, 22);
-            this.pnlBao.Name = "pnlBao";
-            this.pnlBao.ShadowDecoration.Parent = this.pnlBao;
-            this.pnlBao.Size = new System.Drawing.Size(918, 422);
-            this.pnlBao.TabIndex = 6;
-            // 
             // FListingTest
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -315,9 +296,9 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.pnlBao.ResumeLayout(false);
             this.pnlTraloi.ResumeLayout(false);
             this.pnlTraloi.PerformLayout();
-            this.pnlBao.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -337,7 +318,6 @@
         private System.Windows.Forms.Panel panel4;
         private Guna.UI2.WinForms.Guna2Button btketqua;
         private System.Windows.Forms.Label lbKetQua;
-        private Guna.UI2.WinForms.Guna2Button btNote;
         private System.Windows.Forms.Label lbIncorrect;
         private System.Windows.Forms.Label lbCorrect;
         private Guna.UI2.WinForms.Guna2Panel pnlTraloi;

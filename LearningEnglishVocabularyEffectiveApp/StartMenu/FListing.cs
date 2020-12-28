@@ -22,6 +22,12 @@ namespace StartMenu
             videoSelected.Visible = false;
             musicSelected.Visible = false;
             testSelected.Visible = false;
+
+
+
+            object sender = new object();
+            EventArgs e = new EventArgs();
+            btnTestTab_Click(sender, e);
         }
 
         private void btnViDeoTab_Click(object sender, EventArgs e)

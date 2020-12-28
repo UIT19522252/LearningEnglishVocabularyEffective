@@ -78,7 +78,6 @@ namespace StartMenu
             C.Text = daC[chiSo].Substring(0,1);
             D.Text = daD[chiSo].Substring(0,1);
             this.lbKetQua.Hide();
-            this.btNote.Hide();
         }
         private void Pic_Click(object sender, EventArgs e)
         {
@@ -111,7 +110,6 @@ namespace StartMenu
             D.Text = daD[chiSo];
             this.lbKetQua.Text = "Result: " + kq[chiSo];
             this.lbKetQua.Show();
-            this.btNote.Show();
             if (A.Checked ==true && kq[chiSo] == "A")
             {
                 this.lbCorrect.Show();
@@ -132,18 +130,6 @@ namespace StartMenu
                 this.lbIncorrect.Show();
         }
 
-        private void btNote_Click(object sender, EventArgs e)
-        {
-            String connString = @"Server=DESKTOP-HNQNQ1I\SQLEXPRESS;Database=ENGLISHVO;User Id=sa;Password=1;";
-            SqlConnection connection = new SqlConnection(connString);
-            connection.Open();
-
-            String sqlQuery = "update LisAndPic set st = 'N' where id =" + @"'" + id[chiSo]+ @"'";
-
-            SqlCommand command = new SqlCommand(sqlQuery, connection);
-            SqlDataReader reader = command.ExecuteReader();
-            connection.Close();
-        }
 
         private void lbKetQua_Click(object sender, EventArgs e)
         {

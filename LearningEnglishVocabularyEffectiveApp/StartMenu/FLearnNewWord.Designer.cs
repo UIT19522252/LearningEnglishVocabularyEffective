@@ -240,14 +240,14 @@
             // 
             // lblWordRL
             // 
-            this.lblWordRL.AutoSize = true;
-            this.lblWordRL.Font = new System.Drawing.Font("FS Nokio Bold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblWordRL.Font = new System.Drawing.Font("FS Nokio Bold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblWordRL.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblWordRL.Location = new System.Drawing.Point(552, 287);
+            this.lblWordRL.Location = new System.Drawing.Point(12, 260);
             this.lblWordRL.Name = "lblWordRL";
-            this.lblWordRL.Size = new System.Drawing.Size(79, 41);
+            this.lblWordRL.Size = new System.Drawing.Size(1158, 68);
             this.lblWordRL.TabIndex = 0;
             this.lblWordRL.Text = "label1";
+            this.lblWordRL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TimerWrong
             // 
@@ -342,7 +342,6 @@
             this.Text = "LEARN NEW WORDS";
             this.Load += new System.EventHandler(this.FLearnNewWord_Load);
             this.pnlLoad.ResumeLayout(false);
-            this.pnlLoad.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
