@@ -50,7 +50,7 @@
             // 
             // lbNameSong
             // 
-            this.lbNameSong.Font = new System.Drawing.Font("FS Nokio Bold", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameSong.Font = new System.Drawing.Font("FS Nokio Bold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbNameSong.Location = new System.Drawing.Point(12, 437);
             this.lbNameSong.Name = "lbNameSong";
             this.lbNameSong.Size = new System.Drawing.Size(828, 49);

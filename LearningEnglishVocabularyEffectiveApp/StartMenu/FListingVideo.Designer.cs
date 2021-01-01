@@ -59,7 +59,7 @@
             // 
             // treeView
             // 
-            this.treeView.Font = new System.Drawing.Font("FS Nokio Regular", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.treeView.Font = new System.Drawing.Font("FS Nokio Bold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.treeView.Location = new System.Drawing.Point(4, 4);
             this.treeView.Name = "treeView";
             this.treeView.Size = new System.Drawing.Size(315, 524);

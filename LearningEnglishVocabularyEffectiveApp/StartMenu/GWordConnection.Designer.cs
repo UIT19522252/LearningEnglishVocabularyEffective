@@ -248,7 +248,7 @@
             this.btnOK.Font = new System.Drawing.Font("Berlin Sans FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.White;
             this.btnOK.HoverState.Parent = this.btnOK;
-            this.btnOK.Location = new System.Drawing.Point(780, 452);
+            this.btnOK.Location = new System.Drawing.Point(866, 462);
             this.btnOK.Name = "btnOK";
             this.btnOK.ShadowDecoration.Parent = this.btnOK;
             this.btnOK.Size = new System.Drawing.Size(134, 45);
@@ -316,10 +316,10 @@
             this.btnSubmit.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
             this.btnSubmit.HoverState.Parent = this.btnSubmit;
-            this.btnSubmit.Location = new System.Drawing.Point(789, 516);
+            this.btnSubmit.Location = new System.Drawing.Point(792, 513);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.ShadowDecoration.Parent = this.btnSubmit;
-            this.btnSubmit.Size = new System.Drawing.Size(122, 45);
+            this.btnSubmit.Size = new System.Drawing.Size(122, 38);
             this.btnSubmit.TabIndex = 32;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseTransparentBackground = true;
