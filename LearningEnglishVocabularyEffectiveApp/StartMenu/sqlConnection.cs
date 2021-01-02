@@ -70,26 +70,6 @@ namespace StartMenu
 			reader.Close();
 			connection.Close();
 		}
-		public int countToLearn()
-		{
-			SqlConnection connection = new SqlConnection(connString);
-			connection.Open();
-			string sqlQuery = "select count(*) as dem from ToLearn where id_user=" + Data.iduser;
-			SqlCommand command = new SqlCommand(sqlQuery, connection);
-			SqlDataReader reader = command.ExecuteReader();
-			while (reader.HasRows)
-			{
-				if (reader.Read() == false) break;
-				else
-				{
-					int k = int.Parse(reader[0].ToString());
-					reader.Close();
-					return k;
-				}
-			}
-			reader.Close();
-			return -1;
-		}
 		public int countLearned()
 		{
 			SqlConnection connection = new SqlConnection(connString);
@@ -109,6 +89,27 @@ namespace StartMenu
 			}
 			reader.Close();
 			return -1;
+		}
+		public string getLearned()
+		{
+			SqlConnection connection = new SqlConnection(connString);
+			connection.Open();
+			string res = "";
+			int k = 1;
+			string sqlQuery = "select WORD +' : ' + MEAN+' (Ex: ' + EXAMPLE+')' from VOCABULARY v join Learned l on v.id=l.id_word and id_user=" + Data.iduser;
+			SqlCommand command = new SqlCommand(sqlQuery, connection);
+			SqlDataReader reader = command.ExecuteReader();
+			while (reader.HasRows)
+			{
+				if (reader.Read() == false) break;
+				else
+				{
+					res+=k+". "+reader[0].ToString()+"\n";
+					k++;
+				}
+			}
+			reader.Close();
+			return res;
 		}
 		public List<List<string>> getOwnFlashCard()
 		{
