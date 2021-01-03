@@ -89,7 +89,7 @@ namespace StartMenu
                 this.btnSpeaker2.Text = "Your must be learn 5 new words again!";
                 btnLearnAgain.Visible = true;
                 Data.XONG = true;
-                this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
+                this.btnSpeaker2.Visible = this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
                 Questions.Enabled = false;
             }
             else
@@ -126,7 +126,7 @@ namespace StartMenu
                 Data.XONG = true;
                 this.btnDone.Visible = true;
                 this.btnHome.Visible = true;
-                this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
+                this.btnSpeaker2.Visible = this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
                 Questions.Enabled = false;
             }
         }
