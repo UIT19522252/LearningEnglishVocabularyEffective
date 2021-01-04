@@ -16,6 +16,7 @@ namespace StartMenu
 {
     public partial class FLearnNewWord : Form
     {
+        Voice voice = new Voice();
         int time = 0;
         int temp = 0;
         int score = 0;
@@ -24,10 +25,11 @@ namespace StartMenu
         {
             InitializeComponent();
             timerOutOfTime.Start();
-            lblCorrect.Visible = false;
+            btnSpeaker2.Visible = false;
             this.btnDone.Visible = false;
             pnlLoad.Visible = false;
             btnScore.Text = score.ToString();
+
 
 
             temp = BackEnd.getQuestion();
@@ -44,7 +46,7 @@ namespace StartMenu
             InitializeComponent();
             timerOutOfTime.Start();
 
-            lblCorrect.Visible = false;
+            btnSpeaker2.Visible = false;
             this.btnDone.Visible = false;
             pnlLoad.Visible = false;
             btnScore.Text = score.ToString();
@@ -76,18 +78,18 @@ namespace StartMenu
         }
         void WrongAnswer()
         {
-            this.lblCorrect.Text = "Incorrect!";
+            this.btnSpeaker2.Text = "Incorrect!";
             int n = getIndexofQuestion();
             if (n < 0) return;
             score -= 8;
             if (score <= -50)
             {
                 btnScore.Text = score.ToString();
-                this.lblCorrect.Visible = true;
-                this.lblCorrect.Text = "Your must be learn 5 new words again!";
+                this.btnSpeaker2.Visible = true;
+                this.btnSpeaker2.Text = "Your must be learn 5 new words again!";
                 btnLearnAgain.Visible = true;
                 Data.XONG = true;
-                this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
+                this.btnSpeaker2.Visible = this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
                 Questions.Enabled = false;
             }
             else
@@ -95,7 +97,7 @@ namespace StartMenu
                 btnScore.Text = score.ToString();
                 Data.ArrNumber.Add(n);
                 Data.ArrNumber.Add(n);
-                lblCorrect.Visible = true;
+                btnSpeaker2.Visible = true;
                 TimerWrong.Start();
 
             }
@@ -105,7 +107,7 @@ namespace StartMenu
         private void TimerVisitable_Tick(object sender, EventArgs e)
         {
             TimerVisitable.Stop();
-            this.lblCorrect.Visible = false;
+            this.btnSpeaker2.Visible = false;
             int temp = BackEnd.getQuestion();
 
             if (temp != -1)
@@ -116,21 +118,22 @@ namespace StartMenu
             }
             else
             {
-                this.lblCorrect.Visible = true;
-                this.lblCorrect.Text = "Congratulation !\n You have learn 5 new words!";
+                this.btnSpeaker2.Visible = true;
+                this.btnSpeaker2.Text = "Congratulation !\n You have learn 5 new words!";
                 timerOutOfTime.Stop();
                 this.lblTime.Hide();
                 this.LearnSuccess();
                 Data.XONG = true;
                 this.btnDone.Visible = true;
                 this.btnHome.Visible = true;
-                this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
+                this.btnSpeaker2.Visible = this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
                 Questions.Enabled = false;
             }
         }
 
         private void FLearnNewWord_Load(object sender, EventArgs e)
         {
+            voice.Read(".");
         }
 
         public void loadAnswer()
@@ -195,11 +198,12 @@ namespace StartMenu
             string s = AnswerA.Text.Remove(0, 3);
             if (s == Data.currentQuestion.answer)
             {
+                voice.Read(Data.currentQuestion.question);
                 TimerVisitable.Start();
-                this.lblCorrect.Text = "Correct!";
+                this.btnSpeaker2.Text = "Correct!";
                 score += 4;
                 btnScore.Text = score.ToString();
-                this.lblCorrect.Visible = true;
+                this.btnSpeaker2.Visible = true;
             }
             else WrongAnswer();
         }
@@ -209,11 +213,13 @@ namespace StartMenu
             string s = AnswerB.Text.Remove(0, 3);
             if (s == Data.currentQuestion.answer)
             {
+                voice.Read(Data.currentQuestion.question);
+
                 TimerVisitable.Start();
-                this.lblCorrect.Text = "Correct!";
+                this.btnSpeaker2.Text = "Correct!";
                 score += 4;
                 btnScore.Text = score.ToString();
-                this.lblCorrect.Visible = true;
+                this.btnSpeaker2.Visible = true;
             }
             else WrongAnswer();
         }
@@ -223,11 +229,13 @@ namespace StartMenu
             string s = AnswerC.Text.Remove(0, 3);
             if (s == Data.currentQuestion.answer)
             {
+                voice.Read(Data.currentQuestion.question);
+
                 TimerVisitable.Start();
-                this.lblCorrect.Text = "Correct!";
+                this.btnSpeaker2.Text = "Correct!";
                 score += 4;
                 btnScore.Text = score.ToString();
-                this.lblCorrect.Visible = true;
+                this.btnSpeaker2.Visible = true;
             }
             else WrongAnswer(); 
         }
@@ -237,11 +245,13 @@ namespace StartMenu
             string s = AnswerD.Text.Remove(0, 3);
             if (s == Data.currentQuestion.answer)
             {
+                voice.Read(Data.currentQuestion.question);
+
                 TimerVisitable.Start();
-                this.lblCorrect.Text = "Correct!";
+                this.btnSpeaker2.Text = "Correct!";
                 score += 4;
                 btnScore.Text = score.ToString();
-                this.lblCorrect.Visible = true;
+                this.btnSpeaker2.Visible = true;
             }
             else WrongAnswer();
         }
@@ -261,7 +271,7 @@ namespace StartMenu
         private void TimerWrong_Tick(object sender, EventArgs e)
         {
                 TimerWrong.Stop();
-                this.lblCorrect.Visible = false;
+                this.btnSpeaker2.Visible = false;
 
                 lblWordRL.Text = Data.currentQuestion.question + " : " + Data.currentQuestion.answer;
                 pnlLoad.Visible = true;
@@ -285,7 +295,7 @@ namespace StartMenu
             tabLearnNewWord.FormBorderStyle = FormBorderStyle.None;
             tabLearnNewWord.Show();
             pnlLoad.Visible = true;
-            this.lblCorrect.Visible = false;
+            this.btnSpeaker2.Visible = false;
             this.btnDone.Visible = false;
             this.btnHome.Visible = false;
         }
@@ -302,8 +312,8 @@ namespace StartMenu
             if (time == 180)
             {
                 timerOutOfTime.Stop();
-                this.lblCorrect.Visible = true;
-                this.lblCorrect.Text = "Out of time!\nYour must be learn 5 new words again!";
+                this.btnSpeaker2.Visible = true;
+                this.btnSpeaker2.Text = "Out of time!\nYour must be learn 5 new words again!";
                 btnLearnAgain.Visible = true;
                 Data.XONG = true;
                 this.AnswerA.Visible = this.AnswerB.Visible = this.AnswerC.Visible = this.AnswerD.Visible = this.Questions.Visible = false;
@@ -311,6 +321,16 @@ namespace StartMenu
             }
             lblTime.Text = "Time: " + time.ToString();
 
+        }
+
+        private void btnSpeaker_Click(object sender, EventArgs e)
+        {
+            voice.Read(Data.currentQuestion.question);
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            voice.Read(Data.currentQuestion.question);
         }
     }
 }

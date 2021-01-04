@@ -106,8 +106,8 @@ namespace StartMenu
 			this.lbUsername.Text ="Username: "+ Data.username;
 			this.lbId.Text = "UserID: " + Data.iduser;
 			this.lbEmail.Text = "Email: " + sql.FindEmail(Data.username);
-			this.lbToLearn.Text = "To Learn: " + sql.countToLearn();
 			this.lbLearned.Text = "Learned: " + sql.countLearned();
+			this.rtbLearned.Text = sql.getLearned();
 			pnStatistic.Show();
 		}
 		private void btBack3_Click(object sender, EventArgs e)

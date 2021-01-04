@@ -73,7 +73,7 @@ namespace StartMenu
 			{
 				pictureBox1.Visible = false;
 			}
-			else if (game.HP == -1)
+			if (game.HP == 0)
 			{
 				string ans;
 				if ((ans = game.PotentialAnswer()) != "No Answer")

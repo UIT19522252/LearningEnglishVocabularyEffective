@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lblCorrect = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSpeaker2 = new Guna.UI2.WinForms.Guna2Button();
             this.TimerVisitable = new System.Windows.Forms.Timer(this.components);
             this.btnDone = new Guna.UI2.WinForms.Guna2Button();
             this.AnswerB = new Guna.UI2.WinForms.Guna2Button();
@@ -46,26 +46,28 @@
             this.btnLearnAgain = new Guna.UI2.WinForms.Guna2Button();
             this.timerOutOfTime = new System.Windows.Forms.Timer(this.components);
             this.lblTime = new System.Windows.Forms.Label();
+            this.btnSpeaker = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.pnlLoad.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblCorrect
+            // btnSpeaker2
             // 
-            this.lblCorrect.BackColor = System.Drawing.Color.Transparent;
-            this.lblCorrect.CheckedState.Parent = this.lblCorrect;
-            this.lblCorrect.CustomImages.Parent = this.lblCorrect;
-            this.lblCorrect.FillColor = System.Drawing.Color.Transparent;
-            this.lblCorrect.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorrect.ForeColor = System.Drawing.Color.Red;
-            this.lblCorrect.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.lblCorrect.HoverState.Parent = this.lblCorrect;
-            this.lblCorrect.Location = new System.Drawing.Point(12, 187);
-            this.lblCorrect.Name = "lblCorrect";
-            this.lblCorrect.ShadowDecoration.Parent = this.lblCorrect;
-            this.lblCorrect.Size = new System.Drawing.Size(1158, 113);
-            this.lblCorrect.TabIndex = 6;
-            this.lblCorrect.Text = "Correct!";
-            this.lblCorrect.UseTransparentBackground = true;
+            this.btnSpeaker2.BackColor = System.Drawing.Color.Transparent;
+            this.btnSpeaker2.CheckedState.Parent = this.btnSpeaker2;
+            this.btnSpeaker2.CustomImages.Parent = this.btnSpeaker2;
+            this.btnSpeaker2.FillColor = System.Drawing.Color.Transparent;
+            this.btnSpeaker2.Font = new System.Drawing.Font("Berlin Sans FB", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSpeaker2.ForeColor = System.Drawing.Color.Red;
+            this.btnSpeaker2.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnSpeaker2.HoverState.Parent = this.btnSpeaker2;
+            this.btnSpeaker2.Location = new System.Drawing.Point(12, 187);
+            this.btnSpeaker2.Name = "btnSpeaker2";
+            this.btnSpeaker2.ShadowDecoration.Parent = this.btnSpeaker2;
+            this.btnSpeaker2.Size = new System.Drawing.Size(1158, 113);
+            this.btnSpeaker2.TabIndex = 6;
+            this.btnSpeaker2.Text = "Correct!";
+            this.btnSpeaker2.UseTransparentBackground = true;
             // 
             // TimerVisitable
             // 
@@ -213,6 +215,7 @@
             // 
             this.pnlLoad.BackColor = System.Drawing.Color.White;
             this.pnlLoad.BackgroundImage = global::StartMenu.Properties.Resources.LearnNewWords4;
+            this.pnlLoad.Controls.Add(this.btnSpeaker);
             this.pnlLoad.Controls.Add(this.btnOK);
             this.pnlLoad.Controls.Add(this.lblWordRL);
             this.pnlLoad.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -242,7 +245,7 @@
             // 
             this.lblWordRL.Font = new System.Drawing.Font("FS Nokio Bold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblWordRL.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblWordRL.Location = new System.Drawing.Point(12, 260);
+            this.lblWordRL.Location = new System.Drawing.Point(12, 222);
             this.lblWordRL.Name = "lblWordRL";
             this.lblWordRL.Size = new System.Drawing.Size(1158, 68);
             this.lblWordRL.TabIndex = 0;
@@ -316,6 +319,47 @@
             this.lblTime.TabIndex = 22;
             this.lblTime.Text = "0";
             // 
+            // btnSpeaker
+            // 
+            this.btnSpeaker.AutoRoundedCorners = true;
+            this.btnSpeaker.BackColor = System.Drawing.Color.Transparent;
+            this.btnSpeaker.BackgroundImage = global::StartMenu.Properties.Resources.SPEAEKER;
+            this.btnSpeaker.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSpeaker.BorderRadius = 24;
+            this.btnSpeaker.CheckedState.Parent = this.btnSpeaker;
+            this.btnSpeaker.CustomImages.Parent = this.btnSpeaker;
+            this.btnSpeaker.FillColor = System.Drawing.Color.Transparent;
+            this.btnSpeaker.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSpeaker.ForeColor = System.Drawing.Color.White;
+            this.btnSpeaker.HoverState.Parent = this.btnSpeaker;
+            this.btnSpeaker.Location = new System.Drawing.Point(566, 314);
+            this.btnSpeaker.Name = "btnSpeaker";
+            this.btnSpeaker.ShadowDecoration.Parent = this.btnSpeaker;
+            this.btnSpeaker.Size = new System.Drawing.Size(50, 50);
+            this.btnSpeaker.TabIndex = 2;
+            this.btnSpeaker.UseTransparentBackground = true;
+            this.btnSpeaker.Click += new System.EventHandler(this.btnSpeaker_Click);
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BackgroundImage = global::StartMenu.Properties.Resources.SPEAEKER;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button1.BorderRadius = 24;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(740, 165);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(50, 50);
+            this.guna2Button1.TabIndex = 23;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // FLearnNewWord
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -332,8 +376,9 @@
             this.Controls.Add(this.AnswerD);
             this.Controls.Add(this.AnswerA);
             this.Controls.Add(this.AnswerB);
-            this.Controls.Add(this.lblCorrect);
             this.Controls.Add(this.lblTime);
+            this.Controls.Add(this.btnSpeaker2);
+            this.Controls.Add(this.guna2Button1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -348,7 +393,7 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button lblCorrect;
+        private Guna.UI2.WinForms.Guna2Button btnSpeaker2;
         private System.Windows.Forms.Timer TimerVisitable;
         private Guna.UI2.WinForms.Guna2Button btnDone;
         private Guna.UI2.WinForms.Guna2Button AnswerB;
@@ -365,5 +410,7 @@
         private Guna.UI2.WinForms.Guna2Button btnLearnAgain;
         private System.Windows.Forms.Timer timerOutOfTime;
         private System.Windows.Forms.Label lblTime;
+        private Guna.UI2.WinForms.Guna2Button btnSpeaker;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
